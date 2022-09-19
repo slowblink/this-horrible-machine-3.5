@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/ladder00.map-420d4d52ce2731be0950663d8c33564e.tres"
+
+[deps]
+
+source_file="res://qodotmaps/ladder_segments/ladder00.map"
+dest_files=[ "res://.import/ladder00.map-420d4d52ce2731be0950663d8c33564e.tres" ]
+
+[params]
+

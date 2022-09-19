@@ -1,0 +1,17 @@
+// Game: superstructure00
+// Format: Valve
+// entity 0
+{
+"mapversion" "220"
+"classname" "worldspawn"
+"_tb_textures" "textures/PixelArtTextures"
+// brush 0
+{
+( -48 48 0 ) ( -48 48 8 ) ( -48 -48 0 ) PixelArtTextures/Glass_05_basecolor [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -48 -48 0 ) ( -48 -48 8 ) ( 48 -48 0 ) PixelArtTextures/Glass_05_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -48 48 0 ) ( -48 -48 0 ) ( 48 48 0 ) PixelArtTextures/Glass_05_basecolor [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 48 48 8 ) ( 48 -48 8 ) ( -48 48 8 ) PixelArtTextures/Glass_05_basecolor [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 48 48 0 ) ( 48 48 8 ) ( -48 48 0 ) PixelArtTextures/Glass_05_basecolor [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 48 -48 0 ) ( 48 -48 8 ) ( 48 48 0 ) PixelArtTextures/Glass_05_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}

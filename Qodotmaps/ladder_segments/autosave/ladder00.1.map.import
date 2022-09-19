@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/ladder00.1.map-f9eb94c938cc0a0508f868a7d1e133dd.tres"
+
+[deps]
+
+source_file="res://qodotmaps/ladder_segments/autosave/ladder00.1.map"
+dest_files=[ "res://.import/ladder00.1.map-f9eb94c938cc0a0508f868a7d1e133dd.tres" ]
+
+[params]
+

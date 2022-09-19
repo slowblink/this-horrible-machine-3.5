@@ -1,0 +1,17 @@
+// Game: superstructure00
+// Format: Valve
+// entity 0
+{
+"mapversion" "220"
+"classname" "worldspawn"
+"_tb_textures" "textures/PixelArtTextures"
+// brush 0
+{
+( -8 -24 0 ) ( -8 -23 0 ) ( -8 -24 1 ) PixelArtTextures/16x128 [ 0 1 0 -8 ] [ 0 0 -1 0 ] 0 -1 1
+( -8 -8 0 ) ( -8 -8 1 ) ( -7 -8 0 ) PixelArtTextures/16x128 [ 1 0 0 8 ] [ 0 0 -1 0 ] 0 1 1
+( -8 -24 0 ) ( -7 -24 0 ) ( -8 -23 0 ) PixelArtTextures/16x16 [ 1 0 0 8 ] [ 0 -1 0 8 ] 0 -1 1
+( 24 8 128 ) ( 24 9 128 ) ( 25 8 128 ) PixelArtTextures/16x16 [ 1 0 0 8 ] [ 0 -1 0 8 ] 0 1 1
+( 24 8 8 ) ( 25 8 8 ) ( 24 8 9 ) PixelArtTextures/16x128 [ 1 0 0 8 ] [ 0 0 -1 0 ] 0 -1 1
+( 8 8 8 ) ( 8 8 9 ) ( 8 9 8 ) PixelArtTextures/16x128 [ 0 1 0 -8 ] [ 0 0 -1 0 ] 0 1 1
+}
+}

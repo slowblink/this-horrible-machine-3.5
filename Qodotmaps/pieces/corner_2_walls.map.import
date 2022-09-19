@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/corner_2_walls.map-17e5896d993d55c8611f3e40f44ead00.tres"
+
+[deps]
+
+source_file="res://qodotmaps/pieces/corner_2_walls.map"
+dest_files=[ "res://.import/corner_2_walls.map-17e5896d993d55c8611f3e40f44ead00.tres" ]
+
+[params]
+

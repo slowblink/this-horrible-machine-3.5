@@ -1,0 +1,448 @@
+// Game: superstructure00
+// Format: Valve
+// entity 0
+{
+"mapversion" "220"
+"classname" "worldspawn"
+"_tb_textures" "textures/PixelArtTextures"
+// brush 0
+{
+( -24 -24 0 ) ( -24 -24 8 ) ( -24 -32 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -24 -32 0 ) ( -24 -32 8 ) ( 24 -32 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -24 0 ) ( -24 -24 0 ) ( 24 -32 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 -24 8 ) ( 24 -24 8 ) ( -24 -32 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 -24 0 ) ( 24 -24 8 ) ( -24 -24 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -32 0 ) ( 24 -32 8 ) ( 24 -24 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 1
+{
+( 24 24 0 ) ( 24 24 8 ) ( 24 -24 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 -24 0 ) ( 24 -24 0 ) ( 32 -24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 24 0 ) ( 24 24 0 ) ( 32 -24 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 -24 8 ) ( 24 -24 8 ) ( 32 24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 24 8 ) ( 24 24 8 ) ( 32 24 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 -24 0 ) ( 32 -24 8 ) ( 32 24 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 2
+{
+( -32 24 0 ) ( -32 24 8 ) ( -32 -24 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -24 8 ) ( -24 -24 8 ) ( -32 -24 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -24 0 ) ( -24 -24 0 ) ( -32 24 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 24 8 ) ( -24 24 8 ) ( -32 -24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 24 0 ) ( -24 24 0 ) ( -32 24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -24 -24 8 ) ( -24 24 8 ) ( -24 -24 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 3
+{
+( -24 32 0 ) ( -24 32 8 ) ( -24 24 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -24 24 0 ) ( -24 24 8 ) ( 24 24 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 32 0 ) ( -24 32 0 ) ( 24 24 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 32 8 ) ( 24 32 8 ) ( -24 24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 32 0 ) ( 24 32 8 ) ( -24 32 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 24 0 ) ( 24 24 8 ) ( 24 32 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 4
+{
+( -32 -24 64 ) ( -32 -24 56 ) ( -32 24 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -24 64 ) ( -24 -24 64 ) ( -32 -24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -24 56 ) ( -24 -24 56 ) ( -32 24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 24 64 ) ( -24 24 64 ) ( -32 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 24 56 ) ( -24 24 56 ) ( -32 24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -24 -24 64 ) ( -24 24 64 ) ( -24 -24 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 5
+{
+( 24 -24 56 ) ( 24 24 56 ) ( 24 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 -24 56 ) ( 24 -24 56 ) ( 32 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 24 56 ) ( 24 24 56 ) ( 32 -24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 -24 64 ) ( 24 -24 64 ) ( 32 24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 24 64 ) ( 24 24 64 ) ( 32 24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 24 64 ) ( 32 24 56 ) ( 32 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 6
+{
+( -24 24 64 ) ( -24 24 56 ) ( -24 32 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 24 64 ) ( 24 24 56 ) ( -24 24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 24 56 ) ( 24 32 56 ) ( -24 24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 24 64 ) ( -24 24 64 ) ( 24 32 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 32 64 ) ( -24 32 56 ) ( 24 32 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 32 64 ) ( 24 32 56 ) ( 24 24 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 7
+{
+( -24 -32 64 ) ( -24 -32 56 ) ( -24 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -32 64 ) ( 24 -32 56 ) ( -24 -32 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -32 56 ) ( 24 -24 56 ) ( -24 -32 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 -32 64 ) ( -24 -32 64 ) ( 24 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 -24 64 ) ( -24 -24 56 ) ( 24 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -24 64 ) ( 24 -24 56 ) ( 24 -32 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 8
+{
+( -32 -24 56 ) ( -32 -24 48 ) ( -32 24 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 20 56 ) ( -24 20 56 ) ( -32 20 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -24 48 ) ( -24 -24 48 ) ( -32 24 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 24 56 ) ( -24 24 56 ) ( -32 -24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 24 48 ) ( -24 24 48 ) ( -32 24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -24 -24 56 ) ( -24 24 56 ) ( -24 -24 48 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 9
+{
+( -32 -20 16 ) ( -32 -20 8 ) ( -32 28 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -20 48 ) ( -24 -20 48 ) ( -32 -20 40 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 28 64 ) ( -24 28 64 ) ( -32 -20 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 -20 8 ) ( -24 -20 8 ) ( -32 28 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 20 56 ) ( -32 20 48 ) ( -24 20 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -28 -20 16 ) ( -28 28 64 ) ( -28 -20 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 10
+{
+( -32 -68 16 ) ( -32 -68 8 ) ( -32 -20 16 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -24 16 ) ( -24 -24 16 ) ( -32 -24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -68 8 ) ( -24 -68 8 ) ( -32 -20 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 -20 16 ) ( -24 -20 16 ) ( -32 -68 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 -20 8 ) ( -24 -20 8 ) ( -32 -20 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -24 -68 16 ) ( -24 -20 16 ) ( -24 -68 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 11
+{
+( -28 20 16 ) ( -28 -28 64 ) ( -28 20 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -24 -20 56 ) ( -24 -20 48 ) ( -32 -20 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -24 20 8 ) ( -32 20 8 ) ( -24 -28 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 -28 64 ) ( -32 -28 64 ) ( -24 20 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 20 48 ) ( -32 20 48 ) ( -24 20 40 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -24 20 16 ) ( -24 20 8 ) ( -24 -28 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 12
+{
+( -32 -68 56 ) ( -32 -68 48 ) ( -32 -20 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -24 56 ) ( -24 -24 56 ) ( -32 -24 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -68 48 ) ( -24 -68 48 ) ( -32 -20 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 -20 56 ) ( -24 -20 56 ) ( -32 -68 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 -20 48 ) ( -24 -20 48 ) ( -32 -20 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -24 -68 56 ) ( -24 -20 56 ) ( -24 -68 48 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 13
+{
+( -32 -24 16 ) ( -32 -24 8 ) ( -32 24 16 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 20 16 ) ( -24 20 16 ) ( -32 20 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -24 8 ) ( -24 -24 8 ) ( -32 24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 24 16 ) ( -24 24 16 ) ( -32 -24 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 24 8 ) ( -24 24 8 ) ( -32 24 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -24 -24 16 ) ( -24 24 16 ) ( -24 -24 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 14
+{
+( 24 -20 16 ) ( 24 -20 8 ) ( 24 28 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -20 48 ) ( 32 -20 48 ) ( 24 -20 40 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 28 64 ) ( 32 28 64 ) ( 24 -20 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 -20 8 ) ( 32 -20 8 ) ( 24 28 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 20 56 ) ( 24 20 48 ) ( 32 20 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 28 -20 16 ) ( 28 28 64 ) ( 28 -20 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 15
+{
+( 28 20 16 ) ( 28 -28 64 ) ( 28 20 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 -20 56 ) ( 32 -20 48 ) ( 24 -20 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 20 8 ) ( 24 20 8 ) ( 32 -28 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 -28 64 ) ( 24 -28 64 ) ( 32 20 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 20 48 ) ( 24 20 48 ) ( 32 20 40 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 20 16 ) ( 32 20 8 ) ( 32 -28 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 16
+{
+( 24 -24 56 ) ( 24 -24 48 ) ( 24 24 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 20 56 ) ( 32 20 56 ) ( 24 20 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -24 48 ) ( 32 -24 48 ) ( 24 24 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 24 56 ) ( 32 24 56 ) ( 24 -24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 24 48 ) ( 32 24 48 ) ( 24 24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 -24 56 ) ( 32 24 56 ) ( 32 -24 48 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 17
+{
+( 24 -68 56 ) ( 24 -68 48 ) ( 24 -20 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -24 56 ) ( 32 -24 56 ) ( 24 -24 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -68 48 ) ( 32 -68 48 ) ( 24 -20 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 -20 56 ) ( 32 -20 56 ) ( 24 -68 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 -20 48 ) ( 32 -20 48 ) ( 24 -20 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 -68 56 ) ( 32 -20 56 ) ( 32 -68 48 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 18
+{
+( 24 -68 16 ) ( 24 -68 8 ) ( 24 -20 16 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -24 16 ) ( 32 -24 16 ) ( 24 -24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -68 8 ) ( 32 -68 8 ) ( 24 -20 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 -20 16 ) ( 32 -20 16 ) ( 24 -68 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 -20 8 ) ( 32 -20 8 ) ( 24 -20 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 -68 16 ) ( 32 -20 16 ) ( 32 -68 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 19
+{
+( 24 -24 16 ) ( 24 -24 8 ) ( 24 24 16 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 20 16 ) ( 32 20 16 ) ( 24 20 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -24 8 ) ( 32 -24 8 ) ( 24 24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 24 16 ) ( 32 24 16 ) ( 24 -24 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 24 8 ) ( 32 24 8 ) ( 24 24 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 -24 16 ) ( 32 24 16 ) ( 32 -24 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 20
+{
+( -20 24 56 ) ( -20 24 48 ) ( -20 32 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 20 24 8 ) ( 20 32 8 ) ( -28 24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 24 16 ) ( 20 24 8 ) ( -28 24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 20 28 16 ) ( -28 28 64 ) ( 20 28 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -28 24 64 ) ( -28 32 64 ) ( 20 24 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 24 48 ) ( 20 32 48 ) ( 20 24 40 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 21
+{
+( -20 32 48 ) ( -20 24 48 ) ( -20 32 40 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 28 32 64 ) ( 28 24 64 ) ( -20 32 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -20 28 16 ) ( 28 28 64 ) ( -20 28 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 32 16 ) ( -20 32 8 ) ( 28 32 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 32 8 ) ( -20 24 8 ) ( 28 32 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 32 56 ) ( 20 32 48 ) ( 20 24 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 22
+{
+( -24 24 48 ) ( -24 32 48 ) ( -24 24 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 24 56 ) ( 24 24 48 ) ( -24 24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 24 48 ) ( 24 32 48 ) ( -24 24 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 24 56 ) ( -24 32 56 ) ( 24 24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 32 56 ) ( -24 32 56 ) ( 24 32 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 24 56 ) ( -20 32 56 ) ( -20 24 48 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 23
+{
+( 20 24 48 ) ( 20 32 48 ) ( 20 24 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 24 56 ) ( 68 24 48 ) ( 20 24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 24 48 ) ( 68 32 48 ) ( 20 24 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 24 56 ) ( 20 32 56 ) ( 68 24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 68 32 56 ) ( 20 32 56 ) ( 68 32 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 24 56 ) ( 24 32 56 ) ( 24 24 48 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 24
+{
+( 20 24 8 ) ( 20 32 8 ) ( 20 24 16 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 24 16 ) ( 68 24 8 ) ( 20 24 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 24 8 ) ( 68 32 8 ) ( 20 24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 24 16 ) ( 20 32 16 ) ( 68 24 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 68 32 16 ) ( 20 32 16 ) ( 68 32 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 24 16 ) ( 24 32 16 ) ( 24 24 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 25
+{
+( -24 24 8 ) ( -24 32 8 ) ( -24 24 16 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 24 16 ) ( 24 24 8 ) ( -24 24 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 24 8 ) ( 24 32 8 ) ( -24 24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 24 16 ) ( -24 32 16 ) ( 24 24 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 32 16 ) ( -24 32 16 ) ( 24 32 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 24 16 ) ( -20 32 16 ) ( -20 24 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 26
+{
+( -20 -24 48 ) ( -20 -32 48 ) ( -20 -24 40 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 28 -24 64 ) ( 28 -32 64 ) ( -20 -24 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -20 -28 16 ) ( 28 -28 64 ) ( -20 -28 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 -24 16 ) ( -20 -24 8 ) ( 28 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 -24 8 ) ( -20 -32 8 ) ( 28 -24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 -24 56 ) ( 20 -24 48 ) ( 20 -32 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 27
+{
+( -20 -32 56 ) ( -20 -32 48 ) ( -20 -24 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 20 -32 8 ) ( 20 -24 8 ) ( -28 -32 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 -32 16 ) ( 20 -32 8 ) ( -28 -32 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 20 -28 16 ) ( -28 -28 64 ) ( 20 -28 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -28 -32 64 ) ( -28 -24 64 ) ( 20 -32 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 -32 48 ) ( 20 -24 48 ) ( 20 -32 40 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 28
+{
+( 20 -32 8 ) ( 20 -24 8 ) ( 20 -32 16 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 -32 16 ) ( 68 -32 8 ) ( 20 -32 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 -32 8 ) ( 68 -24 8 ) ( 20 -32 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 -32 16 ) ( 20 -24 16 ) ( 68 -32 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 68 -24 16 ) ( 20 -24 16 ) ( 68 -24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -32 16 ) ( 24 -24 16 ) ( 24 -32 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 29
+{
+( 20 -32 48 ) ( 20 -24 48 ) ( 20 -32 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 -32 56 ) ( 68 -32 48 ) ( 20 -32 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 -32 48 ) ( 68 -24 48 ) ( 20 -32 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 -32 56 ) ( 20 -24 56 ) ( 68 -32 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 68 -24 56 ) ( 20 -24 56 ) ( 68 -24 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -32 56 ) ( 24 -24 56 ) ( 24 -32 48 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 30
+{
+( -24 -32 48 ) ( -24 -24 48 ) ( -24 -32 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -32 56 ) ( 24 -32 48 ) ( -24 -32 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -32 48 ) ( 24 -24 48 ) ( -24 -32 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 -32 56 ) ( -24 -24 56 ) ( 24 -32 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 -24 56 ) ( -24 -24 56 ) ( 24 -24 48 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 -32 56 ) ( -20 -24 56 ) ( -20 -32 48 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 31
+{
+( -24 -32 8 ) ( -24 -24 8 ) ( -24 -32 16 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -32 16 ) ( 24 -32 8 ) ( -24 -32 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -32 8 ) ( 24 -24 8 ) ( -24 -32 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 -32 16 ) ( -24 -24 16 ) ( 24 -32 16 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 -24 16 ) ( -24 -24 16 ) ( 24 -24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 -32 16 ) ( -20 -24 16 ) ( -20 -32 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 32
+{
+( -20 24 8 ) ( -20 16 8 ) ( -20 24 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 20 -24 8 ) ( 20 -24 0 ) ( -28 24 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 20 -16 4 ) ( -28 32 4 ) ( 20 -24 4 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 -16 8 ) ( 20 -24 8 ) ( -28 32 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -28 32 8 ) ( -28 32 0 ) ( 20 -16 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 20 16 8 ) ( 20 16 0 ) ( 20 8 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 33
+{
+( -20 16 0 ) ( -20 16 8 ) ( -20 8 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 28 32 0 ) ( 28 32 8 ) ( -20 -16 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 -16 0 ) ( -20 -24 0 ) ( 28 32 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -20 -16 4 ) ( 28 32 4 ) ( -20 -24 4 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -20 -24 0 ) ( -20 -24 8 ) ( 28 24 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 20 24 0 ) ( 20 16 0 ) ( 20 24 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 34
+{
+( -24 16 8 ) ( -24 16 0 ) ( -24 24 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 16 8 ) ( 24 16 0 ) ( -24 16 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 24 0 ) ( -24 24 0 ) ( 24 16 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 24 8 ) ( 24 16 8 ) ( -24 24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 24 8 ) ( -24 24 0 ) ( 24 24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 24 8 ) ( -20 24 0 ) ( -20 16 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 35
+{
+( 20 16 8 ) ( 20 16 0 ) ( 20 24 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 16 8 ) ( 68 16 0 ) ( 20 16 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 24 0 ) ( 20 24 0 ) ( 68 16 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 68 24 8 ) ( 68 16 8 ) ( 20 24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 24 8 ) ( 20 24 0 ) ( 68 24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 24 8 ) ( 24 24 0 ) ( 24 16 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 36
+{
+( 20 -24 8 ) ( 20 -24 0 ) ( 20 -16 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 -24 8 ) ( 68 -24 0 ) ( 20 -24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 -16 0 ) ( 20 -16 0 ) ( 68 -24 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 68 -16 8 ) ( 68 -24 8 ) ( 20 -16 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 -16 8 ) ( 20 -16 0 ) ( 68 -16 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -16 8 ) ( 24 -16 0 ) ( 24 -24 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 37
+{
+( -24 -24 8 ) ( -24 -24 0 ) ( -24 -16 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -24 8 ) ( 24 -24 0 ) ( -24 -24 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -16 0 ) ( -24 -16 0 ) ( 24 -24 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 -16 8 ) ( 24 -24 8 ) ( -24 -16 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 -16 8 ) ( -24 -16 0 ) ( 24 -16 8 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 -16 8 ) ( -20 -16 0 ) ( -20 -24 8 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 38
+{
+( -20 16 56 ) ( -20 16 64 ) ( -20 8 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 28 32 56 ) ( 28 32 64 ) ( -20 -16 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 -16 56 ) ( -20 -24 56 ) ( 28 32 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -20 -16 60 ) ( 28 32 60 ) ( -20 -24 60 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -20 -24 56 ) ( -20 -24 64 ) ( 28 24 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 20 24 56 ) ( 20 16 56 ) ( 20 24 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 39
+{
+( -20 24 64 ) ( -20 16 64 ) ( -20 24 56 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 20 -24 64 ) ( 20 -24 56 ) ( -28 24 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 20 -16 60 ) ( -28 32 60 ) ( 20 -24 60 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 -16 64 ) ( 20 -24 64 ) ( -28 32 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -28 32 64 ) ( -28 32 56 ) ( 20 -16 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 20 16 64 ) ( 20 16 56 ) ( 20 8 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 40
+{
+( 20 -24 64 ) ( 20 -24 56 ) ( 20 -16 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 -24 64 ) ( 68 -24 56 ) ( 20 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 -16 56 ) ( 20 -16 56 ) ( 68 -24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 68 -16 64 ) ( 68 -24 64 ) ( 20 -16 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 -16 64 ) ( 20 -16 56 ) ( 68 -16 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -16 64 ) ( 24 -16 56 ) ( 24 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 41
+{
+( 20 16 64 ) ( 20 16 56 ) ( 20 24 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 16 64 ) ( 68 16 56 ) ( 20 16 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 68 24 56 ) ( 20 24 56 ) ( 68 16 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 68 24 64 ) ( 68 16 64 ) ( 20 24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 20 24 64 ) ( 20 24 56 ) ( 68 24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 24 64 ) ( 24 24 56 ) ( 24 16 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 42
+{
+( -24 16 64 ) ( -24 16 56 ) ( -24 24 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 16 64 ) ( 24 16 56 ) ( -24 16 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 24 56 ) ( -24 24 56 ) ( 24 16 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 24 64 ) ( 24 16 64 ) ( -24 24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 24 64 ) ( -24 24 56 ) ( 24 24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 24 64 ) ( -20 24 56 ) ( -20 16 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 43
+{
+( -24 -24 64 ) ( -24 -24 56 ) ( -24 -16 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -24 64 ) ( 24 -24 56 ) ( -24 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 24 -16 56 ) ( -24 -16 56 ) ( 24 -24 56 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 24 -16 64 ) ( 24 -24 64 ) ( -24 -16 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -24 -16 64 ) ( -24 -16 56 ) ( 24 -16 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -20 -16 64 ) ( -20 -16 56 ) ( -20 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 44
+{
+( 24 32 64 ) ( 24 24 64 ) ( 24 32 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 24 0 ) ( 24 24 0 ) ( 32 24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 32 0 ) ( 24 32 0 ) ( 32 24 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 24 64 ) ( 24 24 64 ) ( 32 32 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 32 64 ) ( 24 32 64 ) ( 32 32 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 32 8 ) ( 24 32 0 ) ( 32 24 0 ) PixelArtTextures/Metals_13_basecolor [ -0.7071067811865476 0 -0.7071067811865476 0 ] [ 0.4082482904638631 -0.8164965809277261 -0.4082482904638631 0 ] 0 1 1
+( 32 24 64 ) ( 24 32 64 ) ( 32 32 56 ) PixelArtTextures/Metals_13_basecolor [ 0.7071067811865476 0 -0.7071067811865476 0 ] [ 0.4082482904638631 -0.8164965809277261 0.4082482904638631 0 ] 0 1 1
+( 32 32 0 ) ( 32 24 0 ) ( 32 32 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 45
+{
+( 24 -24 64 ) ( 24 -32 64 ) ( 24 -24 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 -32 0 ) ( 24 -32 0 ) ( 32 -32 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 -24 0 ) ( 24 -24 0 ) ( 32 -32 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 -32 64 ) ( 24 -32 64 ) ( 32 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 -24 64 ) ( 24 -24 64 ) ( 32 -24 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 -32 8 ) ( 32 -24 0 ) ( 24 -32 0 ) PixelArtTextures/Metals_13_basecolor [ -0.7071067811865476 0 -0.7071067811865476 0 ] [ -0.4082482904638631 -0.8164965809277261 0.4082482904638631 0 ] 0 1 1
+( 24 -32 64 ) ( 32 -24 64 ) ( 32 -32 56 ) PixelArtTextures/Metals_13_basecolor [ 0.7071067811865476 0 -0.7071067811865476 0 ] [ -0.4082482904638631 -0.8164965809277261 -0.4082482904638631 0 ] 0 1 1
+( 32 -32 64 ) ( 32 -24 64 ) ( 32 -32 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 46
+{
+( -32 -32 0 ) ( -32 -24 0 ) ( -32 -32 64 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -32 8 ) ( -24 -32 0 ) ( -32 -24 0 ) PixelArtTextures/Metals_13_basecolor [ -0.7071067811865476 0 0.7071067811865476 0 ] [ 0.4082482904638631 -0.8164965809277261 0.4082482904638631 0 ] 0 1 1
+( -32 -24 64 ) ( -24 -32 64 ) ( -32 -32 56 ) PixelArtTextures/Metals_13_basecolor [ 0.7071067811865476 0 0.7071067811865476 0 ] [ 0.4082482904638631 -0.8164965809277261 -0.4082482904638631 0 ] 0 1 1
+( -32 -32 64 ) ( -24 -32 64 ) ( -32 -32 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -32 0 ) ( -24 -32 0 ) ( -32 -24 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 -24 64 ) ( -24 -24 64 ) ( -32 -32 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 -24 0 ) ( -24 -24 0 ) ( -32 -24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -24 -32 0 ) ( -24 -32 64 ) ( -24 -24 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 47
+{
+( -32 32 64 ) ( -32 24 64 ) ( -32 32 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 32 8 ) ( -32 24 0 ) ( -24 32 0 ) PixelArtTextures/Metals_13_basecolor [ -0.7071067811865476 0 0.7071067811865476 0 ] [ -0.4082482904638631 -0.8164965809277261 -0.4082482904638631 0 ] 0 1 1
+( -32 24 64 ) ( -32 32 56 ) ( -24 32 64 ) PixelArtTextures/Metals_13_basecolor [ 0.7071067811865476 0 0.7071067811865476 0 ] [ -0.4082482904638631 -0.8164965809277261 0.4082482904638631 0 ] 0 1 1
+( -32 24 64 ) ( -24 24 64 ) ( -32 24 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 24 0 ) ( -24 24 0 ) ( -32 32 0 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 32 64 ) ( -24 32 64 ) ( -32 24 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 32 0 ) ( -24 32 0 ) ( -32 32 64 ) PixelArtTextures/Metals_13_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -24 24 0 ) ( -24 24 64 ) ( -24 32 0 ) PixelArtTextures/Metals_13_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}

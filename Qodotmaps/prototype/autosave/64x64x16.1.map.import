@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/64x64x16.1.map-3935648985de45a94d1e9f62ae5cc2fb.tres"
+
+[deps]
+
+source_file="res://qodotmaps/prototype/autosave/64x64x16.1.map"
+dest_files=[ "res://.import/64x64x16.1.map-3935648985de45a94d1e9f62ae5cc2fb.tres" ]
+
+[params]
+

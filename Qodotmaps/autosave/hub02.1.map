@@ -1,0 +1,17 @@
+// Game: superstructure00
+// Format: Valve
+// entity 0
+{
+"mapversion" "220"
+"classname" "worldspawn"
+"_tb_textures" "textures;textures/PixelArtTextures/Metals/Metals_01;textures/PixelArtTextures/Rust/Rust_04;textures/PixelArtTextures/SciFi/SciFi_09;textures/PixelArtTextures/SciFi/SciFi_15;textures/PixelArtTextures/SciFi/SciFi_16"
+// brush 0
+{
+( 0 -336 0 ) ( 0 -335 0 ) ( 0 -336 1 ) __TB_empty [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 0 -512 0 ) ( 0 -512 1 ) ( 1 -512 0 ) __TB_empty [ 1 0 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( 0 -336 0 ) ( 1 -336 0 ) ( 0 -335 0 ) __TB_empty [ -1 0 0 -16 ] [ 0 -1 0 0 ] 0 1 1
+( 400 0 1024 ) ( 400 1 1024 ) ( 401 0 1024 ) __TB_empty [ 1 0 0 16 ] [ 0 -1 0 0 ] 0 1 1
+( 400 0 16 ) ( 401 0 16 ) ( 400 0 17 ) __TB_empty [ -1 0 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( 512 0 16 ) ( 512 0 17 ) ( 512 1 16 ) __TB_empty [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}

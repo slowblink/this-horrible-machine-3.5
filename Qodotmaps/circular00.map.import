@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/circular00.map-d5648f3e96891e146c34bf09688f3622.tres"
+
+[deps]
+
+source_file="res://qodotmaps/circular00.map"
+dest_files=[ "res://.import/circular00.map-d5648f3e96891e146c34bf09688f3622.tres" ]
+
+[params]
+

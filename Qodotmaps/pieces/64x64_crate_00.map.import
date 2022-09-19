@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/64x64_crate_00.map-bdeac03280d6f2c783a7030c045a8ee3.tres"
+
+[deps]
+
+source_file="res://qodotmaps/pieces/64x64_crate_00.map"
+dest_files=[ "res://.import/64x64_crate_00.map-bdeac03280d6f2c783a7030c045a8ee3.tres" ]
+
+[params]
+

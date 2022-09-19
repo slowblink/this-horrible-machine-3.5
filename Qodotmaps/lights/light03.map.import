@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/light03.map-5d21a1158703038f55bc4167a07e31a2.tres"
+
+[deps]
+
+source_file="res://qodotmaps/lights/light03.map"
+dest_files=[ "res://.import/light03.map-5d21a1158703038f55bc4167a07e31a2.tres" ]
+
+[params]
+

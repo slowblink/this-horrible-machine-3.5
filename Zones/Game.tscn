@@ -1,0 +1,171 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Music/gutter core.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Textures/Chip_05_Color.tres" type="Material" id=3]
+[ext_resource path="res://UI/Pause/SFX/select.ogg" type="AudioStream" id=4]
+[ext_resource path="res://UI/Pause/Theme/MinimalUI.tres" type="Theme" id=5]
+[ext_resource path="res://Scripts/mainmenu.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/Ray.gd" type="Script" id=7]
+[ext_resource path="res://Blocks/16x16x32.tscn" type="PackedScene" id=8]
+[ext_resource path="res://UI/Pause/Credits.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=10]
+[ext_resource path="res://NPCs/Ray/RaySit01.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Stages/Stage01.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Light/GrabLightStanding01.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Environments/default_env.tres" type="Environment" id=14]
+
+[sub_resource type="Shader" id=2]
+code = "shader_type spatial;
+render_mode unshaded;
+
+const int pixel_size = 4; //resolution must be divisible by pixel_size
+
+void fragment() {
+	float x = float(int(FRAGCOORD.x) % pixel_size);
+	float y = float(int(FRAGCOORD.y) % pixel_size);
+
+	x = FRAGCOORD.x + floor(float(pixel_size) / 2.0) - x;
+	y = FRAGCOORD.y + floor(float(pixel_size) / 2.0) - y;
+
+	ALBEDO = texture(SCREEN_TEXTURE, vec2(x, y) / VIEWPORT_SIZE).xyz;
+}"
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = SubResource( 2 )
+
+[sub_resource type="Theme" id=1]
+
+[node name="ViewportContainer" type="ViewportContainer"]
+material = SubResource( 3 )
+margin_right = 1280.0
+margin_bottom = 720.0
+theme = SubResource( 1 )
+stretch = true
+stretch_shrink = 4
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 320, 180 )
+handle_input_locally = false
+render_target_update_mode = 3
+gui_snap_controls_to_pixels = false
+shadow_atlas_size = 256
+
+[node name="World" type="WorldEnvironment" parent="Viewport"]
+environment = ExtResource( 14 )
+
+[node name="Player" parent="Viewport/World" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3.43892, 5 )
+MouseSensitivity = 5
+
+[node name="Menu" type="CanvasLayer" parent="Viewport/World"]
+pause_mode = 2
+script = ExtResource( 6 )
+
+[node name="Control" type="Control" parent="Viewport/World/Menu"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+theme = ExtResource( 5 )
+
+[node name="Menu" type="ColorRect" parent="Viewport/World/Menu/Control"]
+visible = false
+margin_left = -6.0
+margin_top = -9.0
+margin_right = 575.0
+margin_bottom = -8.0
+rect_scale = Vector2( 1.00993, 739.489 )
+color = Color( 0, 0, 0, 0.427451 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Viewport/World/Menu/Control"]
+visible = false
+margin_left = 30.0
+margin_top = 20.0
+margin_right = 200.0
+margin_bottom = 194.0
+
+[node name="Button" type="Button" parent="Viewport/World/Menu/Control/VBoxContainer"]
+visible = false
+margin_right = 170.0
+margin_bottom = 35.0
+text = "PLAY"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="Viewport/World/Menu/Control/VBoxContainer"]
+margin_top = 46.0
+margin_right = 170.0
+margin_bottom = 81.0
+text = "SETTINGS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="Viewport/World/Menu/Control/VBoxContainer"]
+margin_top = 92.0
+margin_right = 170.0
+margin_bottom = 127.0
+text = "CREDITS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="Viewport/World/Menu/Control/VBoxContainer"]
+margin_top = 138.0
+margin_right = 170.0
+margin_bottom = 173.0
+text = "QUIT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Credits" parent="Viewport/World/Menu" instance=ExtResource( 9 )]
+visible = false
+theme = ExtResource( 5 )
+
+[node name="SelectAudio" type="AudioStreamPlayer" parent="Viewport/World/Menu"]
+stream = ExtResource( 4 )
+volume_db = -80.0
+
+[node name="LevelMusic" type="AudioStreamPlayer" parent="Viewport/World"]
+stream = ExtResource( 1 )
+volume_db = -10.0
+autoplay = true
+
+[node name="Stage01" parent="Viewport/World" instance=ExtResource( 12 )]
+
+[node name="Ray" type="Spatial" parent="Viewport/World"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7 )
+script = ExtResource( 7 )
+
+[node name="RaySit01" parent="Viewport/World/Ray" instance=ExtResource( 11 )]
+
+[node name="CSGBox" type="CSGBox" parent="Viewport/World/Ray"]
+transform = Transform( 0.36, 0, 0, 0, 0.36, 0, 0, 0, 0.36, 0, 0.4, 0.0999999 )
+material = ExtResource( 3 )
+
+[node name="Pickups" type="Spatial" parent="Viewport/World"]
+
+[node name="Lamp" parent="Viewport/World/Pickups" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.903519, 1.20558, 8.5831 )
+
+[node name="Lamp2" parent="Viewport/World/Pickups" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.14518, 21.7631, -1 )
+
+[node name="Lamp3" parent="Viewport/World/Pickups" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.14518, 42.2185, -1 )
+
+[node name="Lamp4" parent="Viewport/World/Pickups" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.24413, 64.5805, -1 )
+
+[node name="Lamp5" parent="Viewport/World/Pickups" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.24413, 83.4078, -1 )
+
+[node name="16x16x32" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5029, 13.9823, 0 )
+
+[connection signal="interact" from="Viewport/World/Player" to="Viewport/World/Ray" method="_on_Player_interact"]
+[connection signal="pressed" from="Viewport/World/Menu/Control/VBoxContainer/Button" to="Viewport/World/Menu" method="_on_Play_pressed"]
+[connection signal="pressed" from="Viewport/World/Menu/Control/VBoxContainer/Button2" to="Viewport/World/Menu" method="_on_Settings_pressed"]
+[connection signal="pressed" from="Viewport/World/Menu/Control/VBoxContainer/Button3" to="Viewport/World/Menu" method="Credits"]
+[connection signal="pressed" from="Viewport/World/Menu/Control/VBoxContainer/Button4" to="Viewport/World/Menu" method="_on_Quit_pressed"]

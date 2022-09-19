@@ -1,0 +1,69 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://addons/qodot/src/nodes/qodot_map.gd" type="Script" id=1]
+[ext_resource path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" type="Resource" id=2]
+[ext_resource path="res://Textures/PixelArtTextures/16x256.tres" type="Material" id=3]
+[ext_resource path="res://Textures/PixelArtTextures/256x256.png" type="Texture" id=4]
+
+[sub_resource type="SpatialMaterial" id=185]
+
+[sub_resource type="SpatialMaterial" id=186]
+albedo_texture = ExtResource( 4 )
+
+[sub_resource type="ArrayMesh" id=187]
+surfaces/0 = {
+"aabb": AABB( -8, 0, -8, 16, 1.00001, 16 ),
+"array_data": PoolByteArray( 0, 0, 0, 193, 0, 0, 128, 63, 0, 0, 0, 193, 127, 127, 0, 129, 0, 188, 0, 0, 0, 0, 0, 193, 0, 0, 0, 128, 0, 0, 0, 193, 127, 127, 0, 129, 0, 0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 193, 127, 127, 0, 129, 0, 0, 0, 60, 0, 0, 0, 65, 0, 0, 128, 63, 0, 0, 0, 193, 127, 127, 0, 129, 255, 187, 0, 60, 0, 0, 0, 193, 0, 0, 128, 63, 0, 0, 0, 193, 129, 0, 0, 127, 0, 60, 0, 188, 0, 0, 0, 193, 0, 0, 128, 63, 0, 0, 0, 65, 129, 0, 0, 127, 255, 59, 0, 0, 0, 0, 0, 193, 0, 0, 0, 0, 0, 0, 0, 65, 129, 0, 0, 127, 0, 0, 0, 0, 0, 0, 0, 193, 0, 0, 0, 128, 0, 0, 0, 193, 129, 0, 0, 127, 0, 0, 0, 188, 0, 0, 0, 65, 0, 0, 128, 63, 0, 0, 0, 193, 127, 0, 0, 129, 0, 188, 0, 188, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 193, 127, 0, 0, 129, 0, 0, 0, 188, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 65, 127, 0, 0, 129, 0, 0, 0, 0, 0, 0, 0, 65, 0, 0, 128, 63, 0, 0, 0, 65, 127, 0, 0, 129, 255, 187, 0, 0, 0, 0, 0, 193, 0, 0, 128, 63, 0, 0, 0, 65, 0, 0, 0, 127, 0, 60, 0, 0, 0, 0, 0, 65, 0, 0, 128, 63, 0, 0, 0, 65, 0, 0, 0, 127, 255, 59, 0, 60, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 127, 0, 0, 0, 60, 0, 0, 0, 193, 0, 0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 127, 0, 0, 0, 0 ),
+"array_index_data": PoolByteArray( 0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 4, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 8, 0, 10, 0, 11, 0, 12, 0, 13, 0, 14, 0, 12, 0, 14, 0, 15, 0 ),
+"blend_shape_data": [  ],
+"format": 2194711,
+"index_count": 24,
+"material": ExtResource( 3 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 16
+}
+surfaces/1 = {
+"aabb": AABB( -8, 0, -8, 16, 1, 16 ),
+"array_data": PoolByteArray( 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 193, 0, 129, 127, 193, 0, 188, 0, 188, 0, 0, 0, 193, 0, 0, 0, 128, 0, 0, 0, 193, 0, 129, 127, 193, 0, 0, 0, 188, 0, 0, 0, 193, 0, 0, 0, 0, 0, 0, 0, 65, 0, 129, 127, 193, 0, 0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 65, 0, 129, 127, 193, 0, 188, 0, 0, 0, 0, 0, 65, 0, 0, 128, 63, 0, 0, 0, 193, 0, 127, 127, 63, 0, 60, 0, 188, 0, 0, 0, 65, 0, 0, 128, 63, 0, 0, 0, 65, 0, 127, 127, 63, 0, 60, 0, 0, 0, 0, 0, 193, 0, 0, 128, 63, 0, 0, 0, 65, 0, 127, 127, 63, 0, 0, 0, 0, 0, 0, 0, 193, 0, 0, 128, 63, 0, 0, 0, 193, 0, 127, 127, 63, 0, 0, 0, 188 ),
+"array_index_data": PoolByteArray( 0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 4, 0, 6, 0, 7, 0 ),
+"blend_shape_data": [  ],
+"format": 2194711,
+"index_count": 12,
+"material": SubResource( 186 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 8
+}
+
+[sub_resource type="ConvexPolygonShape" id=188]
+points = PoolVector3Array( -8, 1, -8, -8, 0, -8, 8, 0, -8, 8, 1, -8, -8, 1, 8, -8, 0, 8, 8, 0, 8, 8, 1, 8 )
+
+[node name="256x256x16" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 3 )
+script = ExtResource( 1 )
+map_file = "C:/Users/aaron/Documents/GitHub/thishorriblemachine/qodotmaps/prototype/256x256x16.map"
+inverse_scale_factor = 16.0
+entity_fgd = ExtResource( 2 )
+base_texture_dir = "res://textures"
+texture_file_extensions = PoolStringArray( "png" )
+worldspawn_layers = [  ]
+brush_clip_texture = "special/clip"
+face_skip_texture = "special/skip"
+texture_wads = [  ]
+material_file_extension = "tres"
+default_material = SubResource( 185 )
+uv_unwrap_texel_size = 1.0
+print_profiling_data = false
+use_trenchbroom_group_hierarchy = false
+tree_attach_batch_size = 16
+set_owner_batch_size = 16
+
+[node name="entity_0_worldspawn" type="StaticBody" parent="."]
+
+[node name="entity_0_mesh_instance" type="MeshInstance" parent="entity_0_worldspawn"]
+use_in_baked_light = true
+mesh = SubResource( 187 )
+
+[node name="entity_0_brush_0_collision_shape" type="CollisionShape" parent="entity_0_worldspawn"]
+shape = SubResource( 188 )

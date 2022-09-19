@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/hostile_interior01.1.map-b1c38b0d79eea58ce1523fa693049b8e.tres"
+
+[deps]
+
+source_file="res://qodotmaps/autosave/hostile_interior01.1.map"
+dest_files=[ "res://.import/hostile_interior01.1.map-b1c38b0d79eea58ce1523fa693049b8e.tres" ]
+
+[params]
+

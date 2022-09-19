@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/hub02.map-6c1757d3b169abdfaf045e4ce4eb0b51.tres"
+
+[deps]
+
+source_file="res://qodotmaps/hub02.map"
+dest_files=[ "res://.import/hub02.map-6c1757d3b169abdfaf045e4ce4eb0b51.tres" ]
+
+[params]
+

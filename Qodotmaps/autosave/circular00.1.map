@@ -1,0 +1,670 @@
+// Game: superstructure00
+// Format: Valve
+// entity 0
+{
+"mapversion" "220"
+"classname" "worldspawn"
+"_tb_textures" "textures;textures/PixelArtTextures/Metals/Metals_01;textures/PixelArtTextures/Rust/Rust_04;textures/PixelArtTextures/SciFi/SciFi_09;textures/PixelArtTextures/SciFi/SciFi_15;textures/PixelArtTextures/SciFi/SciFi_16"
+// brush 0
+{
+( 0 64 0 ) ( 0 65 0 ) ( 0 64 1 ) PixelArtTextures/SciFi/SciFi_15/SciFi_15_basecolor [ 1.6081226496766366e-16 -1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 80 -256 -32 ) ( 79 -256 -32 ) ( 80 -256 -31 ) PixelArtTextures/SciFi/SciFi_15/SciFi_15_basecolor [ 1 1.6081226496766366e-16 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 80 -64 -16 ) ( 80 -63 -16 ) ( 79 -64 -16 ) PixelArtTextures/SciFi/SciFi_15/SciFi_15_basecolor [ 1.6081226496766366e-16 -1 0 0 ] [ 1 1.6081226496766366e-16 0 0 ] 90 1 1
+( -48 64 0 ) ( -49 64 0 ) ( -48 65 0 ) PixelArtTextures/SciFi/SciFi_15/SciFi_15_basecolor [ -1.6081226496766366e-16 1 0 0 ] [ 1 1.6081226496766366e-16 0 0 ] 270 1 1
+( -48 0 0 ) ( -48 0 1 ) ( -49 0 0 ) PixelArtTextures/SciFi/SciFi_15/SciFi_15_basecolor [ -1 -1.6081226496766366e-16 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 256 -64 -32 ) ( 256 -64 -31 ) ( 256 -63 -32 ) PixelArtTextures/SciFi/SciFi_15/SciFi_15_basecolor [ -1.6081226496766366e-16 1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 1
+{
+( 16 -192 16 ) ( 16 -192 17 ) ( 16 -193 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( -32 -16 16 ) ( -33 -16 16 ) ( -32 -16 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 0 0 -1 0 ] 180 1 1
+( -32 -192 0 ) ( -33 -192 0 ) ( -32 -193 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( -160 -320 64 ) ( -160 -321 64 ) ( -161 -320 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( -32 0 16 ) ( -32 0 17 ) ( -33 0 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 0 0 -1 0 ] 180 1 1
+( 96 -192 16 ) ( 96 -193 16 ) ( 96 -192 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+}
+// brush 2
+{
+( 160 -16 16 ) ( 160 -96 16 ) ( 160 -96 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1.2246467991473532e-16 1 1.2246467991473532e-16 0 ] [ -1.4997597826618576e-32 -1.2246467991473532e-16 1 16 ] 0 1 1
+( 160 -16 16 ) ( 176 -16 32 ) ( 176 -80 32 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -3.1747807714699317e-07 0.9999999999999506 1.2246467991472928e-16 192.00005 ] [ 0.9999999999999506 3.1747807714699317e-07 3.8879851178153045e-23 -160 ] -1.5258789e-05 1 1
+( 176 -80 0 ) ( 176 -16 0 ) ( 160 -16 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ -1.2246467991473532e-16 -1 -1.2246467991473532e-16 0 ] 0 1 1
+( 176 -16 0 ) ( 176 -16 32 ) ( 160 -16 16 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 -1.2246467991473532e-16 0 0 ] [ -1.4997597826618576e-32 -1.2246467991473532e-16 1 16 ] 180 1 1
+( 160 -96 16 ) ( 176 -80 32 ) ( 176 -80 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1.1102230246251565e-16 1 1.2246467991473535e-16 0 ] [ -1.232595164407831e-32 -1.2246467991473535e-16 1.0000000000000002 16 ] 180 1 1
+( 176 -80 32 ) ( 176 -16 32 ) ( 176 -16 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1.2246467991473532e-16 -1 -1.2246467991473532e-16 0 ] [ -1.4997597826618576e-32 -1.2246467991473532e-16 1 16 ] 0 1 1
+}
+// brush 3
+{
+( 160 -192 16 ) ( 160 -192 17 ) ( 160 -193 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 48 -16 16 ) ( 47 -16 16 ) ( 48 -16 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 48 -192 0 ) ( 47 -192 0 ) ( 48 -193 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.2246467991473532e-16 0 -16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( -80 -320 64 ) ( -80 -321 64 ) ( -81 -320 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 48 0 16 ) ( 48 0 17 ) ( 47 0 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 240 -192 16 ) ( 240 -193 16 ) ( 240 -192 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+}
+// brush 4
+{
+( 176 -80 32 ) ( 160 -96 16 ) ( 160 -96 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 -1.1102230246251565e-16 -1.2246467991473535e-16 -16 ] [ -1.2246467991473535e-16 -2.465190328815662e-32 1.0000000000000002 16 ] 0 1 1
+( 160 -96 16 ) ( 240 -96 16 ) ( 240 -96 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 -1.6081226496766366e-16 -1.2246467991473532e-16 0 ] [ -1.2246467991473532e-16 -1.9693822555628533e-32 1 16 ] 180 1 1
+( 176 -80 32 ) ( 240 -80 32 ) ( 240 -96 16 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -0.9999999999999982 1.766827123148018e-08 -1.2246467991473525e-16 272.00006 ] [ 1.766827123148018e-08 0.9999999999999982 2.1637392425921986e-24 -63.999992 ] 581.8103 1 1
+( 240 -96 0 ) ( 240 -80 0 ) ( 176 -80 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1.6081226496766366e-16 1 0 -16 ] [ -1 -1.6081226496766366e-16 -1.2246467991473532e-16 0 ] 270 1 1
+( 240 -80 0 ) ( 240 -80 32 ) ( 176 -80 32 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 1.6081226496766366e-16 1.2246467991473532e-16 0 ] [ -1.2246467991473532e-16 -1.9693822555628533e-32 1 16 ] 180 1 1
+( 240 -96 16 ) ( 240 -80 32 ) ( 240 -80 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1.6081226496766366e-16 -1 0 16 ] [ -1.2246467991473532e-16 -1.9693822555628533e-32 1 16 ] 0 1 1
+}
+// brush 5
+{
+( 176 64 96 ) ( 176 65 96 ) ( 176 64 97 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.6081226496766366e-16 -1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 80 -176 64 ) ( 79 -176 64 ) ( 80 -176 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 1.6081226496766366e-16 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 80 -64 80 ) ( 80 -63 80 ) ( 79 -64 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.6081226496766366e-16 -1 0 0 ] [ 1 1.6081226496766366e-16 0 0 ] 90 1 1
+( -48 64 96 ) ( -49 64 96 ) ( -48 65 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.6081226496766366e-16 1 0 0 ] [ 1 1.6081226496766366e-16 0 0 ] 270 1 1
+( -48 -80 96 ) ( -48 -80 97 ) ( -49 -80 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -1.6081226496766366e-16 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 240 -64 64 ) ( 240 -64 65 ) ( 240 -63 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.6081226496766366e-16 1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 6
+{
+( 16 144 96 ) ( 16 145 96 ) ( 16 144 97 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.6081226496766366e-16 -1 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( -80 -176 64 ) ( -81 -176 64 ) ( -80 -176 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 1.6081226496766366e-16 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( -80 16 80 ) ( -80 17 80 ) ( -81 16 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.6081226496766366e-16 -1 0 -16 ] [ 1 1.6081226496766366e-16 0 0 ] 90 1 1
+( -208 144 96 ) ( -209 144 96 ) ( -208 145 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.6081226496766366e-16 1 0 16 ] [ 1 1.6081226496766366e-16 0 0 ] 270 1 1
+( -208 -80 96 ) ( -208 -80 97 ) ( -209 -80 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -1.6081226496766366e-16 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 80 16 64 ) ( 80 16 65 ) ( 80 17 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.6081226496766366e-16 1 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 7
+{
+( 80 -304 96 ) ( 80 -304 97 ) ( 80 -305 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 9.9579925010296e-17 -1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( -64 -80 96 ) ( -65 -80 96 ) ( -64 -80 97 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 64 -176 80 ) ( 63 -176 80 ) ( 64 -177 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( -64 -304 96 ) ( -64 -305 96 ) ( -65 -304 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( 64 -16 64 ) ( 64 -16 65 ) ( 63 -16 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 176 -176 64 ) ( 176 -177 64 ) ( 176 -176 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -9.9579925010296e-17 1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 8
+{
+( 80 -480 96 ) ( 80 -480 97 ) ( 80 -481 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 9.9579925010296e-17 -1 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( -64 -240 96 ) ( -65 -240 96 ) ( -64 -240 97 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 64 -352 80 ) ( 63 -352 80 ) ( 64 -353 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( -64 -480 96 ) ( -64 -481 96 ) ( -65 -480 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( 64 -176 64 ) ( 64 -176 65 ) ( 63 -176 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 176 -352 64 ) ( 176 -353 64 ) ( 176 -352 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -9.9579925010296e-17 1 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 9
+{
+( 160 -352 96 ) ( 160 -352 97 ) ( 160 -353 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 9.9579925010296e-17 -1 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( -80 -176 96 ) ( -81 -176 96 ) ( -80 -176 97 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( 48 -224 80 ) ( 47 -224 80 ) ( 48 -225 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 -16 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( -80 -352 224 ) ( -80 -353 224 ) ( -81 -352 224 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 16 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( 48 -160 64 ) ( 48 -160 65 ) ( 47 -160 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+( 176 -224 64 ) ( 176 -225 64 ) ( 176 -224 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -9.9579925010296e-17 1 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 10
+{
+( 160 -272 96 ) ( 160 -272 97 ) ( 160 -273 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 9.9579925010296e-17 -1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( -80 -96 96 ) ( -81 -96 96 ) ( -80 -96 97 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( 48 -144 80 ) ( 47 -144 80 ) ( 48 -145 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 -16 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( -80 -272 224 ) ( -80 -273 224 ) ( -81 -272 224 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 16 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( 48 -80 64 ) ( 48 -80 65 ) ( 47 -80 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+( 176 -144 64 ) ( 176 -145 64 ) ( 176 -144 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -9.9579925010296e-17 1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 11
+{
+( 80 -272 96 ) ( 80 -272 97 ) ( 80 -273 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 9.9579925010296e-17 -1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( -160 -96 96 ) ( -161 -96 96 ) ( -160 -96 97 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( -32 -144 80 ) ( -33 -144 80 ) ( -32 -145 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( -160 -272 224 ) ( -160 -273 224 ) ( -161 -272 224 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( -32 -80 64 ) ( -32 -80 65 ) ( -33 -80 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 96 -144 64 ) ( 96 -145 64 ) ( 96 -144 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -9.9579925010296e-17 1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 12
+{
+( 80 -352 96 ) ( 80 -352 97 ) ( 80 -353 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 9.9579925010296e-17 -1 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( -160 -176 96 ) ( -161 -176 96 ) ( -160 -176 97 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( -32 -224 80 ) ( -33 -224 80 ) ( -32 -225 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( -160 -352 224 ) ( -160 -353 224 ) ( -161 -352 224 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( -32 -160 64 ) ( -32 -160 65 ) ( -33 -160 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 96 -224 64 ) ( 96 -225 64 ) ( 96 -224 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -9.9579925010296e-17 1 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 13
+{
+( 176 -176 16 ) ( 176 -176 17 ) ( 176 -177 16 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -9.9579925010296e-17 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -64 -80 48 ) ( -65 -80 48 ) ( -64 -80 49 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ 1 9.9579925010296e-17 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -176 32 ) ( 63 -176 32 ) ( 64 -177 32 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ 1 9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( -64 -304 48 ) ( -64 -305 48 ) ( -65 -304 48 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -1 -9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( 64 -16 16 ) ( 64 -16 17 ) ( 63 -16 16 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 240 -176 16 ) ( 240 -177 16 ) ( 240 -176 17 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -9.9579925010296e-17 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 14
+{
+( 16 -352 48 ) ( 16 -352 49 ) ( 16 -353 48 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -9.9579925010296e-17 1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( -240 -240 80 ) ( -241 -240 80 ) ( -240 -240 81 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ 1 9.9579925010296e-17 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( -112 -352 32 ) ( -113 -352 32 ) ( -112 -353 32 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ 1 9.9579925010296e-17 0 -16 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( -240 -480 48 ) ( -240 -481 48 ) ( -241 -480 48 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -1 -9.9579925010296e-17 0 16 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( -112 -176 48 ) ( -112 -176 49 ) ( -113 -176 48 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -1 -9.9579925010296e-17 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( 80 -352 48 ) ( 80 -353 48 ) ( 80 -352 49 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -9.9579925010296e-17 1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 15
+{
+( 16 -176 48 ) ( 16 -176 49 ) ( 16 -177 48 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -9.9579925010296e-17 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -240 -80 80 ) ( -241 -80 80 ) ( -240 -80 81 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ 1 9.9579925010296e-17 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( -112 -176 32 ) ( -113 -176 32 ) ( -112 -177 32 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ 1 9.9579925010296e-17 0 -16 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( -240 -304 48 ) ( -240 -305 48 ) ( -241 -304 48 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -1 -9.9579925010296e-17 0 16 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( -112 -16 48 ) ( -112 -16 49 ) ( -113 -16 48 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -1 -9.9579925010296e-17 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( 80 -176 48 ) ( 80 -177 48 ) ( 80 -176 49 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -9.9579925010296e-17 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 16
+{
+( 80 -384 112 ) ( 80 -384 113 ) ( 80 -385 112 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 9.9579925010296e-17 -1 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -80 80 ) ( 63 -80 80 ) ( 64 -80 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -256 96 ) ( 63 -256 96 ) ( 64 -257 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( -64 -384 224 ) ( -64 -385 224 ) ( -65 -384 224 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( 64 -64 80 ) ( 64 -64 81 ) ( 63 -64 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 176 -256 80 ) ( 176 -257 80 ) ( 176 -256 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -9.9579925010296e-17 1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 17
+{
+( 80 -496 112 ) ( 80 -496 113 ) ( 80 -497 112 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 9.9579925010296e-17 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -192 80 ) ( 63 -192 80 ) ( 64 -192 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -368 96 ) ( 63 -368 96 ) ( 64 -369 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( -64 -496 224 ) ( -64 -497 224 ) ( -65 -496 224 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( 64 -176 80 ) ( 64 -176 81 ) ( 63 -176 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 176 -368 80 ) ( 176 -369 80 ) ( 176 -368 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -9.9579925010296e-17 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 18
+{
+( 64 -64 80 ) ( 64 -63 80 ) ( 64 -64 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 8.411709486180697e-17 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -112 -176 80 ) ( -113 -176 80 ) ( -112 -176 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -8.411709486180697e-17 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -112 -64 96 ) ( -112 -63 96 ) ( -113 -64 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -8.411709486180697e-17 -1 0 0 ] [ 1 -8.411709486180697e-17 0 0 ] 90 1 1
+( -240 64 224 ) ( -241 64 224 ) ( -240 65 224 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 8.411709486180697e-17 1 0 0 ] [ 1 -8.411709486180697e-17 0 0 ] 270 1 1
+( -240 -80 112 ) ( -240 -80 113 ) ( -241 -80 112 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 8.411709486180697e-17 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 80 -64 80 ) ( 80 -64 81 ) ( 80 -63 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 8.411709486180697e-17 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 19
+{
+( 176 -64 80 ) ( 176 -63 80 ) ( 176 -64 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 8.411709486180697e-17 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 0 -176 80 ) ( -1 -176 80 ) ( 0 -176 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -8.411709486180697e-17 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( 0 -64 96 ) ( 0 -63 96 ) ( -1 -64 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -8.411709486180697e-17 -1 0 0 ] [ 1 -8.411709486180697e-17 0 -16 ] 90 1 1
+( -128 64 224 ) ( -129 64 224 ) ( -128 65 224 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 8.411709486180697e-17 1 0 0 ] [ 1 -8.411709486180697e-17 0 -16 ] 270 1 1
+( -128 -80 112 ) ( -128 -80 113 ) ( -129 -80 112 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 8.411709486180697e-17 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( 192 -64 80 ) ( 192 -64 81 ) ( 192 -63 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 8.411709486180697e-17 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 20
+{
+( 64 -64 80 ) ( 64 -63 80 ) ( 64 -64 81 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ 8.411709486180697e-17 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -112 -192 80 ) ( -113 -192 80 ) ( -112 -192 81 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ 1 -8.411709486180697e-17 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -240 64 224 ) ( -240 65 224 ) ( -241 64 224 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ 8.411709486180697e-17 1 0 0 ] [ 1 -8.411709486180697e-17 0 0 ] 270 1 1
+( -240 64 240 ) ( -241 64 240 ) ( -240 65 240 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ 8.411709486180697e-17 1 0 0 ] [ 1 -8.411709486180697e-17 0 0 ] 270 1 1
+( -240 -64 112 ) ( -240 -64 113 ) ( -241 -64 112 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -1 8.411709486180697e-17 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 192 -64 80 ) ( 192 -64 81 ) ( 192 -63 80 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ 8.411709486180697e-17 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 21
+{
+( 176 -96 16 ) ( 176 -95 16 ) ( 176 -96 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( 176 -80 16 ) ( 176 -80 17 ) ( 177 -80 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 176 -96 0 ) ( 177 -96 0 ) ( 176 -95 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 -1 0 -16 ] 0 1 1
+( 192 -32 32 ) ( 192 -31 32 ) ( 193 -32 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 -1 0 -16 ] 0 1 1
+( 192 -16 32 ) ( 193 -16 32 ) ( 192 -16 33 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 192 -32 32 ) ( 192 -32 33 ) ( 192 -31 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 22
+{
+( 176 -96 64 ) ( 176 -95 64 ) ( 176 -96 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( 176 -80 64 ) ( 176 -80 65 ) ( 177 -80 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 176 -96 48 ) ( 177 -96 48 ) ( 176 -95 48 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 -1 0 -16 ] 0 1 1
+( 192 -32 80 ) ( 192 -31 80 ) ( 193 -32 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 -1 0 -16 ] 0 1 1
+( 192 -16 80 ) ( 193 -16 80 ) ( 192 -16 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 192 -32 80 ) ( 192 -32 81 ) ( 192 -31 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 23
+{
+( 176 -256 64 ) ( 176 -255 64 ) ( 176 -256 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( 176 -240 64 ) ( 176 -240 65 ) ( 177 -240 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 176 -256 48 ) ( 177 -256 48 ) ( 176 -255 48 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 -1 0 -16 ] 0 1 1
+( 192 -192 80 ) ( 192 -191 80 ) ( 193 -192 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 -1 0 -16 ] 0 1 1
+( 192 -176 80 ) ( 193 -176 80 ) ( 192 -176 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 192 -192 80 ) ( 192 -192 81 ) ( 192 -191 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 24
+{
+( 176 -256 16 ) ( 176 -255 16 ) ( 176 -256 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( 176 -240 16 ) ( 176 -240 17 ) ( 177 -240 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 176 -256 0 ) ( 177 -256 0 ) ( 176 -255 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 -1 0 -16 ] 0 1 1
+( 192 -192 32 ) ( 192 -191 32 ) ( 193 -192 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 -1 0 -16 ] 0 1 1
+( 192 -176 32 ) ( 193 -176 32 ) ( 192 -176 33 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 192 -192 32 ) ( 192 -192 33 ) ( 192 -191 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 25
+{
+( 64 -256 64 ) ( 64 -255 64 ) ( 64 -256 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( 64 -240 64 ) ( 64 -240 65 ) ( 65 -240 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( 64 -256 48 ) ( 65 -256 48 ) ( 64 -255 48 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 -1 0 -16 ] 0 1 1
+( 80 -192 80 ) ( 80 -191 80 ) ( 81 -192 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -16 ] [ 0 -1 0 -16 ] 0 1 1
+( 80 -176 80 ) ( 81 -176 80 ) ( 80 -176 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+( 80 -192 80 ) ( 80 -192 81 ) ( 80 -191 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 26
+{
+( 64 -256 16 ) ( 64 -255 16 ) ( 64 -256 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -240 16 ) ( 64 -240 17 ) ( 65 -240 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -256 0 ) ( 65 -256 0 ) ( 64 -255 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 -1 0 -16 ] 0 1 1
+( 80 -192 32 ) ( 80 -191 32 ) ( 81 -192 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -16 ] [ 0 -1 0 -16 ] 0 1 1
+( 80 -176 32 ) ( 81 -176 32 ) ( 80 -176 33 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( 80 -192 32 ) ( 80 -192 33 ) ( 80 -191 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 27
+{
+( 64 -96 16 ) ( 64 -95 16 ) ( 64 -96 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -80 16 ) ( 64 -80 17 ) ( 65 -80 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -96 0 ) ( 65 -96 0 ) ( 64 -95 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 -1 0 -16 ] 0 1 1
+( 80 -32 32 ) ( 80 -31 32 ) ( 81 -32 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -16 ] [ 0 -1 0 -16 ] 0 1 1
+( 80 -16 32 ) ( 81 -16 32 ) ( 80 -16 33 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( 80 -32 32 ) ( 80 -32 33 ) ( 80 -31 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 28
+{
+( 64 -96 64 ) ( 64 -95 64 ) ( 64 -96 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( 64 -80 64 ) ( 64 -80 65 ) ( 65 -80 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( 64 -96 48 ) ( 65 -96 48 ) ( 64 -95 48 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 -1 0 -16 ] 0 1 1
+( 80 -32 80 ) ( 80 -31 80 ) ( 81 -32 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -16 ] [ 0 -1 0 -16 ] 0 1 1
+( 80 -16 80 ) ( 81 -16 80 ) ( 80 -16 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+( 80 -32 80 ) ( 80 -32 81 ) ( 80 -31 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 29
+{
+( 192 -272 16 ) ( 192 -271 16 ) ( 192 -272 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 208 -192 32 ) ( 208 -192 33 ) ( 209 -192 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( 192 -272 0 ) ( 193 -272 0 ) ( 192 -271 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 -1 0 0 ] 0 1 1
+( 208 -208 32 ) ( 208 -207 32 ) ( 209 -208 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -16 ] [ 0 -1 0 0 ] 0 1 1
+( 208 -176 32 ) ( 209 -176 32 ) ( 208 -176 33 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( 240 -208 32 ) ( 240 -208 33 ) ( 240 -207 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 30
+{
+( 192 -160 16 ) ( 192 -159 16 ) ( 192 -160 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( 208 -80 32 ) ( 208 -80 33 ) ( 209 -80 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( 192 -160 0 ) ( 193 -160 0 ) ( 192 -159 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 -1 0 -16 ] 0 1 1
+( 208 -96 32 ) ( 208 -95 32 ) ( 209 -96 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -16 ] [ 0 -1 0 -16 ] 0 1 1
+( 208 -64 32 ) ( 209 -64 32 ) ( 208 -64 33 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( 240 -96 32 ) ( 240 -96 33 ) ( 240 -95 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 31
+{
+( 16 -272 16 ) ( 16 -271 16 ) ( 16 -272 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 -192 32 ) ( 32 -192 33 ) ( 33 -192 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 16 -272 0 ) ( 17 -272 0 ) ( 16 -271 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 -208 32 ) ( 32 -207 32 ) ( 33 -208 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 -176 32 ) ( 33 -176 32 ) ( 32 -176 33 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -208 32 ) ( 64 -208 33 ) ( 64 -207 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 32
+{
+( 16 -160 16 ) ( 16 -159 16 ) ( 16 -160 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( 32 -80 32 ) ( 32 -80 33 ) ( 33 -80 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 16 -160 0 ) ( 17 -160 0 ) ( 16 -159 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 -1 0 -16 ] 0 1 1
+( 32 -96 32 ) ( 32 -95 32 ) ( 33 -96 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 -1 0 -16 ] 0 1 1
+( 32 -64 32 ) ( 33 -64 32 ) ( 32 -64 33 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -96 32 ) ( 64 -96 33 ) ( 64 -95 32 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 33
+{
+( 192 -160 64 ) ( 192 -159 64 ) ( 192 -160 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( 208 -80 80 ) ( 208 -80 81 ) ( 209 -80 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+( 192 -160 48 ) ( 193 -160 48 ) ( 192 -159 48 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 -1 0 -16 ] 0 1 1
+( 208 -96 80 ) ( 208 -95 80 ) ( 209 -96 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -16 ] [ 0 -1 0 -16 ] 0 1 1
+( 208 -64 80 ) ( 209 -64 80 ) ( 208 -64 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+( 240 -96 80 ) ( 240 -96 81 ) ( 240 -95 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 34
+{
+( 16 -160 64 ) ( 16 -159 64 ) ( 16 -160 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( 32 -80 80 ) ( 32 -80 81 ) ( 33 -80 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 16 -160 48 ) ( 17 -160 48 ) ( 16 -159 48 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 -1 0 -16 ] 0 1 1
+( 32 -96 80 ) ( 32 -95 80 ) ( 33 -96 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 -1 0 -16 ] 0 1 1
+( 32 -64 80 ) ( 33 -64 80 ) ( 32 -64 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 64 -96 80 ) ( 64 -96 81 ) ( 64 -95 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 35
+{
+( 192 -272 64 ) ( 192 -271 64 ) ( 192 -272 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 208 -192 80 ) ( 208 -192 81 ) ( 209 -192 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+( 192 -272 48 ) ( 193 -272 48 ) ( 192 -271 48 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 -1 0 0 ] 0 1 1
+( 208 -208 80 ) ( 208 -207 80 ) ( 209 -208 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -16 ] [ 0 -1 0 0 ] 0 1 1
+( 208 -176 80 ) ( 209 -176 80 ) ( 208 -176 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+( 240 -208 80 ) ( 240 -208 81 ) ( 240 -207 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 36
+{
+( 16 -272 64 ) ( 16 -271 64 ) ( 16 -272 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 32 -192 80 ) ( 32 -192 81 ) ( 33 -192 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 16 -272 48 ) ( 17 -272 48 ) ( 16 -271 48 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 -208 80 ) ( 32 -207 80 ) ( 33 -208 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 32 -176 80 ) ( 33 -176 80 ) ( 32 -176 81 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 64 -208 80 ) ( 64 -208 81 ) ( 64 -207 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 37
+{
+( 128 -176 128 ) ( 128 -175 128 ) ( 128 -176 129 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( 128 -176 128 ) ( 128 -176 129 ) ( 129 -176 128 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 128 -176 128 ) ( 129 -176 128 ) ( 128 -175 128 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 -1 0 16 ] 0 1 1
+( 144 -80 144 ) ( 144 -79 144 ) ( 145 -80 144 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 0 ] [ 0 -1 0 16 ] 0 1 1
+( 144 -80 144 ) ( 145 -80 144 ) ( 144 -80 145 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 144 -80 144 ) ( 144 -80 145 ) ( 144 -79 144 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 38
+{
+( 108 -176 96 ) ( 108 -175 96 ) ( 108 -176 97 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 -1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( 108 -176 96 ) ( 108 -176 97 ) ( 109 -176 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -12 ] [ 0 0 -1 0 ] 0 1 1
+( 108 -176 96 ) ( 109 -176 96 ) ( 108 -175 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 12 ] [ 0 -1 0 16 ] 0 1 1
+( 124 -80 112 ) ( 124 -79 112 ) ( 125 -80 112 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 0 0 -12 ] [ 0 -1 0 16 ] 0 1 1
+( 124 -80 112 ) ( 125 -80 112 ) ( 124 -80 113 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 0 0 12 ] [ 0 0 -1 0 ] 0 1 1
+( 124 -80 112 ) ( 124 -80 113 ) ( 124 -79 112 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 0 1 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 39
+{
+( 80 -140 180 ) ( 80 -139 180 ) ( 80 -140 181 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -2.7755575615628914e-16 -0.9999999999999999 0 -28 ] [ 0 0 -1 4 ] 0 1 1
+( 176 -156 164 ) ( 175 -156 164 ) ( 176 -156 165 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -3.885780586188048e-16 0 -16 ] [ 0 0 -1 4 ] 0 1 1
+( 176 -156 164 ) ( 176 -155 164 ) ( 175 -156 164 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -2.7755575615628914e-16 -0.9999999999999999 0 -28 ] [ 1 -3.885780586188048e-16 0 -16 ] 90 1 1
+( 80 -140 180 ) ( 79 -140 180 ) ( 80 -139 180 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 2.7755575615628914e-16 0.9999999999999999 0 28 ] [ 1 -3.885780586188048e-16 0 -16 ] 270 1 1
+( 80 -140 180 ) ( 80 -140 181 ) ( 79 -140 180 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 3.885780586188048e-16 0 16 ] [ 0 0 -1 4 ] 0 1 1
+( 176 -156 164 ) ( 176 -156 165 ) ( 176 -155 164 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 2.7755575615628914e-16 0.9999999999999999 0 28 ] [ 0 0 -1 4 ] 0 1 1
+}
+// brush 40
+{
+( 80 -304 96 ) ( 80 -304 97 ) ( 80 -305 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 9.9579925010296e-17 -1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 64 -16 64 ) ( 63 -16 64 ) ( 64 -16 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 64 -176 80 ) ( 63 -176 80 ) ( 64 -177 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( -64 -304 96 ) ( -64 -305 96 ) ( -65 -304 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 0 ] 180 1 1
+( 64 0 64 ) ( 64 0 65 ) ( 63 0 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 176 -176 64 ) ( 176 -177 64 ) ( 176 -176 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -9.9579925010296e-17 1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 41
+{
+( 80 -544 96 ) ( 80 -544 97 ) ( 80 -545 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 9.9579925010296e-17 -1 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( 64 -256 64 ) ( 63 -256 64 ) ( 64 -256 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 64 -416 80 ) ( 63 -416 80 ) ( 64 -417 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( -64 -544 96 ) ( -64 -545 96 ) ( -65 -544 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( 64 -240 64 ) ( 64 -240 65 ) ( 63 -240 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 176 -416 64 ) ( 176 -417 64 ) ( 176 -416 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -9.9579925010296e-17 1 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 42
+{
+( 240 -64 64 ) ( 240 -63 64 ) ( 240 -64 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.6081226496766366e-16 1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 80 -176 64 ) ( 79 -176 64 ) ( 80 -176 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 1.6081226496766366e-16 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 80 -64 80 ) ( 80 -63 80 ) ( 79 -64 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.6081226496766366e-16 -1 0 0 ] [ 1 1.6081226496766366e-16 0 0 ] 90 1 1
+( -48 64 96 ) ( -49 64 96 ) ( -48 65 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.6081226496766366e-16 1 0 0 ] [ 1 1.6081226496766366e-16 0 0 ] 270 1 1
+( -48 -80 96 ) ( -48 -80 97 ) ( -49 -80 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -1.6081226496766366e-16 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( 256 -64 64 ) ( 256 -64 65 ) ( 256 -63 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.6081226496766366e-16 1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 43
+{
+( 0 -64 64 ) ( 0 -63 64 ) ( 0 -64 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.6081226496766366e-16 1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+( -160 -176 64 ) ( -161 -176 64 ) ( -160 -176 65 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 1.6081226496766366e-16 0 -16 ] [ 0 0 -1 -16 ] 0 1 1
+( -160 -64 80 ) ( -160 -63 80 ) ( -161 -64 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.6081226496766366e-16 -1 0 0 ] [ 1 1.6081226496766366e-16 0 -16 ] 90 1 1
+( -288 64 96 ) ( -289 64 96 ) ( -288 65 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.6081226496766366e-16 1 0 0 ] [ 1 1.6081226496766366e-16 0 -16 ] 270 1 1
+( -288 -80 96 ) ( -288 -80 97 ) ( -289 -80 96 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 -1.6081226496766366e-16 0 16 ] [ 0 0 -1 -16 ] 0 1 1
+( 16 -64 64 ) ( 16 -64 65 ) ( 16 -63 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.6081226496766366e-16 1 0 0 ] [ 0 0 -1 -16 ] 0 1 1
+}
+// brush 44
+{
+( 80 -176 32 ) ( 80 -240 32 ) ( 80 -240 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 2.4492935982947064e-16 1 -1.2246467991473532e-16 0 ] [ 2.999519565323715e-32 1.2246467991473532e-16 1 16 ] 180 1 1
+( 96 -160 16 ) ( 80 -176 32 ) ( 80 -176 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -2.33486982377251e-16 -1 1.2246467991473535e-16 0 ] [ 2.7323549470696886e-32 1.2246467991473535e-16 1.0000000000000002 16 ] 90 1 1
+( 80 -240 0 ) ( 80 -240 32 ) ( 96 -240 16 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 2.4492935982947064e-16 0 0 ] [ 2.999519565323715e-32 1.2246467991473532e-16 1 16 ] 0 1 1
+( 80 -176 0 ) ( 80 -240 0 ) ( 96 -240 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 -2.4492935982947064e-16 0 0 ] [ 2.4492935982947064e-16 1 -1.2246467991473532e-16 0 ] 180 1 1
+( 96 -240 16 ) ( 80 -240 32 ) ( 80 -176 32 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 3.174780770245285e-07 -0.9999999999999506 1.2246467991472928e-16 0 ] [ -0.9999999999999506 -3.174780770245285e-07 3.8879851178153045e-23 0 ] 180.00003 1 1
+( 96 -240 16 ) ( 96 -160 16 ) ( 96 -160 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -2.4492935982947064e-16 -1 1.2246467991473532e-16 0 ] [ 2.999519565323715e-32 1.2246467991473532e-16 1 16 ] 180 1 1
+}
+// brush 45
+{
+( 16 -160 16 ) ( 16 -176 32 ) ( 16 -176 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -3.834758505292834e-17 1 0 16 ] [ 1.2246467991473532e-16 4.696224729009957e-33 1 16 ] 180 1 1
+( 16 -176 0 ) ( 16 -176 32 ) ( 80 -176 32 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 -3.834758505292834e-17 1.2246467991473532e-16 0 ] [ 1.2246467991473532e-16 4.696224729009957e-33 1 16 ] 0 1 1
+( 16 -160 0 ) ( 16 -176 0 ) ( 80 -176 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 3.834758505292834e-17 -1 0 -16 ] [ 1 3.834758505292834e-17 -1.2246467991473532e-16 0 ] 90 1 1
+( 80 -176 32 ) ( 16 -176 32 ) ( 16 -160 16 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 0.9999999999999982 -1.766827135394486e-08 -1.2246467991473525e-16 15.999996 ] [ -1.766827135394486e-08 -0.9999999999999982 2.1637392425921986e-24 0 ] 41.810303 1 1
+( 96 -160 16 ) ( 16 -160 16 ) ( 16 -160 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 3.834758505292834e-17 -1.2246467991473532e-16 0 ] [ 1.2246467991473532e-16 4.696224729009957e-33 1 16 ] 0 1 1
+( 80 -176 32 ) ( 96 -160 16 ) ( 96 -160 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 -1.1442377452219667e-17 -1.2246467991473535e-16 -16 ] [ 1.2246467991473535e-16 9.65430546153804e-33 1.0000000000000002 16 ] 90 1 1
+}
+// brush 46
+{
+( 160 -160 16 ) ( 176 -176 32 ) ( 176 -176 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 -7.267471740958734e-17 1.2246467991473535e-16 0 ] [ -1.2246467991473535e-16 7.629726915068347e-33 1.0000000000000002 16 ] 90 1 1
+( 176 -176 32 ) ( 240 -176 32 ) ( 240 -176 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 8.411709486180698e-17 -1.2246467991473532e-16 0 ] [ -1.2246467991473532e-16 1.0301373097608619e-32 1 16 ] 180 1 1
+( 176 -176 0 ) ( 240 -176 0 ) ( 240 -160 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 8.411709486180698e-17 1 0 0 ] [ -1 8.411709486180698e-17 -1.2246467991473532e-16 0 ] 270 1 1
+( 240 -160 16 ) ( 240 -176 32 ) ( 176 -176 32 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 0.9999999999999506 3.174780771853408e-07 1.2246467991472928e-16 0 ] [ 3.174780771853408e-07 -0.9999999999999506 3.8879851178153045e-23 0 ] 109.47125 1 1
+( 240 -160 16 ) ( 160 -160 16 ) ( 160 -160 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 -8.411709486180698e-17 1.2246467991473532e-16 0 ] [ -1.2246467991473532e-16 1.0301373097608619e-32 1 16 ] 180 1 1
+( 240 -176 0 ) ( 240 -176 32 ) ( 240 -160 16 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -8.411709486180698e-17 -1 0 0 ] [ -1.2246467991473532e-16 1.0301373097608619e-32 1 16 ] 0 1 1
+}
+// brush 47
+{
+( 160 -160 16 ) ( 160 -240 16 ) ( 160 -240 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1.99159850020592e-16 1 -1.2246467991473532e-16 0 ] [ -2.439004728463849e-32 1.2246467991473532e-16 1 16 ] 0 1 1
+( 176 -176 32 ) ( 176 -240 32 ) ( 160 -240 16 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1.7668271193132595e-08 0.9999999999999982 -1.2246467991473525e-16 -16 ] [ 0.9999999999999982 -1.7668271193132595e-08 2.1637392425921986e-24 0 ] 331.28152 1 1
+( 160 -240 16 ) ( 176 -240 32 ) ( 176 -240 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 -1.99159850020592e-16 0 -16 ] [ -2.439004728463849e-32 1.2246467991473532e-16 1 16 ] 180 1 1
+( 160 -240 0 ) ( 176 -240 0 ) ( 176 -176 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 1.99159850020592e-16 0 16 ] [ -1.99159850020592e-16 1 -1.2246467991473532e-16 0 ] 180 1 1
+( 176 -176 32 ) ( 160 -160 16 ) ( 160 -160 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1.49369887515444e-16 1 -1.2246467991473535e-16 -16 ] [ -2.934812801716658e-32 1.2246467991473535e-16 1.0000000000000002 16 ] 90 1 1
+( 176 -240 0 ) ( 176 -240 32 ) ( 176 -176 32 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1.99159850020592e-16 -1 1.2246467991473532e-16 0 ] [ -2.439004728463849e-32 1.2246467991473532e-16 1 16 ] 0 1 1
+}
+// brush 48
+{
+( 80 -16 0 ) ( 80 -16 32 ) ( 80 -80 32 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -3.216245299353273e-16 1 1.2246467991473532e-16 0 ] [ 3.9387645111257066e-32 -1.2246467991473532e-16 1 16 ] 180 1 1
+( 80 -80 32 ) ( 96 -96 16 ) ( 96 -96 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 2.718345674301793e-16 -1 -1.2246467991473535e-16 16 ] [ 4.434572584378516e-32 -1.2246467991473535e-16 1.0000000000000002 16 ] 0 1 1
+( 96 -16 0 ) ( 80 -16 0 ) ( 80 -80 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 -3.216245299353273e-16 0 -16 ] [ 3.216245299353273e-16 -1 -1.2246467991473532e-16 0 ] 0 1 1
+( 96 -16 16 ) ( 80 -16 32 ) ( 80 -16 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 3.216245299353273e-16 0 16 ] [ 3.9387645111257066e-32 -1.2246467991473532e-16 1 16 ] 0 1 1
+( 80 -80 32 ) ( 80 -16 32 ) ( 96 -16 16 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1.7668271070667916e-08 -0.9999999999999982 -1.2246467991473525e-16 16 ] [ -0.9999999999999982 1.7668271070667916e-08 2.1637392425921986e-24 0 ] 151.28152 1 1
+( 96 -96 16 ) ( 96 -16 16 ) ( 96 -16 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 3.216245299353273e-16 -1 -1.2246467991473532e-16 0 ] [ 3.9387645111257066e-32 -1.2246467991473532e-16 1 16 ] 180 1 1
+}
+// brush 49
+{
+( 16 -80 0 ) ( 16 -80 32 ) ( 16 -96 16 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -3.834758505292834e-17 1 0 0 ] [ 1.2246467991473532e-16 4.696224729009957e-33 1 16 ] 180 1 1
+( 16 -96 16 ) ( 96 -96 16 ) ( 96 -96 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 -3.834758505292834e-17 1.2246467991473532e-16 0 ] [ 1.2246467991473532e-16 4.696224729009957e-33 1 16 ] 0 1 1
+( 16 -96 16 ) ( 16 -80 32 ) ( 80 -80 32 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -0.9999999999999506 -3.1747807730780544e-07 1.2246467991472928e-16 0 ] [ -3.1747807730780544e-07 0.9999999999999506 3.8879851178153045e-23 0 ] 289.47122 1 1
+( 80 -80 0 ) ( 16 -80 0 ) ( 16 -96 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 3.834758505292834e-17 -1 0 0 ] [ 1 3.834758505292834e-17 -1.2246467991473532e-16 0 ] 90 1 1
+( 80 -80 32 ) ( 16 -80 32 ) ( 16 -80 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 3.834758505292834e-17 -1.2246467991473532e-16 0 ] [ 1.2246467991473532e-16 4.696224729009957e-33 1 16 ] 0 1 1
+( 96 -96 16 ) ( 80 -80 32 ) ( 80 -80 0 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 -4.9789962505148006e-17 1.2246467991473535e-16 0 ] [ 1.2246467991473535e-16 7.367870911550229e-33 1.0000000000000002 16 ] 180 1 1
+}
+// brush 50
+{
+( 160 -240 64 ) ( 160 -160 64 ) ( 160 -160 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 2.4492935982947064e-16 -1 -1.224646799147353e-16 0 ] [ 1.224646799147353e-16 1.2246467991473532e-16 -1 0 ] 180 1 1
+( 160 -240 64 ) ( 176 -240 48 ) ( 176 -176 48 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -3.174780770245285e-07 -0.9999999999999506 -1.2246471879458036e-16 0 ] [ 0.9999999999999506 -3.174780770245285e-07 1.224646410348781e-16 0 ] 180.00003 1 1
+( 176 -240 80 ) ( 176 -240 48 ) ( 160 -240 64 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 2.4492935982947064e-16 1.2246467991473532e-16 0 ] [ 1.224646799147353e-16 1.2246467991473532e-16 -1 0 ] 180 1 1
+( 176 -176 80 ) ( 176 -240 80 ) ( 160 -240 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 -2.4492935982947064e-16 -1.2246467991473532e-16 0 ] [ -2.4492935982947064e-16 1 1.224646799147353e-16 0 ] 180 1 1
+( 160 -160 64 ) ( 176 -176 48 ) ( 176 -176 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 2.33486982377251e-16 -1 -1.2246467991473532e-16 0 ] [ 1.2246467991473532e-16 1.2246467991473535e-16 -1.0000000000000002 0 ] 0 1 1
+( 176 -176 48 ) ( 176 -240 48 ) ( 176 -240 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -2.4492935982947064e-16 1 1.224646799147353e-16 0 ] [ 1.224646799147353e-16 1.2246467991473532e-16 -1 0 ] 180 1 1
+}
+// brush 51
+{
+( 176 -176 48 ) ( 160 -160 64 ) ( 160 -160 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 -1.1442377452219667e-17 2.465190328815662e-32 16 ] [ 0 9.65430546153804e-33 -1.0000000000000002 0 ] 180 1 1
+( 240 -176 80 ) ( 240 -176 48 ) ( 176 -176 48 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 -3.834758505292834e-17 0 0 ] [ 0 4.696224729009957e-33 -1 0 ] 180 1 1
+( 240 -160 80 ) ( 240 -176 80 ) ( 176 -176 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -3.834758505292834e-17 -1 -4.696224729009958e-33 -16 ] [ -1 3.834758505292834e-17 0 0 ] 90 1 1
+( 176 -176 48 ) ( 240 -176 48 ) ( 240 -160 64 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -0.9999999999999982 -1.766827135394486e-08 1.4791141972893971e-31 16 ] [ 1.766827135394486e-08 -0.9999999999999982 -4.6584654146017076e-32 0 ] 221.8103 1 1
+( 160 -160 64 ) ( 240 -160 64 ) ( 240 -160 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 3.834758505292834e-17 0 0 ] [ 0 4.696224729009957e-33 -1 0 ] 180 1 1
+( 240 -160 64 ) ( 240 -176 48 ) ( 240 -176 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 3.834758505292834e-17 1 4.696224729009958e-33 16 ] [ 0 4.696224729009957e-33 -1 0 ] 180 1 1
+}
+// brush 52
+{
+( 160 -96 64 ) ( 176 -80 48 ) ( 176 -80 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 -4.9789962505148006e-17 -2.465190328815662e-32 0 ] [ 0 7.367870911550229e-33 -1.0000000000000002 0 ] 90 1 1
+( 240 -96 64 ) ( 160 -96 64 ) ( 160 -96 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 -3.834758505292834e-17 0 0 ] [ 0 4.696224729009957e-33 -1 0 ] 180 1 1
+( 240 -96 64 ) ( 240 -80 48 ) ( 176 -80 48 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 0.9999999999999506 -3.1747807730780544e-07 0 0 ] [ 3.1747807730780544e-07 0.9999999999999506 -6.070705392971359e-32 0 ] 109.47119 1 1
+( 176 -80 80 ) ( 240 -80 80 ) ( 240 -96 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -3.834758505292834e-17 -1 -4.696224729009958e-33 0 ] [ -1 3.834758505292834e-17 0 0 ] 90 1 1
+( 176 -80 48 ) ( 240 -80 48 ) ( 240 -80 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 3.834758505292834e-17 0 0 ] [ 0 4.696224729009957e-33 -1 0 ] 180 1 1
+( 240 -80 80 ) ( 240 -80 48 ) ( 240 -96 64 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 3.834758505292834e-17 1 4.696224729009958e-33 0 ] [ 0 4.696224729009957e-33 -1 0 ] 180 1 1
+}
+// brush 53
+{
+( 160 -96 64 ) ( 160 -16 64 ) ( 160 -16 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -3.216245299353273e-16 -1 1.2246467991473527e-16 0 ] [ 1.2246467991473527e-16 -1.2246467991473532e-16 -1 0 ] 180 1 1
+( 176 -80 48 ) ( 176 -16 48 ) ( 160 -16 64 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1.7668271070667916e-08 -0.9999999999999982 1.224646820784744e-16 15.999996 ] [ 0.9999999999999982 1.7668271070667916e-08 1.2246467775099586e-16 0 ] 151.28152 1 1
+( 160 -16 80 ) ( 176 -16 80 ) ( 176 -80 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 -3.216245299353273e-16 1.2246467991473532e-16 -16 ] [ -3.216245299353273e-16 -1 1.2246467991473527e-16 0 ] 0 1 1
+( 160 -16 64 ) ( 176 -16 48 ) ( 176 -16 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 3.216245299353273e-16 -1.2246467991473532e-16 16 ] [ 1.2246467991473527e-16 -1.2246467991473532e-16 -1 0 ] 180 1 1
+( 176 -80 48 ) ( 160 -96 64 ) ( 160 -96 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -2.718345674301793e-16 -1 1.2246467991473532e-16 16 ] [ 1.224646799147353e-16 -1.2246467991473535e-16 -1.0000000000000002 0 ] 90 1 1
+( 176 -16 80 ) ( 176 -16 48 ) ( 176 -80 48 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 3.216245299353273e-16 1 -1.2246467991473527e-16 0 ] [ 1.2246467991473527e-16 -1.2246467991473532e-16 -1 0 ] 180 1 1
+}
+// brush 54
+{
+( 80 -80 48 ) ( 80 -16 48 ) ( 80 -16 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1.224646799147353e-16 -1 1.2246467991473535e-16 0 ] [ 1.2246467991473535e-16 -1.2246467991473532e-16 -1 0 ] 0 1 1
+( 96 -96 64 ) ( 80 -80 48 ) ( 80 -80 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1.1102230246251564e-16 1 -1.2246467991473537e-16 0 ] [ 1.2246467991473535e-16 -1.2246467991473535e-16 -1.0000000000000002 0 ] 270 1 1
+( 80 -80 80 ) ( 80 -16 80 ) ( 96 -16 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 1.2246467991473532e-16 1.2246467991473532e-16 0 ] [ 1.224646799147353e-16 -1 1.2246467991473535e-16 0 ] 0 1 1
+( 80 -16 80 ) ( 80 -16 48 ) ( 96 -16 64 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 -1.2246467991473532e-16 -1.2246467991473532e-16 0 ] [ 1.2246467991473535e-16 -1.2246467991473532e-16 -1 0 ] 0 1 1
+( 96 -16 64 ) ( 80 -16 48 ) ( 80 -80 48 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 3.1747807714699317e-07 0.9999999999999506 -1.2246464103487817e-16 0 ] [ -0.9999999999999506 3.1747807714699317e-07 -1.2246471879458046e-16 0 ] 0 1 1
+( 96 -16 64 ) ( 96 -96 64 ) ( 96 -96 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1.224646799147353e-16 1 -1.2246467991473535e-16 0 ] [ 1.2246467991473535e-16 -1.2246467991473532e-16 -1 0 ] 0 1 1
+}
+// brush 55
+{
+( 16 -96 64 ) ( 16 -80 48 ) ( 16 -80 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1.6081226496766366e-16 -1 -1.9693822555628533e-32 16 ] [ 2.4492935982947064e-16 -1.9693822555628533e-32 -1 0 ] 0 1 1
+( 96 -96 64 ) ( 16 -96 64 ) ( 16 -96 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 -1.6081226496766366e-16 2.4492935982947064e-16 0 ] [ 2.4492935982947064e-16 -1.9693822555628533e-32 -1 0 ] 0 1 1
+( 80 -80 48 ) ( 16 -80 48 ) ( 16 -96 64 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 0.9999999999999982 1.766827123148018e-08 2.4492935982947035e-16 -15.999939 ] [ -1.766827123148018e-08 0.9999999999999982 -4.327478423602145e-24 0 ] 41.810303 1 1
+( 16 -96 80 ) ( 16 -80 80 ) ( 80 -80 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1.6081226496766366e-16 1 1.9693822555628533e-32 -16 ] [ 1 -1.6081226496766366e-16 2.4492935982947064e-16 0 ] 270 1 1
+( 16 -80 80 ) ( 16 -80 48 ) ( 80 -80 48 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 1.6081226496766366e-16 -2.4492935982947064e-16 0 ] [ 2.4492935982947064e-16 -1.9693822555628533e-32 -1 0 ] 0 1 1
+( 80 -80 48 ) ( 96 -96 64 ) ( 96 -96 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 -1.1102230246251565e-16 2.449293598294707e-16 -16 ] [ 2.449293598294707e-16 -2.465190328815662e-32 -1.0000000000000002 0 ] 270 1 1
+}
+// brush 56
+{
+( 16 -176 80 ) ( 16 -176 48 ) ( 16 -160 64 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 8.411709486180698e-17 -1 1.0301373097608619e-32 0 ] [ 2.4492935982947064e-16 1.0301373097608619e-32 -1 0 ] 0 1 1
+( 80 -176 48 ) ( 16 -176 48 ) ( 16 -176 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 8.411709486180698e-17 2.4492935982947064e-16 0 ] [ 2.4492935982947064e-16 1.0301373097608619e-32 -1 0 ] 0 1 1
+( 80 -176 80 ) ( 16 -176 80 ) ( 16 -160 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -8.411709486180698e-17 1 -1.0301373097608619e-32 0 ] [ 1 8.411709486180698e-17 2.4492935982947064e-16 0 ] 270 1 1
+( 16 -160 64 ) ( 16 -176 48 ) ( 80 -176 48 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -0.9999999999999506 3.174780771853408e-07 -2.4492935982945856e-16 0 ] [ -3.174780771853408e-07 -0.9999999999999506 -7.775970228060143e-23 0 ] 289.47128 1 1
+( 16 -160 64 ) ( 96 -160 64 ) ( 96 -160 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 -8.411709486180698e-17 -2.4492935982947064e-16 0 ] [ 2.4492935982947064e-16 1.0301373097608619e-32 -1 0 ] 0 1 1
+( 96 -160 64 ) ( 80 -176 48 ) ( 80 -176 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 -7.267471740958734e-17 -2.449293598294707e-16 0 ] [ 2.449293598294707e-16 7.629726915068347e-33 -1.0000000000000002 0 ] 180 1 1
+}
+// brush 57
+{
+( 80 -240 80 ) ( 80 -240 48 ) ( 80 -176 48 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1.9915985002059197e-16 -1 -1.2246467991473535e-16 0 ] [ 1.2246467991473535e-16 1.2246467991473532e-16 -1 0 ] 0 1 1
+( 80 -176 48 ) ( 96 -160 64 ) ( 96 -160 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1.4936988751544397e-16 1 1.2246467991473537e-16 -16 ] [ 1.2246467991473537e-16 1.2246467991473535e-16 -1.0000000000000002 0 ] 0 1 1
+( 96 -240 64 ) ( 80 -240 48 ) ( 80 -240 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1 -1.99159850020592e-16 1.2246467991473532e-16 -16 ] [ 1.2246467991473535e-16 1.2246467991473532e-16 -1 0 ] 0 1 1
+( 96 -240 80 ) ( 80 -240 80 ) ( 80 -176 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1 1.99159850020592e-16 -1.2246467991473532e-16 16 ] [ 1.9915985002059197e-16 1 1.2246467991473535e-16 0 ] 180 1 1
+( 80 -176 48 ) ( 80 -240 48 ) ( 96 -240 64 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ -1.7668271193132595e-08 0.9999999999999982 1.2246467775099608e-16 -16 ] [ -0.9999999999999982 -1.7668271193132595e-08 -1.2246468207847434e-16 0 ] 331.28152 1 1
+( 96 -160 64 ) ( 96 -240 64 ) ( 96 -240 80 ) PixelArtTextures/SciFi/SciFi_09/SciFi_09_basecolor [ 1.9915985002059197e-16 1 1.2246467991473535e-16 0 ] [ 1.2246467991473535e-16 1.2246467991473532e-16 -1 0 ] 0 1 1
+}
+// brush 58
+{
+( 160 0 64 ) ( 144 0 80 ) ( 144 -16 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 144 -16 80 ) ( 240 -16 80 ) ( 240 -16 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 240 -16 64 ) ( 240 0 64 ) ( 160 0 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 144 0 80 ) ( 240 0 80 ) ( 240 -16 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 240 0 64 ) ( 240 0 80 ) ( 144 0 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 240 -16 80 ) ( 240 0 80 ) ( 240 0 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+}
+// brush 59
+{
+( 16 0 80 ) ( 16 -16 80 ) ( 16 -16 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 16 -16 80 ) ( 112 -16 80 ) ( 96 -16 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 0 0 -1 0 ] 180 1 1
+( 96 -16 64 ) ( 96 0 64 ) ( 16 0 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 16 0 80 ) ( 112 0 80 ) ( 112 -16 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 96 0 64 ) ( 112 0 80 ) ( 16 0 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 0 0 -1 0 ] 180 1 1
+( 112 -16 80 ) ( 112 0 80 ) ( 96 0 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+}
+// brush 60
+{
+( 16 -432 16 ) ( 16 -432 17 ) ( 16 -433 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( -32 -256 16 ) ( -33 -256 16 ) ( -32 -256 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 0 0 -1 0 ] 180 1 1
+( -32 -432 0 ) ( -33 -432 0 ) ( -32 -433 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( -160 -560 64 ) ( -160 -561 64 ) ( -161 -560 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( -32 -240 16 ) ( -32 -240 17 ) ( -33 -240 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 0 0 -1 0 ] 180 1 1
+( 96 -432 16 ) ( 96 -433 16 ) ( 96 -432 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+}
+// brush 61
+{
+( 160 -432 16 ) ( 160 -432 17 ) ( 160 -433 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 48 -256 16 ) ( 47 -256 16 ) ( 48 -256 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 48 -432 0 ) ( 47 -432 0 ) ( 48 -433 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.2246467991473532e-16 0 -16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( -80 -560 64 ) ( -80 -561 64 ) ( -81 -560 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 48 -240 16 ) ( 48 -240 17 ) ( 47 -240 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 240 -432 16 ) ( 240 -433 16 ) ( 240 -432 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+}
+// brush 62
+{
+( 160 -240 64 ) ( 144 -240 80 ) ( 144 -256 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 144 -256 80 ) ( 240 -256 80 ) ( 240 -256 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 240 -256 64 ) ( 240 -240 64 ) ( 160 -240 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 144 -240 80 ) ( 240 -240 80 ) ( 240 -256 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 240 -240 64 ) ( 240 -240 80 ) ( 144 -240 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 240 -256 80 ) ( 240 -240 80 ) ( 240 -240 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+}
+// brush 63
+{
+( 16 -240 80 ) ( 16 -256 80 ) ( 16 -256 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+( 16 -256 80 ) ( 112 -256 80 ) ( 96 -256 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 0 0 -1 0 ] 180 1 1
+( 96 -256 64 ) ( 96 -240 64 ) ( 16 -240 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 16 -240 80 ) ( 112 -240 80 ) ( 112 -256 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 96 -240 64 ) ( 112 -240 80 ) ( 16 -240 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 0 0 -1 0 ] 180 1 1
+( 112 -256 80 ) ( 112 -240 80 ) ( 96 -240 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473532e-16 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+}
+// brush 64
+{
+( 240 -208 16 ) ( 240 -208 17 ) ( 240 -209 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.1102230246251565e-16 1 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 432 -96 16 ) ( 432 -96 17 ) ( 433 -96 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.1102230246251565e-16 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 432 -208 0 ) ( 432 -209 0 ) ( 433 -208 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.2246467991473532e-16 0 -16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 560 -336 64 ) ( 561 -336 64 ) ( 560 -337 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 432 -16 16 ) ( 433 -16 16 ) ( 432 -16 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.1102230246251565e-16 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 256 -208 16 ) ( 256 -209 16 ) ( 256 -208 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.1102230246251565e-16 -1 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+}
+// brush 65
+{
+( 240 -288 16 ) ( 240 -288 17 ) ( 240 -289 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.1102230246251565e-16 1 0 0 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 432 -240 16 ) ( 432 -240 17 ) ( 433 -240 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.1102230246251565e-16 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 432 -288 0 ) ( 432 -289 0 ) ( 433 -288 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 560 -416 64 ) ( 561 -416 64 ) ( 560 -417 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 432 -160 16 ) ( 433 -160 16 ) ( 432 -160 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.1102230246251565e-16 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 256 -288 16 ) ( 256 -289 16 ) ( 256 -288 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.1102230246251565e-16 -1 0 0 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+}
+// brush 66
+{
+( 0 -208 16 ) ( 0 -208 17 ) ( 0 -209 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.1102230246251565e-16 1 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 192 -96 16 ) ( 192 -96 17 ) ( 193 -96 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.1102230246251565e-16 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 192 -208 0 ) ( 192 -209 0 ) ( 193 -208 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.2246467991473532e-16 0 -16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 320 -336 64 ) ( 321 -336 64 ) ( 320 -337 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 192 -16 16 ) ( 193 -16 16 ) ( 192 -16 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.1102230246251565e-16 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 16 -208 16 ) ( 16 -209 16 ) ( 16 -208 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.1102230246251565e-16 -1 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+}
+// brush 67
+{
+( 0 -16 64 ) ( 0 -16 80 ) ( 0 -112 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.1102230246251565e-16 1 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 0 -96 64 ) ( 0 -112 80 ) ( 16 -112 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473535e-16 1.0000000000000002 0 16 ] [ 1.0000000000000002 -1.2246467991473535e-16 7.498798913309291e-33 0 ] 180 1 1
+( 16 -16 64 ) ( 0 -16 64 ) ( 0 -96 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 0 -112 80 ) ( 0 -16 80 ) ( 16 -16 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 16 -16 80 ) ( 0 -16 80 ) ( 0 -16 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.1102230246251565e-16 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 16 -112 80 ) ( 16 -16 80 ) ( 16 -16 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.1102230246251565e-16 -1 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+}
+// brush 68
+{
+( 0 -160 64 ) ( 0 -144 80 ) ( 0 -240 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.1102230246251565e-16 1 0 0 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 0 -240 80 ) ( 16 -240 80 ) ( 16 -240 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.1102230246251565e-16 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 16 -160 64 ) ( 0 -160 64 ) ( 0 -240 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 0 -240 80 ) ( 0 -144 80 ) ( 16 -144 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 16 -144 80 ) ( 0 -144 80 ) ( 0 -160 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473535e-16 1.0000000000000002 0 16 ] [ 1.0000000000000002 -1.2246467991473535e-16 7.498798913309291e-33 0 ] 180 1 1
+( 16 -240 80 ) ( 16 -144 80 ) ( 16 -160 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.1102230246251565e-16 -1 0 0 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+}
+// brush 69
+{
+( 0 -288 16 ) ( 0 -288 17 ) ( 0 -289 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.1102230246251565e-16 1 0 0 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 192 -240 16 ) ( 192 -240 17 ) ( 193 -240 16 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.1102230246251565e-16 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 192 -288 0 ) ( 192 -289 0 ) ( 193 -288 0 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 320 -416 64 ) ( 321 -416 64 ) ( 320 -417 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 192 -160 16 ) ( 193 -160 16 ) ( 192 -160 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.1102230246251565e-16 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 16 -288 16 ) ( 16 -289 16 ) ( 16 -288 17 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.1102230246251565e-16 -1 0 0 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+}
+// brush 70
+{
+( 240 -160 64 ) ( 240 -144 80 ) ( 240 -240 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.1102230246251565e-16 1 0 0 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 240 -240 80 ) ( 256 -240 80 ) ( 256 -240 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.1102230246251565e-16 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 256 -160 64 ) ( 240 -160 64 ) ( 240 -240 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 240 -240 80 ) ( 240 -144 80 ) ( 256 -144 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 0 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 256 -144 80 ) ( 240 -144 80 ) ( 240 -160 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473535e-16 1.0000000000000002 0 16 ] [ 1.0000000000000002 -1.2246467991473535e-16 7.498798913309291e-33 0 ] 180 1 1
+( 256 -240 80 ) ( 256 -144 80 ) ( 256 -160 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.1102230246251565e-16 -1 0 0 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+}
+// brush 71
+{
+( 240 -16 64 ) ( 240 -16 80 ) ( 240 -112 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.1102230246251565e-16 1 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 240 -96 64 ) ( 240 -112 80 ) ( 256 -112 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1.2246467991473535e-16 1.0000000000000002 0 16 ] [ 1.0000000000000002 -1.2246467991473535e-16 7.498798913309291e-33 0 ] 180 1 1
+( 256 -16 64 ) ( 240 -16 64 ) ( 240 -96 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 240 -112 80 ) ( 240 -16 80 ) ( 256 -16 80 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1 1.2246467991473532e-16 0 16 ] [ 1.2246467991473532e-16 1 0 16 ] 180 1 1
+( 256 -16 80 ) ( 240 -16 80 ) ( 240 -16 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ 1 -1.1102230246251565e-16 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+( 256 -112 80 ) ( 256 -16 80 ) ( 256 -16 64 ) PixelArtTextures/Metals/Metals_01/Metals_01_basecolor [ -1.1102230246251565e-16 -1 0 16 ] [ 0 0 -1.0000000000000002 0 ] 180 1 1
+}
+// brush 72
+{
+( 176 -352 48 ) ( 176 -352 49 ) ( 176 -353 48 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -9.9579925010296e-17 1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( -64 -240 80 ) ( -65 -240 80 ) ( -64 -240 81 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ 1 9.9579925010296e-17 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -352 32 ) ( 63 -352 32 ) ( 64 -353 32 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ 1 9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( -64 -480 48 ) ( -64 -481 48 ) ( -65 -480 48 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -1 -9.9579925010296e-17 0 0 ] [ -9.9579925010296e-17 1 0 16 ] 180 1 1
+( 64 -176 48 ) ( 64 -176 49 ) ( 63 -176 48 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -1 -9.9579925010296e-17 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 240 -352 48 ) ( 240 -353 48 ) ( 240 -352 49 ) PixelArtTextures/Rust/Rust_04/Rust_04_Color [ -9.9579925010296e-17 1 0 16 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 1
+{
+"classname" "light"
+"origin" "120 -120 184"
+}

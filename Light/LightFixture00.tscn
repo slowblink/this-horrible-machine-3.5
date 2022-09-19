@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://addons/qodot/src/nodes/qodot_map.gd" type="Script" id=1]
+[ext_resource path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" type="Resource" id=2]
+[ext_resource path="res://Textures/PixelArtTextures/Crystals_08_basecolor.tres" type="Material" id=3]
+
+[sub_resource type="SpatialMaterial" id=100]
+
+[sub_resource type="ArrayMesh" id=101]
+surfaces/0 = {
+"aabb": AABB( 0, 0, 0, 0.50001, 0.25, 2 ),
+"array_data": PoolByteArray( 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 63, 127, 127, 255, 0, 54, 0, 44, 0, 0, 0, 63, 0, 0, 0, 62, 0, 0, 0, 62, 63, 127, 127, 255, 0, 53, 0, 44, 0, 0, 192, 62, 0, 0, 128, 62, 0, 0, 128, 62, 63, 127, 127, 255, 0, 52, 0, 48, 0, 0, 0, 62, 0, 0, 128, 62, 0, 0, 128, 62, 63, 127, 127, 255, 0, 52, 0, 52, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 0, 62, 63, 127, 127, 255, 0, 53, 0, 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 127, 127, 255, 0, 54, 0, 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 129, 0, 0, 127, 0, 54, 0, 172, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 0, 62, 129, 0, 0, 127, 0, 55, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 240, 63, 129, 0, 0, 127, 0, 55, 0, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 129, 0, 0, 127, 0, 54, 128, 59, 0, 0, 0, 62, 0, 0, 128, 62, 0, 0, 128, 62, 193, 63, 0, 63, 0, 56, 62, 178, 0, 0, 0, 62, 0, 0, 128, 62, 0, 0, 224, 63, 193, 63, 0, 63, 0, 61, 62, 178, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 240, 63, 193, 63, 0, 63, 64, 61, 212, 174, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 0, 62, 193, 63, 0, 63, 0, 55, 212, 174, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 129, 129, 63, 0, 44, 0, 172, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 129, 129, 63, 0, 53, 0, 172, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 0, 129, 129, 63, 0, 53, 128, 59, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 129, 129, 63, 0, 44, 128, 59, 0, 0, 192, 62, 0, 0, 128, 62, 0, 0, 128, 62, 0, 127, 127, 63, 0, 176, 0, 44, 0, 0, 192, 62, 0, 0, 128, 62, 0, 0, 224, 63, 0, 127, 127, 63, 0, 176, 128, 58, 0, 0, 0, 62, 0, 0, 128, 62, 0, 0, 224, 63, 0, 127, 127, 63, 0, 180, 128, 58, 0, 0, 0, 62, 0, 0, 128, 62, 0, 0, 128, 62, 0, 127, 127, 63, 0, 180, 0, 44, 0, 0, 0, 63, 0, 0, 0, 62, 0, 0, 0, 62, 63, 63, 129, 127, 0, 182, 124, 44, 0, 0, 0, 63, 0, 0, 0, 62, 0, 0, 240, 63, 63, 63, 129, 127, 0, 189, 124, 44, 0, 0, 192, 62, 0, 0, 128, 62, 0, 0, 224, 63, 63, 63, 129, 127, 192, 188, 175, 164, 0, 0, 192, 62, 0, 0, 128, 62, 0, 0, 128, 62, 63, 63, 129, 127, 0, 183, 175, 164, 0, 0, 0, 63, 0, 0, 0, 62, 0, 0, 0, 62, 127, 0, 0, 1, 0, 183, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 127, 0, 0, 1, 0, 182, 0, 172, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 64, 127, 0, 0, 1, 0, 182, 128, 59, 0, 0, 0, 63, 0, 0, 0, 62, 0, 0, 240, 63, 127, 0, 0, 1, 0, 183, 0, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 0, 63, 0, 1, 0, 182, 0, 53, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 240, 63, 0, 63, 0, 1, 0, 183, 0, 53, 0, 0, 0, 62, 0, 0, 128, 62, 0, 0, 224, 63, 0, 63, 0, 1, 0, 184, 0, 52, 0, 0, 192, 62, 0, 0, 128, 62, 0, 0, 224, 63, 0, 63, 0, 1, 0, 184, 0, 48, 0, 0, 0, 63, 0, 0, 0, 62, 0, 0, 240, 63, 0, 63, 0, 1, 0, 183, 0, 44, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 63, 0, 1, 0, 182, 0, 44 ),
+"array_index_data": PoolByteArray( 0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 3, 0, 0, 0, 3, 0, 4, 0, 0, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 6, 0, 8, 0, 9, 0, 10, 0, 11, 0, 12, 0, 10, 0, 12, 0, 13, 0, 14, 0, 15, 0, 16, 0, 14, 0, 16, 0, 17, 0, 18, 0, 19, 0, 20, 0, 18, 0, 20, 0, 21, 0, 22, 0, 23, 0, 24, 0, 22, 0, 24, 0, 25, 0, 26, 0, 27, 0, 28, 0, 26, 0, 28, 0, 29, 0, 30, 0, 31, 0, 32, 0, 30, 0, 32, 0, 33, 0, 30, 0, 33, 0, 34, 0, 30, 0, 34, 0, 35, 0 ),
+"blend_shape_data": [  ],
+"format": 2194711,
+"index_count": 60,
+"material": ExtResource( 3 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 36
+}
+
+[sub_resource type="ConvexPolygonShape" id=102]
+points = PoolVector3Array( 0.5, 0, 0, 0.5, 0.125, 0.125, 0.375, 0.25, 0.25, 0.125, 0.25, 0.25, 0, 0.125, 0.125, 0, 0, 0, 0, 0.125, 1.875, 0, 0, 2, 0.125, 0.25, 1.75, 0.5, 0, 2, 0.375, 0.25, 1.75, 0.5, 0.125, 1.875 )
+
+[node name="LightFixture00" type="Spatial"]
+
+[node name="Light00" type="Spatial" parent="."]
+script = ExtResource( 1 )
+map_file = "C:/Users/aaron/Documents/GitHub/godot-fps-template/QodotMaps/lights/light00.map"
+inverse_scale_factor = 16.0
+entity_fgd = ExtResource( 2 )
+base_texture_dir = "res://textures"
+texture_file_extensions = PoolStringArray( "png" )
+worldspawn_layers = [  ]
+brush_clip_texture = "special/clip"
+face_skip_texture = "special/skip"
+texture_wads = [  ]
+material_file_extension = "tres"
+default_material = SubResource( 100 )
+uv_unwrap_texel_size = 1.0
+print_profiling_data = false
+use_trenchbroom_group_hierarchy = false
+tree_attach_batch_size = 16
+set_owner_batch_size = 16
+
+[node name="entity_0_worldspawn" type="StaticBody" parent="Light00"]
+
+[node name="entity_0_mesh_instance" type="MeshInstance" parent="Light00/entity_0_worldspawn"]
+use_in_baked_light = true
+mesh = SubResource( 101 )
+
+[node name="entity_0_brush_0_collision_shape" type="CollisionShape" parent="Light00/entity_0_worldspawn"]
+shape = SubResource( 102 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.1, 1 )
+light_color = Color( 0.658824, 1, 1, 1 )
+light_energy = 0.75
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 2.0
