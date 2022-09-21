@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/torch00.3.map-6226b1b894f99b0670101fb5d3dbb55b.tres"
+
+[deps]
+
+source_file="res://Qodotmaps/lights/autosave/torch00.3.map"
+dest_files=[ "res://.import/torch00.3.map-6226b1b894f99b0670101fb5d3dbb55b.tres" ]
+
+[params]
+

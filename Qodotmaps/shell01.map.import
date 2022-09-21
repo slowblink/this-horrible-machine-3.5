@@ -2,12 +2,12 @@
 
 importer="qodot.map"
 type="Resource"
-path="res://.import/shell01.map-2e56ec396683afa725f3620f04c55342.tres"
+path="res://.import/shell01.map-26fb8ac3eb93246adbc7921466bd1823.tres"
 
 [deps]
 
-source_file="res://qodotmaps/shell01.map"
-dest_files=[ "res://.import/shell01.map-2e56ec396683afa725f3620f04c55342.tres" ]
+source_file="res://Qodotmaps/shell01.map"
+dest_files=[ "res://.import/shell01.map-26fb8ac3eb93246adbc7921466bd1823.tres" ]
 
 [params]
 

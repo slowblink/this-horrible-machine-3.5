@@ -2,12 +2,12 @@
 
 importer="qodot.map"
 type="Resource"
-path="res://.import/hostile_interior01.3.map-3d398980f3a3136508f2a7e8190bf406.tres"
+path="res://.import/hostile_interior01.3.map-b3fce1a574a53e5148b08869a45af229.tres"
 
 [deps]
 
-source_file="res://qodotmaps/autosave/hostile_interior01.3.map"
-dest_files=[ "res://.import/hostile_interior01.3.map-3d398980f3a3136508f2a7e8190bf406.tres" ]
+source_file="res://Qodotmaps/autosave/hostile_interior01.3.map"
+dest_files=[ "res://.import/hostile_interior01.3.map-b3fce1a574a53e5148b08869a45af229.tres" ]
 
 [params]
 

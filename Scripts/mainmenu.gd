@@ -1,8 +1,5 @@
 extends CanvasLayer
 
-func _ready():
-	_on_Play_pressed()
-
 func _input(_event: InputEvent) -> void:
 
 # If the player presses ESC in the main menu, it hides any current windows showing and 

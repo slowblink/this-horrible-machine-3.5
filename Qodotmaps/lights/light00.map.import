@@ -2,12 +2,12 @@
 
 importer="qodot.map"
 type="Resource"
-path="res://.import/light00.map-07b63ccfd31067ec7a8efbffb98abe08.tres"
+path="res://.import/light00.map-60de0f9503e50c2d99affab1fc7de045.tres"
 
 [deps]
 
-source_file="res://qodotmaps/lights/light00.map"
-dest_files=[ "res://.import/light00.map-07b63ccfd31067ec7a8efbffb98abe08.tres" ]
+source_file="res://Qodotmaps/lights/light00.map"
+dest_files=[ "res://.import/light00.map-60de0f9503e50c2d99affab1fc7de045.tres" ]
 
 [params]
 
