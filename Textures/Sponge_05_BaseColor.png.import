@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sponge_05_BaseColor.png-586981b1687fe9682a9db19a8cdff0da.stex"
+path="res://.import/Sponge_05_BaseColor.png-54f90f1e8b6868533d395e0d8935e352.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Sponge_05_BaseColor.png"
-dest_files=[ "res://.import/Sponge_05_BaseColor.png-586981b1687fe9682a9db19a8cdff0da.stex" ]
+source_file="res://textures/Sponge_05_BaseColor.png"
+dest_files=[ "res://.import/Sponge_05_BaseColor.png-54f90f1e8b6868533d395e0d8935e352.stex" ]
 
 [params]
 

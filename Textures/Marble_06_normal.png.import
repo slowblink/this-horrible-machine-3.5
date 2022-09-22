@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Marble_06_normal.png-739afda22ce486ad60d18f09beb1ce36.stex"
+path="res://.import/Marble_06_normal.png-6b9a4d3f801fec550502d2b028c8ca30.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Marble_06_normal.png"
-dest_files=[ "res://.import/Marble_06_normal.png-739afda22ce486ad60d18f09beb1ce36.stex" ]
+source_file="res://textures/Marble_06_normal.png"
+dest_files=[ "res://.import/Marble_06_normal.png-6b9a4d3f801fec550502d2b028c8ca30.stex" ]
 
 [params]
 

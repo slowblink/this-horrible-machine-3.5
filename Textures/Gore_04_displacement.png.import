@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gore_04_displacement.png-d801b2fcfe6b5fbd1028cd2dab4b87ca.stex"
+path="res://.import/Gore_04_displacement.png-cc11fbfd0c8996df21ac30f0518a2558.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Gore_04_displacement.png"
-dest_files=[ "res://.import/Gore_04_displacement.png-d801b2fcfe6b5fbd1028cd2dab4b87ca.stex" ]
+source_file="res://textures/Gore_04_displacement.png"
+dest_files=[ "res://.import/Gore_04_displacement.png-cc11fbfd0c8996df21ac30f0518a2558.stex" ]
 
 [params]
 

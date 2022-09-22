@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chocolate_001_roughness.png-684296491daf6765b6ac4d97f58cde1b.stex"
+path="res://.import/Chocolate_001_roughness.png-1b4a418b2e374d9d30691f4c51da3783.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Chocolate_001_roughness.png"
-dest_files=[ "res://.import/Chocolate_001_roughness.png-684296491daf6765b6ac4d97f58cde1b.stex" ]
+source_file="res://textures/Chocolate_001_roughness.png"
+dest_files=[ "res://.import/Chocolate_001_roughness.png-1b4a418b2e374d9d30691f4c51da3783.stex" ]
 
 [params]
 

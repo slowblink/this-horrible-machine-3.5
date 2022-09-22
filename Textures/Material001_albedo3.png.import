@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Material001_albedo3.png-dae2edcb37c72fae56fd95628f8456a2.stex"
+path="res://.import/Material001_albedo3.png-34edaf37b1c7fdaea674695b3d32bae1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Material001_albedo3.png"
-dest_files=[ "res://.import/Material001_albedo3.png-dae2edcb37c72fae56fd95628f8456a2.stex" ]
+source_file="res://textures/Material001_albedo3.png"
+dest_files=[ "res://.import/Material001_albedo3.png-34edaf37b1c7fdaea674695b3d32bae1.stex" ]
 
 [params]
 

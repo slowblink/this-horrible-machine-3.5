@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ZebraSkin_01_Displacement.png-a235a530661704af84754e90a6cf82e4.stex"
+path="res://.import/ZebraSkin_01_Displacement.png-595e3399acb95485c0629aa1a2b7be6d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/ZebraSkin_01_Displacement.png"
-dest_files=[ "res://.import/ZebraSkin_01_Displacement.png-a235a530661704af84754e90a6cf82e4.stex" ]
+source_file="res://textures/ZebraSkin_01_Displacement.png"
+dest_files=[ "res://.import/ZebraSkin_01_Displacement.png-595e3399acb95485c0629aa1a2b7be6d.stex" ]
 
 [params]
 

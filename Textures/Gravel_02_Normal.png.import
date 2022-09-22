@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gravel_02_Normal.png-9a8ce23415551fd30fb46e51dd3e64eb.stex"
+path="res://.import/Gravel_02_Normal.png-4cebc826007b478605b0665353789922.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Gravel_02_Normal.png"
-dest_files=[ "res://.import/Gravel_02_Normal.png-9a8ce23415551fd30fb46e51dd3e64eb.stex" ]
+source_file="res://textures/Gravel_02_Normal.png"
+dest_files=[ "res://.import/Gravel_02_Normal.png-4cebc826007b478605b0665353789922.stex" ]
 
 [params]
 

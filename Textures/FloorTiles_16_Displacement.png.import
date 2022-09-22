@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FloorTiles_16_Displacement.png-9ee7467dddf757177c1e11180429f19e.stex"
+path="res://.import/FloorTiles_16_Displacement.png-e4265e151b7cb4d7f762158ada8cacb3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/FloorTiles_16_Displacement.png"
-dest_files=[ "res://.import/FloorTiles_16_Displacement.png-9ee7467dddf757177c1e11180429f19e.stex" ]
+source_file="res://textures/FloorTiles_16_Displacement.png"
+dest_files=[ "res://.import/FloorTiles_16_Displacement.png-e4265e151b7cb4d7f762158ada8cacb3.stex" ]
 
 [params]
 

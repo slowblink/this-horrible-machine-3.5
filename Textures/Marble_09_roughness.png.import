@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Marble_09_roughness.png-c61dc5c619c7d4b0fe3906cbc0a376fa.stex"
+path="res://.import/Marble_09_roughness.png-ce114795e8ba86bddbbfeab3e7dc1a6b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Marble_09_roughness.png"
-dest_files=[ "res://.import/Marble_09_roughness.png-c61dc5c619c7d4b0fe3906cbc0a376fa.stex" ]
+source_file="res://textures/Marble_09_roughness.png"
+dest_files=[ "res://.import/Marble_09_roughness.png-ce114795e8ba86bddbbfeab3e7dc1a6b.stex" ]
 
 [params]
 

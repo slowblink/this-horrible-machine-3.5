@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Water_17_basecolor.png-ed8c7ce5e208051800dfd116b84ae0fa.stex"
+path="res://.import/Water_17_basecolor.png-71cbea514c4805f0fbede5e80b7243d0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Water_17_basecolor.png"
-dest_files=[ "res://.import/Water_17_basecolor.png-ed8c7ce5e208051800dfd116b84ae0fa.stex" ]
+source_file="res://textures/Water_17_basecolor.png"
+dest_files=[ "res://.import/Water_17_basecolor.png-71cbea514c4805f0fbede5e80b7243d0.stex" ]
 
 [params]
 

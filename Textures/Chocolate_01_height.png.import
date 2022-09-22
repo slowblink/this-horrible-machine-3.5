@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chocolate_01_height.png-eb21e029dfd683e9a7b0178247073043.stex"
+path="res://.import/Chocolate_01_height.png-d88bf56b9d4ca7ef63c22e39de0fb9c3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Chocolate_01_height.png"
-dest_files=[ "res://.import/Chocolate_01_height.png-eb21e029dfd683e9a7b0178247073043.stex" ]
+source_file="res://textures/Chocolate_01_height.png"
+dest_files=[ "res://.import/Chocolate_01_height.png-d88bf56b9d4ca7ef63c22e39de0fb9c3.stex" ]
 
 [params]
 

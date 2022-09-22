@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gravel_07_Displacement.png-e16c40f01b6e9d29c04bc74492ac66bb.stex"
+path="res://.import/Gravel_07_Displacement.png-a393f21957fead642fe1e473703d1308.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Gravel_07_Displacement.png"
-dest_files=[ "res://.import/Gravel_07_Displacement.png-e16c40f01b6e9d29c04bc74492ac66bb.stex" ]
+source_file="res://textures/Gravel_07_Displacement.png"
+dest_files=[ "res://.import/Gravel_07_Displacement.png-a393f21957fead642fe1e473703d1308.stex" ]
 
 [params]
 

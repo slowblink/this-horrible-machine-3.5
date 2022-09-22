@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Stones_02_roughness.png-b669169f3d9f198ac595463fe0ec3331.stex"
+path="res://.import/Stones_02_roughness.png-4ebed2f96012de3ec89ec04657b8f402.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Stones_02_roughness.png"
-dest_files=[ "res://.import/Stones_02_roughness.png-b669169f3d9f198ac595463fe0ec3331.stex" ]
+source_file="res://textures/Stones_02_roughness.png"
+dest_files=[ "res://.import/Stones_02_roughness.png-4ebed2f96012de3ec89ec04657b8f402.stex" ]
 
 [params]
 

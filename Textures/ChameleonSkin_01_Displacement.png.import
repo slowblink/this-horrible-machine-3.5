@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ChameleonSkin_01_Displacement.png-ce14164a8aa699dc68a439cf9fd1b285.stex"
+path="res://.import/ChameleonSkin_01_Displacement.png-d03a44f45497328978f1ce5449fbffef.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/ChameleonSkin_01_Displacement.png"
-dest_files=[ "res://.import/ChameleonSkin_01_Displacement.png-ce14164a8aa699dc68a439cf9fd1b285.stex" ]
+source_file="res://textures/ChameleonSkin_01_Displacement.png"
+dest_files=[ "res://.import/ChameleonSkin_01_Displacement.png-d03a44f45497328978f1ce5449fbffef.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/LeopardSkin_01_AmbientOcclusion.png-6933c348e74f6a06494f53de7a838dd5.stex"
+path="res://.import/LeopardSkin_01_AmbientOcclusion.png-93e3662f6177764e7c6ccb9cc8750f99.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/LeopardSkin_01_AmbientOcclusion.png"
-dest_files=[ "res://.import/LeopardSkin_01_AmbientOcclusion.png-6933c348e74f6a06494f53de7a838dd5.stex" ]
+source_file="res://textures/LeopardSkin_01_AmbientOcclusion.png"
+dest_files=[ "res://.import/LeopardSkin_01_AmbientOcclusion.png-93e3662f6177764e7c6ccb9cc8750f99.stex" ]
 
 [params]
 

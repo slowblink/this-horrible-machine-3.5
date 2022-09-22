@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SciFi_09_roughness.png-b7d7e966bd8e0166045f1118b8c96266.stex"
+path="res://.import/SciFi_09_roughness.png-1b324f35b470269e315bcd0a03348343.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/SciFi_09_roughness.png"
-dest_files=[ "res://.import/SciFi_09_roughness.png-b7d7e966bd8e0166045f1118b8c96266.stex" ]
+source_file="res://textures/SciFi_09_roughness.png"
+dest_files=[ "res://.import/SciFi_09_roughness.png-1b324f35b470269e315bcd0a03348343.stex" ]
 
 [params]
 

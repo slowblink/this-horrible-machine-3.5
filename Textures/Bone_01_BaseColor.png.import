@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bone_01_BaseColor.png-b384614f90429f3268fe79c50d66ee44.stex"
+path="res://.import/Bone_01_BaseColor.png-9a94cd28541cd39aa926f35514f3d2f8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Bone_01_BaseColor.png"
-dest_files=[ "res://.import/Bone_01_BaseColor.png-b384614f90429f3268fe79c50d66ee44.stex" ]
+source_file="res://textures/Bone_01_BaseColor.png"
+dest_files=[ "res://.import/Bone_01_BaseColor.png-9a94cd28541cd39aa926f35514f3d2f8.stex" ]
 
 [params]
 

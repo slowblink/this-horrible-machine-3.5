@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Material001_albedo2.png-0cd72f032ff9d8d570c53bda8bc26f8a.s3tc.stex"
-path.etc2="res://.import/Material001_albedo2.png-0cd72f032ff9d8d570c53bda8bc26f8a.etc2.stex"
+path.s3tc="res://.import/Material001_albedo2.png-a75c88c60ac5678a8eae91a8d9b7bd29.s3tc.stex"
+path.etc2="res://.import/Material001_albedo2.png-a75c88c60ac5678a8eae91a8d9b7bd29.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/Material001_albedo2.png"
-dest_files=[ "res://.import/Material001_albedo2.png-0cd72f032ff9d8d570c53bda8bc26f8a.s3tc.stex", "res://.import/Material001_albedo2.png-0cd72f032ff9d8d570c53bda8bc26f8a.etc2.stex" ]
+source_file="res://textures/Material001_albedo2.png"
+dest_files=[ "res://.import/Material001_albedo2.png-a75c88c60ac5678a8eae91a8d9b7bd29.s3tc.stex", "res://.import/Material001_albedo2.png-a75c88c60ac5678a8eae91a8d9b7bd29.etc2.stex" ]
 
 [params]
 

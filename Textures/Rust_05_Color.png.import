@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rust_05_Color.png-0279a224169bf0a2f5d273c7faea67db.stex"
+path="res://.import/Rust_05_Color.png-bbe4416a4db77633bdbe9f30d7fa1711.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Rust_05_Color.png"
-dest_files=[ "res://.import/Rust_05_Color.png-0279a224169bf0a2f5d273c7faea67db.stex" ]
+source_file="res://textures/Rust_05_Color.png"
+dest_files=[ "res://.import/Rust_05_Color.png-bbe4416a4db77633bdbe9f30d7fa1711.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fur_01_height.png-2e9d5076540068a0b629fa29702f0d02.stex"
+path="res://.import/Fur_01_height.png-c9c7d216df9fc979b1b6d96e509ec085.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Fur_01_height.png"
-dest_files=[ "res://.import/Fur_01_height.png-2e9d5076540068a0b629fa29702f0d02.stex" ]
+source_file="res://textures/Fur_01_height.png"
+dest_files=[ "res://.import/Fur_01_height.png-c9c7d216df9fc979b1b6d96e509ec085.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fabric_12_Normal.png-5474a00ead4faf4088ed85e882bc9c98.stex"
+path="res://.import/Fabric_12_Normal.png-eab1bd97171558bae7540dd6575f4ee1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Fabric_12_Normal.png"
-dest_files=[ "res://.import/Fabric_12_Normal.png-5474a00ead4faf4088ed85e882bc9c98.stex" ]
+source_file="res://textures/Fabric_12_Normal.png"
+dest_files=[ "res://.import/Fabric_12_Normal.png-eab1bd97171558bae7540dd6575f4ee1.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Watermelon_02_Displacement.png-9831957bd6277d8a1b00427c33e76ddf.stex"
+path="res://.import/Watermelon_02_Displacement.png-8f8c52bcbd6b2bfcd8148f1a53b051da.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Watermelon_02_Displacement.png"
-dest_files=[ "res://.import/Watermelon_02_Displacement.png-9831957bd6277d8a1b00427c33e76ddf.stex" ]
+source_file="res://textures/Watermelon_02_Displacement.png"
+dest_files=[ "res://.import/Watermelon_02_Displacement.png-8f8c52bcbd6b2bfcd8148f1a53b051da.stex" ]
 
 [params]
 

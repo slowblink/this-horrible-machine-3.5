@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Metals_11_Displacement.png-91a2570f3f69493d2d08adf475cf8ab3.stex"
+path="res://.import/Metals_11_Displacement.png-45786c8c80f28801bf43ca3a76ce22c4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Metals_11_Displacement.png"
-dest_files=[ "res://.import/Metals_11_Displacement.png-91a2570f3f69493d2d08adf475cf8ab3.stex" ]
+source_file="res://textures/Metals_11_Displacement.png"
+dest_files=[ "res://.import/Metals_11_Displacement.png-45786c8c80f28801bf43ca3a76ce22c4.stex" ]
 
 [params]
 

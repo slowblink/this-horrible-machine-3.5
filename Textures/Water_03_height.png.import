@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Water_03_height.png-a2c88e4c8438f50099ee1bee77b1f578.stex"
+path="res://.import/Water_03_height.png-ad7eb643a217971f152c38f4fb60de80.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Water_03_height.png"
-dest_files=[ "res://.import/Water_03_height.png-a2c88e4c8438f50099ee1bee77b1f578.stex" ]
+source_file="res://textures/Water_03_height.png"
+dest_files=[ "res://.import/Water_03_height.png-ad7eb643a217971f152c38f4fb60de80.stex" ]
 
 [params]
 

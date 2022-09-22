@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/industrial_metal_sheet_32x32_s.png-ff0e91037e76c909961615aabbfe6676.stex"
+path="res://.import/industrial_metal_sheet_32x32_s.png-7e31db7fbb0fb6a71646bf807cc3933c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/industrial_metal_sheet_32x32_s.png"
-dest_files=[ "res://.import/industrial_metal_sheet_32x32_s.png-ff0e91037e76c909961615aabbfe6676.stex" ]
+source_file="res://textures/industrial_metal_sheet_32x32_s.png"
+dest_files=[ "res://.import/industrial_metal_sheet_32x32_s.png-7e31db7fbb0fb6a71646bf807cc3933c.stex" ]
 
 [params]
 

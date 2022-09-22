@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HumanSkin_02_Metallic.png-2a232e3ada1012017bf291322ae605fb.stex"
+path="res://.import/HumanSkin_02_Metallic.png-eb02e764c1433580b4bbc7cdd26de5de.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/HumanSkin_02_Metallic.png"
-dest_files=[ "res://.import/HumanSkin_02_Metallic.png-2a232e3ada1012017bf291322ae605fb.stex" ]
+source_file="res://textures/HumanSkin_02_Metallic.png"
+dest_files=[ "res://.import/HumanSkin_02_Metallic.png-eb02e764c1433580b4bbc7cdd26de5de.stex" ]
 
 [params]
 

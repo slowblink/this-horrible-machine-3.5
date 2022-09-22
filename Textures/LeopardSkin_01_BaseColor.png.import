@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/LeopardSkin_01_BaseColor.png-68d299552e178745d762885b5ba463c8.stex"
+path="res://.import/LeopardSkin_01_BaseColor.png-7fdcd1de6282d45af1ff9e03949b8522.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/LeopardSkin_01_BaseColor.png"
-dest_files=[ "res://.import/LeopardSkin_01_BaseColor.png-68d299552e178745d762885b5ba463c8.stex" ]
+source_file="res://textures/LeopardSkin_01_BaseColor.png"
+dest_files=[ "res://.import/LeopardSkin_01_BaseColor.png-7fdcd1de6282d45af1ff9e03949b8522.stex" ]
 
 [params]
 

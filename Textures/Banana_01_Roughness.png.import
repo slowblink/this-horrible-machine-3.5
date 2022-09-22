@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Banana_01_Roughness.png-436d47a222b12841839a48c386055a43.stex"
+path="res://.import/Banana_01_Roughness.png-b989305b14d94fa9b6358ccdb9f001c7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Banana_01_Roughness.png"
-dest_files=[ "res://.import/Banana_01_Roughness.png-436d47a222b12841839a48c386055a43.stex" ]
+source_file="res://textures/Banana_01_Roughness.png"
+dest_files=[ "res://.import/Banana_01_Roughness.png-b989305b14d94fa9b6358ccdb9f001c7.stex" ]
 
 [params]
 

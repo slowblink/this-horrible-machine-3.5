@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Moss_11_Displacement.png-c2555559a9ddab3a070a5bea5171d642.stex"
+path="res://.import/Moss_11_Displacement.png-853b6c9ec00424e3eefc9c1c98fbf629.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Moss_11_Displacement.png"
-dest_files=[ "res://.import/Moss_11_Displacement.png-c2555559a9ddab3a070a5bea5171d642.stex" ]
+source_file="res://textures/Moss_11_Displacement.png"
+dest_files=[ "res://.import/Moss_11_Displacement.png-853b6c9ec00424e3eefc9c1c98fbf629.stex" ]
 
 [params]
 

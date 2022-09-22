@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bricks_09_height.png-91d850aa71ff9d40acb274982f060f6f.stex"
+path="res://.import/Bricks_09_height.png-4e75fd787c4befbacc7efc40ab708621.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Bricks_09_height.png"
-dest_files=[ "res://.import/Bricks_09_height.png-91d850aa71ff9d40acb274982f060f6f.stex" ]
+source_file="res://textures/Bricks_09_height.png"
+dest_files=[ "res://.import/Bricks_09_height.png-4e75fd787c4befbacc7efc40ab708621.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Corn_01_Height.png-f7230ad1a6a2829242edd0d9a87033a7.stex"
+path="res://.import/Corn_01_Height.png-3a5c86cf29cec74e66d8f62c163452fe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Corn_01_Height.png"
-dest_files=[ "res://.import/Corn_01_Height.png-f7230ad1a6a2829242edd0d9a87033a7.stex" ]
+source_file="res://textures/Corn_01_Height.png"
+dest_files=[ "res://.import/Corn_01_Height.png-3a5c86cf29cec74e66d8f62c163452fe.stex" ]
 
 [params]
 

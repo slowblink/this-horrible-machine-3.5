@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Strawberry_01_Height.png-210d136202ecbbd02f18cf126f500b36.stex"
+path="res://.import/Strawberry_01_Height.png-3f426495273865337c8d79ca9546b714.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Strawberry_01_Height.png"
-dest_files=[ "res://.import/Strawberry_01_Height.png-210d136202ecbbd02f18cf126f500b36.stex" ]
+source_file="res://textures/Strawberry_01_Height.png"
+dest_files=[ "res://.import/Strawberry_01_Height.png-3f426495273865337c8d79ca9546b714.stex" ]
 
 [params]
 

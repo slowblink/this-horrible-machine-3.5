@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Scales_10_basecolor.png-3eaffb5849177361dc67789c9dc9e639.stex"
+path="res://.import/Scales_10_basecolor.png-4ba92ca5b05a464f59357c1f27753b85.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Scales_10_basecolor.png"
-dest_files=[ "res://.import/Scales_10_basecolor.png-3eaffb5849177361dc67789c9dc9e639.stex" ]
+source_file="res://textures/Scales_10_basecolor.png"
+dest_files=[ "res://.import/Scales_10_basecolor.png-4ba92ca5b05a464f59357c1f27753b85.stex" ]
 
 [params]
 

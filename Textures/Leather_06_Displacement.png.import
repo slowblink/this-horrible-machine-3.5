@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Leather_06_Displacement.png-0abc5e267c18c6ef83e876a95e8edba0.stex"
+path="res://.import/Leather_06_Displacement.png-a949e49997498ee5ef18a0c53f297cfb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Leather_06_Displacement.png"
-dest_files=[ "res://.import/Leather_06_Displacement.png-0abc5e267c18c6ef83e876a95e8edba0.stex" ]
+source_file="res://textures/Leather_06_Displacement.png"
+dest_files=[ "res://.import/Leather_06_Displacement.png-a949e49997498ee5ef18a0c53f297cfb.stex" ]
 
 [params]
 

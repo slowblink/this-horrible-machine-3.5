@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/387359c5580f06c08c266126b3b46db47e48ba44.png-e2b3ad8a4a003fa479514a6e81b55c2d.s3tc.stex"
-path.etc2="res://.import/387359c5580f06c08c266126b3b46db47e48ba44.png-e2b3ad8a4a003fa479514a6e81b55c2d.etc2.stex"
+path.s3tc="res://.import/387359c5580f06c08c266126b3b46db47e48ba44.png-426c4167a132a03c21f8d1cef756cb4e.s3tc.stex"
+path.etc2="res://.import/387359c5580f06c08c266126b3b46db47e48ba44.png-426c4167a132a03c21f8d1cef756cb4e.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/387359c5580f06c08c266126b3b46db47e48ba44.png"
-dest_files=[ "res://.import/387359c5580f06c08c266126b3b46db47e48ba44.png-e2b3ad8a4a003fa479514a6e81b55c2d.s3tc.stex", "res://.import/387359c5580f06c08c266126b3b46db47e48ba44.png-e2b3ad8a4a003fa479514a6e81b55c2d.etc2.stex" ]
+source_file="res://textures/387359c5580f06c08c266126b3b46db47e48ba44.png"
+dest_files=[ "res://.import/387359c5580f06c08c266126b3b46db47e48ba44.png-426c4167a132a03c21f8d1cef756cb4e.s3tc.stex", "res://.import/387359c5580f06c08c266126b3b46db47e48ba44.png-426c4167a132a03c21f8d1cef756cb4e.etc2.stex" ]
 
 [params]
 

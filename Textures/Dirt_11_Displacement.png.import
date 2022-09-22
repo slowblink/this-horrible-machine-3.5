@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dirt_11_Displacement.png-46f2558d37d6f5c20be2a95b66383761.stex"
+path="res://.import/Dirt_11_Displacement.png-70e09eeaaa0f9d75ab1b8549871cadd3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Dirt_11_Displacement.png"
-dest_files=[ "res://.import/Dirt_11_Displacement.png-46f2558d37d6f5c20be2a95b66383761.stex" ]
+source_file="res://textures/Dirt_11_Displacement.png"
+dest_files=[ "res://.import/Dirt_11_Displacement.png-70e09eeaaa0f9d75ab1b8549871cadd3.stex" ]
 
 [params]
 

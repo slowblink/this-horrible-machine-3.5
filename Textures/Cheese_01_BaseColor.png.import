@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Cheese_01_BaseColor.png-a398e69f2c2068eb518ce0ee5db009ab.stex"
+path="res://.import/Cheese_01_BaseColor.png-a835a6783b6d0cb3bb93a748e09c8cd6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cheese_01_BaseColor.png"
-dest_files=[ "res://.import/Cheese_01_BaseColor.png-a398e69f2c2068eb518ce0ee5db009ab.stex" ]
+source_file="res://textures/Cheese_01_BaseColor.png"
+dest_files=[ "res://.import/Cheese_01_BaseColor.png-a835a6783b6d0cb3bb93a748e09c8cd6.stex" ]
 
 [params]
 

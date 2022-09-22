@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Water_06_roughness.png-9255bda3050085b6b25d6f1c4297d2f0.stex"
+path="res://.import/Water_06_roughness.png-be101f1d369fc4b844452b79eef2beb9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Water_06_roughness.png"
-dest_files=[ "res://.import/Water_06_roughness.png-9255bda3050085b6b25d6f1c4297d2f0.stex" ]
+source_file="res://textures/Water_06_roughness.png"
+dest_files=[ "res://.import/Water_06_roughness.png-be101f1d369fc4b844452b79eef2beb9.stex" ]
 
 [params]
 

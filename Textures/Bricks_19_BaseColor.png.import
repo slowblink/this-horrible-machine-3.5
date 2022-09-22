@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bricks_19_BaseColor.png-915a3f9e5cfe783d09807fa957640cf6.stex"
+path="res://.import/Bricks_19_BaseColor.png-0b7739aa3f6762e385926fc6519a05ea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Bricks_19_BaseColor.png"
-dest_files=[ "res://.import/Bricks_19_BaseColor.png-915a3f9e5cfe783d09807fa957640cf6.stex" ]
+source_file="res://textures/Bricks_19_BaseColor.png"
+dest_files=[ "res://.import/Bricks_19_BaseColor.png-0b7739aa3f6762e385926fc6519a05ea.stex" ]
 
 [params]
 

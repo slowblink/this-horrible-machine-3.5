@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ice_07_height.png-a62a189edc946e2480b5ea67faea549c.stex"
+path="res://.import/Ice_07_height.png-309ec330c2f4352c3e8d841d8c454704.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Ice_07_height.png"
-dest_files=[ "res://.import/Ice_07_height.png-a62a189edc946e2480b5ea67faea549c.stex" ]
+source_file="res://textures/Ice_07_height.png"
+dest_files=[ "res://.import/Ice_07_height.png-309ec330c2f4352c3e8d841d8c454704.stex" ]
 
 [params]
 

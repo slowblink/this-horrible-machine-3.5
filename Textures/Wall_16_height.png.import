@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Wall_16_height.png-2120a63c33f43ad4221b5e8641694c76.stex"
+path="res://.import/Wall_16_height.png-82301b5d15f83e176245d6bb00532d25.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Wall_16_height.png"
-dest_files=[ "res://.import/Wall_16_height.png-2120a63c33f43ad4221b5e8641694c76.stex" ]
+source_file="res://textures/Wall_16_height.png"
+dest_files=[ "res://.import/Wall_16_height.png-82301b5d15f83e176245d6bb00532d25.stex" ]
 
 [params]
 

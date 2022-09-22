@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Candy_01_Displacement.png-2a3bc68b13412393e9cc3f50a31f3003.stex"
+path="res://.import/Candy_01_Displacement.png-af2dacb4ff0231c9d1b12fd5cec6f4ea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Candy_01_Displacement.png"
-dest_files=[ "res://.import/Candy_01_Displacement.png-2a3bc68b13412393e9cc3f50a31f3003.stex" ]
+source_file="res://textures/Candy_01_Displacement.png"
+dest_files=[ "res://.import/Candy_01_Displacement.png-af2dacb4ff0231c9d1b12fd5cec6f4ea.stex" ]
 
 [params]
 

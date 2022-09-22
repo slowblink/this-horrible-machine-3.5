@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WoodPlanks_04_height.png-4640838318bc9f9f8a34e8ab4420eeda.stex"
+path="res://.import/WoodPlanks_04_height.png-e202b6713fb2ea1dcb3ee4bf50a14989.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/WoodPlanks_04_height.png"
-dest_files=[ "res://.import/WoodPlanks_04_height.png-4640838318bc9f9f8a34e8ab4420eeda.stex" ]
+source_file="res://textures/WoodPlanks_04_height.png"
+dest_files=[ "res://.import/WoodPlanks_04_height.png-e202b6713fb2ea1dcb3ee4bf50a14989.stex" ]
 
 [params]
 

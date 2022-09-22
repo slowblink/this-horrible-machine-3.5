@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Water_21_Displacement.png-b41f8cd18ef6f6ebb4563218b9e70980.stex"
+path="res://.import/Water_21_Displacement.png-80f0e8e2da61707ea9a156841e20c84e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Water_21_Displacement.png"
-dest_files=[ "res://.import/Water_21_Displacement.png-b41f8cd18ef6f6ebb4563218b9e70980.stex" ]
+source_file="res://textures/Water_21_Displacement.png"
+dest_files=[ "res://.import/Water_21_Displacement.png-80f0e8e2da61707ea9a156841e20c84e.stex" ]
 
 [params]
 

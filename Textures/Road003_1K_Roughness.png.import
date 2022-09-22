@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Road003_1K_Roughness.png-ef2df981062a70a003e27efe5004ae42.stex"
+path="res://.import/Road003_1K_Roughness.png-07e12b08ce2634d9af18ac79319a0cee.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Road003_1K_Roughness.png"
-dest_files=[ "res://.import/Road003_1K_Roughness.png-ef2df981062a70a003e27efe5004ae42.stex" ]
+source_file="res://textures/Road003_1K_Roughness.png"
+dest_files=[ "res://.import/Road003_1K_Roughness.png-07e12b08ce2634d9af18ac79319a0cee.stex" ]
 
 [params]
 

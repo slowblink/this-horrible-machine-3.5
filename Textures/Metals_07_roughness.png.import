@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Metals_07_roughness.png-4ccac17e1ddf54d6383dd843b47a290f.stex"
+path="res://.import/Metals_07_roughness.png-df6f65a7d073097086efa18e6c508c39.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Metals_07_roughness.png"
-dest_files=[ "res://.import/Metals_07_roughness.png-4ccac17e1ddf54d6383dd843b47a290f.stex" ]
+source_file="res://textures/Metals_07_roughness.png"
+dest_files=[ "res://.import/Metals_07_roughness.png-df6f65a7d073097086efa18e6c508c39.stex" ]
 
 [params]
 

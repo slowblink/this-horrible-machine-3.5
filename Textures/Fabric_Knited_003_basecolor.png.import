@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fabric_Knited_003_basecolor.png-a38053a078ebeb5eca7c906a3fb9479c.stex"
+path="res://.import/Fabric_Knited_003_basecolor.png-15562f48d78b1b99fd622188f367ae59.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Fabric_Knited_003_basecolor.png"
-dest_files=[ "res://.import/Fabric_Knited_003_basecolor.png-a38053a078ebeb5eca7c906a3fb9479c.stex" ]
+source_file="res://textures/Fabric_Knited_003_basecolor.png"
+dest_files=[ "res://.import/Fabric_Knited_003_basecolor.png-15562f48d78b1b99fd622188f367ae59.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RoofTiles_02_ambientocclusion.png-69aad8a198048241c52459f00d317c35.stex"
+path="res://.import/RoofTiles_02_ambientocclusion.png-746837340c8142a964b6e83d7f53a9f1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/RoofTiles_02_ambientocclusion.png"
-dest_files=[ "res://.import/RoofTiles_02_ambientocclusion.png-69aad8a198048241c52459f00d317c35.stex" ]
+source_file="res://textures/RoofTiles_02_ambientocclusion.png"
+dest_files=[ "res://.import/RoofTiles_02_ambientocclusion.png-746837340c8142a964b6e83d7f53a9f1.stex" ]
 
 [params]
 

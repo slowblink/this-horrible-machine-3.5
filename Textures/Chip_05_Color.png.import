@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chip_05_Color.png-fa7e9c3d4018c48c113886251c54c4c4.stex"
+path="res://.import/Chip_05_Color.png-86d1f2746305dd76c88c15111e5561ac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Chip_05_Color.png"
-dest_files=[ "res://.import/Chip_05_Color.png-fa7e9c3d4018c48c113886251c54c4c4.stex" ]
+source_file="res://textures/Chip_05_Color.png"
+dest_files=[ "res://.import/Chip_05_Color.png-86d1f2746305dd76c88c15111e5561ac.stex" ]
 
 [params]
 

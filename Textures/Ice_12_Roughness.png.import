@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ice_12_Roughness.png-8c446637c813b8c397a646778fda3f0f.stex"
+path="res://.import/Ice_12_Roughness.png-d3ffddb157192f8ea1047ad8815788b1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Ice_12_Roughness.png"
-dest_files=[ "res://.import/Ice_12_Roughness.png-8c446637c813b8c397a646778fda3f0f.stex" ]
+source_file="res://textures/Ice_12_Roughness.png"
+dest_files=[ "res://.import/Ice_12_Roughness.png-d3ffddb157192f8ea1047ad8815788b1.stex" ]
 
 [params]
 

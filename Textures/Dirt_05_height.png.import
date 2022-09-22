@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dirt_05_height.png-c678e73ff9b158519202d37724254812.stex"
+path="res://.import/Dirt_05_height.png-be18b3b9dc5b05d94ee2d1d3385c6468.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Dirt_05_height.png"
-dest_files=[ "res://.import/Dirt_05_height.png-c678e73ff9b158519202d37724254812.stex" ]
+source_file="res://textures/Dirt_05_height.png"
+dest_files=[ "res://.import/Dirt_05_height.png-be18b3b9dc5b05d94ee2d1d3385c6468.stex" ]
 
 [params]
 

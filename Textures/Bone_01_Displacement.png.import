@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bone_01_Displacement.png-5c7eb8590f64d2635060fc46c8a716e7.stex"
+path="res://.import/Bone_01_Displacement.png-6639bda478059f2b880506773ba1c539.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Bone_01_Displacement.png"
-dest_files=[ "res://.import/Bone_01_Displacement.png-5c7eb8590f64d2635060fc46c8a716e7.stex" ]
+source_file="res://textures/Bone_01_Displacement.png"
+dest_files=[ "res://.import/Bone_01_Displacement.png-6639bda478059f2b880506773ba1c539.stex" ]
 
 [params]
 

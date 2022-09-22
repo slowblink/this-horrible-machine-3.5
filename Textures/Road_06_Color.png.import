@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Road_06_Color.png-3751e39e6f088dba0c4beb3ff0b3e0a8.stex"
+path="res://.import/Road_06_Color.png-994e94388933eb5e65a8bccec90597a4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Road_06_Color.png"
-dest_files=[ "res://.import/Road_06_Color.png-3751e39e6f088dba0c4beb3ff0b3e0a8.stex" ]
+source_file="res://textures/Road_06_Color.png"
+dest_files=[ "res://.import/Road_06_Color.png-994e94388933eb5e65a8bccec90597a4.stex" ]
 
 [params]
 

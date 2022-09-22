@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Banana_01_Height.png-db0c0bd1eac36606398fa51313535638.stex"
+path="res://.import/Banana_01_Height.png-112dd6156ddeea70ce888e222281d7d8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Banana_01_Height.png"
-dest_files=[ "res://.import/Banana_01_Height.png-db0c0bd1eac36606398fa51313535638.stex" ]
+source_file="res://textures/Banana_01_Height.png"
+dest_files=[ "res://.import/Banana_01_Height.png-112dd6156ddeea70ce888e222281d7d8.stex" ]
 
 [params]
 

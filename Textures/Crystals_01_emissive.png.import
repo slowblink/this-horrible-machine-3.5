@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Crystals_01_emissive.png-72b836f29e67e70de69ba6033d9847a2.stex"
+path="res://.import/Crystals_01_emissive.png-4b0aa6716b25f953ab0b30922506a429.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Crystals_01_emissive.png"
-dest_files=[ "res://.import/Crystals_01_emissive.png-72b836f29e67e70de69ba6033d9847a2.stex" ]
+source_file="res://textures/Crystals_01_emissive.png"
+dest_files=[ "res://.import/Crystals_01_emissive.png-4b0aa6716b25f953ab0b30922506a429.stex" ]
 
 [params]
 

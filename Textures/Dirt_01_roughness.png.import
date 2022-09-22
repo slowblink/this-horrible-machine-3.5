@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dirt_01_roughness.png-3072f8697daab3b7961222b9364c188d.stex"
+path="res://.import/Dirt_01_roughness.png-97316ab39b3725ee09f928387c56e892.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Dirt_01_roughness.png"
-dest_files=[ "res://.import/Dirt_01_roughness.png-3072f8697daab3b7961222b9364c188d.stex" ]
+source_file="res://textures/Dirt_01_roughness.png"
+dest_files=[ "res://.import/Dirt_01_roughness.png-97316ab39b3725ee09f928387c56e892.stex" ]
 
 [params]
 

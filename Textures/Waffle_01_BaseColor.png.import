@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Waffle_01_BaseColor.png-d9cbc103ca7e5a28aecb38746e9ab24c.stex"
+path="res://.import/Waffle_01_BaseColor.png-e567458d660479dbceedd5bb81ea9554.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Waffle_01_BaseColor.png"
-dest_files=[ "res://.import/Waffle_01_BaseColor.png-d9cbc103ca7e5a28aecb38746e9ab24c.stex" ]
+source_file="res://textures/Waffle_01_BaseColor.png"
+dest_files=[ "res://.import/Waffle_01_BaseColor.png-e567458d660479dbceedd5bb81ea9554.stex" ]
 
 [params]
 

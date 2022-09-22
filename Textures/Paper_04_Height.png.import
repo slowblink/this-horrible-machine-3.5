@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Paper_04_Height.png-c9959d316610564d4f97263577580e43.stex"
+path="res://.import/Paper_04_Height.png-71802171b7cf7de8fd242bc1a9b6bd36.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Paper_04_Height.png"
-dest_files=[ "res://.import/Paper_04_Height.png-c9959d316610564d4f97263577580e43.stex" ]
+source_file="res://textures/Paper_04_Height.png"
+dest_files=[ "res://.import/Paper_04_Height.png-71802171b7cf7de8fd242bc1a9b6bd36.stex" ]
 
 [params]
 

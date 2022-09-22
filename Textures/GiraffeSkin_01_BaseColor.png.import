@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/GiraffeSkin_01_BaseColor.png-21f408476949665f0679a421d1448f2d.stex"
+path="res://.import/GiraffeSkin_01_BaseColor.png-239d0c9e6749eaf0c406b0048123dfad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/GiraffeSkin_01_BaseColor.png"
-dest_files=[ "res://.import/GiraffeSkin_01_BaseColor.png-21f408476949665f0679a421d1448f2d.stex" ]
+source_file="res://textures/GiraffeSkin_01_BaseColor.png"
+dest_files=[ "res://.import/GiraffeSkin_01_BaseColor.png-239d0c9e6749eaf0c406b0048123dfad.stex" ]
 
 [params]
 

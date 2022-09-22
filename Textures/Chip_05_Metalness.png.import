@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chip_05_Metalness.png-e4a0aa7700519bc7c97d3a85ca46fb8b.stex"
+path="res://.import/Chip_05_Metalness.png-5494ec44c2b764375120fc24b3cb6e16.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Chip_05_Metalness.png"
-dest_files=[ "res://.import/Chip_05_Metalness.png-e4a0aa7700519bc7c97d3a85ca46fb8b.stex" ]
+source_file="res://textures/Chip_05_Metalness.png"
+dest_files=[ "res://.import/Chip_05_Metalness.png-5494ec44c2b764375120fc24b3cb6e16.stex" ]
 
 [params]
 

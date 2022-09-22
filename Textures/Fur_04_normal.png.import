@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fur_04_normal.png-0c79a431c43ac22431eb4c594190a58a.stex"
+path="res://.import/Fur_04_normal.png-fbd8750c30e37cd8426fb9577c774794.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Fur_04_normal.png"
-dest_files=[ "res://.import/Fur_04_normal.png-0c79a431c43ac22431eb4c594190a58a.stex" ]
+source_file="res://textures/Fur_04_normal.png"
+dest_files=[ "res://.import/Fur_04_normal.png-fbd8750c30e37cd8426fb9577c774794.stex" ]
 
 [params]
 

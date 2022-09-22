@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rope_03_Displacement.png-7e17ae361c676637c8d507c61e605f4f.stex"
+path="res://.import/Rope_03_Displacement.png-dfa8777095b9d4078902391a4e07b036.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Rope_03_Displacement.png"
-dest_files=[ "res://.import/Rope_03_Displacement.png-7e17ae361c676637c8d507c61e605f4f.stex" ]
+source_file="res://textures/Rope_03_Displacement.png"
+dest_files=[ "res://.import/Rope_03_Displacement.png-dfa8777095b9d4078902391a4e07b036.stex" ]
 
 [params]
 

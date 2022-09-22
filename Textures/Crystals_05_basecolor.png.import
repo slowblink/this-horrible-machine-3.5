@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Crystals_05_basecolor.png-8f721b65a6460d13961cbd829c50372a.stex"
+path="res://.import/Crystals_05_basecolor.png-bc121345b14ee67212e49211bd1682a8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Crystals_05_basecolor.png"
-dest_files=[ "res://.import/Crystals_05_basecolor.png-8f721b65a6460d13961cbd829c50372a.stex" ]
+source_file="res://textures/Crystals_05_basecolor.png"
+dest_files=[ "res://.import/Crystals_05_basecolor.png-bc121345b14ee67212e49211bd1682a8.stex" ]
 
 [params]
 

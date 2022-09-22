@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CoffeeGrain_01_AmbientOcclusion.png-838cd7faa291f87806572b0fc5d30b55.stex"
+path="res://.import/CoffeeGrain_01_AmbientOcclusion.png-11b61602ffa5505354901720ae15c002.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/CoffeeGrain_01_AmbientOcclusion.png"
-dest_files=[ "res://.import/CoffeeGrain_01_AmbientOcclusion.png-838cd7faa291f87806572b0fc5d30b55.stex" ]
+source_file="res://textures/CoffeeGrain_01_AmbientOcclusion.png"
+dest_files=[ "res://.import/CoffeeGrain_01_AmbientOcclusion.png-11b61602ffa5505354901720ae15c002.stex" ]
 
 [params]
 

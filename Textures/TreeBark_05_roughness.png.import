@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TreeBark_05_roughness.png-d3d586277fed6faf77b85a5751cefe82.stex"
+path="res://.import/TreeBark_05_roughness.png-bcc0e3c611c509ebe514c19a113c4c8a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/TreeBark_05_roughness.png"
-dest_files=[ "res://.import/TreeBark_05_roughness.png-d3d586277fed6faf77b85a5751cefe82.stex" ]
+source_file="res://textures/TreeBark_05_roughness.png"
+dest_files=[ "res://.import/TreeBark_05_roughness.png-bcc0e3c611c509ebe514c19a113c4c8a.stex" ]
 
 [params]
 

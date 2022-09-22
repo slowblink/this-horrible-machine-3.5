@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WoodFloor_03_Displacement.png-cdfc76347ec99db740712c3a3cc5bf03.stex"
+path="res://.import/WoodFloor_03_Displacement.png-89ef50852d2990ca6f5ed43246815f71.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/WoodFloor_03_Displacement.png"
-dest_files=[ "res://.import/WoodFloor_03_Displacement.png-cdfc76347ec99db740712c3a3cc5bf03.stex" ]
+source_file="res://textures/WoodFloor_03_Displacement.png"
+dest_files=[ "res://.import/WoodFloor_03_Displacement.png-89ef50852d2990ca6f5ed43246815f71.stex" ]
 
 [params]
 

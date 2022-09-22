@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rust_07_Metallic.png-c7ea6cc466d3db00ae3728b23b4fee65.stex"
+path="res://.import/Rust_07_Metallic.png-9c9304f25113b4267cdb80f7726463ec.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Rust_07_Metallic.png"
-dest_files=[ "res://.import/Rust_07_Metallic.png-c7ea6cc466d3db00ae3728b23b4fee65.stex" ]
+source_file="res://textures/Rust_07_Metallic.png"
+dest_files=[ "res://.import/Rust_07_Metallic.png-9c9304f25113b4267cdb80f7726463ec.stex" ]
 
 [params]
 

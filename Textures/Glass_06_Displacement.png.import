@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Glass_06_Displacement.png-08b36d7218407c5084c29cd02be16f72.stex"
+path="res://.import/Glass_06_Displacement.png-37aae136d96f8e7f1cef350cde4039a7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Glass_06_Displacement.png"
-dest_files=[ "res://.import/Glass_06_Displacement.png-08b36d7218407c5084c29cd02be16f72.stex" ]
+source_file="res://textures/Glass_06_Displacement.png"
+dest_files=[ "res://.import/Glass_06_Displacement.png-37aae136d96f8e7f1cef350cde4039a7.stex" ]
 
 [params]
 

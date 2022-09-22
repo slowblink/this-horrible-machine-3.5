@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DinosaurSkin_02_Displacement.png-3e09d8c095333d9c36372d8734b26a5b.stex"
+path="res://.import/DinosaurSkin_02_Displacement.png-321ebdb704ae816e34e68f6b47807fd9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/DinosaurSkin_02_Displacement.png"
-dest_files=[ "res://.import/DinosaurSkin_02_Displacement.png-3e09d8c095333d9c36372d8734b26a5b.stex" ]
+source_file="res://textures/DinosaurSkin_02_Displacement.png"
+dest_files=[ "res://.import/DinosaurSkin_02_Displacement.png-321ebdb704ae816e34e68f6b47807fd9.stex" ]
 
 [params]
 

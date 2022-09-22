@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gravel_05_Roughness.png-faa74e389a80f0b9c9ca2c80f4109c53.stex"
+path="res://.import/Gravel_05_Roughness.png-350f47661c906ed3b06e0d86cac07ff5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Gravel_05_Roughness.png"
-dest_files=[ "res://.import/Gravel_05_Roughness.png-faa74e389a80f0b9c9ca2c80f4109c53.stex" ]
+source_file="res://textures/Gravel_05_Roughness.png"
+dest_files=[ "res://.import/Gravel_05_Roughness.png-350f47661c906ed3b06e0d86cac07ff5.stex" ]
 
 [params]
 

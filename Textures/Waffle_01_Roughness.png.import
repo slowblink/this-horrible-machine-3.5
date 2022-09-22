@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Waffle_01_Roughness.png-2fef14f05ae497479b32c7f1e3555d2c.stex"
+path="res://.import/Waffle_01_Roughness.png-b6b57861fe1fa37390f1dfa560541f47.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Waffle_01_Roughness.png"
-dest_files=[ "res://.import/Waffle_01_Roughness.png-2fef14f05ae497479b32c7f1e3555d2c.stex" ]
+source_file="res://textures/Waffle_01_Roughness.png"
+dest_files=[ "res://.import/Waffle_01_Roughness.png-b6b57861fe1fa37390f1dfa560541f47.stex" ]
 
 [params]
 

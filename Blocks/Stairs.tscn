@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Textures/Material001_albedo2.png" type="Texture" id=1]
+[ext_resource path="res://textures/Material001_albedo2.png" type="Texture" id=1]
 [ext_resource path="res://Materials/Material_001.material" type="Material" id=2]
 
 [sub_resource type="ConcavePolygonShape" id=5]

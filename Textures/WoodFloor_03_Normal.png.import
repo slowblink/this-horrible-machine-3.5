@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WoodFloor_03_Normal.png-6a985a77295d7e33c9d4cbaf960edaf9.stex"
+path="res://.import/WoodFloor_03_Normal.png-ad1308eccf122255c81886baef161647.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/WoodFloor_03_Normal.png"
-dest_files=[ "res://.import/WoodFloor_03_Normal.png-6a985a77295d7e33c9d4cbaf960edaf9.stex" ]
+source_file="res://textures/WoodFloor_03_Normal.png"
+dest_files=[ "res://.import/WoodFloor_03_Normal.png-ad1308eccf122255c81886baef161647.stex" ]
 
 [params]
 

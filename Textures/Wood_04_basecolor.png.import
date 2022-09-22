@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Wood_04_basecolor.png-447fb06bcac7f357f467c521fa9c5729.stex"
+path="res://.import/Wood_04_basecolor.png-ccfa26918cf71ea146112f3251a5e407.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Wood_04_basecolor.png"
-dest_files=[ "res://.import/Wood_04_basecolor.png-447fb06bcac7f357f467c521fa9c5729.stex" ]
+source_file="res://textures/Wood_04_basecolor.png"
+dest_files=[ "res://.import/Wood_04_basecolor.png-ccfa26918cf71ea146112f3251a5e407.stex" ]
 
 [params]
 

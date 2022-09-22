@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Lava_09_height.png-eea8dcd873a7779ef65d1dd712827d97.stex"
+path="res://.import/Lava_09_height.png-46b43d12131ddae4ee1b47db880d4ad2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Lava_09_height.png"
-dest_files=[ "res://.import/Lava_09_height.png-eea8dcd873a7779ef65d1dd712827d97.stex" ]
+source_file="res://textures/Lava_09_height.png"
+dest_files=[ "res://.import/Lava_09_height.png-46b43d12131ddae4ee1b47db880d4ad2.stex" ]
 
 [params]
 

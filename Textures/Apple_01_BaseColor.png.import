@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Apple_01_BaseColor.png-7b7deac73777b940be6f34f795d4c91e.stex"
+path="res://.import/Apple_01_BaseColor.png-b298c8805a40977c98751e00dfaf9949.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Apple_01_BaseColor.png"
-dest_files=[ "res://.import/Apple_01_BaseColor.png-7b7deac73777b940be6f34f795d4c91e.stex" ]
+source_file="res://textures/Apple_01_BaseColor.png"
+dest_files=[ "res://.import/Apple_01_BaseColor.png-b298c8805a40977c98751e00dfaf9949.stex" ]
 
 [params]
 

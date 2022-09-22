@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bricks_19_Displacement.png-fc855de293b5ed098d005e4d64fc042b.stex"
+path="res://.import/Bricks_19_Displacement.png-1c26a279cd1428a0bcc09eee01719313.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Bricks_19_Displacement.png"
-dest_files=[ "res://.import/Bricks_19_Displacement.png-fc855de293b5ed098d005e4d64fc042b.stex" ]
+source_file="res://textures/Bricks_19_Displacement.png"
+dest_files=[ "res://.import/Bricks_19_Displacement.png-1c26a279cd1428a0bcc09eee01719313.stex" ]
 
 [params]
 

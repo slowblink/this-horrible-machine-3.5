@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Snow_08_roughness.png-b44a1379ae0964e49c25407247fa17b8.stex"
+path="res://.import/Snow_08_roughness.png-6fe248d211570d1a610cd6395c204dec.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Snow_08_roughness.png"
-dest_files=[ "res://.import/Snow_08_roughness.png-b44a1379ae0964e49c25407247fa17b8.stex" ]
+source_file="res://textures/Snow_08_roughness.png"
+dest_files=[ "res://.import/Snow_08_roughness.png-6fe248d211570d1a610cd6395c204dec.stex" ]
 
 [params]
 

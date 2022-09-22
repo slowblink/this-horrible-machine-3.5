@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Watermelon_01_ambientOcclusion.png-1d63f7c703cff6866d28242057fc6192.stex"
+path="res://.import/Watermelon_01_ambientOcclusion.png-f429ceeeebf8ae9f33ff811110dd5a07.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Watermelon_01_ambientOcclusion.png"
-dest_files=[ "res://.import/Watermelon_01_ambientOcclusion.png-1d63f7c703cff6866d28242057fc6192.stex" ]
+source_file="res://textures/Watermelon_01_ambientOcclusion.png"
+dest_files=[ "res://.import/Watermelon_01_ambientOcclusion.png-f429ceeeebf8ae9f33ff811110dd5a07.stex" ]
 
 [params]
 

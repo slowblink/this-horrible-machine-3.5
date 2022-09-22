@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WoodPlanks_02_roughness.png-0a4deb8372b226608a608a29da0e887f.stex"
+path="res://.import/WoodPlanks_02_roughness.png-2d8df300131c99499d16bad6c750e080.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/WoodPlanks_02_roughness.png"
-dest_files=[ "res://.import/WoodPlanks_02_roughness.png-0a4deb8372b226608a608a29da0e887f.stex" ]
+source_file="res://textures/WoodPlanks_02_roughness.png"
+dest_files=[ "res://.import/WoodPlanks_02_roughness.png-2d8df300131c99499d16bad6c750e080.stex" ]
 
 [params]
 

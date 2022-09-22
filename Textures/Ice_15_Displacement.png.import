@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ice_15_Displacement.png-bc0a4e1bf93f3a42782170f1ba59b726.stex"
+path="res://.import/Ice_15_Displacement.png-67ede2757cb6b82e15744f6559367611.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Ice_15_Displacement.png"
-dest_files=[ "res://.import/Ice_15_Displacement.png-bc0a4e1bf93f3a42782170f1ba59b726.stex" ]
+source_file="res://textures/Ice_15_Displacement.png"
+dest_files=[ "res://.import/Ice_15_Displacement.png-67ede2757cb6b82e15744f6559367611.stex" ]
 
 [params]
 

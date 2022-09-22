@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/EggShell_01_roughness.png-2ede62cd17b4b9b2e4534369d4d8852e.stex"
+path="res://.import/EggShell_01_roughness.png-da94c8ba6860de8cf6b481bc39c4a863.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/EggShell_01_roughness.png"
-dest_files=[ "res://.import/EggShell_01_roughness.png-2ede62cd17b4b9b2e4534369d4d8852e.stex" ]
+source_file="res://textures/EggShell_01_roughness.png"
+dest_files=[ "res://.import/EggShell_01_roughness.png-da94c8ba6860de8cf6b481bc39c4a863.stex" ]
 
 [params]
 

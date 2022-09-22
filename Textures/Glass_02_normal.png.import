@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Glass_02_normal.png-9956a83fb5a1094b94749d298693b11b.stex"
+path="res://.import/Glass_02_normal.png-bc8c64b5d2d196a251fea73d39493d28.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Glass_02_normal.png"
-dest_files=[ "res://.import/Glass_02_normal.png-9956a83fb5a1094b94749d298693b11b.stex" ]
+source_file="res://textures/Glass_02_normal.png"
+dest_files=[ "res://.import/Glass_02_normal.png-bc8c64b5d2d196a251fea73d39493d28.stex" ]
 
 [params]
 

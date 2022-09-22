@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HumanSkin_01_BaseColor.png-5a7809a3b9deabc62ddfe377f9c8f088.stex"
+path="res://.import/HumanSkin_01_BaseColor.png-20da0a3ed360e364cb2656fdd77a4072.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/HumanSkin_01_BaseColor.png"
-dest_files=[ "res://.import/HumanSkin_01_BaseColor.png-5a7809a3b9deabc62ddfe377f9c8f088.stex" ]
+source_file="res://textures/HumanSkin_01_BaseColor.png"
+dest_files=[ "res://.import/HumanSkin_01_BaseColor.png-20da0a3ed360e364cb2656fdd77a4072.stex" ]
 
 [params]
 
