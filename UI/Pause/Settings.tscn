@@ -24,7 +24,6 @@ rect_scale = Vector2( 0.880781, 0.880781 )
 theme = ExtResource( 1 )
 script = ExtResource( 4 )
 __meta__ = {
-"_edit_use_anchors_": false,
 "_editor_description_": "These are the normal setting panel, which always show up whether dev mode is turned on or off."
 }
 
@@ -39,14 +38,13 @@ __meta__ = {
 
 [node name="master" type="HBoxContainer" parent="VBoxContainer"]
 margin_right = 425.0
-margin_bottom = 25.0
+margin_bottom = 23.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 
 [node name="Label3" type="Label" parent="VBoxContainer/master"]
-margin_top = 1.0
 margin_right = 210.0
-margin_bottom = 24.0
+margin_bottom = 23.0
 size_flags_horizontal = 3
 text = "MASTER: "
 align = 1
@@ -54,7 +52,7 @@ align = 1
 [node name="mastervol" type="HSlider" parent="VBoxContainer/master"]
 margin_left = 214.0
 margin_right = 425.0
-margin_bottom = 25.0
+margin_bottom = 16.0
 size_flags_horizontal = 3
 min_value = -10.0
 max_value = 10.0
@@ -64,15 +62,14 @@ stream = ExtResource( 3 )
 volume_db = -15.0
 
 [node name="sfx" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 36.0
+margin_top = 34.0
 margin_right = 425.0
-margin_bottom = 61.0
+margin_bottom = 57.0
 alignment = 2
 
 [node name="Label3" type="Label" parent="VBoxContainer/sfx"]
-margin_top = 1.0
 margin_right = 210.0
-margin_bottom = 24.0
+margin_bottom = 23.0
 size_flags_horizontal = 3
 text = "sfx: "
 align = 1
@@ -81,7 +78,7 @@ uppercase = true
 [node name="sfxvol" type="HSlider" parent="VBoxContainer/sfx"]
 margin_left = 214.0
 margin_right = 425.0
-margin_bottom = 25.0
+margin_bottom = 16.0
 size_flags_horizontal = 3
 min_value = -10.0
 max_value = 10.0
@@ -95,15 +92,14 @@ stream = ExtResource( 3 )
 volume_db = -15.0
 
 [node name="music" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 72.0
+margin_top = 68.0
 margin_right = 425.0
-margin_bottom = 97.0
+margin_bottom = 91.0
 alignment = 2
 
 [node name="Label3" type="Label" parent="VBoxContainer/music"]
-margin_top = 1.0
 margin_right = 210.0
-margin_bottom = 24.0
+margin_bottom = 23.0
 size_flags_horizontal = 3
 text = "music: "
 align = 1
@@ -112,7 +108,7 @@ uppercase = true
 [node name="musicvol" type="HSlider" parent="VBoxContainer/music"]
 margin_left = 214.0
 margin_right = 425.0
-margin_bottom = 25.0
+margin_bottom = 16.0
 size_flags_horizontal = 3
 min_value = -10.0
 max_value = 10.0
@@ -126,58 +122,58 @@ stream = ExtResource( 3 )
 volume_db = -15.0
 
 [node name="fullscreen" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 108.0
+margin_top = 102.0
 margin_right = 425.0
-margin_bottom = 149.0
+margin_bottom = 137.0
 alignment = 1
 
 [node name="fullscreen" type="CheckBox" parent="VBoxContainer/fullscreen"]
 margin_right = 425.0
-margin_bottom = 41.0
+margin_bottom = 35.0
 size_flags_horizontal = 3
 text = "FULLSCREEN"
 align = 1
 
 [node name="fov" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 160.0
+margin_top = 148.0
 margin_right = 425.0
-margin_bottom = 201.0
+margin_bottom = 183.0
 alignment = 1
 
 [node name="fovToggle" type="CheckBox" parent="VBoxContainer/fov"]
 margin_right = 425.0
-margin_bottom = 41.0
+margin_bottom = 35.0
 size_flags_horizontal = 3
 pressed = true
 text = "FOV"
 align = 1
 
 [node name="bobbing" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 212.0
+margin_top = 194.0
 margin_right = 425.0
-margin_bottom = 253.0
+margin_bottom = 229.0
 alignment = 1
 
 [node name="bobbingToggle" type="CheckBox" parent="VBoxContainer/bobbing"]
 margin_right = 425.0
-margin_bottom = 41.0
+margin_bottom = 35.0
 size_flags_horizontal = 3
 pressed = true
 text = "BOBBING"
 align = 1
 
 [node name="Label4" type="Label" parent="VBoxContainer"]
-margin_top = 264.0
+margin_top = 240.0
 margin_right = 425.0
-margin_bottom = 313.0
+margin_bottom = 289.0
 text = "
 KEYBINDINGS:"
 align = 1
 
 [node name="up" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 324.0
+margin_top = 300.0
 margin_right = 425.0
-margin_bottom = 359.0
+margin_bottom = 335.0
 size_flags_horizontal = 3
 alignment = 1
 
@@ -197,9 +193,9 @@ size_flags_horizontal = 3
 text = "W"
 
 [node name="left" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 370.0
+margin_top = 346.0
 margin_right = 425.0
-margin_bottom = 405.0
+margin_bottom = 381.0
 size_flags_horizontal = 3
 alignment = 1
 
@@ -219,9 +215,9 @@ size_flags_horizontal = 3
 text = "A"
 
 [node name="down" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 416.0
+margin_top = 392.0
 margin_right = 425.0
-margin_bottom = 451.0
+margin_bottom = 427.0
 size_flags_horizontal = 3
 alignment = 1
 
@@ -241,9 +237,9 @@ size_flags_horizontal = 3
 text = "S"
 
 [node name="right" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 462.0
+margin_top = 438.0
 margin_right = 425.0
-margin_bottom = 497.0
+margin_bottom = 473.0
 size_flags_horizontal = 3
 alignment = 1
 
@@ -263,9 +259,9 @@ size_flags_horizontal = 3
 text = "D"
 
 [node name="jump" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 508.0
+margin_top = 484.0
 margin_right = 425.0
-margin_bottom = 543.0
+margin_bottom = 519.0
 size_flags_horizontal = 3
 alignment = 1
 
@@ -286,9 +282,9 @@ size_flags_horizontal = 3
 text = "SPACE"
 
 [node name="crouch" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 554.0
+margin_top = 530.0
 margin_right = 425.0
-margin_bottom = 589.0
+margin_bottom = 565.0
 size_flags_horizontal = 3
 alignment = 1
 
@@ -309,9 +305,9 @@ size_flags_horizontal = 3
 text = "CONTROL"
 
 [node name="sprint" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 600.0
+margin_top = 576.0
 margin_right = 425.0
-margin_bottom = 635.0
+margin_bottom = 611.0
 size_flags_horizontal = 3
 alignment = 1
 
@@ -332,9 +328,9 @@ size_flags_horizontal = 3
 text = "SHIFT"
 
 [node name="interact" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 646.0
+margin_top = 622.0
 margin_right = 425.0
-margin_bottom = 681.0
+margin_bottom = 657.0
 size_flags_horizontal = 3
 alignment = 1
 

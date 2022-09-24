@@ -120,7 +120,7 @@ anims/bobbing = SubResource( 11 )
 root_node = NodePath("../..")
 anims/land = SubResource( 16 )
 
-[node name="MeshInstance" type="MeshInstance" parent="Head/Camera"]
+[node name="LowResFilter" type="MeshInstance" parent="Head/Camera"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.189819 )
 mesh = SubResource( 20 )
 material/0 = SubResource( 22 )
