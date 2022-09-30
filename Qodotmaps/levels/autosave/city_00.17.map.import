@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/city_00.17.map-e4e9d66e9ee190e48e535a4889d627be.tres"
+
+[deps]
+
+source_file="res://Qodotmaps/levels/autosave/city_00.17.map"
+dest_files=[ "res://.import/city_00.17.map-e4e9d66e9ee190e48e535a4889d627be.tres" ]
+
+[params]
+

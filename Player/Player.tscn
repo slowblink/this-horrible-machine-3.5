@@ -8,7 +8,6 @@
 [ext_resource path="res://Player/SFX/Walking/footstep04.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Player/SFX/Walking/footstep00.ogg" type="AudioStream" id=7]
 [ext_resource path="res://Player/SFX/Walking/footstep07.ogg" type="AudioStream" id=8]
-[ext_resource path="res://default_env.tres" type="Environment" id=9]
 [ext_resource path="res://Player/SFX/Climbing/ladder3.ogg" type="AudioStream" id=10]
 [ext_resource path="res://Player/SFX/Climbing/ladder5.ogg" type="AudioStream" id=11]
 [ext_resource path="res://Player/SFX/Climbing/ladder4.ogg" type="AudioStream" id=12]
@@ -57,25 +56,61 @@ tracks/1/keys = {
 }
 
 [sub_resource type="QuadMesh" id=20]
+size = Vector2( 2, 2 )
+
+[sub_resource type="ShaderMaterial" id=25]
 
 [sub_resource type="Shader" id=23]
 code = "shader_type spatial;
-render_mode unshaded;
+render_mode unshaded, shadows_disabled, depth_test_disable, depth_draw_never;
 
-const int pixel_size = 4; //resolution must be divisible by pixel_size
+uniform int color_depth : hint_range(1, 15) = 5;
+uniform bool dithering = true;
+uniform int resolution_scale = 2;
+
+int dithering_pattern(ivec2 fragcoord) {
+	const int pattern[] = {
+		-4, +0, -3, +1, 
+		+2, -2, +3, -1, 
+		-3, +1, -4, +0, 
+		+3, -1, +2, -2
+	};
+	
+	int x = fragcoord.x % 4;
+	int y = fragcoord.y % 4;
+	
+	return pattern[y * 4 + x];
+}
+
+void vertex() {
+	POSITION = vec4(VERTEX, 1.0);
+}
 
 void fragment() {
-	float x = float(int(FRAGCOORD.x) % pixel_size);
-	float y = float(int(FRAGCOORD.y) % pixel_size);
+	ivec2 uv = ivec2(FRAGCOORD.xy / float(resolution_scale));
+	vec3 color = texelFetch(SCREEN_TEXTURE, uv * resolution_scale, 0).rgb;
+	
+	// Convert from [0.0, 1.0] range to [0, 255] range
+	ivec3 c = ivec3(round(color * 255.0));
+	
+	// Apply the dithering pattern
+	if (dithering) {
+		c += ivec3(dithering_pattern(uv));
+	}
+	
+	// Truncate from 8 bits to color_depth bits
+	c >>= (8 - color_depth);
 
-	x = FRAGCOORD.x + floor(float(pixel_size) / 2.0) - x;
-	y = FRAGCOORD.y + floor(float(pixel_size) / 2.0) - y;
-
-	ALBEDO = texture(SCREEN_TEXTURE, vec2(x, y) / VIEWPORT_SIZE).xyz;
+	// Convert back to [0.0, 1.0] range
+	ALBEDO = vec3(c) / float(1 << color_depth);
 }"
 
 [sub_resource type="ShaderMaterial" id=22]
+next_pass = SubResource( 25 )
 shader = SubResource( 23 )
+shader_param/color_depth = 6
+shader_param/dithering = true
+shader_param/resolution_scale = 1
 
 [sub_resource type="StyleBoxFlat" id=17]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
@@ -109,7 +144,6 @@ shape = SubResource( 3 )
 transform = Transform( 0.9375, 0, 0, 0, 0.9375, -1.16415e-10, 0, 1.16415e-10, 0.9375, 0, 1.00625, 2.32831e-10 )
 
 [node name="Camera" type="Camera" parent="Head"]
-environment = ExtResource( 9 )
 far = 1000.0
 
 [node name="bob" type="AnimationPlayer" parent="Head/Camera"]
@@ -121,7 +155,7 @@ root_node = NodePath("../..")
 anims/land = SubResource( 16 )
 
 [node name="LowResFilter" type="MeshInstance" parent="Head/Camera"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.189819 )
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 1, 0, 0, -1 )
 mesh = SubResource( 20 )
 material/0 = SubResource( 22 )
 

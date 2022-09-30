@@ -9,6 +9,21 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Resource",
+"class": "AdvancedDie",
+"language": "GDScript",
+"path": "res://addons/advanced_random/advanced_die.gd"
+}, {
+"base": "Reference",
+"class": "CardDeck",
+"language": "GDScript",
+"path": "res://addons/advanced_random/card_deck.gd"
+}, {
+"base": "Reference",
+"class": "CellEditor",
+"language": "GDScript",
+"path": "res://addons/resources_speadsheet_view/typed_cells/cell_editor.gd"
+}, {
 "base": "Reference",
 "class": "DTS",
 "language": "GDScript",
@@ -58,6 +73,26 @@ _global_script_classes=[ {
 "class": "DialogicUtil",
 "language": "GDScript",
 "path": "res://addons/dialogic/Other/DialogicUtil.gd"
+}, {
+"base": "Reference",
+"class": "DiceArray",
+"language": "GDScript",
+"path": "res://addons/advanced_random/dice_array.gd"
+}, {
+"base": "Resource",
+"class": "DynamicWheelItem",
+"language": "GDScript",
+"path": "res://addons/advanced_random/dynamic_wheel_item.gd"
+}, {
+"base": "Reference",
+"class": "FairNG",
+"language": "GDScript",
+"path": "res://addons/advanced_random/fairng.gd"
+}, {
+"base": "Reference",
+"class": "FortuneWheel",
+"language": "GDScript",
+"path": "res://addons/advanced_random/fortune_wheel.gd"
 }, {
 "base": "PanelContainer",
 "class": "HistoryRow",
@@ -194,10 +229,35 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/qodot/src/import_plugins/quake_wad_import_plugin.gd"
 }, {
+"base": "GridContainer",
+"class": "SettingsGrid",
+"language": "GDScript",
+"path": "res://addons/resources_speadsheet_view/settings_grid.gd"
+}, {
+"base": "Control",
+"class": "SheetsDockEditor",
+"language": "GDScript",
+"path": "res://addons/resources_speadsheet_view/typed_editors/dock_base.gd"
+}, {
 "base": "LiquidLayer",
 "class": "SlimeLayer",
 "language": "GDScript",
 "path": "res://addons/qodot/game_definitions/worldspawn_layers/liquid/slime.gd"
+}, {
+"base": "Reference",
+"class": "TextEditingUtils",
+"language": "GDScript",
+"path": "res://addons/resources_speadsheet_view/text_editing_utils.gd"
+}, {
+"base": "Button",
+"class": "ThemeIconButton",
+"language": "GDScript",
+"path": "res://addons/resources_speadsheet_view/editor_icon_button.gd"
+}, {
+"base": "Control",
+"class": "ThemeStylebox",
+"language": "GDScript",
+"path": "res://addons/resources_speadsheet_view/editor_stylebox_overrider.gd"
 }, {
 "base": "Resource",
 "class": "TrenchBroomFaceAttrib",
@@ -225,6 +285,9 @@ _global_script_classes=[ {
 "path": "res://addons/qodot/game_definitions/worldspawn_layers/liquid/water.gd"
 } ]
 _global_script_class_icons={
+"AdvancedDie": "",
+"CardDeck": "",
+"CellEditor": "",
 "DTS": "",
 "Dialogic": "",
 "DialogicAnimaPropertiesHelper": "",
@@ -235,6 +298,10 @@ _global_script_class_icons={
 "DialogicParser": "",
 "DialogicResources": "",
 "DialogicUtil": "",
+"DiceArray": "",
+"DynamicWheelItem": "",
+"FairNG": "",
+"FortuneWheel": "",
 "HistoryRow": "",
 "LavaLayer": "",
 "LiquidLayer": "",
@@ -262,13 +329,26 @@ _global_script_class_icons={
 "QuakePaletteImportPlugin": "",
 "QuakeWadFile": "",
 "QuakeWadImportPlugin": "",
+"SettingsGrid": "",
+"SheetsDockEditor": "",
 "SlimeLayer": "",
+"TextEditingUtils": "",
+"ThemeIconButton": "",
+"ThemeStylebox": "",
 "TrenchBroomFaceAttrib": "",
 "TrenchBroomGameConfigFile": "",
 "TrenchBroomGameConfigFolder": "",
 "TrenchBroomTag": "",
 "WaterLayer": ""
 }
+
+[addons]
+
+resources_spreadsheet_view/color_rows=true
+resources_spreadsheet_view/color_arrays=true
+resources_spreadsheet_view/array_min_width=128.0
+resources_spreadsheet_view/clip_headers=false
+resources_spreadsheet_view/dupe_arrays=true
 
 [application]
 
@@ -296,7 +376,7 @@ window/stretch/aspect="keep"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/qodot/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/qodot/plugin.cfg", "res://addons/resources_speadsheet_view/plugin.cfg" )
 
 [importer_defaults]
 
