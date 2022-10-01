@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Feathers_01_basecolor.png-1a22418c4fe9164345bd25fe2609077b.stex"
+path="res://.import/Feathers_01_basecolor.png-dd1279f7c8c98f480472f1de673b88d2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Feathers_01_basecolor.png"
-dest_files=[ "res://.import/Feathers_01_basecolor.png-1a22418c4fe9164345bd25fe2609077b.stex" ]
+source_file="res://Textures/Feathers_01_basecolor.png"
+dest_files=[ "res://.import/Feathers_01_basecolor.png-dd1279f7c8c98f480472f1de673b88d2.stex" ]
 
 [params]
 

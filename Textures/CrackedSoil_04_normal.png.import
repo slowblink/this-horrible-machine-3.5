@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CrackedSoil_04_normal.png-733bcd8a06a6f4500f0f254b293d65cd.stex"
+path="res://.import/CrackedSoil_04_normal.png-77865d4d424adb4557083a0a6dd7c886.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/CrackedSoil_04_normal.png"
-dest_files=[ "res://.import/CrackedSoil_04_normal.png-733bcd8a06a6f4500f0f254b293d65cd.stex" ]
+source_file="res://Textures/CrackedSoil_04_normal.png"
+dest_files=[ "res://.import/CrackedSoil_04_normal.png-77865d4d424adb4557083a0a6dd7c886.stex" ]
 
 [params]
 

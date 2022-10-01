@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HumanSkin_01_Normal.png-c08942e5ce99185887cad3703bdfbe69.stex"
+path="res://.import/HumanSkin_01_Normal.png-f4e2c71c11ab8185a986e70302e1c60c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/HumanSkin_01_Normal.png"
-dest_files=[ "res://.import/HumanSkin_01_Normal.png-c08942e5ce99185887cad3703bdfbe69.stex" ]
+source_file="res://Textures/HumanSkin_01_Normal.png"
+dest_files=[ "res://.import/HumanSkin_01_Normal.png-f4e2c71c11ab8185a986e70302e1c60c.stex" ]
 
 [params]
 

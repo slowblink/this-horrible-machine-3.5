@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Metals_12_ambientOcclusion.png-24a828629d053da9c8346325074ff028.stex"
+path="res://.import/Metals_12_ambientOcclusion.png-f05a793250be5e85365f6f9f80b5d12b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Metals_12_ambientOcclusion.png"
-dest_files=[ "res://.import/Metals_12_ambientOcclusion.png-24a828629d053da9c8346325074ff028.stex" ]
+source_file="res://Textures/Metals_12_ambientOcclusion.png"
+dest_files=[ "res://.import/Metals_12_ambientOcclusion.png-f05a793250be5e85365f6f9f80b5d12b.stex" ]
 
 [params]
 

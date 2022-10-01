@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/industrial_tv_128x256_00_s.png-532674650a2f2307b42ba82f5aa33b82.stex"
+path="res://.import/industrial_tv_128x256_00_s.png-f8fadf99995c31e2eae0d5009605f95a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/industrial_tv_128x256_00_s.png"
-dest_files=[ "res://.import/industrial_tv_128x256_00_s.png-532674650a2f2307b42ba82f5aa33b82.stex" ]
+source_file="res://Textures/industrial_tv_128x256_00_s.png"
+dest_files=[ "res://.import/industrial_tv_128x256_00_s.png-f8fadf99995c31e2eae0d5009605f95a.stex" ]
 
 [params]
 

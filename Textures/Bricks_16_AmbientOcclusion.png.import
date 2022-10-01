@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bricks_16_AmbientOcclusion.png-897dcbd69d9c98bc220cf82dbc6b5691.stex"
+path="res://.import/Bricks_16_AmbientOcclusion.png-475835a6274af0b555b4933951105b98.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Bricks_16_AmbientOcclusion.png"
-dest_files=[ "res://.import/Bricks_16_AmbientOcclusion.png-897dcbd69d9c98bc220cf82dbc6b5691.stex" ]
+source_file="res://Textures/Bricks_16_AmbientOcclusion.png"
+dest_files=[ "res://.import/Bricks_16_AmbientOcclusion.png-475835a6274af0b555b4933951105b98.stex" ]
 
 [params]
 

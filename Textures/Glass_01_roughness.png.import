@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Glass_01_roughness.png-e59b508d46bdd792ee153d9d1245ec74.stex"
+path="res://.import/Glass_01_roughness.png-cf554b09e33c8bb7b69bda97312f2f56.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Glass_01_roughness.png"
-dest_files=[ "res://.import/Glass_01_roughness.png-e59b508d46bdd792ee153d9d1245ec74.stex" ]
+source_file="res://Textures/Glass_01_roughness.png"
+dest_files=[ "res://.import/Glass_01_roughness.png-cf554b09e33c8bb7b69bda97312f2f56.stex" ]
 
 [params]
 

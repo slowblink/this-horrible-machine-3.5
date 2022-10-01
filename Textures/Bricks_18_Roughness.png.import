@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bricks_18_Roughness.png-067fed791dbdab8ecdee6129c3be26f6.stex"
+path="res://.import/Bricks_18_Roughness.png-ac38a30a1ee58c5ebb44a2decbba3499.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Bricks_18_Roughness.png"
-dest_files=[ "res://.import/Bricks_18_Roughness.png-067fed791dbdab8ecdee6129c3be26f6.stex" ]
+source_file="res://Textures/Bricks_18_Roughness.png"
+dest_files=[ "res://.import/Bricks_18_Roughness.png-ac38a30a1ee58c5ebb44a2decbba3499.stex" ]
 
 [params]
 

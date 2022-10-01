@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Mushroom_01_roughness.png-aebcdca4918ac96534b45c6ab0da1483.stex"
+path="res://.import/Mushroom_01_roughness.png-78b6f639b92045a02b7b2cf76cd6951e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Mushroom_01_roughness.png"
-dest_files=[ "res://.import/Mushroom_01_roughness.png-aebcdca4918ac96534b45c6ab0da1483.stex" ]
+source_file="res://Textures/Mushroom_01_roughness.png"
+dest_files=[ "res://.import/Mushroom_01_roughness.png-78b6f639b92045a02b7b2cf76cd6951e.stex" ]
 
 [params]
 

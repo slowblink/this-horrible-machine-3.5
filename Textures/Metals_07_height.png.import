@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Metals_07_height.png-103031828247b1123acb1b5897c6adc6.stex"
+path="res://.import/Metals_07_height.png-3aa2bd647a980b218cbd79ceb4d410bc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Metals_07_height.png"
-dest_files=[ "res://.import/Metals_07_height.png-103031828247b1123acb1b5897c6adc6.stex" ]
+source_file="res://Textures/Metals_07_height.png"
+dest_files=[ "res://.import/Metals_07_height.png-3aa2bd647a980b218cbd79ceb4d410bc.stex" ]
 
 [params]
 

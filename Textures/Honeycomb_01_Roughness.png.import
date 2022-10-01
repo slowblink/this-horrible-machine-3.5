@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Honeycomb_01_Roughness.png-d5203060ef38e1628bb86c1abc30fad3.stex"
+path="res://.import/Honeycomb_01_Roughness.png-9d391a53d5d16dac12412732a1684275.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Honeycomb_01_Roughness.png"
-dest_files=[ "res://.import/Honeycomb_01_Roughness.png-d5203060ef38e1628bb86c1abc30fad3.stex" ]
+source_file="res://Textures/Honeycomb_01_Roughness.png"
+dest_files=[ "res://.import/Honeycomb_01_Roughness.png-9d391a53d5d16dac12412732a1684275.stex" ]
 
 [params]
 

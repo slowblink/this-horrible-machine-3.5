@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rust_03_height.png-968e924f5bdb56f5136ce4f7893f8047.stex"
+path="res://.import/Rust_03_height.png-689027599b097add2c12d7b67fed713c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Rust_03_height.png"
-dest_files=[ "res://.import/Rust_03_height.png-968e924f5bdb56f5136ce4f7893f8047.stex" ]
+source_file="res://Textures/Rust_03_height.png"
+dest_files=[ "res://.import/Rust_03_height.png-689027599b097add2c12d7b67fed713c.stex" ]
 
 [params]
 

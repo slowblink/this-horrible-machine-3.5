@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TreeBark_07_Displacement.png-f9318debc8136b256583b2f1eb92b7ae.stex"
+path="res://.import/TreeBark_07_Displacement.png-d9dc40dd9d3caf3cc81de6daef599141.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/TreeBark_07_Displacement.png"
-dest_files=[ "res://.import/TreeBark_07_Displacement.png-f9318debc8136b256583b2f1eb92b7ae.stex" ]
+source_file="res://Textures/TreeBark_07_Displacement.png"
+dest_files=[ "res://.import/TreeBark_07_Displacement.png-d9dc40dd9d3caf3cc81de6daef599141.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rocks_01_normal.png-f0a1d3c6b159799bc171f083e4f9b381.stex"
+path="res://.import/Rocks_01_normal.png-7244dab47b74578b793c312c217520d1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Rocks_01_normal.png"
-dest_files=[ "res://.import/Rocks_01_normal.png-f0a1d3c6b159799bc171f083e4f9b381.stex" ]
+source_file="res://Textures/Rocks_01_normal.png"
+dest_files=[ "res://.import/Rocks_01_normal.png-7244dab47b74578b793c312c217520d1.stex" ]
 
 [params]
 

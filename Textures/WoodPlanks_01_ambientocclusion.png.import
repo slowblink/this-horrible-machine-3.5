@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WoodPlanks_01_ambientocclusion.png-fa5ee54a296b3fa78722494bf0e495a4.stex"
+path="res://.import/WoodPlanks_01_ambientocclusion.png-9c18932a2452d3b4218e21487718b7fa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/WoodPlanks_01_ambientocclusion.png"
-dest_files=[ "res://.import/WoodPlanks_01_ambientocclusion.png-fa5ee54a296b3fa78722494bf0e495a4.stex" ]
+source_file="res://Textures/WoodPlanks_01_ambientocclusion.png"
+dest_files=[ "res://.import/WoodPlanks_01_ambientocclusion.png-9c18932a2452d3b4218e21487718b7fa.stex" ]
 
 [params]
 

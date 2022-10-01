@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Cheese_01_Height.png-4b45f419b1b718b0c2838bff9e92c922.stex"
+path="res://.import/Cheese_01_Height.png-ab31a04aa40339e8280ab244f673eb37.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Cheese_01_Height.png"
-dest_files=[ "res://.import/Cheese_01_Height.png-4b45f419b1b718b0c2838bff9e92c922.stex" ]
+source_file="res://Textures/Cheese_01_Height.png"
+dest_files=[ "res://.import/Cheese_01_Height.png-ab31a04aa40339e8280ab244f673eb37.stex" ]
 
 [params]
 

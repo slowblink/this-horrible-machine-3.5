@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Paper_03_Displacement.png-719c9efb6056843f453ab3022d160ea7.stex"
+path="res://.import/Paper_03_Displacement.png-d35605b11bdaecbbc4f5a74bf10465c2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Paper_03_Displacement.png"
-dest_files=[ "res://.import/Paper_03_Displacement.png-719c9efb6056843f453ab3022d160ea7.stex" ]
+source_file="res://Textures/Paper_03_Displacement.png"
+dest_files=[ "res://.import/Paper_03_Displacement.png-d35605b11bdaecbbc4f5a74bf10465c2.stex" ]
 
 [params]
 

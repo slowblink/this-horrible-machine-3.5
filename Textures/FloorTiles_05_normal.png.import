@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FloorTiles_05_normal.png-5af948065adfeb1c24803baf168c85c0.stex"
+path="res://.import/FloorTiles_05_normal.png-03218639e4bd23643867658749b035d4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/FloorTiles_05_normal.png"
-dest_files=[ "res://.import/FloorTiles_05_normal.png-5af948065adfeb1c24803baf168c85c0.stex" ]
+source_file="res://Textures/FloorTiles_05_normal.png"
+dest_files=[ "res://.import/FloorTiles_05_normal.png-03218639e4bd23643867658749b035d4.stex" ]
 
 [params]
 

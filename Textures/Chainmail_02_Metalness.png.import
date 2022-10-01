@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chainmail_02_Metalness.png-28be49dc802f5f13840e4e344e74127a.stex"
+path="res://.import/Chainmail_02_Metalness.png-f2115aad5301b688da5f6c2294997cce.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Chainmail_02_Metalness.png"
-dest_files=[ "res://.import/Chainmail_02_Metalness.png-28be49dc802f5f13840e4e344e74127a.stex" ]
+source_file="res://Textures/Chainmail_02_Metalness.png"
+dest_files=[ "res://.import/Chainmail_02_Metalness.png-f2115aad5301b688da5f6c2294997cce.stex" ]
 
 [params]
 

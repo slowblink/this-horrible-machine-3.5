@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rust_09_Displacement.png-1cd0aaccdb7a2c5bb7772c8aea94dae2.stex"
+path="res://.import/Rust_09_Displacement.png-4b1dd256c46824b98a8f4acb54cf1ff8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Rust_09_Displacement.png"
-dest_files=[ "res://.import/Rust_09_Displacement.png-1cd0aaccdb7a2c5bb7772c8aea94dae2.stex" ]
+source_file="res://Textures/Rust_09_Displacement.png"
+dest_files=[ "res://.import/Rust_09_Displacement.png-4b1dd256c46824b98a8f4acb54cf1ff8.stex" ]
 
 [params]
 

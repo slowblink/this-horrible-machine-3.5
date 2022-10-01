@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Crystals_01_height.png-252b9ec17f80e0fa550c29076914a247.stex"
+path="res://.import/Crystals_01_height.png-d77a8cee9ad3218e079fabb1d09a47a3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Crystals_01_height.png"
-dest_files=[ "res://.import/Crystals_01_height.png-252b9ec17f80e0fa550c29076914a247.stex" ]
+source_file="res://Textures/Crystals_01_height.png"
+dest_files=[ "res://.import/Crystals_01_height.png-d77a8cee9ad3218e079fabb1d09a47a3.stex" ]
 
 [params]
 

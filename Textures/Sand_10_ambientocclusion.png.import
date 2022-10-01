@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sand_10_ambientocclusion.png-fed5585dc3b569b3ddc6f4acc8995b5e.stex"
+path="res://.import/Sand_10_ambientocclusion.png-6567983909dd5f344e2d908185f34619.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Sand_10_ambientocclusion.png"
-dest_files=[ "res://.import/Sand_10_ambientocclusion.png-fed5585dc3b569b3ddc6f4acc8995b5e.stex" ]
+source_file="res://Textures/Sand_10_ambientocclusion.png"
+dest_files=[ "res://.import/Sand_10_ambientocclusion.png-6567983909dd5f344e2d908185f34619.stex" ]
 
 [params]
 

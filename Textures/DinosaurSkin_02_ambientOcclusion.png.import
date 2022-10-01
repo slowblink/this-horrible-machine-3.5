@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DinosaurSkin_02_ambientOcclusion.png-c5449e544dff4a399a3847ced3459aed.stex"
+path="res://.import/DinosaurSkin_02_ambientOcclusion.png-04ab8e7f9041e22eb8bb9eab279f0cab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/DinosaurSkin_02_ambientOcclusion.png"
-dest_files=[ "res://.import/DinosaurSkin_02_ambientOcclusion.png-c5449e544dff4a399a3847ced3459aed.stex" ]
+source_file="res://Textures/DinosaurSkin_02_ambientOcclusion.png"
+dest_files=[ "res://.import/DinosaurSkin_02_ambientOcclusion.png-04ab8e7f9041e22eb8bb9eab279f0cab.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Pumpkin_001_roughness.png-b869291df2c5f8c948afd41168e24b83.stex"
+path="res://.import/Pumpkin_001_roughness.png-fc356b38649aa1c0dae55489efe41c4c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Pumpkin_001_roughness.png"
-dest_files=[ "res://.import/Pumpkin_001_roughness.png-b869291df2c5f8c948afd41168e24b83.stex" ]
+source_file="res://Textures/Pumpkin_001_roughness.png"
+dest_files=[ "res://.import/Pumpkin_001_roughness.png-fc356b38649aa1c0dae55489efe41c4c.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ChameleonSkin_01_Normal.png-289c5f80082b2c45f3dd373447ddbd39.stex"
+path="res://.import/ChameleonSkin_01_Normal.png-75442f415a6ef626ecbedb788218f691.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/ChameleonSkin_01_Normal.png"
-dest_files=[ "res://.import/ChameleonSkin_01_Normal.png-289c5f80082b2c45f3dd373447ddbd39.stex" ]
+source_file="res://Textures/ChameleonSkin_01_Normal.png"
+dest_files=[ "res://.import/ChameleonSkin_01_Normal.png-75442f415a6ef626ecbedb788218f691.stex" ]
 
 [params]
 

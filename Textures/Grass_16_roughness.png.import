@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Grass_16_roughness.png-21fb14e5ae5acd3462deca01d952f65f.stex"
+path="res://.import/Grass_16_roughness.png-735c3d992d5c9a4db61486bb36b8c5cc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Grass_16_roughness.png"
-dest_files=[ "res://.import/Grass_16_roughness.png-21fb14e5ae5acd3462deca01d952f65f.stex" ]
+source_file="res://Textures/Grass_16_roughness.png"
+dest_files=[ "res://.import/Grass_16_roughness.png-735c3d992d5c9a4db61486bb36b8c5cc.stex" ]
 
 [params]
 

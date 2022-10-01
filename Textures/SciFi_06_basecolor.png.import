@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SciFi_06_basecolor.png-bfd63aabbdf508faddb3385c9b0aad60.stex"
+path="res://.import/SciFi_06_basecolor.png-7a03aeadc9fb0f0aa939ea11f45ce179.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/SciFi_06_basecolor.png"
-dest_files=[ "res://.import/SciFi_06_basecolor.png-bfd63aabbdf508faddb3385c9b0aad60.stex" ]
+source_file="res://Textures/SciFi_06_basecolor.png"
+dest_files=[ "res://.import/SciFi_06_basecolor.png-7a03aeadc9fb0f0aa939ea11f45ce179.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Moss_04_roughness.png-0efd00cbe26a8e4ddf76f551a66726e7.stex"
+path="res://.import/Moss_04_roughness.png-8f669f0c33b0397c4a7342f9c06c99c6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Moss_04_roughness.png"
-dest_files=[ "res://.import/Moss_04_roughness.png-0efd00cbe26a8e4ddf76f551a66726e7.stex" ]
+source_file="res://Textures/Moss_04_roughness.png"
+dest_files=[ "res://.import/Moss_04_roughness.png-8f669f0c33b0397c4a7342f9c06c99c6.stex" ]
 
 [params]
 

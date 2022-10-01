@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RoofTiles_03_roughness.png-1c12f729986a671f0f062dbee5c09c9b.stex"
+path="res://.import/RoofTiles_03_roughness.png-3afbd86db7d0017182b5cddf2792d823.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/RoofTiles_03_roughness.png"
-dest_files=[ "res://.import/RoofTiles_03_roughness.png-1c12f729986a671f0f062dbee5c09c9b.stex" ]
+source_file="res://Textures/RoofTiles_03_roughness.png"
+dest_files=[ "res://.import/RoofTiles_03_roughness.png-3afbd86db7d0017182b5cddf2792d823.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Snow_05_basecolor.png-de42756e47ab101cb1eec40dd9c4a730.stex"
+path="res://.import/Snow_05_basecolor.png-10107d63a00a4564b55a1e860373ef35.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Snow_05_basecolor.png"
-dest_files=[ "res://.import/Snow_05_basecolor.png-de42756e47ab101cb1eec40dd9c4a730.stex" ]
+source_file="res://Textures/Snow_05_basecolor.png"
+dest_files=[ "res://.import/Snow_05_basecolor.png-10107d63a00a4564b55a1e860373ef35.stex" ]
 
 [params]
 

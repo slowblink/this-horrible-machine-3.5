@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Stones_12_Displacement.png-9f82ab19f59d9bde689a9fe955363db1.stex"
+path="res://.import/Stones_12_Displacement.png-e8f71878102d93ef12d3cefa72cf7734.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Stones_12_Displacement.png"
-dest_files=[ "res://.import/Stones_12_Displacement.png-9f82ab19f59d9bde689a9fe955363db1.stex" ]
+source_file="res://Textures/Stones_12_Displacement.png"
+dest_files=[ "res://.import/Stones_12_Displacement.png-e8f71878102d93ef12d3cefa72cf7734.stex" ]
 
 [params]
 

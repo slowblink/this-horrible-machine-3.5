@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RoofTiles_07_basecolor.png-6c7e4bcf1125ceefe87620f4dc0eb897.stex"
+path="res://.import/RoofTiles_07_basecolor.png-d094531316fe58a881885682de84b657.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/RoofTiles_07_basecolor.png"
-dest_files=[ "res://.import/RoofTiles_07_basecolor.png-6c7e4bcf1125ceefe87620f4dc0eb897.stex" ]
+source_file="res://Textures/RoofTiles_07_basecolor.png"
+dest_files=[ "res://.import/RoofTiles_07_basecolor.png-d094531316fe58a881885682de84b657.stex" ]
 
 [params]
 

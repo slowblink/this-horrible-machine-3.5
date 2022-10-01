@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sand_04_roughness.png-21d9913e95beeefa0dd1d466de2b8b38.stex"
+path="res://.import/Sand_04_roughness.png-9d78dfc148d1f282718584fa88469977.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Sand_04_roughness.png"
-dest_files=[ "res://.import/Sand_04_roughness.png-21d9913e95beeefa0dd1d466de2b8b38.stex" ]
+source_file="res://Textures/Sand_04_roughness.png"
+dest_files=[ "res://.import/Sand_04_roughness.png-9d78dfc148d1f282718584fa88469977.stex" ]
 
 [params]
 

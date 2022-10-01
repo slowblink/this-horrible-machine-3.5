@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SciFi_12_ambientOcclusion.png-2ea2a26aa02c1d3352282d621f94e8fc.stex"
+path="res://.import/SciFi_12_ambientOcclusion.png-d5b8cad311726296eb4aa642fc1e147f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/SciFi_12_ambientOcclusion.png"
-dest_files=[ "res://.import/SciFi_12_ambientOcclusion.png-2ea2a26aa02c1d3352282d621f94e8fc.stex" ]
+source_file="res://Textures/SciFi_12_ambientOcclusion.png"
+dest_files=[ "res://.import/SciFi_12_ambientOcclusion.png-d5b8cad311726296eb4aa642fc1e147f.stex" ]
 
 [params]
 

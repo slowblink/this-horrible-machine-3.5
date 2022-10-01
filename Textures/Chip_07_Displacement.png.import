@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chip_07_Displacement.png-efd89b07b58d6b6b01be8a43847b2cca.stex"
+path="res://.import/Chip_07_Displacement.png-3b6895a594fa47705192a8fe0618197c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Chip_07_Displacement.png"
-dest_files=[ "res://.import/Chip_07_Displacement.png-efd89b07b58d6b6b01be8a43847b2cca.stex" ]
+source_file="res://Textures/Chip_07_Displacement.png"
+dest_files=[ "res://.import/Chip_07_Displacement.png-3b6895a594fa47705192a8fe0618197c.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Water_10_normal.png-f26ded9c621d701feb84115cf16789b6.stex"
+path="res://.import/Water_10_normal.png-cce96a893ad89c671578ce6b297259b2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Water_10_normal.png"
-dest_files=[ "res://.import/Water_10_normal.png-f26ded9c621d701feb84115cf16789b6.stex" ]
+source_file="res://Textures/Water_10_normal.png"
+dest_files=[ "res://.import/Water_10_normal.png-cce96a893ad89c671578ce6b297259b2.stex" ]
 
 [params]
 

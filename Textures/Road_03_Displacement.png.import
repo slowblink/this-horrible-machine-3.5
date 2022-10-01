@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Road_03_Displacement.png-9f16a8314b24f6307ac9241ebb5ff92c.stex"
+path="res://.import/Road_03_Displacement.png-ffe7e1f3dad5472c331d413116196c02.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Road_03_Displacement.png"
-dest_files=[ "res://.import/Road_03_Displacement.png-9f16a8314b24f6307ac9241ebb5ff92c.stex" ]
+source_file="res://Textures/Road_03_Displacement.png"
+dest_files=[ "res://.import/Road_03_Displacement.png-ffe7e1f3dad5472c331d413116196c02.stex" ]
 
 [params]
 

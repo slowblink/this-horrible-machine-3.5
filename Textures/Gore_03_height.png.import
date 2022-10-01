@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gore_03_height.png-b940864f2a944cae6da363a6d85ef793.stex"
+path="res://.import/Gore_03_height.png-a0e04df3b15fa656809882fe44b9b2b0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Gore_03_height.png"
-dest_files=[ "res://.import/Gore_03_height.png-b940864f2a944cae6da363a6d85ef793.stex" ]
+source_file="res://Textures/Gore_03_height.png"
+dest_files=[ "res://.import/Gore_03_height.png-a0e04df3b15fa656809882fe44b9b2b0.stex" ]
 
 [params]
 

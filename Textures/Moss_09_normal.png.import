@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Moss_09_normal.png-2385151b958207d1ab0547e2b08f153d.stex"
+path="res://.import/Moss_09_normal.png-df626b2e9cd12e871070b6c655c6ac4c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Moss_09_normal.png"
-dest_files=[ "res://.import/Moss_09_normal.png-2385151b958207d1ab0547e2b08f153d.stex" ]
+source_file="res://Textures/Moss_09_normal.png"
+dest_files=[ "res://.import/Moss_09_normal.png-df626b2e9cd12e871070b6c655c6ac4c.stex" ]
 
 [params]
 

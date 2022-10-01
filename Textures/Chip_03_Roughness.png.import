@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chip_03_Roughness.png-3df0368b07d11e5b11d2c523e6971a64.stex"
+path="res://.import/Chip_03_Roughness.png-485bccd4d106e45a848e67abefb2b722.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Chip_03_Roughness.png"
-dest_files=[ "res://.import/Chip_03_Roughness.png-3df0368b07d11e5b11d2c523e6971a64.stex" ]
+source_file="res://Textures/Chip_03_Roughness.png"
+dest_files=[ "res://.import/Chip_03_Roughness.png-485bccd4d106e45a848e67abefb2b722.stex" ]
 
 [params]
 

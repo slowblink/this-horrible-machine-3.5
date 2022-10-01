@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Honeycomb_01_BaseColor.png-902949ff19e10817d62cece71807732b.stex"
+path="res://.import/Honeycomb_01_BaseColor.png-d44717001c6255feb587b63365cb1a50.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Honeycomb_01_BaseColor.png"
-dest_files=[ "res://.import/Honeycomb_01_BaseColor.png-902949ff19e10817d62cece71807732b.stex" ]
+source_file="res://Textures/Honeycomb_01_BaseColor.png"
+dest_files=[ "res://.import/Honeycomb_01_BaseColor.png-d44717001c6255feb587b63365cb1a50.stex" ]
 
 [params]
 

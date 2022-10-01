@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WoodPlanks_16_Displacement.png-fc6483d402bf5b2a21d29dc71806f4fc.stex"
+path="res://.import/WoodPlanks_16_Displacement.png-be154ee1aab2c14ab5b94923861cd97f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/WoodPlanks_16_Displacement.png"
-dest_files=[ "res://.import/WoodPlanks_16_Displacement.png-fc6483d402bf5b2a21d29dc71806f4fc.stex" ]
+source_file="res://Textures/WoodPlanks_16_Displacement.png"
+dest_files=[ "res://.import/WoodPlanks_16_Displacement.png-be154ee1aab2c14ab5b94923861cd97f.stex" ]
 
 [params]
 

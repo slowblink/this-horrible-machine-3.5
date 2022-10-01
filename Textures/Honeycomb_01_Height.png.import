@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Honeycomb_01_Height.png-855c4cadb86afac9822ad3795d9bf553.stex"
+path="res://.import/Honeycomb_01_Height.png-cb1c6f4a031dae0073eac15041422e7c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Honeycomb_01_Height.png"
-dest_files=[ "res://.import/Honeycomb_01_Height.png-855c4cadb86afac9822ad3795d9bf553.stex" ]
+source_file="res://Textures/Honeycomb_01_Height.png"
+dest_files=[ "res://.import/Honeycomb_01_Height.png-cb1c6f4a031dae0073eac15041422e7c.stex" ]
 
 [params]
 

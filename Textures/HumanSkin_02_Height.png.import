@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HumanSkin_02_Height.png-0aae5446d83bce035026ac6ddabf783c.stex"
+path="res://.import/HumanSkin_02_Height.png-3249304add8c94f1344f9b420e2398ba.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/HumanSkin_02_Height.png"
-dest_files=[ "res://.import/HumanSkin_02_Height.png-0aae5446d83bce035026ac6ddabf783c.stex" ]
+source_file="res://Textures/HumanSkin_02_Height.png"
+dest_files=[ "res://.import/HumanSkin_02_Height.png-3249304add8c94f1344f9b420e2398ba.stex" ]
 
 [params]
 

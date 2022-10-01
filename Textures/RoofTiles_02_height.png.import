@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RoofTiles_02_height.png-fd6149e3bb3b4c0d74fb52a69c9736e2.stex"
+path="res://.import/RoofTiles_02_height.png-abadff290220a95541c19954554a1ecb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/RoofTiles_02_height.png"
-dest_files=[ "res://.import/RoofTiles_02_height.png-fd6149e3bb3b4c0d74fb52a69c9736e2.stex" ]
+source_file="res://Textures/RoofTiles_02_height.png"
+dest_files=[ "res://.import/RoofTiles_02_height.png-abadff290220a95541c19954554a1ecb.stex" ]
 
 [params]
 

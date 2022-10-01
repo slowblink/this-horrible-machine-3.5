@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Leather_04_roughness.png-0b33e17721149240bf9c0947c9c53266.stex"
+path="res://.import/Leather_04_roughness.png-e96dcd34e56a4c5c7cb773cd153d97f6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Leather_04_roughness.png"
-dest_files=[ "res://.import/Leather_04_roughness.png-0b33e17721149240bf9c0947c9c53266.stex" ]
+source_file="res://Textures/Leather_04_roughness.png"
+dest_files=[ "res://.import/Leather_04_roughness.png-e96dcd34e56a4c5c7cb773cd153d97f6.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Coral_01_basecolor.png-90a401c20e0c97f7b429532b861d77de.stex"
+path="res://.import/Coral_01_basecolor.png-e3a1738e34de26b08e7e5de116705e25.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Coral_01_basecolor.png"
-dest_files=[ "res://.import/Coral_01_basecolor.png-90a401c20e0c97f7b429532b861d77de.stex" ]
+source_file="res://Textures/Coral_01_basecolor.png"
+dest_files=[ "res://.import/Coral_01_basecolor.png-e3a1738e34de26b08e7e5de116705e25.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Coral_01_height.png-11748aa1f24ff5bd2742f0fcb7883845.stex"
+path="res://.import/Coral_01_height.png-09a5572a4953918feafbebe075a622fe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Coral_01_height.png"
-dest_files=[ "res://.import/Coral_01_height.png-11748aa1f24ff5bd2742f0fcb7883845.stex" ]
+source_file="res://Textures/Coral_01_height.png"
+dest_files=[ "res://.import/Coral_01_height.png-09a5572a4953918feafbebe075a622fe.stex" ]
 
 [params]
 

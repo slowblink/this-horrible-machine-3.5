@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Marble_02_height.png-48a55023c9ee639c1ccb50ceded94289.stex"
+path="res://.import/Marble_02_height.png-b2bbe833586be71508489afeea471952.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Marble_02_height.png"
-dest_files=[ "res://.import/Marble_02_height.png-48a55023c9ee639c1ccb50ceded94289.stex" ]
+source_file="res://Textures/Marble_02_height.png"
+dest_files=[ "res://.import/Marble_02_height.png-b2bbe833586be71508489afeea471952.stex" ]
 
 [params]
 

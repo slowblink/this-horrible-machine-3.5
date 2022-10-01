@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Strawberry_01_AmbientOcclusion.png-5c1ae0658a8b2abe88974e1cc4f8624d.stex"
+path="res://.import/Strawberry_01_AmbientOcclusion.png-516033e05f88289a2435aa07cc1ccfde.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Strawberry_01_AmbientOcclusion.png"
-dest_files=[ "res://.import/Strawberry_01_AmbientOcclusion.png-5c1ae0658a8b2abe88974e1cc4f8624d.stex" ]
+source_file="res://Textures/Strawberry_01_AmbientOcclusion.png"
+dest_files=[ "res://.import/Strawberry_01_AmbientOcclusion.png-516033e05f88289a2435aa07cc1ccfde.stex" ]
 
 [params]
 

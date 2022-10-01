@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rust_10_AmbientOcclusion.png-64d2313a90c4f2094325e27d05b99810.stex"
+path="res://.import/Rust_10_AmbientOcclusion.png-532783fc0f63b84ccd5c2791d482ee1e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Rust_10_AmbientOcclusion.png"
-dest_files=[ "res://.import/Rust_10_AmbientOcclusion.png-64d2313a90c4f2094325e27d05b99810.stex" ]
+source_file="res://Textures/Rust_10_AmbientOcclusion.png"
+dest_files=[ "res://.import/Rust_10_AmbientOcclusion.png-532783fc0f63b84ccd5c2791d482ee1e.stex" ]
 
 [params]
 

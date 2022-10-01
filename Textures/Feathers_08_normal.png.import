@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Feathers_08_normal.png-007e2bdd6d5c59b45b4709611fc5bcf0.stex"
+path="res://.import/Feathers_08_normal.png-a0b5df0628cb2f7276a28bbff1dda2d5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Feathers_08_normal.png"
-dest_files=[ "res://.import/Feathers_08_normal.png-007e2bdd6d5c59b45b4709611fc5bcf0.stex" ]
+source_file="res://Textures/Feathers_08_normal.png"
+dest_files=[ "res://.import/Feathers_08_normal.png-a0b5df0628cb2f7276a28bbff1dda2d5.stex" ]
 
 [params]
 

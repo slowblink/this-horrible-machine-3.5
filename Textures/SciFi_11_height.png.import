@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SciFi_11_height.png-5ca4a8fbc69fb70ee2372f6ed655c946.stex"
+path="res://.import/SciFi_11_height.png-f5aeba77f831436a07920c6954152ede.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/SciFi_11_height.png"
-dest_files=[ "res://.import/SciFi_11_height.png-5ca4a8fbc69fb70ee2372f6ed655c946.stex" ]
+source_file="res://Textures/SciFi_11_height.png"
+dest_files=[ "res://.import/SciFi_11_height.png-f5aeba77f831436a07920c6954152ede.stex" ]
 
 [params]
 

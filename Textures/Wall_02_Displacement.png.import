@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Wall_02_Displacement.png-d6fde4f24700b2c118eafbfafa414ace.stex"
+path="res://.import/Wall_02_Displacement.png-0de33690cc9a3a1343a2ff6da91a9830.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Wall_02_Displacement.png"
-dest_files=[ "res://.import/Wall_02_Displacement.png-d6fde4f24700b2c118eafbfafa414ace.stex" ]
+source_file="res://Textures/Wall_02_Displacement.png"
+dest_files=[ "res://.import/Wall_02_Displacement.png-0de33690cc9a3a1343a2ff6da91a9830.stex" ]
 
 [params]
 

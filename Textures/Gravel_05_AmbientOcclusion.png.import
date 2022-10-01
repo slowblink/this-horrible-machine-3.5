@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gravel_05_AmbientOcclusion.png-d8b88bb8f86c36c2ce892f399fcbfa18.stex"
+path="res://.import/Gravel_05_AmbientOcclusion.png-178dee07be56578aa2a38bf345e1cef7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Gravel_05_AmbientOcclusion.png"
-dest_files=[ "res://.import/Gravel_05_AmbientOcclusion.png-d8b88bb8f86c36c2ce892f399fcbfa18.stex" ]
+source_file="res://Textures/Gravel_05_AmbientOcclusion.png"
+dest_files=[ "res://.import/Gravel_05_AmbientOcclusion.png-178dee07be56578aa2a38bf345e1cef7.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Grass_21_ambientOcclusion.png-20784712de7fe044a8164291e9188a9c.stex"
+path="res://.import/Grass_21_ambientOcclusion.png-6ba90915a6a964acf88f7e43e46fd733.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Grass_21_ambientOcclusion.png"
-dest_files=[ "res://.import/Grass_21_ambientOcclusion.png-20784712de7fe044a8164291e9188a9c.stex" ]
+source_file="res://Textures/Grass_21_ambientOcclusion.png"
+dest_files=[ "res://.import/Grass_21_ambientOcclusion.png-6ba90915a6a964acf88f7e43e46fd733.stex" ]
 
 [params]
 

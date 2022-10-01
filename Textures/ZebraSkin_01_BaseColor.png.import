@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ZebraSkin_01_BaseColor.png-975f5b7d7ecacec304d65336fb3d945e.stex"
+path="res://.import/ZebraSkin_01_BaseColor.png-846be95161593197530b59c271046a05.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/ZebraSkin_01_BaseColor.png"
-dest_files=[ "res://.import/ZebraSkin_01_BaseColor.png-975f5b7d7ecacec304d65336fb3d945e.stex" ]
+source_file="res://Textures/ZebraSkin_01_BaseColor.png"
+dest_files=[ "res://.import/ZebraSkin_01_BaseColor.png-846be95161593197530b59c271046a05.stex" ]
 
 [params]
 

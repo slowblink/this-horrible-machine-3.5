@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rocks_05_roughness.png-a314aaa9b63f3a1fc43edb579f710b4a.stex"
+path="res://.import/Rocks_05_roughness.png-263892ab1de20afeeefb1c7b81513697.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Rocks_05_roughness.png"
-dest_files=[ "res://.import/Rocks_05_roughness.png-a314aaa9b63f3a1fc43edb579f710b4a.stex" ]
+source_file="res://Textures/Rocks_05_roughness.png"
+dest_files=[ "res://.import/Rocks_05_roughness.png-263892ab1de20afeeefb1c7b81513697.stex" ]
 
 [params]
 

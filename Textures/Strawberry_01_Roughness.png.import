@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Strawberry_01_Roughness.png-e1760192e280f22a3bdda122d64fca59.stex"
+path="res://.import/Strawberry_01_Roughness.png-4111cf75b8321ca845adafd8c85a007e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Strawberry_01_Roughness.png"
-dest_files=[ "res://.import/Strawberry_01_Roughness.png-e1760192e280f22a3bdda122d64fca59.stex" ]
+source_file="res://Textures/Strawberry_01_Roughness.png"
+dest_files=[ "res://.import/Strawberry_01_Roughness.png-4111cf75b8321ca845adafd8c85a007e.stex" ]
 
 [params]
 

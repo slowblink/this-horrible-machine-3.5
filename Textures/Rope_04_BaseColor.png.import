@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rope_04_BaseColor.png-d36ce4fae20ed7aa009385d7d7662137.stex"
+path="res://.import/Rope_04_BaseColor.png-4fbf6efdc11c239583f420167c4419f9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Rope_04_BaseColor.png"
-dest_files=[ "res://.import/Rope_04_BaseColor.png-d36ce4fae20ed7aa009385d7d7662137.stex" ]
+source_file="res://Textures/Rope_04_BaseColor.png"
+dest_files=[ "res://.import/Rope_04_BaseColor.png-4fbf6efdc11c239583f420167c4419f9.stex" ]
 
 [params]
 

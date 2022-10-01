@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fur_03_basecolor.png-065d0fed49f96149f90a79d808fea8bf.stex"
+path="res://.import/Fur_03_basecolor.png-8d7d939c4072ed32ab4b1adb8fe53753.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Fur_03_basecolor.png"
-dest_files=[ "res://.import/Fur_03_basecolor.png-065d0fed49f96149f90a79d808fea8bf.stex" ]
+source_file="res://Textures/Fur_03_basecolor.png"
+dest_files=[ "res://.import/Fur_03_basecolor.png-8d7d939c4072ed32ab4b1adb8fe53753.stex" ]
 
 [params]
 

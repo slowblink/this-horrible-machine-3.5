@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rocks_13_Displacement.png-5788f12c1ba0e009855a460594341d23.stex"
+path="res://.import/Rocks_13_Displacement.png-dc93c72f9d7132826a4eaf2101771d86.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Rocks_13_Displacement.png"
-dest_files=[ "res://.import/Rocks_13_Displacement.png-5788f12c1ba0e009855a460594341d23.stex" ]
+source_file="res://Textures/Rocks_13_Displacement.png"
+dest_files=[ "res://.import/Rocks_13_Displacement.png-dc93c72f9d7132826a4eaf2101771d86.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Metals_03_basecolor.png-d16f9aebba86414e6476684f7d6fdbda.stex"
+path="res://.import/Metals_03_basecolor.png-20b63546f8618e7942320fffd16d534f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Metals_03_basecolor.png"
-dest_files=[ "res://.import/Metals_03_basecolor.png-d16f9aebba86414e6476684f7d6fdbda.stex" ]
+source_file="res://Textures/Metals_03_basecolor.png"
+dest_files=[ "res://.import/Metals_03_basecolor.png-20b63546f8618e7942320fffd16d534f.stex" ]
 
 [params]
 

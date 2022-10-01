@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dirt_05_normal.png-1f16dc4e68cda7efc61fedb2b9c84a44.stex"
+path="res://.import/Dirt_05_normal.png-c2c4187946e21301d92cf0f3939817de.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Dirt_05_normal.png"
-dest_files=[ "res://.import/Dirt_05_normal.png-1f16dc4e68cda7efc61fedb2b9c84a44.stex" ]
+source_file="res://Textures/Dirt_05_normal.png"
+dest_files=[ "res://.import/Dirt_05_normal.png-c2c4187946e21301d92cf0f3939817de.stex" ]
 
 [params]
 

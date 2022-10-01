@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Corn_01_BaseColor.png-f4cc814c76fc808295ab8d0c188f43c4.stex"
+path="res://.import/Corn_01_BaseColor.png-2907bfc6dff48ab0031621c81aacca57.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Corn_01_BaseColor.png"
-dest_files=[ "res://.import/Corn_01_BaseColor.png-f4cc814c76fc808295ab8d0c188f43c4.stex" ]
+source_file="res://Textures/Corn_01_BaseColor.png"
+dest_files=[ "res://.import/Corn_01_BaseColor.png-2907bfc6dff48ab0031621c81aacca57.stex" ]
 
 [params]
 

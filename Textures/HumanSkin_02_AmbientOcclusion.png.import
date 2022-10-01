@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HumanSkin_02_AmbientOcclusion.png-acad22cfd47bb649a18338380a412e10.stex"
+path="res://.import/HumanSkin_02_AmbientOcclusion.png-169b3286d2b8f69d4b4e8ce9ea73d5a3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/HumanSkin_02_AmbientOcclusion.png"
-dest_files=[ "res://.import/HumanSkin_02_AmbientOcclusion.png-acad22cfd47bb649a18338380a412e10.stex" ]
+source_file="res://Textures/HumanSkin_02_AmbientOcclusion.png"
+dest_files=[ "res://.import/HumanSkin_02_AmbientOcclusion.png-169b3286d2b8f69d4b4e8ce9ea73d5a3.stex" ]
 
 [params]
 

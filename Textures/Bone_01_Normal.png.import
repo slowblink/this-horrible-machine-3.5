@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bone_01_Normal.png-694f1f042e98f6be64c52e39cb0da6de.stex"
+path="res://.import/Bone_01_Normal.png-5a90acad943daa98a53e3f3648f00f9c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Bone_01_Normal.png"
-dest_files=[ "res://.import/Bone_01_Normal.png-694f1f042e98f6be64c52e39cb0da6de.stex" ]
+source_file="res://Textures/Bone_01_Normal.png"
+dest_files=[ "res://.import/Bone_01_Normal.png-5a90acad943daa98a53e3f3648f00f9c.stex" ]
 
 [params]
 

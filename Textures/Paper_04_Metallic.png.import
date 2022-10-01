@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Paper_04_Metallic.png-2cdfecc2f83f69b5e87dcdd430d25e52.stex"
+path="res://.import/Paper_04_Metallic.png-efaa08fef7860967af975184840342ed.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Paper_04_Metallic.png"
-dest_files=[ "res://.import/Paper_04_Metallic.png-2cdfecc2f83f69b5e87dcdd430d25e52.stex" ]
+source_file="res://Textures/Paper_04_Metallic.png"
+dest_files=[ "res://.import/Paper_04_Metallic.png-efaa08fef7860967af975184840342ed.stex" ]
 
 [params]
 

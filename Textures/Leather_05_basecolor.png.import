@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Leather_05_basecolor.png-dbadbff61d82067a3e5990423a178d69.stex"
+path="res://.import/Leather_05_basecolor.png-f9c5807487ad379f98cd86f39cb06ed6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Leather_05_basecolor.png"
-dest_files=[ "res://.import/Leather_05_basecolor.png-dbadbff61d82067a3e5990423a178d69.stex" ]
+source_file="res://Textures/Leather_05_basecolor.png"
+dest_files=[ "res://.import/Leather_05_basecolor.png-f9c5807487ad379f98cd86f39cb06ed6.stex" ]
 
 [params]
 

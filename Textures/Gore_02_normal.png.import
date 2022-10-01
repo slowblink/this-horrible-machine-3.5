@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gore_02_normal.png-ba83e514d44feadd77da39760b9d25f8.stex"
+path="res://.import/Gore_02_normal.png-57ec5ed596930f237be5c7d42d1c303e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Gore_02_normal.png"
-dest_files=[ "res://.import/Gore_02_normal.png-ba83e514d44feadd77da39760b9d25f8.stex" ]
+source_file="res://Textures/Gore_02_normal.png"
+dest_files=[ "res://.import/Gore_02_normal.png-57ec5ed596930f237be5c7d42d1c303e.stex" ]
 
 [params]
 

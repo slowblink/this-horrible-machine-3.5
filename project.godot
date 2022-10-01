@@ -376,7 +376,11 @@ window/stretch/aspect="keep"
 
 [editor_plugins]
 
+<<<<<<< Updated upstream
 enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/qodot/plugin.cfg", "res://addons/resources_speadsheet_view/plugin.cfg" )
+=======
+enabled=PoolStringArray( "res://addons/SimpleTODO/plugin.cfg", "res://addons/dialogic/plugin.cfg", "res://addons/qodot/plugin.cfg" )
+>>>>>>> Stashed changes
 
 [importer_defaults]
 

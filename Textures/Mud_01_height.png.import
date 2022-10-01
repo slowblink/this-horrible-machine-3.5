@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Mud_01_height.png-25b879fdc7923b61ef96e4dd05c7263a.stex"
+path="res://.import/Mud_01_height.png-ec19ce3d6329390cfc2f3a604a244376.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Mud_01_height.png"
-dest_files=[ "res://.import/Mud_01_height.png-25b879fdc7923b61ef96e4dd05c7263a.stex" ]
+source_file="res://Textures/Mud_01_height.png"
+dest_files=[ "res://.import/Mud_01_height.png-ec19ce3d6329390cfc2f3a604a244376.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Snow_04_ambientocclusion.png-3dcc031286ef591208349b07b9aea05c.stex"
+path="res://.import/Snow_04_ambientocclusion.png-846a0a6cf100b6da6bb193d2a2764db7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Snow_04_ambientocclusion.png"
-dest_files=[ "res://.import/Snow_04_ambientocclusion.png-3dcc031286ef591208349b07b9aea05c.stex" ]
+source_file="res://Textures/Snow_04_ambientocclusion.png"
+dest_files=[ "res://.import/Snow_04_ambientocclusion.png-846a0a6cf100b6da6bb193d2a2764db7.stex" ]
 
 [params]
 

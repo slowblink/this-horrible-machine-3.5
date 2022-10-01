@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/EggShell_01_basecolor.png-e74fe0d220604ed3501ca8453898e885.stex"
+path="res://.import/EggShell_01_basecolor.png-0c4f2456f94449d1dc127b81017b7208.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/EggShell_01_basecolor.png"
-dest_files=[ "res://.import/EggShell_01_basecolor.png-e74fe0d220604ed3501ca8453898e885.stex" ]
+source_file="res://Textures/EggShell_01_basecolor.png"
+dest_files=[ "res://.import/EggShell_01_basecolor.png-0c4f2456f94449d1dc127b81017b7208.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Coral_01_roughness.png-5654feca96d7e5de4fe9c274a51adcaf.stex"
+path="res://.import/Coral_01_roughness.png-c7960fc999063a39870af9b578804749.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Coral_01_roughness.png"
-dest_files=[ "res://.import/Coral_01_roughness.png-5654feca96d7e5de4fe9c274a51adcaf.stex" ]
+source_file="res://Textures/Coral_01_roughness.png"
+dest_files=[ "res://.import/Coral_01_roughness.png-c7960fc999063a39870af9b578804749.stex" ]
 
 [params]
 

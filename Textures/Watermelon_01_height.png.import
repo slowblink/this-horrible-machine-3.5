@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Watermelon_01_height.png-839d3486292d0a6f7cba0daa3e38f4c0.stex"
+path="res://.import/Watermelon_01_height.png-2ac558798d4be744cb7330682c53b091.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Watermelon_01_height.png"
-dest_files=[ "res://.import/Watermelon_01_height.png-839d3486292d0a6f7cba0daa3e38f4c0.stex" ]
+source_file="res://Textures/Watermelon_01_height.png"
+dest_files=[ "res://.import/Watermelon_01_height.png-2ac558798d4be744cb7330682c53b091.stex" ]
 
 [params]
 

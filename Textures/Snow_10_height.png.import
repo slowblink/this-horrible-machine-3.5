@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Snow_10_height.png-d2c27f2b0b6d73a0c14aba1f9349993b.stex"
+path="res://.import/Snow_10_height.png-a62da246900d4ff202164b51cd2798b9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Snow_10_height.png"
-dest_files=[ "res://.import/Snow_10_height.png-d2c27f2b0b6d73a0c14aba1f9349993b.stex" ]
+source_file="res://Textures/Snow_10_height.png"
+dest_files=[ "res://.import/Snow_10_height.png-a62da246900d4ff202164b51cd2798b9.stex" ]
 
 [params]
 

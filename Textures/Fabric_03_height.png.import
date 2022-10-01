@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fabric_03_height.png-aeb6e30358a732966d6b6a30baa17534.stex"
+path="res://.import/Fabric_03_height.png-a703674438f6d007a4af38dcf6c7bdd7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Fabric_03_height.png"
-dest_files=[ "res://.import/Fabric_03_height.png-aeb6e30358a732966d6b6a30baa17534.stex" ]
+source_file="res://Textures/Fabric_03_height.png"
+dest_files=[ "res://.import/Fabric_03_height.png-a703674438f6d007a4af38dcf6c7bdd7.stex" ]
 
 [params]
 

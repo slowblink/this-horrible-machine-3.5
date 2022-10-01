@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Wood_06_ambientocclusion.png-44c2c8caa0d6b03498042e0ba6a27093.stex"
+path="res://.import/Wood_06_ambientocclusion.png-c2e008519575da2313734581b7f49b19.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Wood_06_ambientocclusion.png"
-dest_files=[ "res://.import/Wood_06_ambientocclusion.png-44c2c8caa0d6b03498042e0ba6a27093.stex" ]
+source_file="res://Textures/Wood_06_ambientocclusion.png"
+dest_files=[ "res://.import/Wood_06_ambientocclusion.png-c2e008519575da2313734581b7f49b19.stex" ]
 
 [params]
 

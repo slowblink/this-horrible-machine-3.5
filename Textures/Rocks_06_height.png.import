@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rocks_06_height.png-178424553321d85081dc7750bcfef634.stex"
+path="res://.import/Rocks_06_height.png-0603b80bc28b023aab4d060cf0357110.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Rocks_06_height.png"
-dest_files=[ "res://.import/Rocks_06_height.png-178424553321d85081dc7750bcfef634.stex" ]
+source_file="res://Textures/Rocks_06_height.png"
+dest_files=[ "res://.import/Rocks_06_height.png-0603b80bc28b023aab4d060cf0357110.stex" ]
 
 [params]
 

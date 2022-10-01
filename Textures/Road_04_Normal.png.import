@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Road_04_Normal.png-2310c52fceee57ea3dd6aae3e14da2a0.stex"
+path="res://.import/Road_04_Normal.png-cd2bc70f22b21aac026e239f9a92048b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Road_04_Normal.png"
-dest_files=[ "res://.import/Road_04_Normal.png-2310c52fceee57ea3dd6aae3e14da2a0.stex" ]
+source_file="res://Textures/Road_04_Normal.png"
+dest_files=[ "res://.import/Road_04_Normal.png-cd2bc70f22b21aac026e239f9a92048b.stex" ]
 
 [params]
 

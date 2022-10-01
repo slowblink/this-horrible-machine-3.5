@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Scales_08_height.png-bb115a6949701ba497519b7ce811efce.stex"
+path="res://.import/Scales_08_height.png-25f4940dfb274c4e8a86fafeb9b61026.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Scales_08_height.png"
-dest_files=[ "res://.import/Scales_08_height.png-bb115a6949701ba497519b7ce811efce.stex" ]
+source_file="res://Textures/Scales_08_height.png"
+dest_files=[ "res://.import/Scales_08_height.png-25f4940dfb274c4e8a86fafeb9b61026.stex" ]
 
 [params]
 
