@@ -1,8 +1,9 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Materials/Material_001.material" type="Material" id=1]
-[ext_resource path="res://Plates/Plate.gd" type="Script" id=2]
-[ext_resource path="res://Materials/Atlas.material" type="Material" id=3]
+[ext_resource path="res://materials/Material_001.material" type="Material" id=1]
+[ext_resource path="res://plates/Plate.gd" type="Script" id=2]
+[ext_resource path="res://materials/Atlas.material" type="Material" id=3]
+
 
 [sub_resource type="ArrayMesh" id=14]
 resource_name = "new things to add_Cube019"

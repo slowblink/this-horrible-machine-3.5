@@ -1,13 +1,14 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://UI/Pause/Pause.gd" type="Script" id=1]
-[ext_resource path="res://UI/Pause/Theme/Theme.tres" type="Theme" id=2]
-[ext_resource path="res://UI/Pause/SFX/pause.ogg" type="AudioStream" id=6]
-[ext_resource path="res://UI/Pause/SFX/select.ogg" type="AudioStream" id=7]
-[ext_resource path="res://UI/Pause/SFX/death.ogg" type="AudioStream" id=8]
-[ext_resource path="res://UI/Pause/Settings.tscn" type="PackedScene" id=11]
-[ext_resource path="res://SFX/background music.ogg" type="AudioStream" id=12]
-[ext_resource path="res://UI/Pause/Credits.tscn" type="PackedScene" id=13]
+[ext_resource path="res://ui/Pause/Pause.gd" type="Script" id=1]
+[ext_resource path="res://ui/Pause/Theme/Theme.tres" type="Theme" id=2]
+[ext_resource path="res://ui/Pause/SFX/pause.ogg" type="AudioStream" id=6]
+[ext_resource path="res://ui/Pause/SFX/select.ogg" type="AudioStream" id=7]
+[ext_resource path="res://ui/Pause/SFX/death.ogg" type="AudioStream" id=8]
+[ext_resource path="res://ui/Pause/Settings.tscn" type="PackedScene" id=11]
+[ext_resource path="res://sfx/background music.ogg" type="AudioStream" id=12]
+[ext_resource path="res://ui/Pause/Credits.tscn" type="PackedScene" id=13]
+
 
 [sub_resource type="Animation" id=2]
 resource_name = "death"

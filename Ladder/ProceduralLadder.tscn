@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Ladder/LadderProcedural.gd" type="Script" id=1]
-[ext_resource path="res://Ladder/LadderTop.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ladder/LadderProcedural.gd" type="Script" id=1]
+[ext_resource path="res://ladder/LadderTop.tscn" type="PackedScene" id=2]
+
 
 [node name="Ladder" type="Spatial"]
 script = ExtResource( 1 )

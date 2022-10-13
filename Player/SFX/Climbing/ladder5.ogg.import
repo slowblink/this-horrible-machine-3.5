@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/ladder5.ogg-0cd49d0fd8a1f5c7c68983e9588b804b.oggstr"
+path="res://.import/ladder5.ogg-817566d1d65fa965affef29c127b7f9b.oggstr"
 
 [deps]
 
-source_file="res://Player/SFX/Climbing/ladder5.ogg"
-dest_files=[ "res://.import/ladder5.ogg-0cd49d0fd8a1f5c7c68983e9588b804b.oggstr" ]
+source_file="res://player/SFX/Climbing/ladder5.ogg"
+dest_files=[ "res://.import/ladder5.ogg-817566d1d65fa965affef29c127b7f9b.oggstr" ]
 
 [params]
 

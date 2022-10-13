@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/footstep04.ogg-012c457b2ca402b3d913fb04e9b49c19.oggstr"
+path="res://.import/footstep04.ogg-7e8b8cdfc35a50d91ab6b757ae6a2043.oggstr"
 
 [deps]
 
-source_file="res://Player/SFX/Walking/footstep04.ogg"
-dest_files=[ "res://.import/footstep04.ogg-012c457b2ca402b3d913fb04e9b49c19.oggstr" ]
+source_file="res://player/SFX/Walking/footstep04.ogg"
+dest_files=[ "res://.import/footstep04.ogg-7e8b8cdfc35a50d91ab6b757ae6a2043.oggstr" ]
 
 [params]
 

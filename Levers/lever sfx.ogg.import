@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/lever sfx.ogg-051855954c097d1916b9acc3deb8433a.oggstr"
+path="res://.import/lever sfx.ogg-c6f0f0433e50dd27e3c276b06ffef198.oggstr"
 
 [deps]
 
-source_file="res://Levers/lever sfx.ogg"
-dest_files=[ "res://.import/lever sfx.ogg-051855954c097d1916b9acc3deb8433a.oggstr" ]
+source_file="res://levers/lever sfx.ogg"
+dest_files=[ "res://.import/lever sfx.ogg-c6f0f0433e50dd27e3c276b06ffef198.oggstr" ]
 
 [params]
 

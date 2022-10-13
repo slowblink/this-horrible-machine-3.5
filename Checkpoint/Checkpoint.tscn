@@ -1,9 +1,10 @@
 [gd_scene load_steps=16 format=2]
 
-[ext_resource path="res://Materials/Material_001.material" type="Material" id=1]
-[ext_resource path="res://Checkpoint/Checkpoint.gd" type="Script" id=2]
-[ext_resource path="res://SFX/Checkpoint/idle.ogg" type="AudioStream" id=3]
-[ext_resource path="res://SFX/Checkpoint/collectCheckpoint.ogg" type="AudioStream" id=4]
+[ext_resource path="res://materials/Material_001.material" type="Material" id=1]
+[ext_resource path="res://checkpoint/Checkpoint.gd" type="Script" id=2]
+[ext_resource path="res://sfx/Checkpoint/idle.ogg" type="AudioStream" id=3]
+[ext_resource path="res://sfx/Checkpoint/collectCheckpoint.ogg" type="AudioStream" id=4]
+
 
 [sub_resource type="BoxShape" id=58]
 extents = Vector3( 0.7, 2.6, 1.4 )

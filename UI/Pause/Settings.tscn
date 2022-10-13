@@ -1,9 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://UI/Pause/Theme/Theme.tres" type="Theme" id=1]
-[ext_resource path="res://UI/Pause/SFX/tick.ogg" type="AudioStream" id=3]
-[ext_resource path="res://UI/Pause/Settings.gd" type="Script" id=4]
-[ext_resource path="res://UI/Pause/SFX/select.ogg" type="AudioStream" id=5]
+[ext_resource path="res://ui/Pause/Theme/Theme.tres" type="Theme" id=1]
+[ext_resource path="res://ui/Pause/SFX/tick.ogg" type="AudioStream" id=3]
+[ext_resource path="res://ui/Pause/Settings.gd" type="Script" id=4]
+[ext_resource path="res://ui/Pause/SFX/select.ogg" type="AudioStream" id=5]
+
 
 [sub_resource type="StyleBoxFlat" id=4]
 bg_color = Color( 0.0431373, 0.0431373, 0.0431373, 0.862745 )

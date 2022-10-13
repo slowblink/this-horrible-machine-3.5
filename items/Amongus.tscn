@@ -1,8 +1,9 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Materials/Material_001.material" type="Material" id=1]
+[ext_resource path="res://materials/Material_001.material" type="Material" id=1]
 [ext_resource path="res://items/Amongus.gd" type="Script" id=2]
-[ext_resource path="res://Materials/Atlas.material" type="Material" id=3]
+[ext_resource path="res://materials/Atlas.material" type="Material" id=3]
+
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 1.3, 1.5, 1.2 )

@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://UI/Pause/Theme/Theme.tres" type="Theme" id=1]
-[ext_resource path="res://UI/Pause/Credits.gd" type="Script" id=5]
-[ext_resource path="res://UI/Pause/SFX/select.ogg" type="AudioStream" id=6]
+[ext_resource path="res://ui/Pause/Theme/Theme.tres" type="Theme" id=1]
+[ext_resource path="res://ui/Pause/Credits.gd" type="Script" id=5]
+[ext_resource path="res://ui/Pause/SFX/select.ogg" type="AudioStream" id=6]
+
 
 [node name="Credits" type="VBoxContainer"]
 anchor_left = 0.5

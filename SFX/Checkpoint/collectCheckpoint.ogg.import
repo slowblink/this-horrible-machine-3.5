@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/collectCheckpoint.ogg-30d0536de0d8c7fd89f34b29ddd54567.oggstr"
+path="res://.import/collectCheckpoint.ogg-70d2aa9733f09c6e3969d4601fac6648.oggstr"
 
 [deps]
 
-source_file="res://SFX/Checkpoint/collectCheckpoint.ogg"
-dest_files=[ "res://.import/collectCheckpoint.ogg-30d0536de0d8c7fd89f34b29ddd54567.oggstr" ]
+source_file="res://sfx/Checkpoint/collectCheckpoint.ogg"
+dest_files=[ "res://.import/collectCheckpoint.ogg-70d2aa9733f09c6e3969d4601fac6648.oggstr" ]
 
 [params]
 

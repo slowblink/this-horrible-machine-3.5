@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/death.ogg-e4671877a90b140d25beedf3eaced8b1.oggstr"
+path="res://.import/death.ogg-b8ebfce3b83134ea9348d4988b6a2b54.oggstr"
 
 [deps]
 
-source_file="res://UI/Pause/SFX/death.ogg"
-dest_files=[ "res://.import/death.ogg-e4671877a90b140d25beedf3eaced8b1.oggstr" ]
+source_file="res://ui/Pause/SFX/death.ogg"
+dest_files=[ "res://.import/death.ogg-b8ebfce3b83134ea9348d4988b6a2b54.oggstr" ]
 
 [params]
 

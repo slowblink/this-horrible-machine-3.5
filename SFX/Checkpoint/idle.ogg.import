@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/idle.ogg-855c8bd5b7fee6c5556cf286f9e78dbc.oggstr"
+path="res://.import/idle.ogg-4341f6f3f704e3be031aeb844ab47918.oggstr"
 
 [deps]
 
-source_file="res://SFX/Checkpoint/idle.ogg"
-dest_files=[ "res://.import/idle.ogg-855c8bd5b7fee6c5556cf286f9e78dbc.oggstr" ]
+source_file="res://sfx/Checkpoint/idle.ogg"
+dest_files=[ "res://.import/idle.ogg-4341f6f3f704e3be031aeb844ab47918.oggstr" ]
 
 [params]
 

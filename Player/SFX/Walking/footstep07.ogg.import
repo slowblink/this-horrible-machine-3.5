@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/footstep07.ogg-56483b394e8cbd398d50003e0367f5e3.oggstr"
+path="res://.import/footstep07.ogg-c362396ddfd291aab95418534dac4743.oggstr"
 
 [deps]
 
-source_file="res://Player/SFX/Walking/footstep07.ogg"
-dest_files=[ "res://.import/footstep07.ogg-56483b394e8cbd398d50003e0367f5e3.oggstr" ]
+source_file="res://player/SFX/Walking/footstep07.ogg"
+dest_files=[ "res://.import/footstep07.ogg-c362396ddfd291aab95418534dac4743.oggstr" ]
 
 [params]
 
