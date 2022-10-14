@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/footstep07.ogg-54c27b64bcad3c8c481fa3e7086b8514.oggstr"
+
+[deps]
+
+source_file="res://scenes/player/sfx/walking/footstep07.ogg"
+dest_files=[ "res://.import/footstep07.ogg-54c27b64bcad3c8c481fa3e7086b8514.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ladder4.ogg-bb5ee13788f4bbfeeee35efd123df699.oggstr"
+
+[deps]
+
+source_file="res://scenes/player/sfx/climbing/ladder4.ogg"
+dest_files=[ "res://.import/ladder4.ogg-bb5ee13788f4bbfeeee35efd123df699.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
