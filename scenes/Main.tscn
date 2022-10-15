@@ -1,12 +1,29 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/default_env.tres" type="Environment" id=1]
+[ext_resource path="res://src/textures/misc/thm_logo.png" type="Texture" id=2]
 [ext_resource path="res://scenes/player/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/ui/pause/theme/Theme.tres" type="Theme" id=13]
-[ext_resource path="res://scenes/ui/fps logo.png" type="Texture" id=14]
 [ext_resource path="res://scenes/mainmenu.gd" type="Script" id=15]
 [ext_resource path="res://scenes/ui/pause/Credits.tscn" type="PackedScene" id=16]
 [ext_resource path="res://scenes/ui/pause/sfx/select.ogg" type="AudioStream" id=18]
+
+[sub_resource type="Animation" id=1]
+resource_name = "menu_loop"
+length = 30.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 15, 30 ),
+"transitions": PoolRealArray( -2.5, -2.5, -2.5 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -560 ), Vector2( 0, 0 ) ]
+}
 
 [node name="Blocks" type="WorldEnvironment"]
 environment = ExtResource( 1 )
@@ -20,65 +37,59 @@ margin_right = 40.0
 margin_bottom = 40.0
 theme = ExtResource( 13 )
 
-[node name="Menu" type="ColorRect" parent="Menu/Control"]
-margin_left = -6.0
-margin_top = -9.0
-margin_right = 575.0
-margin_bottom = -8.0
-rect_scale = Vector2( 1.00993, 739.489 )
-color = Color( 0, 0, 0, 0.427451 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="TextureRect" type="TextureRect" parent="Menu/Control"]
+margin_top = -512.426
+margin_right = 1280.0
+margin_bottom = 767.574
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource( 2 )
+expand = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Menu/Control/TextureRect"]
+autoplay = "menu_loop"
+anims/menu_loop = SubResource( 1 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Menu/Control"]
-margin_left = 87.0
-margin_top = 466.0
-margin_right = 473.0
-margin_bottom = 646.0
+margin_right = 1280.0
+margin_bottom = 720.0
+alignment = 1
 
 [node name="Button" type="Button" parent="Menu/Control/VBoxContainer"]
-margin_right = 386.0
-margin_bottom = 35.0
+margin_top = 273.0
+margin_right = 1280.0
+margin_bottom = 308.0
 text = "PLAY"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button2" type="Button" parent="Menu/Control/VBoxContainer"]
-margin_top = 46.0
-margin_right = 386.0
-margin_bottom = 81.0
+margin_top = 319.0
+margin_right = 1280.0
+margin_bottom = 354.0
 text = "SETTINGS"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button3" type="Button" parent="Menu/Control/VBoxContainer"]
-margin_top = 92.0
-margin_right = 386.0
-margin_bottom = 127.0
+margin_top = 365.0
+margin_right = 1280.0
+margin_bottom = 400.0
 text = "CREDITS"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button4" type="Button" parent="Menu/Control/VBoxContainer"]
-margin_top = 138.0
-margin_right = 386.0
-margin_bottom = 173.0
+margin_top = 411.0
+margin_right = 1280.0
+margin_bottom = 446.0
 text = "QUIT"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="TextureRect" type="TextureRect" parent="Menu/Control"]
-margin_left = 931.0
-margin_top = 4.0
-margin_right = 1269.0
-margin_bottom = 194.0
-texture = ExtResource( 14 )
-expand = true
 
 [node name="Credits" parent="Menu" instance=ExtResource( 16 )]
 visible = false
