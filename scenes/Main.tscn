@@ -79,9 +79,6 @@ margin_right = 1269.0
 margin_bottom = 194.0
 texture = ExtResource( 14 )
 expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Credits" parent="Menu" instance=ExtResource( 16 )]
 visible = false
