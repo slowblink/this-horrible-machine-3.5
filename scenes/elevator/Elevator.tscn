@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://src/textures/misc/Material_001.material" type="Material" id=1]
+[ext_resource path="res://textures/misc/Material_001.material" type="Material" id=1]
 [ext_resource path="res://scenes/elevator/ElevatorTop.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/textures/misc/Atlas.material" type="Material" id=3]
+[ext_resource path="res://textures/misc/Atlas.material" type="Material" id=3]
 [ext_resource path="res://scenes/elevator/Elevator.gd" type="Script" id=4]
 
 

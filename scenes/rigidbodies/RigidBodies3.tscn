@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://src/textures/misc/RigidBody Material.tres" type="Material" id=1]
+[ext_resource path="res://textures/misc/RigidBody Material.tres" type="Material" id=1]
 [ext_resource path="res://scenes/rigidbodies/RigidBodyReset.gd" type="Script" id=2]
 
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://src/textures/misc/Atlas.material" type="Material" id=1]
+[ext_resource path="res://textures/misc/Atlas.material" type="Material" id=1]
 [ext_resource path="res://scenes/blocks/fence/Fence.gd" type="Script" id=2]
 [ext_resource path="res://scenes/blocks/fence/Left.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/blocks/fence/Right.tscn" type="PackedScene" id=5]
