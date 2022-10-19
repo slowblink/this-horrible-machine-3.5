@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://scenes/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://scenes/player/crosshair007.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://scenes/player/sfx/climbing/ladder3.ogg" type="AudioStream" id=10]
 [ext_resource path="res://scenes/player/sfx/climbing/ladder5.ogg" type="AudioStream" id=11]
 [ext_resource path="res://scenes/player/sfx/climbing/ladder4.ogg" type="AudioStream" id=12]
+[ext_resource path="res://src/shaders/pixelated.tres" type="Shader" id=13]
 [ext_resource path="res://scenes/player/sfx/climbing/ladder1.ogg" type="AudioStream" id=14]
 
 [sub_resource type="CapsuleShape" id=3]
@@ -55,6 +56,11 @@ tracks/1/keys = {
 "points": PoolRealArray( 0, 0, 0, 0, 0, -1.37748, -0.077, 0, 0.149, 0, 0, -0.136, 0, 0, 0 ),
 "times": PoolRealArray( 0, 0.1, 0.3 )
 }
+
+[sub_resource type="QuadMesh" id=20]
+
+[sub_resource type="ShaderMaterial" id=21]
+shader = ExtResource( 13 )
 
 [sub_resource type="StyleBoxFlat" id=17]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
@@ -107,6 +113,11 @@ anims/bobbing = SubResource( 11 )
 root_node = NodePath("../..")
 anims/land = SubResource( 16 )
 
+[node name="LoRes" type="MeshInstance" parent="Head/Camera"]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 1, 0, 0, -1 )
+mesh = SubResource( 20 )
+material/0 = SubResource( 21 )
+
 [node name="Hand" type="SpringArm" parent="Head"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
 spring_length = 5.0
@@ -117,8 +128,9 @@ transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0, 0, 0 )
 
 [node name="RayCast" type="RayCast" parent="Head"]
 unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 enabled = true
-cast_to = Vector3( 0, 0, -6.095 )
+cast_to = Vector3( 0, 0, -5 )
 collision_mask = 5
 collide_with_areas = true
 
