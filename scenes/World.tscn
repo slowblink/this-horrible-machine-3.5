@@ -623,11 +623,10 @@ Bobbing = false
 SprintFOVToggle = false
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( -1, 2.31808e-07, -2.31808e-07, 0, 0.707107, 0.707106, 3.27826e-07, 0.707106, -0.707107, 0, 7, 0 )
-visible = false
-light_color = Color( 1, 0.956863, 0.894118, 1 )
-light_energy = 0.5
-light_indirect_energy = 0.5
+transform = Transform( -1, 2.31808e-07, -2.31808e-07, 0, 0.707107, 0.707106, 3.27826e-07, 0.707106, -0.707107, 0, 111.1, 35.7631 )
+light_color = Color( 1, 0, 0, 1 )
+light_energy = 0.1
+light_indirect_energy = 0.1
 shadow_enabled = true
 shadow_contact = 0.9
 directional_shadow_mode = 0
