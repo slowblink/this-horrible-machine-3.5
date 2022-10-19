@@ -52,15 +52,16 @@ margin_bottom = 720.0
 alignment = 1
 
 [node name="PLAY" type="Button" parent="Control/VBoxContainer"]
-margin_top = 273.0
+margin_top = 319.0
 margin_right = 1280.0
-margin_bottom = 308.0
+margin_bottom = 354.0
 text = "PLAY"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="SETTINGS" type="Button" parent="Control/VBoxContainer"]
+visible = false
 margin_top = 319.0
 margin_right = 1280.0
 margin_bottom = 354.0
@@ -70,18 +71,19 @@ __meta__ = {
 }
 
 [node name="CREDITS" type="Button" parent="Control/VBoxContainer"]
-margin_top = 365.0
+visible = false
+margin_top = 342.0
 margin_right = 1280.0
-margin_bottom = 400.0
+margin_bottom = 377.0
 text = "CREDITS"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="QUIT" type="Button" parent="Control/VBoxContainer"]
-margin_top = 411.0
+margin_top = 365.0
 margin_right = 1280.0
-margin_bottom = 446.0
+margin_bottom = 400.0
 text = "QUIT"
 __meta__ = {
 "_edit_use_anchors_": false
