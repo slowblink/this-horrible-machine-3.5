@@ -194,6 +194,31 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/qodot/game_definitions/worldspawn_layers/liquid/slime.gd"
 }, {
+"base": "Node",
+"class": "State",
+"language": "GDScript",
+"path": "res://addons/xsm/state.gd"
+}, {
+"base": "State",
+"class": "StateAnimation",
+"language": "GDScript",
+"path": "res://addons/xsm/state_animation.gd"
+}, {
+"base": "State",
+"class": "StateLoop",
+"language": "GDScript",
+"path": "res://addons/xsm/state_loop.gd"
+}, {
+"base": "State",
+"class": "StateRand",
+"language": "GDScript",
+"path": "res://addons/xsm/state_rand.gd"
+}, {
+"base": "State",
+"class": "StateRegions",
+"language": "GDScript",
+"path": "res://addons/xsm/state_regions.gd"
+}, {
 "base": "Resource",
 "class": "TrenchBroomFaceAttrib",
 "language": "GDScript",
@@ -257,6 +282,11 @@ _global_script_class_icons={
 "QuakeWadFile": "",
 "QuakeWadImportPlugin": "",
 "SlimeLayer": "",
+"State": "res://addons/xsm/icons/state.png",
+"StateAnimation": "res://addons/xsm/icons/state.png",
+"StateLoop": "res://addons/xsm/icons/state_loop.png",
+"StateRand": "res://addons/xsm/icons/state_rand.png",
+"StateRegions": "res://addons/xsm/icons/state_regions.png",
 "TrenchBroomFaceAttrib": "",
 "TrenchBroomGameConfigFile": "",
 "TrenchBroomGameConfigFolder": "",
@@ -288,7 +318,7 @@ window/stretch/aspect="keep"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/node_referencer/plugin.cfg", "res://addons/qodot/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/node_referencer/plugin.cfg", "res://addons/qodot/plugin.cfg", "res://addons/xsm/plugin.cfg" )
 
 [importer_defaults]
 
