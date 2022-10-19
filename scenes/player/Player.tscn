@@ -14,7 +14,6 @@
 [ext_resource path="res://scenes/player/sfx/climbing/ladder4.ogg" type="AudioStream" id=12]
 [ext_resource path="res://scenes/player/sfx/climbing/ladder1.ogg" type="AudioStream" id=14]
 
-
 [sub_resource type="CapsuleShape" id=3]
 height = 2.0
 
@@ -37,7 +36,7 @@ tracks/0/keys = {
 resource_name = "land"
 length = 0.3
 tracks/0/type = "bezier"
-tracks/0/path = NodePath("Camera:translation:y")
+tracks/0/path = NodePath("Head/Camera:translation:y")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -47,7 +46,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1, 0.3 )
 }
 tracks/1/type = "bezier"
-tracks/1/path = NodePath("Camera:rotation_degrees:x")
+tracks/1/path = NodePath("Head/Camera:rotation_degrees:x")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -80,6 +79,12 @@ extents = Vector3( 1, 1.5, 0.1 )
 collision_layer = 2
 collision_mask = 5
 script = ExtResource( 1 )
+SprintMeter = false
+Jump = 10
+Gravity = 5
+Speed = 5
+SprintSpeedFactor = 5
+CrouchSpeedFactor = 5
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0 )
@@ -89,6 +94,8 @@ shape = SubResource( 3 )
 transform = Transform( 0.9375, 0, 0, 0, 0.9375, -1.16415e-10, 0, 1.16415e-10, 0.9375, 0, 1.00625, 2.32831e-10 )
 
 [node name="Camera" type="Camera" parent="Head"]
+unique_name_in_owner = true
+transform = Transform( 1.06667, 0, 0, 0, 1.06667, 0, 0, 0, 1.06667, 0, 0, 0 )
 environment = ExtResource( 9 )
 far = 1000.0
 
@@ -109,6 +116,7 @@ margin = 0.0
 transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0, 0, 0 )
 
 [node name="RayCast" type="RayCast" parent="Head"]
+unique_name_in_owner = true
 enabled = true
 cast_to = Vector3( 0, 0, -6.095 )
 collision_mask = 5
@@ -122,12 +130,12 @@ transform = Transform( 0.9375, 0, 0, 0, 0.9375, 0, 0, 0, 0.9375, 0, -1.10625, 0 
 enabled = true
 cast_to = Vector3( 0, -1.021, 0 )
 collide_with_areas = true
-debug_shape_thickness = 5.0
+debug_shape_thickness = 5
 
 [node name="TopCheck" type="RayCast" parent="."]
 enabled = true
 cast_to = Vector3( 0, 2.021, 0 )
-debug_shape_thickness = 5.0
+debug_shape_thickness = 5
 
 [node name="Crosshair" type="Node2D" parent="."]
 visible = false

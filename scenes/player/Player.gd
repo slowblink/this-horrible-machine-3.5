@@ -247,7 +247,7 @@ func _input(event: InputEvent) -> void:
 		if Input.is_action_just_pressed("click"):
 			if objectGrabbed:
 			# give that object linear velocity (movement) on the Z axis which would be multiplied by ThrowForce.
-				objectGrabbed.linear_velocity = -$Head/Camera.global_transform.basis.z * ThrowForce
+				objectGrabbed.linear_velocity = -$"%Camera".global_transform.basis.z * ThrowForce
 				release()
 		# Otherwise, if we are colliding with something else,
 			if $Head/RayCast.get_collider():
@@ -291,7 +291,7 @@ func movement(delta):
 
 
 # When the player crouches (Ctrl),
-	if Input.is_action_pressed("crouch"):
+	if Input.is_action_pressed("crouch") or Input.is_action_pressed("jump"):
 	# subtract the player's collision height by CrouchSmoothing,
 		$CollisionShape.shape.height -= CrouchSmoothing * delta
 	# set the current speed to the predetermined crouching speed.
@@ -371,13 +371,13 @@ func movement(delta):
 
 
 # When the player jumps (Space):
-	if Input.is_action_just_pressed("jump"):\
+	if Input.is_action_just_released("jump"):\
 	# If the maximum ammount of jumps is 1,
 		if MaxJumps < 2:
 		# and if the maximum ammount of jumps is not 0, and is touching the ground or a slope through the ground
 		# check raycast:
 			if MaxJumps > 0\
-			and (is_on_floor() or $GroundCheck.is_colliding()):
+			and (is_on_floor() or $GroundCheck.is_colliding() or $Head/RayCast.is_colliding()):
 			# set the Y vector of the current gravity to 1 and multiply it by the jump height variable (Jump).
 				gravityVec = Vector3.UP * Jump
 
@@ -419,7 +419,7 @@ func movement(delta):
 		if gravityVec.y < -15\
 		and Bobbing:
 		# play the landing animation.
-			$Head/Camera/land.play("land")
+			$"%Camera"/land.play("land")
 	# If the player will not be landing on a jump pad,
 		if not ($GroundCheck.get_collider() is Area\
 		and $GroundCheck.get_collider().is_in_group("jumppad")):
@@ -514,12 +514,12 @@ func movement(delta):
 			if Bobbing == true:
 		# the bobbing animation speed is changed if the player is walking, crouching or sprinting.
 				if Speed == defaultSpeed:
-					$Head/Camera/bob.playback_speed = 2
+					$"%Camera"/bob.playback_speed = 2
 				elif Speed == crouchSpeed:
-					$Head/Camera/bob.playback_speed = 1
+					$"%Camera"/bob.playback_speed = 1
 				elif Speed == sprintSpeed:
-					$Head/Camera/bob.playback_speed = 5
-				$Head/Camera/bob.play("bobbing")
+					$"%Camera"/bob.playback_speed = 5
+				$"%Camera"/bob.play("bobbing")
 		# If the random walk sound effect is not playing and the walking timer has been set off. 
 			if not $RandomWalk.is_playing()\
 			and walkAudio == true:
@@ -543,7 +543,7 @@ func camera(delta):
 # multiplied by the MouseSensitivity.
 	rotationVelocity = rotationVelocity.linear_interpolate(cameraInput * (MouseSensitivity * 0.25), delta * CameraSmoothing)
 # We interpolate the Z rotation of the camera which gives it a slight tilt.
-	$Head/Camera.rotation_degrees.z = lerp($Head/Camera.rotation_degrees.z,
+	$"%Camera".rotation_degrees.z = lerp($"%Camera".rotation_degrees.z,
 # The value is taken from pressing the left input which is multiplied by TiltAmmount
 	(TiltAmmount * (float(Input.is_action_pressed("left")) 
 # And the tilt will be zero if the player is not on the ground.
@@ -580,7 +580,7 @@ func camera(delta):
 	# FOV is set by the speed of the player.
 		var FOV = h_velocity.length()
 	# The camera's FOV is interpolated with FOV:
-		$Head/Camera.fov = lerp($Head/Camera.fov, 
+		$"%Camera".fov = lerp($"%Camera".fov, 
 	# FOV will never go lower than MinFOV added with MaxFOV that only gets toggled when the player
 	# is moving (the higher the player movement, the closer the camera FOV gets to MaxFOV).
 	# The camera FOV is also multiplied if the player is running.

@@ -11,7 +11,7 @@ func _on_Credits_tree_entered() -> void:
 # CREDITS  ------------------------------------------------------------------------------------
 
 # Most of these function by opening a link on the browser.
-# Again big thanks to these awesome people who make Godot more and more easir to learn <3
+# Again big thanks to these awesome people who make Godot more and more easier to learn <3
 func _on_KENNEY_pressed() -> void:
 	$SelectAudio.play()
 # warning-ignore:return_value_discarded

@@ -18,7 +18,7 @@ func _on_Play_pressed() -> void:
 	hide()
 	Global.Playing = true
 	# and grabs the player node's camera to set as the current camera.
-	Global.player.get_node("Head/Camera").set_current(true)
+	Global.player.get_node("%Camera").set_current(true)
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	# We then hide the menu and logo,
 	$Control.visible = false
