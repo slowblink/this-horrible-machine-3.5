@@ -1105,15 +1105,12 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id=221]
 shader = SubResource( 220 )
-shader_param/room_depth = 1.0
+shader_param/room_depth = 4.0
 shader_param/emission_strength = 0.0
 shader_param/cubemap_albedo = ExtResource( 11 )
-shader_param/cubemap_normalmap = ExtResource( 11 )
-shader_param/cubemap_emission = ExtResource( 11 )
 
-[sub_resource type="QuadMesh" id=222]
+[sub_resource type="PlaneMesh" id=222]
 material = SubResource( 221 )
-size = Vector2( 10, 10 )
 
 [node name="Blocks" type="WorldEnvironment"]
 environment = ExtResource( 1 )
@@ -1816,5 +1813,5 @@ shape = SubResource( 218 )
 shape = SubResource( 219 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 0.136753, 0, 0.990605, 0, 1, 0, -0.990605, 0, 0.136753, -8.68999, 50.516, -10.0319 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 51, -5 )
 mesh = SubResource( 222 )
