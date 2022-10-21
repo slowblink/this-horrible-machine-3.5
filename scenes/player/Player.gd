@@ -89,7 +89,7 @@ var stillSprinting = false
 # How many times the player has jumped.
 var jumpCount = 0
 # Default FOV of the player. (modified through the export variables)
-var fov = 70
+var fov = 90
 
 # Default length of the rigid body grabbing system.
 var scrollInput = 5
