@@ -202,8 +202,8 @@ wait_time = 0.1
 one_shot = true
 
 [node name="OmniLight" type="OmniLight" parent="."]
-light_color = Color( 0.835294, 1, 0.827451, 1 )
-light_energy = 0.2
+light_color = Color( 0.996078, 0.027451, 0.0156863, 1 )
+light_energy = 0.5
 light_negative = true
 light_specular = 0.0
 shadow_enabled = true

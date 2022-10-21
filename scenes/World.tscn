@@ -1539,7 +1539,7 @@ script = ExtResource( 5 )
 [node name="Menu" parent="." instance=ExtResource( 4 )]
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.8421, -195.574 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 84, 137.842, -211.574 )
 LockMouse = false
 DevMode = true
 SprintFOVToggle = false
@@ -1547,9 +1547,9 @@ SprintSpeedFactor = 20
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( -1, 2.31808e-07, -2.31808e-07, 0, 0.707107, 0.707106, 3.27826e-07, 0.707106, -0.707107, 0, 111.1, 35.7631 )
-light_color = Color( 1, 0, 0, 1 )
-light_energy = 0.1
-light_indirect_energy = 0.1
+light_color = Color( 0.94902, 0.529412, 0.0196078, 1 )
+light_energy = 0.5
+light_indirect_energy = 0.5
 shadow_enabled = true
 shadow_contact = 0.9
 directional_shadow_mode = 1
