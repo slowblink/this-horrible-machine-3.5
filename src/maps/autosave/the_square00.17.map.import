@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/the_square00.17.map-ed95cdeca9c603f9b693535caddca6ae.tres"
+
+[deps]
+
+source_file="res://src/maps/autosave/the_square00.17.map"
+dest_files=[ "res://.import/the_square00.17.map-ed95cdeca9c603f9b693535caddca6ae.tres" ]
+
+[params]
+

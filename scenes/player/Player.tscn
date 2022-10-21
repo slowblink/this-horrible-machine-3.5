@@ -201,6 +201,15 @@ stream = ExtResource( 6 )
 wait_time = 0.1
 one_shot = true
 
+[node name="OmniLight" type="OmniLight" parent="."]
+light_color = Color( 0.835294, 1, 0.827451, 1 )
+light_energy = 0.2
+light_negative = true
+light_specular = 0.0
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 6.9644
+
 [connection signal="area_entered" from="ClimbCheck" to="." method="_on_ClimbCheck_area_entered"]
 [connection signal="area_exited" from="ClimbCheck" to="." method="_on_ClimbCheck_area_exited"]
 [connection signal="timeout" from="RandomWalk/WalkAudioTimer" to="." method="_on_WalkAudioTimer_timeout"]
