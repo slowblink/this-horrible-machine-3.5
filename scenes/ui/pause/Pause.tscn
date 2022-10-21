@@ -112,6 +112,7 @@ margin_bottom = 282.0
 text = "SETTINGS"
 
 [node name="Credits" type="Button" parent="Pause/Pause"]
+visible = false
 margin_top = 293.0
 margin_right = 296.0
 margin_bottom = 328.0

@@ -30,7 +30,6 @@ auto_exposure_enabled = true
 ss_reflections_enabled = true
 ss_reflections_max_steps = 16
 ss_reflections_roughness = false
-dof_blur_far_enabled = true
 dof_blur_far_distance = 25.0
 dof_blur_far_transition = 30.0
 dof_blur_far_quality = 0
