@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Glass_05_normal.png-9b1079957664da66a8510d6a58cb1aed.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://textures/map_mats/Glass_05_normal.png"
+dest_files=[ "res://.import/Glass_05_normal.png-9b1079957664da66a8510d6a58cb1aed.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=1
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0
