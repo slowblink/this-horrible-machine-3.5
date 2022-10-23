@@ -186,7 +186,6 @@ func setspawn():
 func _input(event: InputEvent) -> void:
 # Inputs will only work if the player has pressed the Play button in the menu.
 	if Global.Playing:
-
 	# If I move my mouse, it gets the relative mouse movement and assigns it to cameraInput.
 		if event is InputEventMouseMotion:
 			cameraInput = event.relative
@@ -290,7 +289,7 @@ func movement(delta):
 	direction = Vector3()
 
 
-# When the player crouches (Ctrl),
+# When the player crouches (Ctrl) or when the player is setting a jump,
 	if Input.is_action_pressed("crouch") or Input.is_action_pressed("jump"):
 	# subtract the player's collision height by CrouchSmoothing,
 		$CollisionShape.shape.height -= CrouchSmoothing * delta
