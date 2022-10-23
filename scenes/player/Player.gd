@@ -135,10 +135,12 @@ signal interact(node,item)
 signal letGo(node)
 # The signal sent when the player dies.
 signal kill
-
 # Grabs the node "Spawn Point" in the world. If there's no Spawn Point node, then it
 # editor position of the player and saves that as the spawn point. 
 var spawnpoint
+# look_direction is what I'm using to * jump by to send the player in the direction they are 
+# looking when they release space
+var look_direction = Vector3()
 
 # RUN TIME  ----------------------------------------------------------------------------
 # When the game runs,
@@ -289,9 +291,10 @@ func movement(delta):
 	direction = Vector3()
 
 
-# When the player crouches (Ctrl) or when the player is setting a jump,
+# When the player crouches (Ctrl) or when the player is setting up a jump,
 	if Input.is_action_pressed("crouch") or Input.is_action_pressed("jump"):
 	# subtract the player's collision height by CrouchSmoothing,
+		#climb = true
 		$CollisionShape.shape.height -= CrouchSmoothing * delta
 	# set the current speed to the predetermined crouching speed.
 		Speed = crouchSpeed
@@ -371,14 +374,18 @@ func movement(delta):
 
 # When the player jumps (Space):
 	if Input.is_action_just_released("jump"):\
-	# If the maximum ammount of jumps is 1,
+		# If the maximum ammount of jumps is 1,
+		#climb = false
 		if MaxJumps < 2:
 		# and if the maximum ammount of jumps is not 0, and is touching the ground or a slope through the ground
 		# check raycast:
 			if MaxJumps > 0\
 			and (is_on_floor() or $GroundCheck.is_colliding() or $Head/RayCast.is_colliding()):
-			# set the Y vector of the current gravity to 1 and multiply it by the jump height variable (Jump).
-				gravityVec = Vector3.UP * Jump
+				look_direction = $Head/Camera.get_global_rotation() 
+				print(look_direction)
+				# set the Y vector of the current gravity to 1 and multiply it by the jump height variable (Jump).
+				gravityVec = look_direction * Jump
+				print(gravityVec)
 
 	# Otherwise, if max jumps is more than 1:
 		else:
