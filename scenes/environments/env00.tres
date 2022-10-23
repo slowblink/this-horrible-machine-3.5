@@ -2,31 +2,31 @@
 
 [sub_resource type="ProceduralSky" id=1]
 sky_top_color = Color( 0, 0, 0, 1 )
-sky_horizon_color = Color( 0.94902, 0.529412, 0.0196078, 1 )
-sky_curve = 0.0195873
-sky_energy = 0.1
-ground_bottom_color = Color( 0.0117647, 0.65098, 0.415686, 1 )
-ground_horizon_color = Color( 0.94902, 0.92549, 0.847059, 1 )
+sky_horizon_color = Color( 0.0117647, 0.65098, 0.415686, 1 )
+sky_curve = 0.020278
+sky_energy = 5.0
+ground_bottom_color = Color( 0, 0, 0, 1 )
+ground_horizon_color = Color( 0.0117647, 0.65098, 0.415686, 1 )
 ground_curve = 0.0151572
-ground_energy = 0.1
-sun_color = Color( 0.996078, 0.027451, 0.0156863, 1 )
-sun_curve = 0.0450626
+sun_color = Color( 0.678431, 0.027451, 0.45098, 1 )
+sun_curve = 0.00507655
+sun_energy = 10.0
 
 [resource]
 background_mode = 2
 background_sky = SubResource( 1 )
 background_color = Color( 0.235294, 0.27451, 0.341176, 1 )
-background_energy = 0.5
+background_energy = 2.0
 ambient_light_color = Color( 0.0196078, 0.94902, 0.780392, 1 )
 ambient_light_energy = 0.2
-ambient_light_sky_contribution = 0.5
+ambient_light_sky_contribution = 0.75
 fog_enabled = true
 fog_color = Color( 0, 0.0156863, 0.0156863, 1 )
-fog_sun_color = Color( 0.996078, 0.027451, 0.0156863, 1 )
-fog_sun_amount = 0.01
+fog_sun_color = Color( 0.94902, 0.529412, 0.0196078, 1 )
+fog_sun_amount = 0.05
+fog_depth_end = 50.0
 fog_transmit_enabled = true
 tonemap_mode = 2
-auto_exposure_enabled = true
 ss_reflections_enabled = true
 ss_reflections_max_steps = 16
 ss_reflections_roughness = false
