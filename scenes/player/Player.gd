@@ -384,7 +384,8 @@ func movement(delta):
 				look_direction = $Head/Camera.get_global_rotation() 
 				print(look_direction)
 				# set the Y vector of the current gravity to 1 and multiply it by the jump height variable (Jump).
-				gravityVec = look_direction * Jump
+				gravityVec = Vector3((sin(look_direction.x+(PI/2))*cos(look_direction.y+PI)),sin(look_direction.x+(PI/2))*sin(look_direction.y+PI),cos(look_direction.x+(PI/2)))*Jump
+				# gravityVec = Vector3.UP * Jump
 				print(gravityVec)
 
 	# Otherwise, if max jumps is more than 1:

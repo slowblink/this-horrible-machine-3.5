@@ -86,7 +86,7 @@ collision_layer = 2
 collision_mask = 5
 script = ExtResource( 1 )
 SprintMeter = false
-Jump = 30
+Jump = 10
 Gravity = 25
 Speed = 5
 SprintSpeedFactor = 5
@@ -101,7 +101,7 @@ transform = Transform( 0.9375, 0, 0, 0, 0.9375, -1.16415e-10, 0, 1.16415e-10, 0.
 
 [node name="Camera" type="Camera" parent="Head"]
 unique_name_in_owner = true
-transform = Transform( 1.06667, 0, 0, 0, 1.06667, 0, 0, 0, 1.06667, 0, 0, 0 )
+transform = Transform( 1.06667, 0, 0, 0, 1.06667, 0, 0, 0, 1.06667, 0, 0, -2.48353e-10 )
 environment = ExtResource( 9 )
 far = 1000.0
 
