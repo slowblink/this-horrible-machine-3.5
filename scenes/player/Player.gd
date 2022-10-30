@@ -141,6 +141,12 @@ var spawnpoint
 # look_direction is what I'm using to * jump by to send the player in the direction they are 
 # looking when they release space
 var look_direction = Vector3()
+var jump_velocity = Vector3()
+var h_jump = Vector3()
+onready var debug_1 = $CanvasLayer/DebugContainer/Debug1
+onready var debug_2 = $CanvasLayer/DebugContainer/Debug2
+onready var debug_3 = $CanvasLayer/DebugContainer/Debug3
+var look_rad = Vector3()
 
 # RUN TIME  ----------------------------------------------------------------------------
 # When the game runs,
@@ -274,6 +280,7 @@ func _input(event: InputEvent) -> void:
 # The player can pan around and move only if the player hits the play button in the menu and if the player is not
 # currently dead. (You can remove the PauseNode statement as it is only used primarily in this project.)
 func _physics_process(delta: float) -> void:
+	debugger()
 	if Global.Playing\
 	and not Global.PauseNode.dead:
 		camera(delta)
@@ -285,16 +292,28 @@ func _physics_process(delta: float) -> void:
 
 # MOVEMENT SYSTEM ----------------------------------------------------------------------------
 # warning-ignore:function_conflicts_variable
-func movement(delta):
+func touchdown():
+	pass
+func debugger():
+	#look_direction = $Head/Camera.get_global_rotation()
+	#look_rad.x = look_direction.x/PI
+	#look_rad.y = look_direction.y/PI
+	#look_rad.z = look_direction.z/PI
+	h_jump = Vector3()
+	h_jump -= transform.basis.z
 
+	debug_1.text = str("h_jump: ",String(h_jump))
+	debug_2.text = str("h_velocity: ",String(h_velocity))
+	debug_3.text = str("jump_velocity: ", String(jump_velocity))
+func movement(delta):
 # This makes sure that you don't keep moving when you let go of a key.
 	direction = Vector3()
-
-
+	
 # When the player crouches (Ctrl) or when the player is setting up a jump,
 	if Input.is_action_pressed("crouch") or Input.is_action_pressed("jump"):
 	# subtract the player's collision height by CrouchSmoothing,
 		#climb = true
+		
 		$CollisionShape.shape.height -= CrouchSmoothing * delta
 	# set the current speed to the predetermined crouching speed.
 		Speed = crouchSpeed
@@ -314,7 +333,6 @@ func movement(delta):
 # while crouching)
 	if test_move(transform,Vector3.UP,false):
 		fall.y = -2
-
 
 # When the player sprints (Shift),
 	if Input.is_action_pressed("run"):
@@ -381,13 +399,19 @@ func movement(delta):
 		# check raycast:
 			if MaxJumps > 0\
 			and (is_on_floor() or $GroundCheck.is_colliding() or $Head/RayCast.is_colliding()):
-				look_direction = $Head/Camera.get_global_rotation() 
-				print(look_direction)
+				#look_direction = $Head/Camera.get_global_rotation()
+				
+				#jump_velocity.x = sin(look_direction.x+(PI/2))*cos(look_direction.y+PI)
+				#jump_velocity.y = sin(look_direction.x+(PI/2))*sin(look_direction.y+PI)
+				#jump_velocity.z = cos(look_direction.x+(PI/2))
+				print("is_on_floor or GroundCheck has collided")
+				touchdown()
+				jump_velocity.x = h_jump.x * Jump
+				jump_velocity.z = h_jump.z * Jump
+				#gravityVec = Vector3(jump_velocity) * Jump
+				#FIRST DRAFT gravityVec = Vector3((sin(look_direction.x+(PI/2))*cos(look_direction.y+PI)),sin(look_direction.x+(PI/2))*sin(look_direction.y+PI),cos(look_direction.x+(PI/2)))*Jump
 				# set the Y vector of the current gravity to 1 and multiply it by the jump height variable (Jump).
-				gravityVec = Vector3((sin(look_direction.x+(PI/2))*cos(look_direction.y+PI)),sin(look_direction.x+(PI/2))*sin(look_direction.y+PI),cos(look_direction.x+(PI/2)))*Jump
-				# gravityVec = Vector3.UP * Jump
-				print(gravityVec)
-
+				gravityVec = Vector3.UP * Jump #original
 	# Otherwise, if max jumps is more than 1:
 		else:
 		# and if the ammount of jumps done currently is not more than the maximum allowed number of jumps,
@@ -403,7 +427,6 @@ func movement(delta):
 	# start falling.
 		gravityVec = Vector3.UP * 0
 		h_velocity.y = 0
-
 
 # When the player is not on the floor:
 	if not is_on_floor():
@@ -483,7 +506,6 @@ func movement(delta):
 	direction = direction.normalized()
 # We then interpolate the direction vector smoothly to make the movement smoother.
 	h_velocity = h_velocity.linear_interpolate(direction * Speed, h_acceleration * delta)
-
 # Arcade Style = No smoothing in the movement.
 	if ArcadeStyle:
 	# For arcade style, we only need the raw normalized direction vector with no interpolation.
@@ -491,8 +513,8 @@ func movement(delta):
 		movement.x = direction.x
 		movement.z = direction.z
 	else:
-		movement.x = h_velocity.x
-		movement.z = h_velocity.z
+		movement.x = h_velocity.x + jump_velocity.x
+		movement.z = h_velocity.z + jump_velocity.z
 
 # If you are currently standing on a spring/jump boost:
 	if spring:
@@ -510,11 +532,9 @@ func movement(delta):
 # Otherwise, gravity will be controlling the Y position of the player.
 		movement.y = gravityVec.y
 
-
 # Move and slide moves the player with the movement vector, which is assigned from earlier.
 # warning-ignore:return_value_discarded
 	move_and_slide(movement, Vector3.UP, true, 4, PI/4, false)
-
 	if direction != Vector3():
 	# If the player is currently moving and on the floor and bobbing is on:
 		if is_on_floor():

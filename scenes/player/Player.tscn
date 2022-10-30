@@ -86,7 +86,7 @@ collision_layer = 2
 collision_mask = 5
 script = ExtResource( 1 )
 SprintMeter = false
-Jump = 10
+Jump = 100
 Gravity = 25
 Speed = 5
 SprintSpeedFactor = 5
@@ -200,6 +200,29 @@ stream = ExtResource( 6 )
 [node name="ClimbTimeout" type="Timer" parent="."]
 wait_time = 0.1
 one_shot = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="DebugContainer" type="VBoxContainer" parent="CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Debug1" type="Label" parent="CanvasLayer/DebugContainer"]
+margin_right = 113.0
+margin_bottom = 14.0
+text = "JUMP_VELOCITY_X"
+
+[node name="Debug2" type="Label" parent="CanvasLayer/DebugContainer"]
+margin_top = 18.0
+margin_right = 113.0
+margin_bottom = 32.0
+text = "JUMP_VELOCITY_X"
+
+[node name="Debug3" type="Label" parent="CanvasLayer/DebugContainer"]
+margin_top = 36.0
+margin_right = 113.0
+margin_bottom = 50.0
+text = "JUMP_VELOCITY_X"
 
 [connection signal="area_entered" from="ClimbCheck" to="." method="_on_ClimbCheck_area_entered"]
 [connection signal="area_exited" from="ClimbCheck" to="." method="_on_ClimbCheck_area_exited"]
