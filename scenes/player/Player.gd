@@ -1,5 +1,12 @@
 extends KinematicBody
 
+# old code
+#look_direction = $Head/Camera.get_global_rotation()
+#jump_velocity.x = sin(look_direction.x+(PI/2))*cos(look_direction.y+PI)
+#jump_velocity.y = sin(look_direction.x+(PI/2))*sin(look_direction.y+PI)
+#jump_velocity.z = cos(look_direction.x+(PI/2))
+
+
 # EXPORT VARIABLES  ----------------------------------------------------------------------------
 
 # Locks the mouse at the start of the game.
@@ -140,6 +147,8 @@ signal kill
 var spawnpoint
 # look_direction is what I'm using to * jump by to send the player in the direction they are 
 # looking when they release space
+
+# -- special jump variables--
 var look_direction = Vector3()
 var jump_velocity = Vector3()
 var h_jump = Vector3()
@@ -147,6 +156,7 @@ onready var debug_1 = $CanvasLayer/DebugContainer/Debug1
 onready var debug_2 = $CanvasLayer/DebugContainer/Debug2
 onready var debug_3 = $CanvasLayer/DebugContainer/Debug3
 var look_rad = Vector3()
+var on_wall = false
 
 # RUN TIME  ----------------------------------------------------------------------------
 # When the game runs,
@@ -189,6 +199,10 @@ func setspawn():
 		spawnpoint = get_parent().get_node("Spawn Point").global_transform.origin
 # Then, grab the spawn point coordinates and move the player to that location.
 	global_transform.origin = spawnpoint
+func set_jump_velocity():
+	jump_velocity.x = h_jump.x * Jump
+	jump_velocity.z = h_jump.z * Jump
+
 
 # INPUT EVENTS  ----------------------------------------------------------------------------
 func _input(event: InputEvent) -> void:
@@ -280,21 +294,21 @@ func _input(event: InputEvent) -> void:
 # The player can pan around and move only if the player hits the play button in the menu and if the player is not
 # currently dead. (You can remove the PauseNode statement as it is only used primarily in this project.)
 func _physics_process(delta: float) -> void:
-	debugger()
+
 	if Global.Playing\
 	and not Global.PauseNode.dead:
+		debug()
 		camera(delta)
 		movement(delta)
-
 	# If I am currently holding an object, decide what to do with that object with this function.
 		if objectGrabbed:
 			grab()
+	
 
 # MOVEMENT SYSTEM ----------------------------------------------------------------------------
 # warning-ignore:function_conflicts_variable
-func touchdown():
-	pass
-func debugger():
+
+func debug():
 	#look_direction = $Head/Camera.get_global_rotation()
 	#look_rad.x = look_direction.x/PI
 	#look_rad.y = look_direction.y/PI
@@ -303,28 +317,25 @@ func debugger():
 	h_jump -= transform.basis.z
 
 	debug_1.text = str("h_jump: ",String(h_jump))
-	debug_2.text = str("h_velocity: ",String(h_velocity))
+	debug_2.text = str("on_wall: ",String(on_wall))
 	debug_3.text = str("jump_velocity: ", String(jump_velocity))
 func movement(delta):
-# This makes sure that you don't keep moving when you let go of a key.
-	direction = Vector3()
-	
-# When the player crouches (Ctrl) or when the player is setting up a jump,
-	if Input.is_action_pressed("crouch") or Input.is_action_pressed("jump"):
-	# subtract the player's collision height by CrouchSmoothing,
-		#climb = true
-		
+	if not falling:
+		touchdown()
+	direction = Vector3()# This makes sure that you don't keep moving when you let go of a key.
+	if Input.is_action_pressed("jump"): # When the player crouches (Ctrl) or when the player is setting up a jump, #Input.is_action_pressed("crouch") or 
+		jump_charge()
+	# SHORTER COLLISION
 		$CollisionShape.shape.height -= CrouchSmoothing * delta
-	# set the current speed to the predetermined crouching speed.
+	# SET SPEED
 		Speed = crouchSpeed
-	# make audio plays 1 second delayed from each other, and lower the volume.
+	# SOUND
 		$RandomWalk/WalkAudioTimer.wait_time = 1
 		$RandomWalk.volume_db = crouchVolume
-# otherwise, test to see if there's something above the player,
+# ANYTHING ABOVE PLAYER?
 	elif not test_move(transform,Vector3.UP,$CollisionShape.shape.height):
 	# and if there are nothing above the player, then add height back with CrouchSmoothing.
 		$CollisionShape.shape.height += CrouchSmoothing * delta
-
 # The player's collision shape is clamped to make sure that the lowest point that the player's
 # collision shape can be is the crouch height.
 	$CollisionShape.shape.height = clamp($CollisionShape.shape.height,crouchedHeight,defaultHeight)
@@ -392,22 +403,16 @@ func movement(delta):
 
 # When the player jumps (Space):
 	if Input.is_action_just_released("jump"):\
-		# If the maximum ammount of jumps is 1,
 		#climb = false
 		if MaxJumps < 2:
 		# and if the maximum ammount of jumps is not 0, and is touching the ground or a slope through the ground
 		# check raycast:
 			if MaxJumps > 0\
 			and (is_on_floor() or $GroundCheck.is_colliding() or $Head/RayCast.is_colliding()):
-				#look_direction = $Head/Camera.get_global_rotation()
-				
-				#jump_velocity.x = sin(look_direction.x+(PI/2))*cos(look_direction.y+PI)
-				#jump_velocity.y = sin(look_direction.x+(PI/2))*sin(look_direction.y+PI)
-				#jump_velocity.z = cos(look_direction.x+(PI/2))
+
 				print("is_on_floor or GroundCheck has collided")
-				touchdown()
-				jump_velocity.x = h_jump.x * Jump
-				jump_velocity.z = h_jump.z * Jump
+
+				set_jump_velocity()
 				#gravityVec = Vector3(jump_velocity) * Jump
 				#FIRST DRAFT gravityVec = Vector3((sin(look_direction.x+(PI/2))*cos(look_direction.y+PI)),sin(look_direction.x+(PI/2))*sin(look_direction.y+PI),cos(look_direction.x+(PI/2)))*Jump
 				# set the Y vector of the current gravity to 1 and multiply it by the jump height variable (Jump).
@@ -512,7 +517,11 @@ func movement(delta):
 		direction *= Speed
 		movement.x = direction.x
 		movement.z = direction.z
-	else:
+	elif is_on_floor():
+		movement.x = h_velocity.x
+		movement.z = h_velocity.z
+	#jank solution where I'm just removing jump_velocity from the equation if on floor
+	elif not is_on_floor():
 		movement.x = h_velocity.x + jump_velocity.x
 		movement.z = h_velocity.z + jump_velocity.z
 
@@ -747,3 +756,18 @@ func _on_WalkAudioTimer_timeout() -> void:
 	walkAudio = true
 func _on_ClimbAudioTimer_timeout() -> void:
 	climbAudio = true
+func touchdown():
+	#jump_velocity.x = 0
+	#jump_velocity.z = 0
+	#print("jump velocity reset")
+	#print(String(jump_velocity))
+	pass
+func jump_charge():
+	#clear the jump velocity
+	jump_velocity = Vector3()
+
+func _on_WallCheck_area_entered(area: Area):
+	pass
+
+func _on_WallCheck_area_exited(area: Area):
+	pass

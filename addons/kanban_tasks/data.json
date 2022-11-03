@@ -1,0 +1,87 @@
+{
+  "settings": {
+    "show_details_preview": true
+  },
+  "categories": [
+    {
+      "title": "Task",
+      "color": "6495ed"
+    },
+    {
+      "title": "Fix",
+      "color": "df5a12"
+    }
+  ],
+  "columns": [
+    {
+      "stages": [
+        0
+      ]
+    },
+    {
+      "stages": [
+        1
+      ]
+    },
+    {
+      "stages": [
+        2
+      ]
+    },
+    {
+      "stages": [
+        3
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "title": "Backlog and Ideas",
+      "tasks": [
+
+      ]
+    },
+    {
+      "title": "Intended Features",
+      "tasks": [
+        0
+      ]
+    },
+    {
+      "title": "In Development",
+      "tasks": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "title": "In Production",
+      "tasks": [
+
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "category": 0,
+      "title": "controller support",
+      "details": ""
+    },
+    {
+      "category": 0,
+      "title": "jump button latches onto walls",
+      "details": ""
+    },
+    {
+      "category": 1,
+      "title": "jump button should not stop player's air movement",
+      "details": ""
+    },
+    {
+      "category": 1,
+      "title": "on_wall should only show \"true\" when player is touching a wall",
+      "details": "currently it shows true at all times and is probably colliding with the player"
+    }
+  ]
+}
