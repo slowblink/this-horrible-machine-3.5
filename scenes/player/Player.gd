@@ -294,22 +294,7 @@ func _physics_process(delta: float) -> void:
 
 # MOVEMENT SYSTEM ----------------------------------------------------------------------------
 # warning-ignore:function_conflicts_variable
-
-func debug():
-	#look_direction = $Head/Camera.get_global_rotation()
-	#look_rad.x = look_direction.x/PI
-	#look_rad.y = look_direction.y/PI
-	#look_rad.z = look_direction.z/PI
-	h_jump = Vector3()
-	h_jump -= transform.basis.z
-
-	debug_1.text = str("h_jump: ",String(h_jump))
-	debug_2.text = str("on_wall: ",String(on_wall))
-	debug_3.text = str("jump_velocity: ", String(jump_velocity))
-func movement(delta):
-	if not falling:
-		touchdown()
-	direction = Vector3()# This makes sure that you don't keep moving when you let go of a key.
+func is_jump_pressed(delta):
 	if Input.is_action_pressed("jump"): # When the player crouches (Ctrl) or when the player is setting up a jump, #Input.is_action_pressed("crouch") or 
 		jump_charge()
 	# SHORTER COLLISION
@@ -323,6 +308,21 @@ func movement(delta):
 	elif not test_move(transform,Vector3.UP,$CollisionShape.shape.height):
 	# and if there are nothing above the player, then add height back with CrouchSmoothing.
 		$CollisionShape.shape.height += CrouchSmoothing * delta
+	
+func debug():
+	#look_direction = $Head/Camera.get_global_rotation()
+	#look_rad.x = look_direction.x/PI
+	#look_rad.y = look_direction.y/PI
+	#look_rad.z = look_direction.z/PI
+	h_jump = Vector3()
+	h_jump -= transform.basis.z
+
+	debug_1.text = str("h_jump: ",String(h_jump))
+	debug_2.text = str("on_wall: ",String(on_wall))
+	debug_3.text = str("jump_velocity: ", String(jump_velocity))
+func movement(delta):
+	direction = Vector3()# This makes sure that you don't keep moving when you let go of a key.
+	is_jump_pressed(delta)
 # The player's collision shape is clamped to make sure that the lowest point that the player's
 # collision shape can be is the crouch height.
 	$CollisionShape.shape.height = clamp($CollisionShape.shape.height,crouchedHeight,defaultHeight)
