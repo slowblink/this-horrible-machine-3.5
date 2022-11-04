@@ -1,14 +1,10 @@
 extends KinematicBody
-
 # old code
 #look_direction = $Head/Camera.get_global_rotation()
 #jump_velocity.x = sin(look_direction.x+(PI/2))*cos(look_direction.y+PI)
 #jump_velocity.y = sin(look_direction.x+(PI/2))*sin(look_direction.y+PI)
 #jump_velocity.z = cos(look_direction.x+(PI/2))
-
-
 # EXPORT VARIABLES  ----------------------------------------------------------------------------
-
 # Locks the mouse at the start of the game.
 export var LockMouse = true
 # Allows you to alter the player feel while in-game.
@@ -60,9 +56,7 @@ export var TiltSpeed = 5
 export var CrouchSmoothing = 20
 # How far you can extend the holding object.
 export var ScrollLimit = 10 
-
 # PRESET VARIABLES  ----------------------------------------------------------------------------
-
 # Current acceleration.
 var h_acceleration = 6
 # Acceleration mid-air.
@@ -97,7 +91,6 @@ var stillSprinting = false
 var jumpCount = 0
 # Default FOV of the player. (modified through the export variables)
 var fov = 90
-
 # Default length of the rigid body grabbing system.
 var scrollInput = 5
 var scroll = 5
@@ -195,9 +188,9 @@ func setspawn():
 	# and finally save the location of the newly made node.
 		spawnpoint = pos3d.global_transform.origin
 	else:
-# If there is, detect that node's position and save it.
+		# If there is, detect that node's position and save it.
 		spawnpoint = get_parent().get_node("Spawn Point").global_transform.origin
-# Then, grab the spawn point coordinates and move the player to that location.
+	# Then, grab the spawn point coordinates and move the player to that location.
 	global_transform.origin = spawnpoint
 func set_jump_velocity():
 	jump_velocity.x = h_jump.x * Jump
@@ -233,7 +226,6 @@ func _input(event: InputEvent) -> void:
 							objectGrabbed.axis_lock_angular_x = true
 							objectGrabbed.axis_lock_angular_y = true
 							objectGrabbed.axis_lock_angular_z = true
-
 		# If it is in the group "item":
 						elif $Head/RayCast.get_collider().is_in_group("item"):
 			# Grab the colliding node,
@@ -253,17 +245,12 @@ func _input(event: InputEvent) -> void:
 							get_node("Head/ItemPosition").add_child(Item)
 			# and set the item's global transform to the player's item hand node.
 							Item.global_transform = get_node("Head/ItemPosition").global_transform
-
 		# Emits a signal that interacted with something and send that node to it.
 					emit_signal("interact", $Head/RayCast.get_collider())
-
-
 	# If the player releases the interact key, it emits a signal that states that I have let go of the object I am 
 	# currently holding.
 		elif Input.is_action_just_released("interact"):
 			emit_signal("letGo", $Head/RayCast.get_collider())
-
-
 	# When the player clicks the mouse and if I am holding an object,
 		if Input.is_action_just_pressed("click"):
 			if objectGrabbed:
@@ -492,28 +479,28 @@ func movement(delta):
 			direction += transform.basis.z
 		if climb\
 		and not is_on_floor():
-	# Same concept for the down input.
+		# Same concept for the down input.
 			climbForce = -10
 			ladderSound()
 	else:
-	# If the player is not moving and you are currently climbing and not on the floor, climb force
-	# is set to zero.
+		# If the player is not moving and you are currently climbing and not on the floor, climb force
+		# is set to zero.
 		if climb\
 		and not is_on_floor():
 			climbForce = 0
 
-# The same concept is done with the left and right input, with a simpler but similar concept.
+	# The same concept is done with the left and right input, with a simpler but similar concept.
 	if Input.is_action_pressed("left"):
 		direction -= transform.basis.x
 	elif Input.is_action_pressed("right"):
 		direction += transform.basis.x
-# We normalize the direction vector to ensure that the movement is consistent.
+	# We normalize the direction vector to ensure that the movement is consistent.
 	direction = direction.normalized()
-# We then interpolate the direction vector smoothly to make the movement smoother.
+	# We then interpolate the direction vector smoothly to make the movement smoother.
 	h_velocity = h_velocity.linear_interpolate(direction * Speed, h_acceleration * delta)
-# Arcade Style = No smoothing in the movement.
+	# Arcade Style = No smoothing in the movement.
 	if ArcadeStyle:
-	# For arcade style, we only need the raw normalized direction vector with no interpolation.
+		# For arcade style, we only need the raw normalized direction vector with no interpolation.
 		direction *= Speed
 		movement.x = direction.x
 		movement.z = direction.z
@@ -525,24 +512,24 @@ func movement(delta):
 		movement.x = h_velocity.x + jump_velocity.x
 		movement.z = h_velocity.z + jump_velocity.z
 
-# If you are currently standing on a spring/jump boost:
+	# If you are currently standing on a spring/jump boost:
 	if spring:
-	# Add to the Y vector of the player a specified bounce value from the jump pad.
+		# Add to the Y vector of the player a specified bounce value from the jump pad.
 		gravityVec.y += bounce
-	# and we want to make sure that you are not just adding more to the Y value other than once.
+		# and we want to make sure that you are not just adding more to the Y value other than once.
 		spring = false
 
-# If the player is currently climbing:
+	# If the player is currently climbing:
 	if climb:
-	# the Y movement of the player is now determined by the climb force, which is changed with
-	# the up and down input.
+		# the Y movement of the player is now determined by the climb force, which is changed with
+		# the up and down input.
 		movement.y = climbForce
 	else:
-# Otherwise, gravity will be controlling the Y position of the player.
+		# Otherwise, gravity will be controlling the Y position of the player.
 		movement.y = gravityVec.y
 
-# Move and slide moves the player with the movement vector, which is assigned from earlier.
-# warning-ignore:return_value_discarded
+	# Move and slide moves the player with the movement vector, which is assigned from earlier.
+	# warning-ignore:return_value_discarded
 	move_and_slide(movement, Vector3.UP, true, 4, PI/4, false)
 	if direction != Vector3():
 	# If the player is currently moving and on the floor and bobbing is on:
@@ -741,7 +728,7 @@ func _on_ClimbTimeout_timeout() -> void:
 
 # The ladder sound effect function.
 func ladderSound():
-	# Rhe sound effect system works like the walking sound effect system.
+	# The sound effect system works like the walking sound effect system.
 	if not $RandomClimb.is_playing()\
 	and climb\
 	and climbAudio == true:
@@ -765,9 +752,7 @@ func touchdown():
 func jump_charge():
 	#clear the jump velocity
 	jump_velocity = Vector3()
-
 func _on_WallCheck_area_entered(area: Area):
 	pass
-
 func _on_WallCheck_area_exited(area: Area):
 	pass
