@@ -90,11 +90,12 @@ collision_layer = 2
 collision_mask = 5
 script = ExtResource( 1 )
 SprintMeter = false
-Jump = 500
-Gravity = 25
+Jump = 50
+Gravity = 10
 Speed = 5
 SprintSpeedFactor = 5
 CrouchSpeedFactor = 5
+leap_scale = 2
 
 [node name="CollisionShape" type="CollisionShape" parent="." groups=["Player"]]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0 )
@@ -158,6 +159,7 @@ debug_shape_thickness = 5
 visible = false
 
 [node name="Crosshair007" type="Sprite" parent="Crosshair"]
+visible = false
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 

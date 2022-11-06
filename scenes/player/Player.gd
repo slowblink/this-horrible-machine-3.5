@@ -150,6 +150,11 @@ onready var debug_2 = $CanvasLayer/DebugContainer/Debug2
 onready var debug_3 = $CanvasLayer/DebugContainer/Debug3
 var look_rad = Vector3()
 var on_wall = false
+export var jump_decay_rate = 10
+export var jump_death_margin = 0.0
+export var leap_scale = 4
+
+var grapple = false
 
 # RUN TIME  ----------------------------------------------------------------------------
 # When the game runs,
@@ -180,7 +185,7 @@ func debug():
 	#look_rad.z = look_direction.z/PI
 	h_jump = Vector3()
 	h_jump -= transform.basis.z
-	debug_1.text = str("h_jump: ",String(h_jump))
+	debug_1.text = str("grapple: ",String(grapple))
 	debug_2.text = str("on_wall: ",String(on_wall))
 	debug_3.text = str("jump_velocity: ", String(jump_velocity))
 
@@ -204,8 +209,8 @@ func setspawn():
 	# Then, grab the spawn point coordinates and move the player to that location.
 	global_transform.origin = spawnpoint
 func set_jump_velocity():
-	jump_velocity.x = h_jump.x * Jump
-	jump_velocity.z = h_jump.z * Jump
+	jump_velocity.x = h_jump.x * (Jump * leap_scale) 
+	jump_velocity.z = h_jump.z * (Jump * leap_scale)
 
 
 # INPUT EVENTS  ----------------------------------------------------------------------------
@@ -306,12 +311,30 @@ func _physics_process(delta: float) -> void:
 # MOVEMENT SYSTEM ----------------------------------------------------------------------------
 # warning-ignore:function_conflicts_variable
 
-
-
-
-
-
-
+func grapple_wall():
+	grapple = true
+	jump_velocity = Vector3()
+	#self-arrest by skipping move_and_slide as well as zeroing gravity?
+	
+	#we end up here if space was pushed while touching a wall in the air
+	
+func jump_velocity_decay(delta):
+	#take whatever the value is and multiply it by .9 and by delta, and then assign that to jump_velocity
+	# we're checking for the distance, positive or negative, from zero.
+	if abs(jump_velocity.x) > jump_death_margin:
+		if falling:
+			jump_velocity.x = jump_velocity.x - ((jump_velocity.x / jump_decay_rate) * delta)
+		else:
+			jump_velocity.x = jump_velocity.x / 2
+	else:
+		jump_velocity.x = 0
+	if abs(jump_velocity.z) > jump_death_margin:
+		if falling:
+			jump_velocity.z = jump_velocity.z - ((jump_velocity.z / jump_decay_rate) * delta)
+		else: jump_velocity.z = jump_velocity.z / 2
+			
+	else:
+		jump_velocity.z = 0
 func check_climb():
 	# If the player is currently climbing:
 	if climb:
@@ -335,43 +358,13 @@ func check_arcade():
 		direction *= Speed
 		movement.x = direction.x
 		movement.z = direction.z
-	elif is_on_floor():
-		movement.x = h_velocity.x
-		movement.z = h_velocity.z
+	else:
+		movement.x = h_velocity.x + jump_velocity.x
+		movement.z = h_velocity.z + jump_velocity.z
 	#jank solution where I'm just removing jump_velocity from the equation if on floor
 	#elif not is_on_floor():
 	#	movement.x = h_velocity.x + jump_velocity.x
 	#	movement.z = h_velocity.z + jump_velocity.z
-func jump_decay(delta):
-	# I think I want to lerp my way to zero with the jump_velocity here, but I'm not super sure yet.
-	# Also, I need to move the jump_velocity code out of the arcade mode stuff.
-	pass
-func walk_fx():
-	if direction != Vector3():
-	# If the player is currently moving and on the floor and bobbing is on:
-		if is_on_floor():
-			if Bobbing == true:
-		# the bobbing animation speed is changed if the player is walking, crouching or sprinting.
-				if Speed == defaultSpeed:
-					$"%Camera"/bob.playback_speed = 2
-				elif Speed == crouchSpeed:
-					$"%Camera"/bob.playback_speed = 1
-				elif Speed == sprintSpeed:
-					$"%Camera"/bob.playback_speed = 5
-				$"%Camera"/bob.play("bobbing")
-		# If the random walk sound effect is not playing and the walking timer has been set off. 
-			if not $RandomWalk.is_playing()\
-			and walkAudio == true:
-		# Randomize a seed
-				randomize()
-		# Grab a random number with the range being the ammount of sound effects that can be used.
-				var random_index = randi() % WalkAudioFiles.size()
-				$RandomWalk.stream = WalkAudioFiles[random_index]
-				$RandomWalk.play()
-		# This variable prevents the sound effect to be played again while the player is moving.
-				walkAudio = false
-		# Start the walking timer.
-				$RandomWalk/WalkAudioTimer.start()
 func strafe_move():
 	# The same concept is done with the left and right input, with a simpler but similar concept.
 	if Input.is_action_pressed("left"):
@@ -460,15 +453,10 @@ func is_jump_released():
 		# and if the maximum ammount of jumps is not 0, and is touching the ground or a slope through the ground
 		# check raycast:
 			if MaxJumps > 0\
-			and (is_on_floor() or $GroundCheck.is_colliding() or $Head/RayCast.is_colliding()):
-
+			and (is_on_floor() or $GroundCheck.is_colliding() or grapple):
 				print("is_on_floor or GroundCheck has collided")
-
 				set_jump_velocity()
-				#gravityVec = Vector3(jump_velocity) * Jump
-				#FIRST DRAFT gravityVec = Vector3((sin(look_direction.x+(PI/2))*cos(look_direction.y+PI)),sin(look_direction.x+(PI/2))*sin(look_direction.y+PI),cos(look_direction.x+(PI/2)))*Jump
-				# set the Y vector of the current gravity to 1 and multiply it by the jump height variable (Jump).
-				gravityVec = Vector3.UP * Jump #original
+				gravityVec = Vector3.UP * Jump
 	# Otherwise, if max jumps is more than 1:
 		else:
 		# and if the ammount of jumps done currently is not more than the maximum allowed number of jumps,
@@ -477,6 +465,7 @@ func is_jump_released():
 				gravityVec = Vector3.UP * Jump
 		# and add 1 jump to current jumps done.
 		jumpCount += 1
+		grapple = false
 func is_sprint_pressed():
 	if Input.is_action_pressed("run"):
 	# and if sprint meter is on,
@@ -535,8 +524,11 @@ func prevent_top_clip():
 	if test_move(transform,Vector3.UP,false):
 		fall.y = -2
 func is_jump_pressed(delta):
-	if Input.is_action_pressed("jump"): # When the player crouches (Ctrl) or when the player is setting up a jump, #Input.is_action_pressed("crouch") or 
-		jump_charge()
+	if Input.is_action_pressed("jump"):
+		if not falling:
+			jump_charge()
+		if self.is_on_wall():
+			grapple_wall()
 	# SHORTER COLLISION
 		$CollisionShape.shape.height -= CrouchSmoothing * delta
 	# SET SPEED
@@ -548,13 +540,40 @@ func is_jump_pressed(delta):
 	elif not test_move(transform,Vector3.UP,$CollisionShape.shape.height):
 	# and if there are nothing above the player, then add height back with CrouchSmoothing.
 		$CollisionShape.shape.height += CrouchSmoothing * delta
+func walk_fx():
+	if direction != Vector3():
+	# If the player is currently moving and on the floor and bobbing is on:
+		if is_on_floor():
+			if Bobbing == true:
+		# the bobbing animation speed is changed if the player is walking, crouching or sprinting.
+				if Speed == defaultSpeed:
+					$"%Camera"/bob.playback_speed = 2
+				elif Speed == crouchSpeed:
+					$"%Camera"/bob.playback_speed = 1
+				elif Speed == sprintSpeed:
+					$"%Camera"/bob.playback_speed = 5
+				$"%Camera"/bob.play("bobbing")
+		# If the random walk sound effect is not playing and the walking timer has been set off. 
+			if not $RandomWalk.is_playing()\
+			and walkAudio == true:
+		# Randomize a seed
+				randomize()
+		# Grab a random number with the range being the ammount of sound effects that can be used.
+				var random_index = randi() % WalkAudioFiles.size()
+				$RandomWalk.stream = WalkAudioFiles[random_index]
+				$RandomWalk.play()
+		# This variable prevents the sound effect to be played again while the player is moving.
+				walkAudio = false
+		# Start the walking timer.
+				$RandomWalk/WalkAudioTimer.start()
 func movement(delta):
-	direction = Vector3() # This makes sure that you don't keep moving when you let go of a key.
+	direction = Vector3() # reset direction
 	is_jump_pressed(delta)
 	# The player's collision shape is clamped to make sure that the lowest point that the player's
 	# collision shape can be is the crouch height.
 	$CollisionShape.shape.height = clamp($CollisionShape.shape.height,crouchedHeight,defaultHeight)
-	# When the player is colliding with something on top of itself, make the player sink into the ground by -2. (this is useful for crouching to make sure that the player isn't clipping upwards the while crouching)
+	# When the player is colliding with something on top of itself, make the player sink into the ground by -2. 
+	#(this is useful for crouching to make sure that the player isn't clipping upwards the while crouching)
 	prevent_top_clip()
 	# When the player sprints (Shift),
 	is_sprint_pressed()
@@ -563,17 +582,17 @@ func movement(delta):
 	check_floor_touch(delta)
 	forward_backward_move()
 	strafe_move()
-	
+	jump_velocity_decay(delta)
 	direction = direction.normalized() # We normalize the direction vector to ensure that the movement is consistent.
-	h_velocity = h_velocity.linear_interpolate(direction * Speed, h_acceleration * delta) # We then interpolate the direction vector smoothly to make the movement smoother.
-	
-	check_arcade()
+	h_velocity = h_velocity.linear_interpolate(direction * Speed, h_acceleration * delta) # We then interpolate the direction 
+	# vector smoothly to make the movement smoother.
+	check_arcade() #this is where I currently apply and remove jump_velocity
 	check_spring()
 	check_climb()
-
 	# Move and slide moves the player with the movement vector, which is assigned from earlier.
 	# warning-ignore:return_value_discarded
-	move_and_slide(movement, Vector3.UP, true, 4, PI/4, false)
+	if not grapple:
+		move_and_slide(movement, Vector3.UP, true, 4, PI/4, false)
 	walk_fx()
 
 # CAMERA SYSTEM  ----------------------------------------------------------------------------
@@ -771,7 +790,4 @@ func touchdown():
 func jump_charge():
 	#clear the jump velocity
 	jump_velocity = Vector3()
-func _on_WallCheck_area_entered(area: Area):
-	pass
-func _on_WallCheck_area_exited(area: Area):
-	pass
+	#and then presumably start charging up some value
