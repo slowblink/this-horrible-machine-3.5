@@ -306,8 +306,8 @@ default_bus_layout="res://Deprecated/default_bus_layout.tres"
 [autoload]
 
 Global="*res://scenes/Global.gd"
-Pause="*res://scenes/ui/pause/Pause.tscn"
 SilentWolf="*res://addons/silent_wolf/SilentWolf.gd"
+Pause="*res://scenes/ui/pause/Pause.tscn"
 
 [display]
 
