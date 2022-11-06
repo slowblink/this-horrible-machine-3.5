@@ -28,6 +28,9 @@ export var Jump = 20
 export var MaxJumps = 1
 # The user's mouse sensitivity.
 export var MouseSensitivity = 1
+
+export var JoySensitivity = 1 
+
 # How much the camera is being smoothened (lower = smoother)
 export var CameraSmoothing = 20
 # The gravity of the player.
@@ -594,12 +597,16 @@ func movement(delta):
 	walk_fx()
 
 # CAMERA SYSTEM  ----------------------------------------------------------------------------
+func joy_look():
+	cameraInput.x = (Input.get_action_strength("look_right") - Input.get_action_strength("look_left")) * JoySensitivity
+	cameraInput.y = (Input.get_action_strength("look_down") - Input.get_action_strength("look_up")) * JoySensitivity
 func camera(delta):
 # The crosshair's position will allways be at the middle of the screen.
 	$Crosshair.position = get_viewport().size / 2
 
 # The mouse movement is interpolated into rotationVelocity with CameraSmoothing. It is also 
 # multiplied by the MouseSensitivity.
+	joy_look()
 	rotationVelocity = rotationVelocity.linear_interpolate(cameraInput * (MouseSensitivity * 0.25), delta * CameraSmoothing)
 # We interpolate the Z rotation of the camera which gives it a slight tilt.
 	$"%Camera".rotation_degrees.z = lerp($"%Camera".rotation_degrees.z,

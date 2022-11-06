@@ -5035,7 +5035,8 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -74.1579, 231.426 )
 LockMouse = false
 DevMode = true
 SprintFOVToggle = false
-Jump = 20
+Jump = 15
+JoySensitivity = 5
 SprintSpeedFactor = 20
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
