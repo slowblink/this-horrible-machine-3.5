@@ -151,7 +151,7 @@ onready var debug_3 = $CanvasLayer/DebugContainer/Debug3
 var look_rad = Vector3()
 var on_wall = false
 export var jump_decay_rate = 10
-export var jump_death_margin = 0.0
+export var jump_death_margin = 0.1
 export var leap_scale = 4
 
 var grapple = false
@@ -179,16 +179,16 @@ func _ready() -> void:
 		$Sprint.visible = false
 
 func debug():
-	#look_direction = $Head/Camera.get_global_rotation()
+	look_direction = $Head/Camera.get_global_rotation()
 	#look_rad.x = look_direction.x/PI
 	#look_rad.y = look_direction.y/PI
 	#look_rad.z = look_direction.z/PI
 	h_jump = Vector3()
 	h_jump -= transform.basis.z
 	debug_1.text = str("grapple: ",String(grapple))
-	debug_2.text = str("on_wall: ",String(on_wall))
+	debug_2.text = str("look_direction.x: ",String(look_direction.x))
 	debug_3.text = str("jump_velocity: ", String(jump_velocity))
-
+	
 # This function detects if there is already a Spawn Point node.
 func setspawn():
 # If there isn't:
@@ -411,7 +411,6 @@ func check_floor_touch(delta):
 			gravityVec += Vector3.DOWN * Gravity * delta
 	# set the player's current speed to another variable.
 		h_acceleration = air_acceleration
-
 # When the player is on the floor:
 	else:
 	# and if the player is falling at a certain ammount and Bobbing is turned on,
@@ -430,7 +429,6 @@ func check_floor_touch(delta):
 			$LandAudio.play()
 	# reset all jumps that were previously done when touching the ground.
 		jumpCount = 0
-
 	# If the player was falling when touching the ground:
 		if falling:
 		# Take the point of the ground to push the player back up on the ground.
@@ -456,7 +454,7 @@ func is_jump_released():
 			and (is_on_floor() or $GroundCheck.is_colliding() or grapple):
 				print("is_on_floor or GroundCheck has collided")
 				set_jump_velocity()
-				gravityVec = Vector3.UP * Jump
+				gravityVec = (Vector3.UP * look_direction.x) * Jump
 	# Otherwise, if max jumps is more than 1:
 		else:
 		# and if the ammount of jumps done currently is not more than the maximum allowed number of jumps,
@@ -635,7 +633,6 @@ func camera(delta):
 		$Head.rotation.x = clamp($Head.rotation.x,deg2rad(-90),deg2rad(90))
 	# Remove all mouse movement information to avoid the mouse movement to stack.
 		cameraInput = Vector2.ZERO
-
 # If Sprint FOV is on:
 	if SprintFOVToggle:
 	# FOV is set by the speed of the player.
