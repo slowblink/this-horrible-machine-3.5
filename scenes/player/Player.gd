@@ -151,6 +151,7 @@ var h_jump = Vector3()
 onready var debug_1 = $CanvasLayer/DebugContainer/Debug1
 onready var debug_2 = $CanvasLayer/DebugContainer/Debug2
 onready var debug_3 = $CanvasLayer/DebugContainer/Debug3
+onready var debug_4 = $CanvasLayer/DebugContainer/Debug4
 var look_rad = Vector3()
 var on_wall = false
 export var jump_decay_rate = 10
@@ -191,7 +192,7 @@ func debug():
 	debug_1.text = str("grapple: ",String(grapple))
 	debug_2.text = str("look_direction.x: ",String(look_direction.x))
 	debug_3.text = str("jump_velocity: ", String(jump_velocity))
-	
+	debug_4.text = str("L2 to jump on gamepad, right joystick is still a bit jank")
 # This function detects if there is already a Spawn Point node.
 func setspawn():
 # If there isn't:
@@ -212,9 +213,8 @@ func setspawn():
 	# Then, grab the spawn point coordinates and move the player to that location.
 	global_transform.origin = spawnpoint
 func set_jump_velocity():
-	jump_velocity.x = h_jump.x * (Jump * leap_scale) 
+	jump_velocity.x = h_jump.x * (Jump * leap_scale)
 	jump_velocity.z = h_jump.z * (Jump * leap_scale)
-
 
 # INPUT EVENTS  ----------------------------------------------------------------------------
 func _input(event: InputEvent) -> void:
@@ -222,8 +222,12 @@ func _input(event: InputEvent) -> void:
 	if Global.Playing:
 	# If I move my mouse, it gets the relative mouse movement and assigns it to cameraInput.
 		if event is InputEventMouseMotion:
-			cameraInput = event.relative
-
+			#cameraInput = event.relative
+			cameraInput.x = event.relative.x + (Input.get_action_strength("look_right") - Input.get_action_strength("look_left")) * JoySensitivity
+			cameraInput.y = event.relative.y + (Input.get_action_strength("look_down") - Input.get_action_strength("look_up")) * JoySensitivity
+		else:
+			cameraInput.x = (Input.get_action_strength("look_right") - Input.get_action_strength("look_left")) * JoySensitivity
+			cameraInput.y = (Input.get_action_strength("look_down") - Input.get_action_strength("look_up")) * JoySensitivity
 	# If I press the interact button (E),
 		if Input.is_action_just_pressed("interact"):
 	# if I'm holding an object, let go of that object.
@@ -318,7 +322,6 @@ func grapple_wall():
 	grapple = true
 	jump_velocity = Vector3()
 	#self-arrest by skipping move_and_slide as well as zeroing gravity?
-	
 	#we end up here if space was pushed while touching a wall in the air
 	
 func jump_velocity_decay(delta):
@@ -454,8 +457,10 @@ func is_jump_released():
 		# and if the maximum ammount of jumps is not 0, and is touching the ground or a slope through the ground
 		# check raycast:
 			if MaxJumps > 0\
-			and (is_on_floor() or $GroundCheck.is_colliding() or grapple):
+			and (is_on_floor() or $GroundCheck.is_colliding()):
 				print("is_on_floor or GroundCheck has collided")
+				gravityVec = (Vector3.UP * Jump)
+			elif grapple:
 				set_jump_velocity()
 				gravityVec = (Vector3.UP * look_direction.x) * Jump
 	# Otherwise, if max jumps is more than 1:
@@ -597,16 +602,12 @@ func movement(delta):
 	walk_fx()
 
 # CAMERA SYSTEM  ----------------------------------------------------------------------------
-func joy_look():
-	cameraInput.x = (Input.get_action_strength("look_right") - Input.get_action_strength("look_left")) * JoySensitivity
-	cameraInput.y = (Input.get_action_strength("look_down") - Input.get_action_strength("look_up")) * JoySensitivity
 func camera(delta):
 # The crosshair's position will allways be at the middle of the screen.
 	$Crosshair.position = get_viewport().size / 2
 
 # The mouse movement is interpolated into rotationVelocity with CameraSmoothing. It is also 
 # multiplied by the MouseSensitivity.
-	joy_look()
 	rotationVelocity = rotationVelocity.linear_interpolate(cameraInput * (MouseSensitivity * 0.25), delta * CameraSmoothing)
 # We interpolate the Z rotation of the camera which gives it a slight tilt.
 	$"%Camera".rotation_degrees.z = lerp($"%Camera".rotation_degrees.z,

@@ -214,21 +214,27 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Debug1" type="Label" parent="CanvasLayer/DebugContainer"]
-margin_right = 113.0
+margin_right = 46.0
 margin_bottom = 14.0
-text = "JUMP_VELOCITY_X"
+text = "DEBUG"
 
 [node name="Debug2" type="Label" parent="CanvasLayer/DebugContainer"]
 margin_top = 18.0
-margin_right = 113.0
+margin_right = 46.0
 margin_bottom = 32.0
-text = "JUMP_VELOCITY_X"
+text = "DEBUG"
 
 [node name="Debug3" type="Label" parent="CanvasLayer/DebugContainer"]
 margin_top = 36.0
-margin_right = 113.0
+margin_right = 46.0
 margin_bottom = 50.0
-text = "JUMP_VELOCITY_X"
+text = "DEBUG"
+
+[node name="Debug4" type="Label" parent="CanvasLayer/DebugContainer"]
+margin_top = 54.0
+margin_right = 46.0
+margin_bottom = 68.0
+text = "DEBUG"
 
 [node name="WallCheck" type="Area" parent="."]
 
