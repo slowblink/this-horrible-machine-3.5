@@ -17,5 +17,5 @@ func _ready():
 		"api_key": "CveITQIj6577yyVKuaft77sNG4k6Le7nasS3kF0U",
 		"game_id": "thishorriblemachine",
 		"game_version": "0.0.2",
-		"log_level": 0
+		"log_level": 2
 	})
