@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://scenes/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://scenes/player/crosshair007.png" type="Texture" id=2]
@@ -80,10 +80,6 @@ ProgressBar/styles/fg = SubResource( 19 )
 
 [sub_resource type="BoxShape" id=15]
 extents = Vector3( 1, 1.5, 0.1 )
-
-[sub_resource type="CylinderShape" id=22]
-height = 1.0
-radius = 2.0
 
 [node name="Player" type="KinematicBody"]
 collision_layer = 2
@@ -236,15 +232,8 @@ margin_right = 46.0
 margin_bottom = 68.0
 text = "DEBUG"
 
-[node name="WallCheck" type="Area" parent="."]
-
-[node name="CollisionShape" type="CollisionShape" parent="WallCheck"]
-shape = SubResource( 22 )
-
 [connection signal="area_entered" from="ClimbCheck" to="." method="_on_ClimbCheck_area_entered"]
 [connection signal="area_exited" from="ClimbCheck" to="." method="_on_ClimbCheck_area_exited"]
 [connection signal="timeout" from="RandomWalk/WalkAudioTimer" to="." method="_on_WalkAudioTimer_timeout"]
 [connection signal="timeout" from="RandomClimb/ClimbAudioTimer" to="." method="_on_ClimbAudioTimer_timeout"]
 [connection signal="timeout" from="ClimbTimeout" to="." method="_on_ClimbTimeout_timeout"]
-[connection signal="area_entered" from="WallCheck" to="." method="_on_WallCheck_area_entered"]
-[connection signal="area_exited" from="WallCheck" to="." method="_on_WallCheck_area_exited"]
