@@ -8,8 +8,8 @@
       "color": "6495ed"
     },
     {
-      "title": "Fix",
-      "color": "df5a12"
+      "title": "Header",
+      "color": "ffffff"
     }
   ],
   "columns": [
@@ -74,12 +74,12 @@
       "details": ""
     },
     {
-      "category": 1,
+      "category": 0,
       "title": "jump button should not stop player's air movement",
       "details": ""
     },
     {
-      "category": 1,
+      "category": 0,
       "title": "on_wall should only show \"true\" when player is touching a wall",
       "details": "currently it shows true at all times and is probably colliding with the player"
     }

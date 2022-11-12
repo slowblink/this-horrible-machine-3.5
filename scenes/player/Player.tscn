@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://scenes/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://scenes/player/crosshair007.png" type="Texture" id=2]
@@ -31,6 +31,21 @@ tracks/0/keys = {
 "transitions": PoolRealArray( -2, -0.5, 1 ),
 "update": 0,
 "values": [ Vector3( 0, 0, 0 ), Vector3( 0, -0.3, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=22]
+resource_name = "grapple"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4 ),
+"transitions": PoolRealArray( -2, -9.18957, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, -0.1, -0.2 ), Vector3( 0, 0, 0 ) ]
 }
 
 [sub_resource type="Animation" id=16]
@@ -102,13 +117,17 @@ transform = Transform( 0.9375, 0, 0, 0, 0.9375, -1.16415e-10, 0, 1.16415e-10, 0.
 
 [node name="Camera" type="Camera" parent="Head"]
 unique_name_in_owner = true
-transform = Transform( 1.06667, 0, 0, 0, 1.06667, 0, 0, 0, 1.06667, 0, 0, -2.48353e-10 )
+transform = Transform( 1.06667, 0, 0, 0, 1.06667, 0, 0, 0, 1.06667, 0, 0, 0 )
 environment = ExtResource( 9 )
 far = 2000.0
 
 [node name="bob" type="AnimationPlayer" parent="Head/Camera"]
 playback_speed = 2.0
 anims/bobbing = SubResource( 11 )
+
+[node name="grapple" type="AnimationPlayer" parent="Head/Camera"]
+playback_speed = 2.0
+anims/grapple = SubResource( 22 )
 
 [node name="land" type="AnimationPlayer" parent="Head/Camera"]
 root_node = NodePath("../..")
@@ -186,6 +205,10 @@ AudioFiles = [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource
 [node name="WalkAudioTimer" type="Timer" parent="RandomWalk"]
 wait_time = 0.5
 one_shot = true
+
+[node name="Grapple" type="AudioStreamPlayer" parent="."]
+script = ExtResource( 3 )
+AudioFiles = [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 8 ) ]
 
 [node name="RandomClimb" type="AudioStreamPlayer" parent="."]
 volume_db = -20.0

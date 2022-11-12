@@ -1,4 +1,4 @@
-[gd_scene load_steps=795 format=2]
+[gd_scene load_steps=799 format=2]
 
 [ext_resource path="res://scenes/environments/env00.tres" type="Environment" id=1]
 [ext_resource path="res://addons/qodot/src/nodes/qodot_map.gd" type="Script" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://textures/map_mats/32_worn_rivet_wall.tres" type="Material" id=28]
 [ext_resource path="res://textures/map_mats/32_vertical_slot_panels.tres" type="Material" id=29]
 [ext_resource path="res://textures/map_mats/256_Facades_09_basecolor.tres" type="Material" id=30]
+[ext_resource path="res://addons/kenney_particle_pack/circle_01.png" type="Texture" id=31]
 [ext_resource path="res://textures/map_mats/128_worn_rivet_wall.png" type="Texture" id=32]
 
 [sub_resource type="SpatialMaterial" id=2]
@@ -4930,6 +4931,27 @@ points = PoolVector3Array( -53.3333, 50.6667, -18.6667, -53.3333, -45.3333, -18.
 [sub_resource type="ConvexPolygonShape" id=764]
 points = PoolVector3Array( -53.3333, -13.3333, -2.66667, -53.3333, -45.3333, -2.66667, -5.33333, -45.3333, -2.66667, -5.33333, -13.3333, -2.66667, -53.3333, -13.3333, 13.3333, -53.3333, -45.3333, 13.3333, -5.33333, -45.3333, 13.3333, -5.33333, -13.3333, 13.3333 )
 
+[sub_resource type="ParticlesMaterial" id=767]
+emission_shape = 1
+emission_sphere_radius = 0.01
+initial_velocity = 3.76
+initial_velocity_random = 0.11
+linear_accel_random = 0.14
+hue_variation = 0.51
+
+[sub_resource type="SpatialMaterial" id=768]
+render_priority = 1
+flags_transparent = true
+flags_unshaded = true
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_texture = ExtResource( 31 )
+
+[sub_resource type="QuadMesh" id=769]
+material = SubResource( 768 )
+
 [node name="World" type="WorldEnvironment"]
 environment = ExtResource( 1 )
 script = ExtResource( 5 )
@@ -7401,3 +7423,10 @@ shape = SubResource( 763 )
 
 [node name="entity_52_brush_5_collision_shape" type="CollisionShape" parent="QodotLevel/entity_52_func_group"]
 shape = SubResource( 764 )
+
+[node name="Particles" type="Particles" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -76, 225 )
+lifetime = 0.29
+visibility_aabb = AABB( -9, -4, -9, 18, 8, 18 )
+process_material = SubResource( 767 )
+draw_pass_1 = SubResource( 769 )
