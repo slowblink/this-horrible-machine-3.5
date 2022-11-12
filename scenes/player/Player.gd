@@ -1,4 +1,10 @@
 extends KinematicBody
+
+
+### Automatic References Start ###
+onready var _bob: AnimationPlayer = $Head/Camera/bob
+onready var _grapple: AnimationPlayer = $Head/Camera/grapple
+### Automatic References Stop ###
 # old code
 #look_direction = $Head/Camera.get_global_rotation()
 #jump_velocity.x = sin(look_direction.x+(PI/2))*cos(look_direction.y+PI)
@@ -159,6 +165,7 @@ export var jump_death_margin = 0.1
 export var leap_scale = 4
 
 var grapple = false
+var grapple_fx_started = false
 
 # RUN TIME  ----------------------------------------------------------------------------
 # When the game runs,
@@ -319,6 +326,12 @@ func _physics_process(delta: float) -> void:
 # warning-ignore:function_conflicts_variable
 
 func grapple_wall():
+	if not grapple_fx_started:
+		#sound
+		#particles
+		_grapple.play("grapple") #camera
+		grapple_fx_started = true
+		#we reset this when grapple is false again
 	grapple = true
 	jump_velocity = Vector3()
 	#self-arrest by skipping move_and_slide as well as zeroing gravity?
@@ -598,6 +611,7 @@ func movement(delta):
 	# Move and slide moves the player with the movement vector, which is assigned from earlier.
 	# warning-ignore:return_value_discarded
 	if not grapple:
+		grapple_fx_started = false #reset the fx for the next one
 		move_and_slide(movement, Vector3.UP, true, 4, PI/4, false)
 	walk_fx()
 
