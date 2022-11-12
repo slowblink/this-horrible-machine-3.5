@@ -117,9 +117,8 @@ transform = Transform( 0.9375, 0, 0, 0, 0.9375, -1.16415e-10, 0, 1.16415e-10, 0.
 
 [node name="Camera" type="Camera" parent="Head"]
 unique_name_in_owner = true
-transform = Transform( 1.06667, 0, 0, 0, 1.06667, 0, 0, 0, 1.06667, 0, 0, 0 )
 environment = ExtResource( 9 )
-far = 2000.0
+far = 3000.0
 
 [node name="bob" type="AnimationPlayer" parent="Head/Camera"]
 playback_speed = 2.0
