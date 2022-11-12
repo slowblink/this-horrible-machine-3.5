@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://scenes/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://scenes/player/crosshair007.png" type="Texture" id=2]
@@ -14,6 +14,8 @@
 [ext_resource path="res://scenes/player/sfx/climbing/ladder4.ogg" type="AudioStream" id=12]
 [ext_resource path="res://src/shaders/pixelated.tres" type="Shader" id=13]
 [ext_resource path="res://scenes/player/sfx/climbing/ladder1.ogg" type="AudioStream" id=14]
+[ext_resource path="res://addons/kenney_particle_pack/smoke_07.png" type="Texture" id=15]
+[ext_resource path="res://src/sfx/temp/TS_OBSIDIAN_kick_long_midrangey.wav" type="AudioStream" id=16]
 
 [sub_resource type="CapsuleShape" id=3]
 height = 2.0
@@ -96,13 +98,48 @@ ProgressBar/styles/fg = SubResource( 19 )
 [sub_resource type="BoxShape" id=15]
 extents = Vector3( 1, 1.5, 0.1 )
 
+[sub_resource type="Gradient" id=772]
+offsets = PoolRealArray( 0, 0.041543, 1 )
+colors = PoolColorArray( 0.113725, 0.113725, 0.113725, 0, 0.376471, 0.376471, 0.376471, 0.513726, 0.745098, 0.745098, 0.745098, 0 )
+
+[sub_resource type="GradientTexture" id=766]
+gradient = SubResource( 772 )
+width = 16
+
+[sub_resource type="ParticlesMaterial" id=773]
+lifetime_randomness = 0.5
+spread = 180.0
+gravity = Vector3( 0, -1, 0 )
+initial_velocity = 2.0
+initial_velocity_random = 0.5
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+damping = 0.5
+damping_random = 0.3
+scale = 2.0
+scale_random = 0.6
+color_ramp = SubResource( 766 )
+
+[sub_resource type="SpatialMaterial" id=771]
+render_priority = 1
+flags_transparent = true
+vertex_color_use_as_albedo = true
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_texture = ExtResource( 15 )
+
+[sub_resource type="QuadMesh" id=774]
+material = SubResource( 771 )
+
 [node name="Player" type="KinematicBody"]
 collision_layer = 2
 collision_mask = 5
 script = ExtResource( 1 )
 SprintMeter = false
-Jump = 50
-Gravity = 10
+Jump = 75
+Gravity = 5
 Speed = 5
 SprintSpeedFactor = 5
 CrouchSpeedFactor = 5
@@ -206,6 +243,7 @@ wait_time = 0.5
 one_shot = true
 
 [node name="Grapple" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
 script = ExtResource( 3 )
 AudioFiles = [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 8 ) ]
 
@@ -253,6 +291,17 @@ margin_top = 54.0
 margin_right = 46.0
 margin_bottom = 68.0
 text = "DEBUG"
+
+[node name="grapple_puff" type="Particles" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+emitting = false
+amount = 32
+one_shot = true
+explosiveness = 1.0
+randomness = 0.5
+local_coords = false
+process_material = SubResource( 773 )
+draw_pass_1 = SubResource( 774 )
 
 [connection signal="area_entered" from="ClimbCheck" to="." method="_on_ClimbCheck_area_entered"]
 [connection signal="area_exited" from="ClimbCheck" to="." method="_on_ClimbCheck_area_exited"]

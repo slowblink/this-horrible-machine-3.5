@@ -4,6 +4,8 @@ extends KinematicBody
 ### Automatic References Start ###
 onready var _bob: AnimationPlayer = $Head/Camera/bob
 onready var _grapple: AnimationPlayer = $Head/Camera/grapple
+onready var _grapple_sfx: AudioStreamPlayer = $Grapple
+onready var _grapple_puff: Particles = $grapple_puff
 ### Automatic References Stop ###
 # old code
 #look_direction = $Head/Camera.get_global_rotation()
@@ -199,7 +201,7 @@ func debug():
 	debug_1.text = str("grapple: ",String(grapple))
 	debug_2.text = str("look_direction.x: ",String(look_direction.x))
 	debug_3.text = str("jump_velocity: ", String(jump_velocity))
-	debug_4.text = str("L2 to jump on gamepad, right joystick is still a bit jank")
+	debug_4.text = str("try wall-jumping")
 # This function detects if there is already a Spawn Point node.
 func setspawn():
 # If there isn't:
@@ -327,9 +329,9 @@ func _physics_process(delta: float) -> void:
 
 func grapple_wall():
 	if not grapple_fx_started:
-		#sound
-		#particles
+		_grapple_sfx.play()
 		_grapple.play("grapple") #camera
+		_grapple_puff.set_emitting(true)
 		grapple_fx_started = true
 		#we reset this when grapple is false again
 	grapple = true
@@ -445,7 +447,7 @@ func check_floor_touch(delta):
 		# cap the landing autio to not blow out anyone's ears when landing from a skyscraper,
 			$LandAudio.volume_db = clamp($LandAudio.volume_db,-30,5)
 		# and play the landing audio.
-			$LandAudio.play()
+			#$LandAudio.play() TEMPORARILY DISABLED BECAUSE OF BUG
 	# reset all jumps that were previously done when touching the ground.
 		jumpCount = 0
 	# If the player was falling when touching the ground:

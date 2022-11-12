@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/so hardly remembered.ogg-db4b05c2c77c1101b5dac507a5a08655.oggstr"
+
+[deps]
+
+source_file="res://src/music/so hardly remembered.ogg"
+dest_files=[ "res://.import/so hardly remembered.ogg-db4b05c2c77c1101b5dac507a5a08655.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

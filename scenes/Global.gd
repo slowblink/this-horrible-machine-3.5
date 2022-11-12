@@ -12,10 +12,10 @@ var Settings
 # The pause node
 var PauseNode
 
-func _ready():
-	SilentWolf.configure({
-		"api_key": "CveITQIj6577yyVKuaft77sNG4k6Le7nasS3kF0U",
-		"game_id": "thishorriblemachine",
-		"game_version": "0.0.2",
-		"log_level": 2
-	})
+#func _ready():
+#	SilentWolf.configure({
+#		"api_key": "CveITQIj6577yyVKuaft77sNG4k6Le7nasS3kF0U",
+#		"game_id": "thishorriblemachine",
+#		"game_version": "0.0.2",
+#		"log_level": 2
+#	})
