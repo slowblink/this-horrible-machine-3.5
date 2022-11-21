@@ -201,7 +201,7 @@ func debug():
 	debug_1.text = str("grapple: ",String(grapple))
 	debug_2.text = str("look_direction.x: ",String(look_direction.x))
 	debug_3.text = str("jump_velocity: ", String(jump_velocity))
-	debug_4.text = str("try wall-jumping")
+	debug_4.text = str("0.0.2")
 # This function detects if there is already a Spawn Point node.
 func setspawn():
 # If there isn't:
