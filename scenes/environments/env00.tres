@@ -32,7 +32,6 @@ fog_transmit_enabled = true
 tonemap_mode = 2
 tonemap_exposure = 0.1
 tonemap_white = 0.1
-auto_exposure_enabled = true
 auto_exposure_scale = 0.2
 ss_reflections_enabled = true
 ss_reflections_max_steps = 16

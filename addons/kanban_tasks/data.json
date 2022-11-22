@@ -44,21 +44,21 @@
     {
       "title": "Intended Features",
       "tasks": [
-        0
+        4
       ]
     },
     {
       "title": "In Development",
       "tasks": [
-        3,
-        2,
-        1
+        0
       ]
     },
     {
       "title": "In Production",
       "tasks": [
-
+        3,
+        1,
+        2
       ]
     }
   ],
@@ -82,6 +82,11 @@
       "category": 0,
       "title": "on_wall should only show \"true\" when player is touching a wall",
       "details": "currently it shows true at all times and is probably colliding with the player"
+    },
+    {
+      "category": 1,
+      "title": "NPC 0.1.0",
+      "details": "- Animated idle mesh and mat\n- Interactable dialog\n- Functional state changes"
     }
   ]
 }
