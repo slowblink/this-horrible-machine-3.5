@@ -1,0 +1,88 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/everything_library/src/editor_icon_button.gd" type="Script" id=1]
+
+[sub_resource type="Image" id=3]
+data = {
+"data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
+"format": "LumAlpha8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id=2]
+flags = 4
+flags = 4
+image = SubResource( 3 )
+size = Vector2( 16, 16 )
+
+[node name="Control" type="HBoxContainer"]
+margin_right = 466.0
+margin_bottom = 24.0
+
+[node name="Path" type="Button" parent="."]
+margin_right = 111.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+text = "Click to select..."
+clip_text = true
+
+[node name="Property" type="LineEdit" parent="."]
+margin_left = 115.0
+margin_right = 226.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+placeholder_text = "Singleton Property..."
+
+[node name="Flags" type="HBoxContainer" parent="."]
+margin_left = 230.0
+margin_right = 310.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 80, 0 )
+custom_constants/separation = 0
+
+[node name="Recursive" type="CheckBox" parent="Flags"]
+margin_right = 40.0
+margin_bottom = 24.0
+hint_tooltip = "Recursive
+
+Grab files from the folder's subfolders too, and these subfolders' subfolders as well."
+size_flags_horizontal = 3
+text = "R"
+clip_text = true
+
+[node name="Non-unique-keys" type="CheckBox" parent="Flags"]
+margin_left = 40.0
+margin_right = 80.0
+margin_bottom = 24.0
+hint_tooltip = "Non-unique
+
+Each key stores an array with all items whose property's value is equal to the key.
+
+Good if you want to grab all items belonging to the same category."
+size_flags_horizontal = 3
+text = "N"
+clip_text = true
+
+[node name="Key" type="LineEdit" parent="."]
+margin_left = 314.0
+margin_right = 426.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+text = "resource_path"
+placeholder_text = "Key Property..."
+
+[node name="VSeparator" type="VSeparator" parent="."]
+margin_left = 430.0
+margin_right = 434.0
+margin_bottom = 24.0
+
+[node name="Remove" type="Button" parent="."]
+margin_left = 438.0
+margin_right = 466.0
+margin_bottom = 24.0
+hint_tooltip = "Stop tracking"
+icon = SubResource( 2 )
+script = ExtResource( 1 )
+icon_name = "Remove"

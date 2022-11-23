@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "Ray is trying to contact someone with whatever remaining juice his repeater has. He thought he had a confirmed response from someone out there, but then they went silent. He doesn't want to give up hope yet, though.",
+	"display_name": "Ray",
+	"display_name_bool": true,
+	"id": "character-1669188507.json",
+	"mirror_portraits": false,
+	"name": "ray",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": "default-theme.cfg"
+}
