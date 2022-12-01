@@ -21,7 +21,11 @@ compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 flags/filter=true
+=======
+flags/filter=false
+>>>>>>> Stashed changes
 =======
 flags/filter=false
 >>>>>>> Stashed changes
@@ -36,7 +40,11 @@ process/normal_map_invert_y=false
 stream=false
 size_limit=0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 detect_3d=true
+=======
+detect_3d=false
+>>>>>>> Stashed changes
 =======
 detect_3d=false
 >>>>>>> Stashed changes
