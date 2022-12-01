@@ -2,8 +2,21 @@
 	"glossary": [
 		{
 			"extra": "",
+<<<<<<< Updated upstream
 			"id": "1669188689-648",
 			"name": "New glossary entry",
+=======
+			"id": "1669623818-815",
+			"name": "engineer",
+			"text": "one who keeps it livable in this horrible machine",
+			"title": "engineer",
+			"type": 1
+		},
+		{
+			"extra": "",
+			"id": "1669622595-918",
+			"name": "superstructure",
+>>>>>>> Stashed changes
 			"text": "",
 			"title": "",
 			"type": 1

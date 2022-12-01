@@ -1,0 +1,239 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://examples/basic_test/test_root.gd" type="Script" id=1]
+[ext_resource path="res://addons/xsm/state.gd" type="Script" id=2]
+[ext_resource path="res://examples/basic_test/test_loop.gd" type="Script" id=3]
+[ext_resource path="res://addons/xsm/state_regions.gd" type="Script" id=4]
+[ext_resource path="res://examples/basic_test/test_substates.gd" type="Script" id=5]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="StateRoot" type="Node" parent="."]
+script = ExtResource( 1 )
+history_size = 10
+fsm_owner = NodePath("../Panel/VBoxContainer/HBCActiveStates/ActiveStates")
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="State1" type="Node" parent="StateRoot"]
+script = ExtResource( 5 )
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="Substate1" type="Node" parent="StateRoot/State1"]
+script = ExtResource( 2 )
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="Substate2" type="Node" parent="StateRoot/State1"]
+script = ExtResource( 2 )
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="Substate3" type="Node" parent="StateRoot/State1"]
+script = ExtResource( 2 )
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="StateRegions" type="Node" parent="StateRoot"]
+script = ExtResource( 4 )
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="Region1" type="Node" parent="StateRoot/StateRegions"]
+script = ExtResource( 2 )
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="Region2" type="Node" parent="StateRoot/StateRegions"]
+script = ExtResource( 2 )
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="Region3" type="Node" parent="StateRoot/StateRegions"]
+script = ExtResource( 2 )
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="StateLoop" type="Node" parent="StateRoot"]
+script = ExtResource( 3 )
+exit_state = NodePath("../State1/Substate3")
+exit_state = NodePath("../State1/Substate3")
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="Loop1" type="Node" parent="StateRoot/StateLoop"]
+script = ExtResource( 2 )
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="Loop2" type="Node" parent="StateRoot/StateLoop"]
+script = ExtResource( 2 )
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="Loop3" type="Node" parent="StateRoot/StateLoop"]
+script = ExtResource( 2 )
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="Loop4" type="Node" parent="StateRoot/StateLoop"]
+script = ExtResource( 2 )
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="Loop5" type="Node" parent="StateRoot/StateLoop"]
+script = ExtResource( 2 )
+disabled = false
+debug_mode = false
+timed = false
+next_state = NodePath("")
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 20.0
+custom_constants/margin_top = 20
+
+[node name="HBCActiveStates" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_top = 24.0
+margin_right = 1024.0
+margin_bottom = 38.0
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/HBCActiveStates"]
+margin_left = 464.0
+margin_right = 555.0
+margin_bottom = 14.0
+text = "Active States: "
+
+[node name="ActiveStates" type="Label" parent="Panel/VBoxContainer/HBCActiveStates"]
+unique_name_in_owner = true
+margin_left = 559.0
+margin_right = 559.0
+margin_bottom = 14.0
+
+[node name="HBCButtons" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_top = 42.0
+margin_right = 1024.0
+margin_bottom = 62.0
+alignment = 1
+
+[node name="Goto1" type="Button" parent="Panel/VBoxContainer/HBCButtons"]
+margin_left = 345.0
+margin_right = 432.0
+margin_bottom = 20.0
+text = "Goto State1"
+
+[node name="GotoRegions" type="Button" parent="Panel/VBoxContainer/HBCButtons"]
+margin_left = 436.0
+margin_right = 565.0
+margin_bottom = 20.0
+text = "Goto StateRegions"
+
+[node name="GotoLoop" type="Button" parent="Panel/VBoxContainer/HBCButtons"]
+margin_left = 569.0
+margin_right = 679.0
+margin_bottom = 20.0
+text = "Goto StateLoop"
+
+[node name="HBCLoopButtons" type="HBoxContainer" parent="Panel/VBoxContainer"]
+unique_name_in_owner = true
+visible = false
+margin_top = 66.0
+margin_right = 543.0
+margin_bottom = 86.0
+alignment = 1
+
+[node name="Spacer" type="MarginContainer" parent="Panel/VBoxContainer/HBCLoopButtons"]
+margin_right = 220.0
+margin_bottom = 20.0
+custom_constants/margin_right = 120
+
+[node name="OptionButton" type="OptionButton" parent="Panel/VBoxContainer/HBCLoopButtons"]
+margin_left = 224.0
+margin_right = 309.0
+margin_bottom = 20.0
+text = "Forward"
+items = [ "Disabled", null, false, 0, null, "Forward", null, false, 1, null, "Backward", null, false, 2, null, "Ping-Pong", null, false, 3, null ]
+selected = 1
+
+[node name="LoopPrev" type="Button" parent="Panel/VBoxContainer/HBCLoopButtons"]
+margin_left = 313.0
+margin_right = 388.0
+margin_bottom = 20.0
+text = "Loop Prev"
+
+[node name="LoopNext" type="Button" parent="Panel/VBoxContainer/HBCLoopButtons"]
+margin_left = 392.0
+margin_right = 469.0
+margin_bottom = 20.0
+text = "Loop Next"
+
+[node name="LoopExit" type="Button" parent="Panel/VBoxContainer/HBCLoopButtons"]
+margin_left = 473.0
+margin_right = 543.0
+margin_bottom = 20.0
+text = "Loop Exit"
+
+[node name="HBCHistory" type="HBoxContainer" parent="Panel/VBoxContainer"]
+visible = false
+margin_top = 66.0
+margin_right = 512.0
+margin_bottom = 66.0
+alignment = 1
+
+[node name="History" type="VBoxContainer" parent="Panel/VBoxContainer/HBCHistory"]
+unique_name_in_owner = true
+margin_left = 144.0
+margin_right = 144.0
+
+[node name="Spacer" type="MarginContainer" parent="Panel/VBoxContainer/HBCHistory"]
+margin_left = 148.0
+margin_right = 368.0
+custom_constants/margin_right = 120
+
+[connection signal="pressed" from="Panel/VBoxContainer/HBCButtons/Goto1" to="StateRoot" method="_on_Goto1_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/HBCButtons/GotoRegions" to="StateRoot" method="_on_GotoRegions_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/HBCButtons/GotoLoop" to="StateRoot" method="_on_GotoLoop_pressed"]
+[connection signal="item_selected" from="Panel/VBoxContainer/HBCLoopButtons/OptionButton" to="StateRoot/StateLoop" method="_on_OptionButton_item_selected"]
+[connection signal="pressed" from="Panel/VBoxContainer/HBCLoopButtons/LoopPrev" to="StateRoot/StateLoop" method="_on_LoopPrev_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/HBCLoopButtons/LoopNext" to="StateRoot/StateLoop" method="_on_LoopNext_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/HBCLoopButtons/LoopExit" to="StateRoot/StateLoop" method="_on_LoopExit_pressed"]

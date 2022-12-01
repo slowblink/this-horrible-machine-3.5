@@ -1,0 +1,153 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1669620645.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1669620645.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "hello"
+		},
+		{
+			"character": "character-1669620645.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "are you the new engineer?"
+		},
+		{
+			"choice": "yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "no",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1669624101",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "here to help"
+		},
+		{
+			"character": "character-1669620645.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "good. good."
+		},
+		{
+			"character": "character-1669620645.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "we've done our best in the since losing the last one"
+		},
+		{
+			"character": "character-1669620645.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "but"
+		},
+		{
+			"character": "character-1669620645.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "it's hard"
+		},
+		{
+			"character": "character-1669620645.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "not just without the frame"
+		},
+		{
+			"character": "character-1669620645.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "just feeling safe can be hard"
+		},
+		{
+			"anchor_id": "anchor-1669624100",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1669624101",
+			"index": 0,
+			"name": "not here to help"
+		},
+		{
+			"character": "character-1669620645.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "okay. fair enough. "
+		},
+		{
+			"character": "character-1669620645.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "i am sure we can find a place for you"
+		},
+		{
+			"anchor_id": "anchor-1669624100",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1669624267",
+			"index": 0,
+			"name": "need to rest"
+		},
+		{
+			"character": "character-1669620645.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "we should get you into some shelter"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669622486.json",
+		"name": "Q. Belinay Østensen"
+	}
+}

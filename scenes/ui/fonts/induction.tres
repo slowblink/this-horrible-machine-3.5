@@ -5,5 +5,5 @@ antialiased = false
 font_path = "res://src/fonts/induction.ttf"
 
 [resource]
-size = 14
+size = 26
 font_data = SubResource( 1 )

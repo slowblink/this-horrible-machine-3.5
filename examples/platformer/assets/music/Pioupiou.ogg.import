@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Pioupiou.ogg-052f66cc73f6a6ac87524a6274a8e156.oggstr"
+
+[deps]
+
+source_file="res://examples/platformer/assets/music/Pioupiou.ogg"
+dest_files=[ "res://.import/Pioupiou.ogg-052f66cc73f6a6ac87524a6274a8e156.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

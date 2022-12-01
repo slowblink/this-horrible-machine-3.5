@@ -5,7 +5,13 @@
 	"folders": {
 		"Characters": {
 			"files": [
+<<<<<<< Updated upstream
 				"character-1669188507.json"
+=======
+				"character-1669620645.json",
+				"character-1669622420.json",
+				"character-1669622449.json"
+>>>>>>> Stashed changes
 			],
 			"folders": {
 
@@ -17,7 +23,12 @@
 		},
 		"Definitions": {
 			"files": [
+<<<<<<< Updated upstream
 				"1669188689-648"
+=======
+				"1669622595-918",
+				"1669623818-815"
+>>>>>>> Stashed changes
 			],
 			"folders": {
 
@@ -29,7 +40,8 @@
 		},
 		"Themes": {
 			"files": [
-				"default-theme.cfg"
+				"default-theme.cfg",
+				"theme-1669622564.cfg"
 			],
 			"folders": {
 
@@ -41,8 +53,12 @@
 		},
 		"Timelines": {
 			"files": [
+<<<<<<< Updated upstream
 				"timeline-1669188645.json",
 				"timeline-1669188675.json"
+=======
+				"timeline-1669622486.json"
+>>>>>>> Stashed changes
 			],
 			"folders": {
 
