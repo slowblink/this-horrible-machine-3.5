@@ -119,7 +119,7 @@ shape = SubResource( 1709 )
 shape = SubResource( 1710 )
 
 [node name="OmniLight" type="OmniLight" parent="GiantLightRod"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 48, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 62, 0 )
 light_color = Color( 0.94902, 0.529412, 0.0196078, 1 )
 light_indirect_energy = 0.5
 shadow_enabled = true

@@ -9,9 +9,10 @@ sky_energy = 5.0
 ground_bottom_color = Color( 0, 0, 0, 1 )
 ground_horizon_color = Color( 0.0117647, 0.65098, 0.415686, 1 )
 ground_curve = 0.0151572
-sun_color = Color( 0.678431, 0.0588235, 0.027451, 1 )
-sun_curve = 0.00507655
-sun_energy = 5.0
+sun_color = Color( 0.94902, 0.0196078, 0.0196078, 1 )
+sun_latitude = 90.0
+sun_angle_max = 0.0
+sun_curve = 0.00603706
 texture_size = 0
 
 [resource]
