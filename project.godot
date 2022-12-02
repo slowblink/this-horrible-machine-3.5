@@ -306,7 +306,6 @@ default_bus_layout="res://Deprecated/default_bus_layout.tres"
 [autoload]
 
 Global="*res://scenes/Global.gd"
-SilentWolf="*res://addons/silent_wolf/SilentWolf.gd"
 Pause="*res://scenes/ui/pause/Pause.tscn"
 
 [display]
@@ -317,9 +316,13 @@ window/size/resizable=false
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 
+[editor]
+
+script_templates_search_path="res://addons/xsm/templates/"
+
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/node_referencer/plugin.cfg", "res://addons/qodot/plugin.cfg", "res://addons/silent_wolf/plugin.cfg", "res://addons/xsm/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/node_referencer/plugin.cfg", "res://addons/qodot/plugin.cfg", "res://addons/xsm/plugin.cfg" )
 
 [importer_defaults]
 

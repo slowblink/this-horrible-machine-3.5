@@ -1,4 +1,9 @@
 extends Spatial
+
+
+### Automatic References Start ###
+onready var _collision_shape: CollisionShape = $KinematicBody/CollisionShape
+### Automatic References Stop ###
 ##########################
 ## THIS NODE IS A FOR ANY NPC
 ## MODULATE COLOR AND MESH DEFORMS
