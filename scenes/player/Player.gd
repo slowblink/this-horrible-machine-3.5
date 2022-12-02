@@ -473,8 +473,9 @@ func is_jump_released():
 		# check raycast:
 			if MaxJumps > 0\
 			and (is_on_floor() or $GroundCheck.is_colliding()):
-				print("is_on_floor or GroundCheck has collided")
-				gravityVec = (Vector3.UP * Jump)
+				#gravityVec = (Vector3.UP * Jump)
+				set_jump_velocity()
+				gravityVec = (Vector3.UP * look_direction.x) * Jump
 			elif grapple:
 				set_jump_velocity()
 				gravityVec = (Vector3.UP * look_direction.x) * Jump

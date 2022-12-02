@@ -3,7 +3,9 @@ extends Spatial
 
 ### Automatic References Start ###
 onready var _collision_shape: CollisionShape = $KinematicBody/CollisionShape
+onready var _rigged_character: MeshInstance = $KinematicBody/Armature/Skeleton/rigged_character
 ### Automatic References Stop ###
+
 ##########################
 ## THIS NODE IS A FOR ANY NPC
 ## MODULATE COLOR AND MESH DEFORMS

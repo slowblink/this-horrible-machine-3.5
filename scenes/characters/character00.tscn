@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://addons/xsm/state.gd" type="Script" id=1]
+[ext_resource path="res://scenes/characters/rigged_character.gd" type="Script" id=2]
 [ext_resource path="res://scenes/characters/character00.gd" type="Script" id=5]
 [ext_resource path="res://scenes/characters/character_material_01.tres" type="Material" id=6]
 
@@ -439,7 +440,7 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1, 0
 shape = SubResource( 8 )
 
 [node name="Armature" type="Spatial" parent="KinematicBody"]
-transform = Transform( 0.994714, -0.0863251, -0.055608, -0.049957, 0.0662971, -0.996548, 0.0897138, 0.994059, 0.0616341, -0.0547072, -0.00356164, 0.0660293 )
+transform = Transform( 0.993931, -0.0910426, -0.0617505, -0.0559267, 0.0651898, -0.996304, 0.0947316, 0.993711, 0.0597025, -0.05613, -0.00326878, 0.0592381 )
 
 [node name="Skeleton" type="Skeleton" parent="KinematicBody/Armature"]
 bones/0/name = "Pelvis"
@@ -538,10 +539,11 @@ bones/18/rest = Transform( 0.993276, -0.0266693, -0.112651, 0.115416, 0.152672, 
 bones/18/enabled = true
 bones/18/bound_children = [  ]
 
-[node name="LowPolyCharacter Rigged" type="MeshInstance" parent="KinematicBody/Armature/Skeleton"]
+[node name="rigged_character" type="MeshInstance" parent="KinematicBody/Armature/Skeleton"]
 mesh = SubResource( 2 )
 skin = SubResource( 3 )
 material/0 = ExtResource( 6 )
+script = ExtResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="KinematicBody"]
 root_node = NodePath("../..")
@@ -567,14 +569,14 @@ script = ExtResource( 1 )
 disabled = false
 debug_mode = false
 timed = false
-next_state = NodePath("../Walking")
+next_state = NodePath("")
 
 [node name="Walking" type="Node" parent="TravelState"]
 script = ExtResource( 1 )
 disabled = false
 debug_mode = false
 timed = false
-next_state = NodePath("../Running")
+next_state = NodePath("")
 
 [node name="Running" type="Node" parent="TravelState"]
 script = ExtResource( 1 )

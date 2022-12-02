@@ -138,12 +138,12 @@ collision_layer = 2
 collision_mask = 5
 script = ExtResource( 1 )
 SprintMeter = false
-Jump = 75
+Jump = 100
 Gravity = 5
 Speed = 5
 SprintSpeedFactor = 5
 CrouchSpeedFactor = 5
-leap_scale = 2
+jump_decay_rate = 50
 
 [node name="CollisionShape" type="CollisionShape" parent="." groups=["Player"]]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0 )
