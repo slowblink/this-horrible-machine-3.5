@@ -4,8 +4,9 @@ extends KinematicBody
 ### Automatic References Start ###
 onready var _bob: AnimationPlayer = $Head/Camera/bob
 onready var _grapple: AnimationPlayer = $Head/Camera/grapple
-onready var _grapple_sfx: AudioStreamPlayer = $Grapple
 onready var _grapple_puff: Particles = $grapple_puff
+onready var _grapple_sfx: AudioStreamPlayer = $Grapple
+onready var _ray_cast: RayCast = get_node("%RayCast")
 ### Automatic References Stop ###
 # old code
 #look_direction = $Head/Camera.get_global_rotation()
@@ -198,10 +199,10 @@ func debug():
 	#look_rad.z = look_direction.z/PI
 	h_jump = Vector3()
 	h_jump -= transform.basis.z
-	debug_1.text = str("grapple: ",String(grapple))
+
 	debug_2.text = str("look_direction.x: ",String(look_direction.x))
 	debug_3.text = str("jump_velocity: ", String(jump_velocity))
-	debug_4.text = str("0.0.2")
+	debug_4.text = str("0.1.2")
 # This function detects if there is already a Spawn Point node.
 func setspawn():
 # If there isn't:
@@ -319,6 +320,7 @@ func _physics_process(delta: float) -> void:
 		debug()
 		camera(delta)
 		movement(delta)
+		check_ray_for_npc()
 	# If I am currently holding an object, decide what to do with that object with this function.
 		if objectGrabbed:
 			grab()
@@ -813,3 +815,10 @@ func jump_charge():
 	#clear the jump velocity
 	jump_velocity = Vector3()
 	#and then presumably start charging up some value
+func check_ray_for_npc():
+	#_ray_cast is my node, and I want to check out whether it is_colliding()
+	if _ray_cast.is_colliding():
+		#then I want to see what it is colliding with, specifically which npc
+		debug_1.text = str(_ray_cast.get_collider())
+		pass
+	pass

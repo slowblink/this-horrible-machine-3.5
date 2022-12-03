@@ -1,6 +1,14 @@
 tool
 extends State
 
+################################
+# Indended Function:
+# Only one dialog timeline should be active, so this keeps track of that,
+# but also allows time between dialogs, and then lets dialogic know when
+# the state manager is ready for a new dialog timeline to begin.
+#
+# Where was dialogic running, before?
+################################
 
 #
 # FUNCTIONS TO INHERIT IN YOUR STATES
@@ -39,7 +47,6 @@ func _before_exit(_args) -> void:
 # This function is called when the State exits
 # XSM before_exits the children first, then the root
 func _on_exit(_args) -> void:
-	#switch to OnCooldown
 	pass
 
 

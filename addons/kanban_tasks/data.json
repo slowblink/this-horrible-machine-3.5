@@ -5,11 +5,19 @@
   "categories": [
     {
       "title": "Task",
-      "color": "6495ed"
+      "color": "64ed89"
     },
     {
       "title": "Header",
-      "color": "ffffff"
+      "color": "000000"
+    },
+    {
+      "title": "Subtask",
+      "color": "82c9d1"
+    },
+    {
+      "title": "Fix",
+      "color": "cd7506"
     }
   ],
   "columns": [
@@ -36,57 +44,94 @@
   ],
   "stages": [
     {
-      "title": "Backlog and Ideas",
+      "title": "Ideas & Feedback",
+      "tasks": [
+        2,
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "title": "In Queue",
+      "tasks": [
+        5,
+        9,
+        10
+      ]
+    },
+    {
+      "title": "In-Progress",
       "tasks": [
 
       ]
     },
     {
-      "title": "Intended Features",
+      "title": "Feedback Pending",
       "tasks": [
-        4
-      ]
-    },
-    {
-      "title": "In Development",
-      "tasks": [
-        0
-      ]
-    },
-    {
-      "title": "In Production",
-      "tasks": [
-        3,
-        1,
-        2
+
       ]
     }
   ],
   "tasks": [
     {
       "category": 0,
-      "title": "controller support",
+      "title": "Gamepad controls are broken and not working in menus",
       "details": ""
     },
     {
       "category": 0,
-      "title": "jump button latches onto walls",
+      "title": "Screen sizing is not properly working when defaulting to fullscreen",
       "details": ""
-    },
-    {
-      "category": 0,
-      "title": "jump button should not stop player's air movement",
-      "details": ""
-    },
-    {
-      "category": 0,
-      "title": "on_wall should only show \"true\" when player is touching a wall",
-      "details": "currently it shows true at all times and is probably colliding with the player"
     },
     {
       "category": 1,
-      "title": "NPC 0.1.0",
-      "details": "- Animated idle mesh and mat\n- Interactable dialog\n- Functional state changes"
+      "title": "These are not yet tasks. Rewrite and reframe them as tasks before moving them into the queue.",
+      "details": ""
+    },
+    {
+      "category": 0,
+      "title": "The color of the character could be inherited from dialogic's database",
+      "details": ""
+    },
+    {
+      "category": 0,
+      "title": "in theory, the character color stuff could also get inherited from a gridless database, but I'm reconsidering whether it's worth brining that tool in since I don't yet know the whole process",
+      "details": ""
+    },
+    {
+      "category": 0,
+      "title": "make one NPC talk and stop talking when appropriate.",
+      "details": ""
+    },
+    {
+      "category": 2,
+      "title": "player controller checks if raycast touches character",
+      "details": ""
+    },
+    {
+      "category": 2,
+      "title": "player controller checks dialogstate for Ready",
+      "details": ""
+    },
+    {
+      "category": 2,
+      "title": "dialog manager might need to hold DialogState node",
+      "details": ""
+    },
+    {
+      "category": 0,
+      "title": "set up versioning plugin",
+      "details": ""
+    },
+    {
+      "category": 3,
+      "title": "fix jump inertia",
+      "details": ""
     }
   ]
 }
