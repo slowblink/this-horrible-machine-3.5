@@ -186,8 +186,8 @@ script = ExtResource( 5 )
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 111.1, 35.7631 )
 light_color = Color( 0.94902, 0.529412, 0.0196078, 1 )
+light_specular = 5.0
 shadow_enabled = true
-shadow_contact = 0.9
 directional_shadow_blend_splits = true
 directional_shadow_max_distance = 8000.0
 
