@@ -1,7 +1,6 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://addons/xsm/state.gd" type="Script" id=1]
-[ext_resource path="res://scenes/characters/rigged_character.gd" type="Script" id=2]
 [ext_resource path="res://scenes/characters/character00.gd" type="Script" id=5]
 [ext_resource path="res://scenes/characters/character_material_01.tres" type="Material" id=6]
 
@@ -543,7 +542,6 @@ bones/18/bound_children = [  ]
 mesh = SubResource( 2 )
 skin = SubResource( 3 )
 material/0 = ExtResource( 6 )
-script = ExtResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="KinematicBody"]
 root_node = NodePath("../..")
@@ -569,14 +567,14 @@ script = ExtResource( 1 )
 disabled = false
 debug_mode = false
 timed = false
-next_state = NodePath("")
+next_state = NodePath("../Walking")
 
 [node name="Walking" type="Node" parent="TravelState"]
 script = ExtResource( 1 )
 disabled = false
 debug_mode = false
 timed = false
-next_state = NodePath("")
+next_state = NodePath("../Running")
 
 [node name="Running" type="Node" parent="TravelState"]
 script = ExtResource( 1 )
