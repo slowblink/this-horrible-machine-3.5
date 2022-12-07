@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/torch01.map-c17f0c32819b276095f82e01b50e346f.tres"
+
+[deps]
+
+source_file="res://src/maps/props/torch01.map"
+dest_files=[ "res://.import/torch01.map-c17f0c32819b276095f82e01b50e346f.tres" ]
+
+[params]
+
