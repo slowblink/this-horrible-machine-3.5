@@ -170,6 +170,8 @@ export var leap_scale = 4
 var grapple = false
 var grapple_fx_started = false
 
+var npc_target = "null"
+
 # RUN TIME  ----------------------------------------------------------------------------
 # When the game runs,
 func _ready() -> void:
@@ -821,10 +823,15 @@ func check_raycast():
 		toggle_crosshair(true)
 		#then I want to see what it is colliding with, specifically which npc
 		debug_1.text = str(_ray_cast.get_collider())
+		# check for the gridless db. if null, print it and move on.
+		if _ray_cast.get_collider().is_in_group("npc"):
+			npc_target = _ray_cast.get_collider().npc_name
+		else:
+			pass
 	else:
 		toggle_crosshair(false)
 		debug_1.text = str("not much to see here")
-	pass
+	
 
 func toggle_crosshair(interactable):
 	#this is a placeholder function, but later this will control the animation

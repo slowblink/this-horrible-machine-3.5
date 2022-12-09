@@ -10,6 +10,8 @@ onready var _rigged_character: MeshInstance = $KinematicBody/Armature/Skeleton/r
 
 onready var npc_name = npc_data.name
 onready var npc_color = npc_data.color
+onready var npc_idle = npc_data.idle_animation
+onready var npc_body = npc_data.body_type
 
 ##########################
 ## THIS NODE IS A FOR ANY NPC

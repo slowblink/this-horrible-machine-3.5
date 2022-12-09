@@ -10,6 +10,11 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Resource",
+"class": "Category",
+"language": "GDScript",
+"path": "res://gridlessDB_data/Database/classes/Category.gd"
+}, {
+"base": "Resource",
 "class": "Characters",
 "language": "GDScript",
 "path": "res://gridlessDB_data/Database/classes/Characters.gd"
@@ -63,6 +68,11 @@ _global_script_classes=[ {
 "class": "DialogicUtil",
 "language": "GDScript",
 "path": "res://addons/dialogic/Other/DialogicUtil.gd"
+}, {
+"base": "Resource",
+"class": "DynamicObjects",
+"language": "GDScript",
+"path": "res://gridlessDB_data/Database/classes/DynamicObjects.gd"
 }, {
 "base": "PanelContainer",
 "class": "HistoryRow",
@@ -235,6 +245,11 @@ _global_script_classes=[ {
 "path": "res://addons/xsm/state_regions.gd"
 }, {
 "base": "Resource",
+"class": "StaticObjects",
+"language": "GDScript",
+"path": "res://gridlessDB_data/Database/classes/StaticObjects.gd"
+}, {
+"base": "Resource",
 "class": "TrenchBroomFaceAttrib",
 "language": "GDScript",
 "path": "res://addons/qodot/src/resources/game-definitions/trenchbroom/trenchbroom_face_attrib.gd"
@@ -263,8 +278,14 @@ _global_script_classes=[ {
 "class": "WaterLayer",
 "language": "GDScript",
 "path": "res://addons/qodot/game_definitions/worldspawn_layers/liquid/water.gd"
+}, {
+"base": "Spatial",
+"class": "cQuakeLamp",
+"language": "GDScript",
+"path": "res://scenes/light/Template/QuakeLamp.gd"
 } ]
 _global_script_class_icons={
+"Category": "",
 "Characters": "",
 "DTS": "",
 "Dialogic": "",
@@ -276,6 +297,7 @@ _global_script_class_icons={
 "DialogicParser": "",
 "DialogicResources": "",
 "DialogicUtil": "",
+"DynamicObjects": "",
 "HistoryRow": "",
 "LavaLayer": "",
 "LiquidLayer": "",
@@ -310,12 +332,14 @@ _global_script_class_icons={
 "StateLoop": "res://addons/xsm/icons/state_loop.png",
 "StateRand": "res://addons/xsm/icons/state_rand.png",
 "StateRegions": "res://addons/xsm/icons/state_regions.png",
+"StaticObjects": "",
 "TrenchBroomFaceAttrib": "",
 "TrenchBroomGameConfigFile": "",
 "TrenchBroomGameConfigFolder": "",
 "TrenchBroomTag": "",
 "VectorResource": "",
-"WaterLayer": ""
+"WaterLayer": "",
+"cQuakeLamp": ""
 }
 
 [application]

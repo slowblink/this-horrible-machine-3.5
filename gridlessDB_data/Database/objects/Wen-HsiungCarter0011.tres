@@ -5,8 +5,8 @@
 [resource]
 script = ExtResource( 1 )
 color = Color( 0.73099, 0.077161, 0.914063, 1 )
-body_type = 1
+body_type = 0
 portrait = ""
 dialogic_character_file = "dialogic/characters/character-1670019414.json"
 idle_animation = 0
-name = ""
+name = "Wen-Hsiung Carter 0011"

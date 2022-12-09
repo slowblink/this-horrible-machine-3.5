@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://scenes/rigidbodies/RigidBodyReset.gd" type="Script" id=1]
 [ext_resource path="res://textures/map_mats/MetalPlates_02_basecolor.png" type="Texture" id=2]
@@ -89,8 +89,96 @@ points = PoolVector3Array( -0.5, 1, -0.25, -0.5, 0.25, -0.25, -0.25, 0.25, -0.25
 [sub_resource type="ConvexPolygonShape" id=122]
 points = PoolVector3Array( -0.25, -0.75, -0.25, -0.25, -0.25, -0.25, -0.5, -0.25, -0.25, -0.5, -0.75, -0.25, -0.5, -1, 0, -0.25, -1, 0, -0.5, -0.25, 0.25, -0.5, -1, 0.25, -0.25, -1, 0.25, -0.25, -0.25, 0.25 )
 
+[sub_resource type="Animation" id=123]
+resource_name = "Flicker01"
+length = 10.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:omni_range")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.6, 2.9, 3.1, 5.4, 5.5, 5.6, 6.9, 7, 7.9, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 25.0, 25.0, 50.0, 25.0, 25.0, 50.0, 25.0, 25.0, 5.0, 25.0, 25.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:light_energy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.6, 2.9, 3.1, 5.4, 5.5, 5.6, 6.9, 7, 7.9, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 1.0, 1.0, 1.0, 1.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=124]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:omni_range")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 25.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:light_energy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+
+[sub_resource type="Animation" id=125]
+resource_name = "Flicker"
+length = 0.03
+loop = true
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.03 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.3, 0.6 ]
+}
+
+[sub_resource type="Animation" id=126]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.3 ]
+}
+
 [node name="Torch01" type="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.00156, 417.98, 88.4242 )
 
 [node name="Small" type="RigidBody" parent="."]
 gravity_scale = 0.2
@@ -135,16 +223,27 @@ shape = SubResource( 121 )
 [node name="entity_0_brush_9_collision_shape" type="CollisionShape" parent="Small"]
 shape = SubResource( 122 )
 
-[node name="OmniLightNoShadow" type="OmniLight" parent="Small"]
+[node name="OmniLight" type="OmniLight" parent="Small"]
 light_color = Color( 0.0162, 0.70416, 0.81, 1 )
+light_indirect_energy = 20.0
+light_specular = 1.0
+shadow_enabled = true
+omni_range = 25.0
+omni_attenuation = 7.72748
+
+[node name="FlickerAnimation" type="AnimationPlayer" parent="Small/OmniLight"]
+autoplay = "Flicker01"
+anims/Flicker01 = SubResource( 123 )
+anims/RESET = SubResource( 124 )
+
+[node name="OmniLightNoShadow" type="OmniLight" parent="Small"]
+light_color = Color( 0.0156863, 0.705882, 0.811765, 1 )
 light_energy = 0.3
 light_specular = 1.0
 omni_range = 10.0
 omni_attenuation = 2.54912
 
-[node name="OmniLightShadow" type="OmniLight" parent="Small"]
-light_color = Color( 0.0162, 0.70416, 0.81, 1 )
-light_specular = 1.0
-shadow_enabled = true
-omni_range = 25.0
-omni_attenuation = 7.72748
+[node name="FlickerAnimation" type="AnimationPlayer" parent="Small/OmniLightNoShadow"]
+autoplay = "Flicker"
+anims/Flicker = SubResource( 125 )
+anims/RESET = SubResource( 126 )
