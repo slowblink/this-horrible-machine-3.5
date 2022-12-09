@@ -53,7 +53,8 @@
         4,
         6,
         7,
-        8
+        8,
+        11
       ]
     },
     {
@@ -131,6 +132,11 @@
     {
       "category": 3,
       "title": "fix jump inertia",
+      "details": ""
+    },
+    {
+      "category": 0,
+      "title": "there isn't any friction happening when I hit walls in the air",
       "details": ""
     }
   ]

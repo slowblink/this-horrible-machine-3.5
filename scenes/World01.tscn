@@ -1,4 +1,4 @@
-[gd_scene load_steps=98 format=2]
+[gd_scene load_steps=99 format=2]
 
 [ext_resource path="res://scenes/environments/env00.tres" type="Environment" id=1]
 [ext_resource path="res://addons/qodot/src/nodes/qodot_map.gd" type="Script" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://textures/map_mats/128x128.png" type="Texture" id=15]
 [ext_resource path="res://textures/map_mats/32x32.png" type="Texture" id=16]
 [ext_resource path="res://textures/map_mats/32_worn_rivet_wall_d.png" type="Texture" id=17]
+[ext_resource path="res://gridlessDB_data/Database/objects/Kvaran0101.tres" type="Resource" id=18]
 [ext_resource path="res://textures/map_mats/16_rivet_wall_horizontal.tres" type="Material" id=19]
 [ext_resource path="res://textures/map_mats/16x16_metal_slats.tres" type="Material" id=21]
 [ext_resource path="res://textures/map_mats/32_vertical_slot_panels.tres" type="Material" id=22]
@@ -346,14 +347,6 @@ points = PoolVector3Array( -96, 0, -32, -96, -16, -32, 0, -16, -32, 0, 0, -32, -
 environment = ExtResource( 1 )
 script = ExtResource( 5 )
 
-[node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 111.1, 35.7631 )
-light_color = Color( 0.94902, 0.529412, 0.0196078, 1 )
-light_specular = 5.0
-shadow_enabled = true
-directional_shadow_blend_splits = true
-directional_shadow_max_distance = 8000.0
-
 [node name="Menu" parent="." instance=ExtResource( 4 )]
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
@@ -366,11 +359,9 @@ JoySensitivity = 5
 Gravity = 2
 SprintSpeedFactor = 20
 
-[node name="character00" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 270, 256, -39 )
-
-[node name="character00" parent="character00" instance=ExtResource( 8 )]
-transform = Transform( -0.653606, 0, 0.756835, 0, 1, 0, -0.756835, 0, -0.653606, -562.364, 160.043, 71.662 )
+[node name="Kvaran 0101" parent="." instance=ExtResource( 8 )]
+transform = Transform( -0.653606, 0, 0.756835, 0, 1, 0, -0.756835, 0, -0.653606, -151.364, 416.043, 36.662 )
+npc_data = ExtResource( 18 )
 
 [node name="DialogManager" type="Node" parent="."]
 
@@ -710,6 +701,14 @@ shape = SubResource( 48 )
 [node name="entity_0_brush_6_collision_shape" type="CollisionShape" parent="Layout/Break02/entity_0_worldspawn"]
 shape = SubResource( 49 )
 
+[node name="DirectionalLight" type="DirectionalLight" parent="Layout"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 111.1, 35.7631 )
+light_color = Color( 0.94902, 0.529412, 0.0196078, 1 )
+light_specular = 5.0
+shadow_enabled = true
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 8000.0
+
 [node name="LightTower00" parent="Layout" instance=ExtResource( 40 )]
 transform = Transform( 1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, -166, 247, -44 )
 
@@ -722,13 +721,13 @@ transform = Transform( 1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37
 [node name="LightTower07" parent="Layout" instance=ExtResource( 40 )]
 transform = Transform( 1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, 58, 247, -44 )
 
-[node name="Torch03" parent="." instance=ExtResource( 14 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 211.191, 256.041, -46.9195 )
+[node name="Torch03" parent="Layout" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 211.191, 259.041, -46.9195 )
 
-[node name="Torch02" parent="." instance=ExtResource( 14 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.54656, 420.126, 55.9974 )
+[node name="Torch02" parent="Layout" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.54656, 417.126, 55.9974 )
 
-[node name="Torch01" parent="." instance=ExtResource( 14 )]
+[node name="Torch01" parent="Layout" instance=ExtResource( 14 )]
 
-[node name="Torch04" parent="." instance=ExtResource( 14 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.00156, 417.98, 11.4431 )
+[node name="Torch04" parent="Layout" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.9984, 252.98, 11.4431 )

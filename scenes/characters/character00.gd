@@ -1,15 +1,29 @@
 extends Spatial
 
+export(Resource) var npc_data
+var npc_material #generated below 
 
 ### Automatic References Start ###
 onready var _collision_shape: CollisionShape = $KinematicBody/CollisionShape
 onready var _rigged_character: MeshInstance = $KinematicBody/Armature/Skeleton/rigged_character
 ### Automatic References Stop ###
 
+onready var npc_name = npc_data.name
+onready var npc_color = npc_data.color
+
 ##########################
 ## THIS NODE IS A FOR ANY NPC
 ## MODULATE COLOR AND MESH DEFORMS
 ##########################
 
-# export var character color. probably want it to be a hex value
-# I may not even want to export it, though. it could pull from a database entry, if I connect it to that.
+func _ready():
+	infer_character_details()
+func infer_character_details():
+	generate_material()
+	apply_material()
+func generate_material():
+	npc_material = SpatialMaterial.new()
+	npc_material.flags_unshaded = true
+	npc_material.albedo_color = npc_color 
+func apply_material():
+	_rigged_character.set_surface_material(0,npc_material)

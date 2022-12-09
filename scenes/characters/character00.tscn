@@ -1,14 +1,12 @@
 [gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://addons/xsm/state.gd" type="Script" id=1]
+[ext_resource path="res://scenes/characters/materials/test_material.tres" type="Material" id=2]
 [ext_resource path="res://scenes/characters/character00.gd" type="Script" id=5]
 [ext_resource path="res://scenes/characters/character_material_01.tres" type="Material" id=6]
 
 [sub_resource type="CapsuleShape" id=8]
 radius = 0.4
-
-[sub_resource type="SpatialMaterial" id=1]
-vertex_color_use_as_albedo = true
 
 [sub_resource type="ArrayMesh" id=2]
 resource_name = "character00_Cube001"
@@ -19,7 +17,7 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 2194911,
 "index_count": 1296,
-"material": SubResource( 1 ),
+"material": ExtResource( 2 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( -0.165881, 0.727185, -0.0953373, 0.331763, 0.539169, 0.236189 ), AABB( -0.206473, 0.926168, -0.128688, 0.412946, 0.624086, 0.291799 ), AABB( -0.121525, 1.34866, -0.128688, 0.24305, 0.279086, 0.291799 ), AABB( -0.126975, 1.58336, -0.0959524, 0.253951, 0.197722, 0.246034 ), AABB( -0.126975, 1.58336, -0.101697, 0.253951, 0.363233, 0.251779 ), AABB( 5.51056e-09, 1.24522, -0.128688, 0.26718, 0.436594, 0.291799 ), AABB( 8.37529e-09, 1.16354, -0.108605, 0.626875, 0.474798, 0.253835 ), AABB( 0.5075, 1.43537, -0.0759869, 0.406877, 0.139539, 0.176624 ), AABB( 0.750953, 1.47531, 0.0180081, 0.285358, 0.0873841, 0.169873 ), AABB( -0.26718, 1.24522, -0.128688, 0.26718, 0.436594, 0.291799 ), AABB( -0.626875, 1.16354, -0.108605, 0.626875, 0.474798, 0.253835 ), AABB( -0.914377, 1.43537, -0.075987, 0.406877, 0.139539, 0.176624 ), AABB( -1.03631, 1.47531, 0.0180081, 0.285358, 0.0873837, 0.169873 ), AABB( -0.0110121, 0.385001, -0.107543, 0.221815, 0.778537, 0.248394 ), AABB( 0.0683231, -0.00332478, -0.107543, 0.14248, 0.544408, 0.161548 ), AABB( 0.0955106, -0.00364524, -0.0701091, 0.115661, 0.123567, 0.243483 ), AABB( -0.210803, 0.385001, -0.107543, 0.221815, 0.778537, 0.248394 ), AABB( -0.210803, -0.00332478, -0.107543, 0.14248, 0.544408, 0.161548 ), AABB( -0.211171, -0.00364524, -0.0701091, 0.115661, 0.123567, 0.243483 ) ],
 "vertex_count": 1212
@@ -567,14 +565,14 @@ script = ExtResource( 1 )
 disabled = false
 debug_mode = false
 timed = false
-next_state = NodePath("../Walking")
+next_state = NodePath("")
 
 [node name="Walking" type="Node" parent="TravelState"]
 script = ExtResource( 1 )
 disabled = false
 debug_mode = false
 timed = false
-next_state = NodePath("../Running")
+next_state = NodePath("")
 
 [node name="Running" type="Node" parent="TravelState"]
 script = ExtResource( 1 )

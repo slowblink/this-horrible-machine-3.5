@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Resource",
+"class": "Characters",
+"language": "GDScript",
+"path": "res://gridlessDB_data/Database/classes/Characters.gd"
+}, {
 "base": "Reference",
 "class": "DTS",
 "language": "GDScript",
@@ -73,6 +78,11 @@ _global_script_classes=[ {
 "class": "LiquidLayer",
 "language": "GDScript",
 "path": "res://addons/qodot/game_definitions/worldspawn_layers/liquid.gd"
+}, {
+"base": "Resource",
+"class": "Phenomenae",
+"language": "GDScript",
+"path": "res://gridlessDB_data/Database/classes/Phenomenae.gd"
 }, {
 "base": "PhysicsEntity",
 "class": "PhysicsBall",
@@ -194,6 +204,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/qodot/game_definitions/worldspawn_layers/liquid/slime.gd"
 }, {
+"base": "Resource",
+"class": "SmallObjects",
+"language": "GDScript",
+"path": "res://gridlessDB_data/Database/classes/SmallObjects.gd"
+}, {
 "base": "Node",
 "class": "State",
 "language": "GDScript",
@@ -239,12 +254,18 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/qodot/src/resources/game-definitions/trenchbroom/trenchbroom_tag.gd"
 }, {
+"base": "Resource",
+"class": "VectorResource",
+"language": "GDScript",
+"path": "res://addons/vector_resource/vector_resource.gd"
+}, {
 "base": "LiquidLayer",
 "class": "WaterLayer",
 "language": "GDScript",
 "path": "res://addons/qodot/game_definitions/worldspawn_layers/liquid/water.gd"
 } ]
 _global_script_class_icons={
+"Characters": "",
 "DTS": "",
 "Dialogic": "",
 "DialogicAnimaPropertiesHelper": "",
@@ -258,6 +279,7 @@ _global_script_class_icons={
 "HistoryRow": "",
 "LavaLayer": "",
 "LiquidLayer": "",
+"Phenomenae": "",
 "PhysicsBall": "",
 "PhysicsEntity": "",
 "QodotDependencies": "",
@@ -282,6 +304,7 @@ _global_script_class_icons={
 "QuakeWadFile": "",
 "QuakeWadImportPlugin": "",
 "SlimeLayer": "",
+"SmallObjects": "",
 "State": "res://addons/xsm/icons/state.png",
 "StateAnimation": "res://addons/xsm/icons/state.png",
 "StateLoop": "res://addons/xsm/icons/state_loop.png",
@@ -291,6 +314,7 @@ _global_script_class_icons={
 "TrenchBroomGameConfigFile": "",
 "TrenchBroomGameConfigFolder": "",
 "TrenchBroomTag": "",
+"VectorResource": "",
 "WaterLayer": ""
 }
 

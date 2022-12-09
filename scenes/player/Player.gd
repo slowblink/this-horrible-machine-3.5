@@ -320,7 +320,7 @@ func _physics_process(delta: float) -> void:
 		debug()
 		camera(delta)
 		movement(delta)
-		check_ray_for_npc()
+		check_raycast()
 	# If I am currently holding an object, decide what to do with that object with this function.
 		if objectGrabbed:
 			grab()
@@ -815,10 +815,20 @@ func jump_charge():
 	#clear the jump velocity
 	jump_velocity = Vector3()
 	#and then presumably start charging up some value
-func check_ray_for_npc():
+func check_raycast():
 	#_ray_cast is my node, and I want to check out whether it is_colliding()
 	if _ray_cast.is_colliding():
+		toggle_crosshair(true)
 		#then I want to see what it is colliding with, specifically which npc
 		debug_1.text = str(_ray_cast.get_collider())
-		pass
+	else:
+		toggle_crosshair(false)
+		debug_1.text = str("not much to see here")
+	pass
+
+func toggle_crosshair(interactable):
+	#this is a placeholder function, but later this will control the animation
+	#of some sort of UI element to indicate the player looking at something
+	# that can be picked up or manipulated
+	# currently it shows walls, which I want it to ignore.
 	pass

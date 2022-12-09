@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://gridlessDB_data/Database/classes/Characters.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = Color(0.73099, 0.077161, 0.914063, 1)
+name = "Wen-Hsiung Carter 0011"
+body_type = 0
+portrait = ""
+dialogic_character_file = "dialogic/characters/character-1670019414.json"
