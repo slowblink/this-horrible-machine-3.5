@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/character00.glb-6f02ca3798d403bec13165596f8be754.scn"
+path="res://.import/npc_a.glb-7e3233e79a51965803ab3e2092e74336.scn"
 
 [deps]
 
-source_file="res://src/gltf/character00.glb"
-dest_files=[ "res://.import/character00.glb-6f02ca3798d403bec13165596f8be754.scn" ]
+source_file="res://src/gltf/npc_a.glb"
+dest_files=[ "res://.import/npc_a.glb-7e3233e79a51965803ab3e2092e74336.scn" ]
 
 [params]
 

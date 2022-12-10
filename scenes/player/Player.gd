@@ -602,7 +602,7 @@ func movement(delta):
 	#(this is useful for crouching to make sure that the player isn't clipping upwards the while crouching)
 	prevent_top_clip()
 	# When the player sprints (Shift),
-	is_sprint_pressed()
+	#is_sprint_pressed()
 	is_jump_released()
 	check_ceiling_touch()
 	check_floor_touch(delta)
@@ -663,18 +663,18 @@ func camera(delta):
 	# Remove all mouse movement information to avoid the mouse movement to stack.
 		cameraInput = Vector2.ZERO
 # If Sprint FOV is on:
-	if SprintFOVToggle:
+	#if SprintFOVToggle:
 	# FOV is set by the speed of the player.
-		var FOV = h_velocity.length()
+		#var FOV = h_velocity.length()
 	# The camera's FOV is interpolated with FOV:
-		$"%Camera".fov = lerp($"%Camera".fov, 
+		#$"%Camera".fov = lerp($"%Camera".fov, 
 	# FOV will never go lower than MinFOV added with MaxFOV that only gets toggled when the player
 	# is moving (the higher the player movement, the closer the camera FOV gets to MaxFOV).
 	# The camera FOV is also multiplied if the player is running.
 	# However, this will be cancelled if the player was still holding sprint even if stamina runs out.
-		MinFOV + (MaxFOV/90 * (FOV * (float(Input.is_action_pressed("run")) - float(stillSprinting)))),
+		#MinFOV + (MaxFOV/90 * (FOV * (float(Input.is_action_pressed("run")) - float(stillSprinting)))),
 	# This is then smoothened by SprintFOVSmooth
-		delta * SprintFOVSmooth)
+		#delta * SprintFOVSmooth)
 
 # RIGID BODY GRABBING SYSTEM ----------------------------------------------------------------
 # This is the function that allows the player to grab a rigidbody.

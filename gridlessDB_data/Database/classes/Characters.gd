@@ -9,3 +9,5 @@ export (String) var dialogic_character_file = "dialogic/characters/character-167
 enum IdleAnimations {Idle}
 export(IdleAnimations) var idle_animation = IdleAnimations.Idle
 export (String) var name = ""
+enum StageShapes {}
+export(StageShapes) var stage_shape 

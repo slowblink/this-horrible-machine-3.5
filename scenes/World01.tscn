@@ -7,7 +7,7 @@
 [ext_resource path="res://scenes/World.gd" type="Script" id=5]
 [ext_resource path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" type="Resource" id=6]
 [ext_resource path="res://textures/map_mats/512_decay_wall_02.tres" type="Material" id=7]
-[ext_resource path="res://scenes/characters/character00.tscn" type="PackedScene" id=8]
+[ext_resource path="res://npc/NpcA.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/Ready.gd" type="Script" id=9]
 [ext_resource path="res://textures/map_mats/256x256.png" type="Texture" id=10]
 [ext_resource path="res://addons/xsm/state.gd" type="Script" id=11]
@@ -24,7 +24,7 @@
 [ext_resource path="res://textures/map_mats/32_vertical_slot_panels.tres" type="Material" id=22]
 [ext_resource path="res://textures/map_mats/512_decay_wall_01.tres" type="Material" id=23]
 [ext_resource path="res://textures/map_mats/128_master_vertical_slot_panels.tres" type="Material" id=24]
-[ext_resource path="res://gridlessDB_data/Database/objects/Wen-HsiungCarter0011.tres" type="Resource" id=25]
+[ext_resource path="res://gridlessDB_data/Database/objects/Z.KaylaMeyer.tres" type="Resource" id=25]
 [ext_resource path="res://scenes/LightTower00.tscn" type="PackedScene" id=40]
 
 [sub_resource type="SpatialMaterial" id=1]
@@ -390,22 +390,7 @@ script = ExtResource( 5 )
 [node name="Menu" parent="." instance=ExtResource( 4 )]
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 280, 259, -47 )
-LockMouse = false
-DevMode = true
-SprintFOVToggle = false
-Jump = 15
-JoySensitivity = 5
-Gravity = 2
-SprintSpeedFactor = 20
-
-[node name="Wen-HsiungCarter0011" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 197.794, 256.042, -32.7447 )
-npc_data = ExtResource( 25 )
-
-[node name="QBelinayOstensen" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.10026, 0, 0 )
-npc_data = ExtResource( 18 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0 )
 
 [node name="DialogManager" type="Node" parent="."]
 
@@ -772,7 +757,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 211.191, 259.041, -46.9195 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.54656, 417.126, 55.9974 )
 
 [node name="Torch01" parent="Layout" instance=ExtResource( 14 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.78855, 30.1106 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.78855, 26.1106 )
 
 [node name="Torch04" parent="Layout" instance=ExtResource( 14 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.9984, 252.98, 11.4431 )
+
+[node name="NpcA" parent="." instance=ExtResource( 8 )]
+transform = Transform( -0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, -4, 0, 7 )
+npc_data = ExtResource( 18 )
+
+[node name="NpcA2" parent="." instance=ExtResource( 8 )]
+transform = Transform( 0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, 4, 0, 1 )
+npc_data = ExtResource( 25 )
