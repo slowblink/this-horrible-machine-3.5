@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-direction = 0
+direction = 1
 dangerous = 0
-beautiful = 1
-valued = 0
+beautiful = 0
+valued = 1

@@ -1,13 +1,10 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://scenes/rigidbodies/RigidBodyReset.gd" type="Script" id=1]
-[ext_resource path="res://textures/map_mats/MetalPlates_02_basecolor.png" type="Texture" id=2]
+[ext_resource path="res://textures/map_mats/MetalPlates_02_basecolor.tres" type="Material" id=2]
 [ext_resource path="res://textures/map_mats/Glass_05_basecolor.tres" type="Material" id=3]
 [ext_resource path="res://textures/map_mats/16x16_metal_slats.tres" type="Material" id=4]
 [ext_resource path="res://textures/map_mats/Glass_04_basecolor.tres" type="Material" id=5]
-
-[sub_resource type="SpatialMaterial" id=110]
-albedo_texture = ExtResource( 2 )
 
 [sub_resource type="ArrayMesh" id=112]
 surfaces/0 = {
@@ -41,7 +38,7 @@ surfaces/2 = {
 "blend_shape_data": [  ],
 "format": 2194711,
 "index_count": 108,
-"material": SubResource( 110 ),
+"material": ExtResource( 2 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 76

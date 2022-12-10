@@ -11,3 +11,9 @@ export(IdleAnimations) var idle_animation = IdleAnimations.Idle
 export (String) var name = ""
 enum StageShapes {}
 export(StageShapes) var stage_shape 
+export (bool) var has_killed = 0
+export (bool) var smokes = 0
+export (bool) var drinks = 0
+export (bool) var owns_a_weapon = 0
+export (bool) var has_touched_the_decay = 0
+export (bool) var wants_to_touch_the_decay = 0
