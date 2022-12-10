@@ -170,7 +170,7 @@ func _ready() -> void:
 			if fsm_owner.is_empty() and get_parent():
 				target = get_parent()
 			state_map[name] = self
-			init_children_state_map(state_map, self)
+			init_children_state_map(state_map)
 			enter()
 			init_children_states(true)
 			_after_enter(null)
@@ -291,8 +291,8 @@ func property_get_revert(property):
 # Careful, if your substates have the same name,
 # their parents names must be different
 # It would be easier if the state_root name is unique
-func init_children_state_map(dict: Dictionary, new_state_root: State):
-	state_root = new_state_root
+func init_children_state_map(dict: Dictionary):
+	# state_root = new_state_root
 	for c in get_children():
 		if dict.has(c.name):
 			var curr_state: State = dict[c.name]
@@ -306,7 +306,7 @@ func init_children_state_map(dict: Dictionary, new_state_root: State):
 			state_root.duplicate_names[c.name] += 1
 		else:
 			dict[c.name] = c
-		c.init_children_state_map(dict, state_root)
+		c.init_children_state_map(dict)
 
 
 func init_children_states(first_branch: bool) -> void:
@@ -600,9 +600,9 @@ func was_state_active(state_name: String, history_id: int = 0) -> bool:
 func find_state_node_or_null(new_state: String) -> State:
 	if not new_state or new_state == "":
 		return null
-		
 	if new_state == get_name():
 		return self
+
 
 	var map: Dictionary = state_root.state_map
 	if map.has(new_state):
@@ -614,7 +614,31 @@ func find_state_node_or_null(new_state: String) -> State:
 		elif map.has( str("%s/%s" % [get_parent().name, new_state]) ):
 			return map[ str("%s/%s" % [get_parent().name, new_state]) ]
 
-	return null
+
+	# TODO here: avoid the state map if nothing found
+	# it means looking through children, then siblings, then parent...
+	# A recursive method should work pretty well here -> obviously (below)
+	var result
+	var ancester = self
+	var avoid_state = ancester
+	while not result and ancester and ancester.get_class() == "State":
+		result = ancester._find_state_in_children(new_state, avoid_state)
+		avoid_state = ancester
+		ancester = ancester.get_parent()
+	return result
+
+
+func _find_state_in_children(new_state: String, avoid_state: State = null):
+	var result = null
+	for c in get_children():
+		if c != avoid_state:
+			if c.name == new_state:
+				return c
+			else:
+				result = c._find_state_in_children(new_state)
+				if result:
+					return result
+	return result
 
 
 func add_timer(timer_name: String, time: float) -> Timer:

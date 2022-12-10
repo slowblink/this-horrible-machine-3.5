@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/superstructure.map-dc196a6d9386ab335532252c15be8ab5.tres"
+
+[deps]
+
+source_file="res://src/maps/superstructure.map"
+dest_files=[ "res://.import/superstructure.map-dc196a6d9386ab335532252c15be8ab5.tres" ]
+
+[params]
+

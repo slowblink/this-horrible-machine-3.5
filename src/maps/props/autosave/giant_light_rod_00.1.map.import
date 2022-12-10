@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/giant_light_rod_00.1.map-01d3a2f69ff9ddd80d55916b9b97ffb4.tres"
+
+[deps]
+
+source_file="res://src/maps/props/autosave/giant_light_rod_00.1.map"
+dest_files=[ "res://.import/giant_light_rod_00.1.map-01d3a2f69ff9ddd80d55916b9b97ffb4.tres" ]
+
+[params]
+

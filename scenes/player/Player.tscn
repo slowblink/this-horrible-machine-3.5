@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://scenes/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://scenes/player/crosshair007.png" type="Texture" id=2]
@@ -14,6 +14,8 @@
 [ext_resource path="res://scenes/player/sfx/climbing/ladder4.ogg" type="AudioStream" id=12]
 [ext_resource path="res://src/shaders/pixelated.tres" type="Shader" id=13]
 [ext_resource path="res://scenes/player/sfx/climbing/ladder1.ogg" type="AudioStream" id=14]
+[ext_resource path="res://addons/kenney_particle_pack/smoke_07.png" type="Texture" id=15]
+[ext_resource path="res://src/sfx/temp/TS_OBSIDIAN_kick_long_midrangey.wav" type="AudioStream" id=16]
 
 [sub_resource type="CapsuleShape" id=3]
 height = 2.0
@@ -31,6 +33,21 @@ tracks/0/keys = {
 "transitions": PoolRealArray( -2, -0.5, 1 ),
 "update": 0,
 "values": [ Vector3( 0, 0, 0 ), Vector3( 0, -0.3, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=22]
+resource_name = "grapple"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4 ),
+"transitions": PoolRealArray( -2, -9.18957, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, -0.1, -0.2 ), Vector3( 0, 0, 0 ) ]
 }
 
 [sub_resource type="Animation" id=16]
@@ -81,18 +98,54 @@ ProgressBar/styles/fg = SubResource( 19 )
 [sub_resource type="BoxShape" id=15]
 extents = Vector3( 1, 1.5, 0.1 )
 
+[sub_resource type="Gradient" id=772]
+offsets = PoolRealArray( 0, 0.041543, 1 )
+colors = PoolColorArray( 0.113725, 0.113725, 0.113725, 0, 0.376471, 0.376471, 0.376471, 0.513726, 0.745098, 0.745098, 0.745098, 0 )
+
+[sub_resource type="GradientTexture" id=766]
+gradient = SubResource( 772 )
+width = 16
+
+[sub_resource type="ParticlesMaterial" id=773]
+lifetime_randomness = 0.5
+spread = 180.0
+gravity = Vector3( 0, -1, 0 )
+initial_velocity = 2.0
+initial_velocity_random = 0.5
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+damping = 0.5
+damping_random = 0.3
+scale = 2.0
+scale_random = 0.6
+color_ramp = SubResource( 766 )
+
+[sub_resource type="SpatialMaterial" id=771]
+render_priority = 1
+flags_transparent = true
+vertex_color_use_as_albedo = true
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_texture = ExtResource( 15 )
+
+[sub_resource type="QuadMesh" id=774]
+material = SubResource( 771 )
+
 [node name="Player" type="KinematicBody"]
 collision_layer = 2
 collision_mask = 5
 script = ExtResource( 1 )
+LockMouse = false
 SprintMeter = false
-Jump = 30
-Gravity = 25
+Gravity = 5
 Speed = 5
 SprintSpeedFactor = 5
 CrouchSpeedFactor = 5
+jump_decay_rate = 50
 
-[node name="CollisionShape" type="CollisionShape" parent="."]
+[node name="CollisionShape" type="CollisionShape" parent="." groups=["Player"]]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0 )
 shape = SubResource( 3 )
 
@@ -101,13 +154,16 @@ transform = Transform( 0.9375, 0, 0, 0, 0.9375, -1.16415e-10, 0, 1.16415e-10, 0.
 
 [node name="Camera" type="Camera" parent="Head"]
 unique_name_in_owner = true
-transform = Transform( 1.06667, 0, 0, 0, 1.06667, 0, 0, 0, 1.06667, 0, 0, 0 )
 environment = ExtResource( 9 )
-far = 1000.0
+far = 3000.0
 
 [node name="bob" type="AnimationPlayer" parent="Head/Camera"]
 playback_speed = 2.0
 anims/bobbing = SubResource( 11 )
+
+[node name="grapple" type="AnimationPlayer" parent="Head/Camera"]
+playback_speed = 2.0
+anims/grapple = SubResource( 22 )
 
 [node name="land" type="AnimationPlayer" parent="Head/Camera"]
 root_node = NodePath("../..")
@@ -154,6 +210,7 @@ debug_shape_thickness = 5
 visible = false
 
 [node name="Crosshair007" type="Sprite" parent="Crosshair"]
+visible = false
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 
@@ -171,7 +228,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ClimbCheck" type="Area" parent="."]
+[node name="ClimbCheck" type="Area" parent="." groups=["Player"]]
 
 [node name="CollisionShape" type="CollisionShape" parent="ClimbCheck"]
 transform = Transform( 1, 0, 0, 0, 1, -6.98492e-10, 0, 6.98492e-10, 1, 0, 0.298254, -1.00052 )
@@ -184,6 +241,11 @@ AudioFiles = [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource
 [node name="WalkAudioTimer" type="Timer" parent="RandomWalk"]
 wait_time = 0.5
 one_shot = true
+
+[node name="Grapple" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+script = ExtResource( 3 )
+AudioFiles = [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 8 ) ]
 
 [node name="RandomClimb" type="AudioStreamPlayer" parent="."]
 volume_db = -20.0
@@ -201,14 +263,45 @@ stream = ExtResource( 6 )
 wait_time = 0.1
 one_shot = true
 
-[node name="OmniLight" type="OmniLight" parent="."]
-light_color = Color( 0.996078, 0.027451, 0.0156863, 1 )
-light_energy = 0.5
-light_negative = true
-light_specular = 0.0
-shadow_enabled = true
-omni_range = 10.0
-omni_attenuation = 6.9644
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="DebugContainer" type="VBoxContainer" parent="CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Debug1" type="Label" parent="CanvasLayer/DebugContainer"]
+margin_right = 46.0
+margin_bottom = 14.0
+text = "DEBUG"
+
+[node name="Debug2" type="Label" parent="CanvasLayer/DebugContainer"]
+margin_top = 18.0
+margin_right = 46.0
+margin_bottom = 32.0
+text = "DEBUG"
+
+[node name="Debug3" type="Label" parent="CanvasLayer/DebugContainer"]
+margin_top = 36.0
+margin_right = 46.0
+margin_bottom = 50.0
+text = "DEBUG"
+
+[node name="Debug4" type="Label" parent="CanvasLayer/DebugContainer"]
+margin_top = 54.0
+margin_right = 46.0
+margin_bottom = 68.0
+text = "DEBUG"
+
+[node name="grapple_puff" type="Particles" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+emitting = false
+amount = 32
+one_shot = true
+explosiveness = 1.0
+randomness = 0.5
+local_coords = false
+process_material = SubResource( 773 )
+draw_pass_1 = SubResource( 774 )
 
 [connection signal="area_entered" from="ClimbCheck" to="." method="_on_ClimbCheck_area_entered"]
 [connection signal="area_exited" from="ClimbCheck" to="." method="_on_ClimbCheck_area_exited"]

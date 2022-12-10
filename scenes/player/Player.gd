@@ -1,7 +1,19 @@
 extends KinematicBody
 
-# EXPORT VARIABLES  ----------------------------------------------------------------------------
 
+### Automatic References Start ###
+onready var _bob: AnimationPlayer = $Head/Camera/bob
+onready var _grapple: AnimationPlayer = $Head/Camera/grapple
+onready var _grapple_puff: Particles = $grapple_puff
+onready var _grapple_sfx: AudioStreamPlayer = $Grapple
+onready var _ray_cast: RayCast = get_node("%RayCast")
+### Automatic References Stop ###
+# old code
+#look_direction = $Head/Camera.get_global_rotation()
+#jump_velocity.x = sin(look_direction.x+(PI/2))*cos(look_direction.y+PI)
+#jump_velocity.y = sin(look_direction.x+(PI/2))*sin(look_direction.y+PI)
+#jump_velocity.z = cos(look_direction.x+(PI/2))
+# EXPORT VARIABLES  ----------------------------------------------------------------------------
 # Locks the mouse at the start of the game.
 export var LockMouse = true
 # Allows you to alter the player feel while in-game.
@@ -25,6 +37,9 @@ export var Jump = 20
 export var MaxJumps = 1
 # The user's mouse sensitivity.
 export var MouseSensitivity = 1
+
+export var JoySensitivity = 1 
+
 # How much the camera is being smoothened (lower = smoother)
 export var CameraSmoothing = 20
 # The gravity of the player.
@@ -53,9 +68,7 @@ export var TiltSpeed = 5
 export var CrouchSmoothing = 20
 # How far you can extend the holding object.
 export var ScrollLimit = 10 
-
 # PRESET VARIABLES  ----------------------------------------------------------------------------
-
 # Current acceleration.
 var h_acceleration = 6
 # Acceleration mid-air.
@@ -90,7 +103,6 @@ var stillSprinting = false
 var jumpCount = 0
 # Default FOV of the player. (modified through the export variables)
 var fov = 90
-
 # Default length of the rigid body grabbing system.
 var scrollInput = 5
 var scroll = 5
@@ -135,10 +147,30 @@ signal interact(node,item)
 signal letGo(node)
 # The signal sent when the player dies.
 signal kill
-
 # Grabs the node "Spawn Point" in the world. If there's no Spawn Point node, then it
 # editor position of the player and saves that as the spawn point. 
 var spawnpoint
+# look_direction is what I'm using to * jump by to send the player in the direction they are 
+# looking when they release space
+
+# -- special jump variables--
+var look_direction = Vector3()
+var jump_velocity = Vector3()
+var h_jump = Vector3()
+onready var debug_1 = $CanvasLayer/DebugContainer/Debug1
+onready var debug_2 = $CanvasLayer/DebugContainer/Debug2
+onready var debug_3 = $CanvasLayer/DebugContainer/Debug3
+onready var debug_4 = $CanvasLayer/DebugContainer/Debug4
+var look_rad = Vector3()
+var on_wall = false
+export var jump_decay_rate = 10
+export var jump_death_margin = 0.1
+export var leap_scale = 4
+
+var grapple = false
+var grapple_fx_started = false
+
+var npc_target = "null"
 
 # RUN TIME  ----------------------------------------------------------------------------
 # When the game runs,
@@ -162,6 +194,17 @@ func _ready() -> void:
 	if not SprintMeter:
 		$Sprint.visible = false
 
+func debug():
+	look_direction = $Head/Camera.get_global_rotation()
+	#look_rad.x = look_direction.x/PI
+	#look_rad.y = look_direction.y/PI
+	#look_rad.z = look_direction.z/PI
+	h_jump = Vector3()
+	h_jump -= transform.basis.z
+
+	debug_2.text = str("look_direction.x: ",String(look_direction.x))
+	debug_3.text = str("jump_velocity: ", String(jump_velocity))
+	debug_4.text = str("0.1.2")
 # This function detects if there is already a Spawn Point node.
 func setspawn():
 # If there isn't:
@@ -177,20 +220,26 @@ func setspawn():
 	# and finally save the location of the newly made node.
 		spawnpoint = pos3d.global_transform.origin
 	else:
-# If there is, detect that node's position and save it.
+		# If there is, detect that node's position and save it.
 		spawnpoint = get_parent().get_node("Spawn Point").global_transform.origin
-# Then, grab the spawn point coordinates and move the player to that location.
+	# Then, grab the spawn point coordinates and move the player to that location.
 	global_transform.origin = spawnpoint
+func set_jump_velocity():
+	jump_velocity.x = h_jump.x * (Jump * leap_scale)
+	jump_velocity.z = h_jump.z * (Jump * leap_scale)
 
 # INPUT EVENTS  ----------------------------------------------------------------------------
 func _input(event: InputEvent) -> void:
 # Inputs will only work if the player has pressed the Play button in the menu.
 	if Global.Playing:
-
 	# If I move my mouse, it gets the relative mouse movement and assigns it to cameraInput.
 		if event is InputEventMouseMotion:
-			cameraInput = event.relative
-
+			#cameraInput = event.relative
+			cameraInput.x = event.relative.x + (Input.get_action_strength("look_right") - Input.get_action_strength("look_left")) * JoySensitivity
+			cameraInput.y = event.relative.y + (Input.get_action_strength("look_down") - Input.get_action_strength("look_up")) * JoySensitivity
+		else:
+			cameraInput.x = (Input.get_action_strength("look_right") - Input.get_action_strength("look_left")) * JoySensitivity
+			cameraInput.y = (Input.get_action_strength("look_down") - Input.get_action_strength("look_up")) * JoySensitivity
 	# If I press the interact button (E),
 		if Input.is_action_just_pressed("interact"):
 	# if I'm holding an object, let go of that object.
@@ -212,7 +261,6 @@ func _input(event: InputEvent) -> void:
 							objectGrabbed.axis_lock_angular_x = true
 							objectGrabbed.axis_lock_angular_y = true
 							objectGrabbed.axis_lock_angular_z = true
-
 		# If it is in the group "item":
 						elif $Head/RayCast.get_collider().is_in_group("item"):
 			# Grab the colliding node,
@@ -232,17 +280,12 @@ func _input(event: InputEvent) -> void:
 							get_node("Head/ItemPosition").add_child(Item)
 			# and set the item's global transform to the player's item hand node.
 							Item.global_transform = get_node("Head/ItemPosition").global_transform
-
 		# Emits a signal that interacted with something and send that node to it.
 					emit_signal("interact", $Head/RayCast.get_collider())
-
-
 	# If the player releases the interact key, it emits a signal that states that I have let go of the object I am 
 	# currently holding.
 		elif Input.is_action_just_released("interact"):
 			emit_signal("letGo", $Head/RayCast.get_collider())
-
-
 	# When the player clicks the mouse and if I am holding an object,
 		if Input.is_action_just_pressed("click"):
 			if objectGrabbed:
@@ -273,48 +316,183 @@ func _input(event: InputEvent) -> void:
 # The player can pan around and move only if the player hits the play button in the menu and if the player is not
 # currently dead. (You can remove the PauseNode statement as it is only used primarily in this project.)
 func _physics_process(delta: float) -> void:
+
 	if Global.Playing\
 	and not Global.PauseNode.dead:
+		debug()
 		camera(delta)
 		movement(delta)
-
+		check_raycast()
 	# If I am currently holding an object, decide what to do with that object with this function.
 		if objectGrabbed:
 			grab()
+	
 
 # MOVEMENT SYSTEM ----------------------------------------------------------------------------
 # warning-ignore:function_conflicts_variable
-func movement(delta):
 
-# This makes sure that you don't keep moving when you let go of a key.
-	direction = Vector3()
-
-
-# When the player crouches (Ctrl),
-	if Input.is_action_pressed("crouch") or Input.is_action_pressed("jump"):
-	# subtract the player's collision height by CrouchSmoothing,
-		$CollisionShape.shape.height -= CrouchSmoothing * delta
-	# set the current speed to the predetermined crouching speed.
-		Speed = crouchSpeed
-	# make audio plays 1 second delayed from each other, and lower the volume.
-		$RandomWalk/WalkAudioTimer.wait_time = 1
-		$RandomWalk.volume_db = crouchVolume
-# otherwise, test to see if there's something above the player,
-	elif not test_move(transform,Vector3.UP,$CollisionShape.shape.height):
-	# and if there are nothing above the player, then add height back with CrouchSmoothing.
-		$CollisionShape.shape.height += CrouchSmoothing * delta
-
-# The player's collision shape is clamped to make sure that the lowest point that the player's
-# collision shape can be is the crouch height.
-	$CollisionShape.shape.height = clamp($CollisionShape.shape.height,crouchedHeight,defaultHeight)
-# When the player is colliding with something on top of itself, make the player sink into the ground 
-# by -2. (this is useful for crouching to make sure that the player isn't clipping upwards the 
-# while crouching)
-	if test_move(transform,Vector3.UP,false):
-		fall.y = -2
-
-
-# When the player sprints (Shift),
+func grapple_wall():
+	if not grapple_fx_started:
+		_grapple_sfx.play()
+		_grapple.play("grapple") #camera
+		_grapple_puff.set_emitting(true)
+		grapple_fx_started = true
+		#we reset this when grapple is false again
+	grapple = true
+	jump_velocity = Vector3()
+	#self-arrest by skipping move_and_slide as well as zeroing gravity?
+	#we end up here if space was pushed while touching a wall in the air
+	
+func jump_velocity_decay(delta):
+	#take whatever the value is and multiply it by .9 and by delta, and then assign that to jump_velocity
+	# we're checking for the distance, positive or negative, from zero.
+	if abs(jump_velocity.x) > jump_death_margin:
+		if falling:
+			jump_velocity.x = jump_velocity.x - ((jump_velocity.x / jump_decay_rate) * delta)
+		else:
+			jump_velocity.x = jump_velocity.x / 2
+	else:
+		jump_velocity.x = 0
+	if abs(jump_velocity.z) > jump_death_margin:
+		if falling:
+			jump_velocity.z = jump_velocity.z - ((jump_velocity.z / jump_decay_rate) * delta)
+		else: jump_velocity.z = jump_velocity.z / 2
+			
+	else:
+		jump_velocity.z = 0
+func check_climb():
+	# If the player is currently climbing:
+	if climb:
+		# the Y movement of the player is now determined by the climb force, which is changed with
+		# the up and down input.
+		movement.y = climbForce
+	else:
+		# Otherwise, gravity will be controlling the Y position of the player.
+		movement.y = gravityVec.y
+func check_spring():
+	# If you are currently standing on a spring/jump boost:
+	if spring:
+		# Add to the Y vector of the player a specified bounce value from the jump pad.
+		gravityVec.y += bounce
+		# and we want to make sure that you are not just adding more to the Y value other than once.
+		spring = false
+func check_arcade():
+	# Arcade Style = No smoothing in the movement.
+	if ArcadeStyle:
+		# For arcade style, we only need the raw normalized direction vector with no interpolation.
+		direction *= Speed
+		movement.x = direction.x
+		movement.z = direction.z
+	else:
+		movement.x = h_velocity.x + jump_velocity.x
+		movement.z = h_velocity.z + jump_velocity.z
+	#jank solution where I'm just removing jump_velocity from the equation if on floor
+	#elif not is_on_floor():
+	#	movement.x = h_velocity.x + jump_velocity.x
+	#	movement.z = h_velocity.z + jump_velocity.z
+func strafe_move():
+	# The same concept is done with the left and right input, with a simpler but similar concept.
+	if Input.is_action_pressed("left"):
+		direction -= transform.basis.x
+	elif Input.is_action_pressed("right"):
+		direction += transform.basis.x
+func forward_backward_move():
+	# If up or down input is  pressed, the local transform corresponding axis is either increased or 
+# decreased.
+	if Input.is_action_pressed("up"):
+		if not climb:
+			direction -= transform.basis.z
+		if climb\
+		and not is_on_floor():
+	# If the player is currently in climb mode, we add a climbforce instead of moving the direction.
+			climbForce = 10
+			ladderSound()
+	elif Input.is_action_pressed("down"):
+		if not climb\
+		or (climb and is_on_floor()):
+			direction += transform.basis.z
+		if climb\
+		and not is_on_floor():
+		# Same concept for the down input.
+			climbForce = -10
+			ladderSound()
+	else:
+		# If the player is not moving and you are currently climbing and not on the floor, climb force
+		# is set to zero.
+		if climb\
+		and not is_on_floor():
+			climbForce = 0
+func check_floor_touch(delta):
+	if not is_on_floor():
+	# the player is now falling
+		falling = true
+	# and if the player hasn't jumped yet, add 1 to jump count (so if the maximum ammount of jumps is only 1,
+	# the player won't be allowed to jump again mid air unless if your max jumps are 2 or above)
+		if jumpCount < 1:
+			jumpCount = 1
+	# If the player is currently not climbing,
+		if not climb:
+		# set the player's gravity vector (Y) to -1 * gravity variable over time.
+			gravityVec += Vector3.DOWN * Gravity * delta
+	# set the player's current speed to another variable.
+		h_acceleration = air_acceleration
+# When the player is on the floor:
+	else:
+	# and if the player is falling at a certain ammount and Bobbing is turned on,
+		if gravityVec.y < -15\
+		and Bobbing:
+		# play the landing animation.
+			$"%Camera"/land.play("land")
+	# If the player will not be landing on a jump pad,
+		if not ($GroundCheck.get_collider() is Area\
+		and $GroundCheck.get_collider().is_in_group("jumppad")):
+		# set the landing audio to the gravity vector minus 30
+			$LandAudio.volume_db = (-gravityVec.y) - 30
+		# cap the landing autio to not blow out anyone's ears when landing from a skyscraper,
+			$LandAudio.volume_db = clamp($LandAudio.volume_db,-30,5)
+		# and play the landing audio.
+			#$LandAudio.play() TEMPORARILY DISABLED BECAUSE OF BUG
+	# reset all jumps that were previously done when touching the ground.
+		jumpCount = 0
+	# If the player was falling when touching the ground:
+		if falling:
+		# Take the point of the ground to push the player back up on the ground.
+			gravityVec = -get_floor_normal()
+		# Make acceleration as if you are on the ground.
+			h_acceleration = normal_acceleration
+		# Set it so now the player is not falling anymore.
+		falling = false
+func check_ceiling_touch():
+	if is_on_ceiling():
+		# set the gravity of the player to 0, which means the player will remove all current Y velocity and 
+		# start falling.
+			gravityVec = Vector3.UP * 0
+			h_velocity.y = 0
+func is_jump_released():
+	# When the player jumps (Space):
+	if Input.is_action_just_released("jump"):\
+		#climb = false
+		if MaxJumps < 2:
+		# and if the maximum ammount of jumps is not 0, and is touching the ground or a slope through the ground
+		# check raycast:
+			if MaxJumps > 0\
+			and (is_on_floor() or $GroundCheck.is_colliding()):
+				#gravityVec = (Vector3.UP * Jump)
+				set_jump_velocity()
+				gravityVec = (Vector3.UP * look_direction.x) * Jump
+			elif grapple:
+				set_jump_velocity()
+				gravityVec = (Vector3.UP * look_direction.x) * Jump
+	# Otherwise, if max jumps is more than 1:
+		else:
+		# and if the ammount of jumps done currently is not more than the maximum allowed number of jumps,
+			if jumpCount < MaxJumps:
+		# set the Y vector of the current gravity to 1 and multiply it by the jump height variable (Jump).
+				gravityVec = Vector3.UP * Jump
+		# and add 1 jump to current jumps done.
+		jumpCount += 1
+		grapple = false
+func is_sprint_pressed():
 	if Input.is_action_pressed("run"):
 	# and if sprint meter is on,
 		if SprintMeter == true:
@@ -368,146 +546,27 @@ func movement(delta):
 			Speed = defaultSpeed
 			$RandomWalk/WalkAudioTimer.wait_time = 0.5
 			$RandomWalk.volume_db = walkVolume
-
-
-# When the player jumps (Space):
-	if Input.is_action_just_released("jump"):\
-	# If the maximum ammount of jumps is 1,
-		if MaxJumps < 2:
-		# and if the maximum ammount of jumps is not 0, and is touching the ground or a slope through the ground
-		# check raycast:
-			if MaxJumps > 0\
-			and (is_on_floor() or $GroundCheck.is_colliding() or $Head/RayCast.is_colliding()):
-			# set the Y vector of the current gravity to 1 and multiply it by the jump height variable (Jump).
-				gravityVec = Vector3.UP * Jump
-
-	# Otherwise, if max jumps is more than 1:
-		else:
-		# and if the ammount of jumps done currently is not more than the maximum allowed number of jumps,
-			if jumpCount < MaxJumps:
-		# set the Y vector of the current gravity to 1 and multiply it by the jump height variable (Jump).
-				gravityVec = Vector3.UP * Jump
-		# and add 1 jump to current jumps done.
-		jumpCount += 1
-
-# When the player hits the ceiling,
-	if is_on_ceiling():
-	# set the gravity of the player to 0, which means the player will remove all current Y velocity and 
-	# start falling.
-		gravityVec = Vector3.UP * 0
-		h_velocity.y = 0
-
-
-# When the player is not on the floor:
-	if not is_on_floor():
-	# the player is now falling
-		falling = true
-	# and if the player hasn't jumped yet, add 1 to jump count (so if the maximum ammount of jumps is only 1,
-	# the player won't be allowed to jump again mid air unless if your max jumps are 2 or above)
-		if jumpCount < 1:
-			jumpCount = 1
-	# If the player is currently not climbing,
-		if not climb:
-		# set the player's gravity vector (Y) to -1 * gravity variable over time.
-			gravityVec += Vector3.DOWN * Gravity * delta
-	# set the player's current speed to another variable.
-		h_acceleration = air_acceleration
-
-# When the player is on the floor:
-	else:
-	# and if the player is falling at a certain ammount and Bobbing is turned on,
-		if gravityVec.y < -15\
-		and Bobbing:
-		# play the landing animation.
-			$"%Camera"/land.play("land")
-	# If the player will not be landing on a jump pad,
-		if not ($GroundCheck.get_collider() is Area\
-		and $GroundCheck.get_collider().is_in_group("jumppad")):
-		# set the landing audio to the gravity vector minus 30
-			$LandAudio.volume_db = (-gravityVec.y) - 30
-		# cap the landing autio to not blow out anyone's ears when landing from a skyscraper,
-			$LandAudio.volume_db = clamp($LandAudio.volume_db,-30,5)
-		# and play the landing audio.
-			$LandAudio.play()
-	# reset all jumps that were previously done when touching the ground.
-		jumpCount = 0
-
-	# If the player was falling when touching the ground:
-		if falling:
-		# Take the point of the ground to push the player back up on the ground.
-			gravityVec = -get_floor_normal()
-		# Make acceleration as if you are on the ground.
-			h_acceleration = normal_acceleration
-		# Set it so now the player is not falling anymore.
-		falling = false
-
-# If up or down input is  pressed, the local transform corresponding axis is either increased or 
-# decreased.
-	if Input.is_action_pressed("up"):
-		if not climb:
-			direction -= transform.basis.z
-		if climb\
-		and not is_on_floor():
-	# If the player is currently in climb mode, we add a climbforce instead of moving the direction.
-			climbForce = 10
-			ladderSound()
-	elif Input.is_action_pressed("down"):
-		if not climb\
-		or (climb and is_on_floor()):
-			direction += transform.basis.z
-		if climb\
-		and not is_on_floor():
-	# Same concept for the down input.
-			climbForce = -10
-			ladderSound()
-	else:
-	# If the player is not moving and you are currently climbing and not on the floor, climb force
-	# is set to zero.
-		if climb\
-		and not is_on_floor():
-			climbForce = 0
-
-# The same concept is done with the left and right input, with a simpler but similar concept.
-	if Input.is_action_pressed("left"):
-		direction -= transform.basis.x
-	elif Input.is_action_pressed("right"):
-		direction += transform.basis.x
-# We normalize the direction vector to ensure that the movement is consistent.
-	direction = direction.normalized()
-# We then interpolate the direction vector smoothly to make the movement smoother.
-	h_velocity = h_velocity.linear_interpolate(direction * Speed, h_acceleration * delta)
-
-# Arcade Style = No smoothing in the movement.
-	if ArcadeStyle:
-	# For arcade style, we only need the raw normalized direction vector with no interpolation.
-		direction *= Speed
-		movement.x = direction.x
-		movement.z = direction.z
-	else:
-		movement.x = h_velocity.x
-		movement.z = h_velocity.z
-
-# If you are currently standing on a spring/jump boost:
-	if spring:
-	# Add to the Y vector of the player a specified bounce value from the jump pad.
-		gravityVec.y += bounce
-	# and we want to make sure that you are not just adding more to the Y value other than once.
-		spring = false
-
-# If the player is currently climbing:
-	if climb:
-	# the Y movement of the player is now determined by the climb force, which is changed with
-	# the up and down input.
-		movement.y = climbForce
-	else:
-# Otherwise, gravity will be controlling the Y position of the player.
-		movement.y = gravityVec.y
-
-
-# Move and slide moves the player with the movement vector, which is assigned from earlier.
-# warning-ignore:return_value_discarded
-	move_and_slide(movement, Vector3.UP, true, 4, PI/4, false)
-
+func prevent_top_clip():
+	if test_move(transform,Vector3.UP,false):
+		fall.y = -2
+func is_jump_pressed(delta):
+	if Input.is_action_pressed("jump"):
+		if not falling:
+			jump_charge()
+		if self.is_on_wall():
+			grapple_wall()
+	# SHORTER COLLISION
+		$CollisionShape.shape.height -= CrouchSmoothing * delta
+	# SET SPEED
+		Speed = crouchSpeed
+	# SOUND
+		$RandomWalk/WalkAudioTimer.wait_time = 1
+		$RandomWalk.volume_db = crouchVolume
+# ANYTHING ABOVE PLAYER?
+	elif not test_move(transform,Vector3.UP,$CollisionShape.shape.height):
+	# and if there are nothing above the player, then add height back with CrouchSmoothing.
+		$CollisionShape.shape.height += CrouchSmoothing * delta
+func walk_fx():
 	if direction != Vector3():
 	# If the player is currently moving and on the floor and bobbing is on:
 		if is_on_floor():
@@ -533,6 +592,35 @@ func movement(delta):
 				walkAudio = false
 		# Start the walking timer.
 				$RandomWalk/WalkAudioTimer.start()
+func movement(delta):
+	direction = Vector3() # reset direction
+	is_jump_pressed(delta)
+	# The player's collision shape is clamped to make sure that the lowest point that the player's
+	# collision shape can be is the crouch height.
+	$CollisionShape.shape.height = clamp($CollisionShape.shape.height,crouchedHeight,defaultHeight)
+	# When the player is colliding with something on top of itself, make the player sink into the ground by -2. 
+	#(this is useful for crouching to make sure that the player isn't clipping upwards the while crouching)
+	prevent_top_clip()
+	# When the player sprints (Shift),
+	#is_sprint_pressed()
+	is_jump_released()
+	check_ceiling_touch()
+	check_floor_touch(delta)
+	forward_backward_move()
+	strafe_move()
+	jump_velocity_decay(delta)
+	direction = direction.normalized() # We normalize the direction vector to ensure that the movement is consistent.
+	h_velocity = h_velocity.linear_interpolate(direction * Speed, h_acceleration * delta) # We then interpolate the direction 
+	# vector smoothly to make the movement smoother.
+	check_arcade() #this is where I currently apply and remove jump_velocity
+	check_spring()
+	check_climb()
+	# Move and slide moves the player with the movement vector, which is assigned from earlier.
+	# warning-ignore:return_value_discarded
+	if not grapple:
+		grapple_fx_started = false #reset the fx for the next one
+		move_and_slide(movement, Vector3.UP, true, 4, PI/4, false)
+	walk_fx()
 
 # CAMERA SYSTEM  ----------------------------------------------------------------------------
 func camera(delta):
@@ -574,20 +662,19 @@ func camera(delta):
 		$Head.rotation.x = clamp($Head.rotation.x,deg2rad(-90),deg2rad(90))
 	# Remove all mouse movement information to avoid the mouse movement to stack.
 		cameraInput = Vector2.ZERO
-
 # If Sprint FOV is on:
-	if SprintFOVToggle:
+	#if SprintFOVToggle:
 	# FOV is set by the speed of the player.
-		var FOV = h_velocity.length()
+		#var FOV = h_velocity.length()
 	# The camera's FOV is interpolated with FOV:
-		$"%Camera".fov = lerp($"%Camera".fov, 
+		#$"%Camera".fov = lerp($"%Camera".fov, 
 	# FOV will never go lower than MinFOV added with MaxFOV that only gets toggled when the player
 	# is moving (the higher the player movement, the closer the camera FOV gets to MaxFOV).
 	# The camera FOV is also multiplied if the player is running.
 	# However, this will be cancelled if the player was still holding sprint even if stamina runs out.
-		MinFOV + (MaxFOV/90 * (FOV * (float(Input.is_action_pressed("run")) - float(stillSprinting)))),
+		#MinFOV + (MaxFOV/90 * (FOV * (float(Input.is_action_pressed("run")) - float(stillSprinting)))),
 	# This is then smoothened by SprintFOVSmooth
-		delta * SprintFOVSmooth)
+		#delta * SprintFOVSmooth)
 
 # RIGID BODY GRABBING SYSTEM ----------------------------------------------------------------
 # This is the function that allows the player to grab a rigidbody.
@@ -705,7 +792,7 @@ func _on_ClimbTimeout_timeout() -> void:
 
 # The ladder sound effect function.
 func ladderSound():
-	# Rhe sound effect system works like the walking sound effect system.
+	# The sound effect system works like the walking sound effect system.
 	if not $RandomClimb.is_playing()\
 	and climb\
 	and climbAudio == true:
@@ -720,3 +807,35 @@ func _on_WalkAudioTimer_timeout() -> void:
 	walkAudio = true
 func _on_ClimbAudioTimer_timeout() -> void:
 	climbAudio = true
+func touchdown():
+	#jump_velocity.x = 0
+	#jump_velocity.z = 0
+	#print("jump velocity reset")
+	#print(String(jump_velocity))
+	pass
+func jump_charge():
+	#clear the jump velocity
+	jump_velocity = Vector3()
+	#and then presumably start charging up some value
+func check_raycast():
+	#_ray_cast is my node, and I want to check out whether it is_colliding()
+	if _ray_cast.is_colliding():
+		toggle_crosshair(true)
+		#then I want to see what it is colliding with, specifically which npc
+		debug_1.text = str(_ray_cast.get_collider())
+		# check for the gridless db. if null, print it and move on.
+		if _ray_cast.get_collider().is_in_group("npc"):
+			npc_target = _ray_cast.get_collider().npc_name
+		else:
+			pass
+	else:
+		toggle_crosshair(false)
+		debug_1.text = str("not much to see here")
+	
+
+func toggle_crosshair(interactable):
+	#this is a placeholder function, but later this will control the animation
+	#of some sort of UI element to indicate the player looking at something
+	# that can be picked up or manipulated
+	# currently it shows walls, which I want it to ignore.
+	pass

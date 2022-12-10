@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/_template_street_break_01.map-d00094b563d358ce5fc7e53d2ea66602.tres"
+
+[deps]
+
+source_file="res://src/maps/_template_street_break_01.map"
+dest_files=[ "res://.import/_template_street_break_01.map-d00094b563d358ce5fc7e53d2ea66602.tres" ]
+
+[params]
+

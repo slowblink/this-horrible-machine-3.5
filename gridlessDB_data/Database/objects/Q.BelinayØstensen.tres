@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://gridlessDB_data/Database/classes/Characters.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = Color( 0.289063, 1, 0, 1 )
+body_type = 1
+portrait = ""
+dialogic_character_file = "dialogic/characters/character-1670536990.json"
+idle_animation = 0
+name = "Q. Belinay Østensen"
+stage_shape = 0

@@ -7,3 +7,9 @@ export.cfg
 # Mono-specific ignores
 .mono/
 data_*/
+builds/win/thm-win64.exe
+builds/win/thm-win64.exe
+builds/win/thm-win64.pck
+builds/win/thm-win64.exe
+builds/win/thm-win64.pck
+*.exe

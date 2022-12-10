@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/TS_OBSIDIAN_tom_floor_boulder.wav-619b4ccd829e84400bae911f25adf1c4.sample"
+
+[deps]
+
+source_file="res://src/sfx/temp/TS_OBSIDIAN_tom_floor_boulder.wav"
+dest_files=[ "res://.import/TS_OBSIDIAN_tom_floor_boulder.wav-619b4ccd829e84400bae911f25adf1c4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

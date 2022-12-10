@@ -1,0 +1,101 @@
+// Game: this_horrible_machine
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_textures" "textures/map_mats"
+// brush 0
+{
+( -8 -4 16 ) ( -8 -4 4 ) ( -8 4 16 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+( 8 -4 8 ) ( 8 -4 4 ) ( 0 -4 16 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( 8 4 4 ) ( -8 4 4 ) ( 8 -4 4 ) map_mats/Glass_05_basecolor 8 8 -90 1 1
+( 0 4 16 ) ( 0 -4 16 ) ( -8 4 16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( -8 4 16 ) ( -8 4 4 ) ( 0 4 16 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( 8 4 8 ) ( 8 -4 8 ) ( 0 4 16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( 8 4 8 ) ( 8 4 4 ) ( 8 -4 8 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+}
+// brush 1
+{
+( -8 4 -8 ) ( -8 4 -4 ) ( -8 -4 -8 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+( -8 4 -8 ) ( -8 -4 -8 ) ( 0 4 -16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( -8 -4 -8 ) ( -8 -4 -4 ) ( 0 -4 -16 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( 0 4 -16 ) ( 0 -4 -16 ) ( 8 4 -16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( -8 4 -4 ) ( 8 4 -4 ) ( -8 -4 -4 ) map_mats/Glass_05_basecolor 8 8 -90 1 1
+( 8 4 -16 ) ( 8 4 -4 ) ( 0 4 -16 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( 8 -4 -16 ) ( 8 -4 -4 ) ( 8 4 -16 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+}
+// brush 2
+{
+( 4 8 12 ) ( 4 4 12 ) ( 4 8 -16 ) map_mats/Glass_04_basecolor -8 0 -90 1 1
+( 8 4 -16 ) ( 4 4 -16 ) ( 8 4 8 ) map_mats/Glass_04_basecolor 8 0 -90 1 1
+( 8 8 -16 ) ( 4 8 -16 ) ( 8 4 -16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( 8 8 8 ) ( 4 8 12 ) ( 8 8 -16 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( 8 4 8 ) ( 4 4 12 ) ( 8 8 8 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( 8 4 -16 ) ( 8 4 8 ) ( 8 8 -16 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+}
+// brush 3
+{
+( -8 4 -8 ) ( -4 8 -12 ) ( -8 4 16 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+( -8 4 -8 ) ( -4 4 -12 ) ( -4 8 -12 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( -8 4 16 ) ( -4 4 16 ) ( -8 4 -8 ) map_mats/Glass_04_basecolor 8 0 -90 1 1
+( -8 4 16 ) ( -4 8 16 ) ( -4 4 16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( -4 8 16 ) ( -4 8 -12 ) ( -4 4 16 ) map_mats/Glass_04_basecolor -8 0 -90 1 1
+}
+// brush 4
+{
+( -4 4 16 ) ( -4 4 4 ) ( -4 8 16 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+( 4 4 12 ) ( 4 4 4 ) ( 0 4 16 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( 4 8 4 ) ( -4 8 4 ) ( 4 4 4 ) map_mats/Glass_05_basecolor 8 8 -90 1 1
+( 0 4 16 ) ( -4 4 16 ) ( 0 8 16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( -4 8 16 ) ( -4 8 4 ) ( 0 8 16 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( 0 8 16 ) ( 4 8 12 ) ( 0 4 16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( 4 8 12 ) ( 4 8 4 ) ( 4 4 12 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+}
+// brush 5
+{
+( -4 8 -12 ) ( -4 8 -4 ) ( -4 4 -12 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+( 0 8 -16 ) ( -4 8 -12 ) ( 0 4 -16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( -4 4 -12 ) ( -4 4 -4 ) ( 0 4 -16 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( 0 4 -16 ) ( 4 4 -16 ) ( 0 8 -16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( -4 4 -4 ) ( -4 8 -4 ) ( 4 4 -4 ) map_mats/Glass_05_basecolor 8 8 -90 1 1
+( 4 8 -16 ) ( 4 8 -4 ) ( 0 8 -16 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( 4 4 -16 ) ( 4 4 -4 ) ( 4 8 -16 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+}
+// brush 6
+{
+( 4 -4 -16 ) ( 4 -4 12 ) ( 4 -8 -16 ) map_mats/Glass_04_basecolor -8 0 -90 1 1
+( 8 -4 -16 ) ( 4 -4 -16 ) ( 4 -8 -16 ) map_mats/MetalPlates_02_basecolor 7.9999995 7.9999995 -90 1 1
+( 8 -4 8 ) ( 4 -4 12 ) ( 8 -4 -16 ) map_mats/Glass_04_basecolor 8 0 -90 1 1
+( 8 -4 8 ) ( 4 -8 12 ) ( 4 -4 12 ) map_mats/MetalPlates_02_basecolor 7.9999995 7.9999995 -90 1 1
+( 8 -4 8 ) ( 8 -4 -16 ) ( 4 -8 12 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+}
+// brush 7
+{
+( -8 -8 -8 ) ( -8 -4 -8 ) ( -8 -8 16 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+( -8 -8 -8 ) ( -4 -8 -12 ) ( -8 -4 -8 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( -8 -8 16 ) ( -4 -8 16 ) ( -8 -8 -8 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( -8 -4 16 ) ( -4 -4 16 ) ( -8 -8 16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( -8 -4 -8 ) ( -4 -4 -12 ) ( -8 -4 16 ) map_mats/Glass_04_basecolor 8 0 -90 1 1
+( -4 -4 16 ) ( -4 -4 -12 ) ( -4 -8 16 ) map_mats/Glass_04_basecolor -8 0 -90 1 1
+}
+// brush 8
+{
+( -4 -8 16 ) ( -4 -8 4 ) ( -4 -4 16 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+( 4 -8 12 ) ( 4 -8 4 ) ( 0 -8 16 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( 4 -4 4 ) ( -4 -4 4 ) ( 4 -8 4 ) map_mats/Glass_05_basecolor 8 8 -90 1 1
+( 0 -8 16 ) ( -4 -8 16 ) ( 0 -4 16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( -4 -4 16 ) ( -4 -4 4 ) ( 0 -4 16 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( 0 -4 16 ) ( 4 -4 12 ) ( 0 -8 16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( 4 -4 12 ) ( 4 -4 4 ) ( 4 -8 12 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+}
+// brush 9
+{
+( -4 -4 -12 ) ( -4 -4 -4 ) ( -4 -8 -12 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+( 0 -4 -16 ) ( -4 -4 -12 ) ( 0 -8 -16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( -4 -8 -12 ) ( -4 -8 -4 ) ( 0 -8 -16 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( 0 -8 -16 ) ( 4 -8 -16 ) ( 0 -4 -16 ) map_mats/MetalPlates_02_basecolor 8 8 -90 1 1
+( -4 -8 -4 ) ( -4 -4 -4 ) ( 4 -8 -4 ) map_mats/Glass_05_basecolor 8 8 -90 1 1
+( 4 -4 -16 ) ( 4 -4 -4 ) ( 0 -4 -16 ) map_mats/16x16_metal_slats 8 0 -90 1 1
+( 4 -8 -16 ) ( 4 -8 -4 ) ( 4 -4 -16 ) map_mats/16x16_metal_slats -8 0 -90 1 1
+}
+}
