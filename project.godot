@@ -346,6 +346,8 @@ _global_script_class_icons={
 
 config/name="this horrible machine"
 run/main_scene="res://scenes/World01.tscn"
+config/version="0.1.3"
+config/build=1
 
 [audio]
 
@@ -370,7 +372,7 @@ script_templates_search_path="res://addons/xsm/templates/"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/node_referencer/plugin.cfg", "res://addons/qodot/plugin.cfg", "res://addons/xsm/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/godot-version-management/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/node_referencer/plugin.cfg", "res://addons/qodot/plugin.cfg", "res://addons/xsm/plugin.cfg" )
 
 [importer_defaults]
 

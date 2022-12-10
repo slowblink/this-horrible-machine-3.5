@@ -70,6 +70,7 @@ export var CrouchSmoothing = 20
 export var ScrollLimit = 10 
 # PRESET VARIABLES  ----------------------------------------------------------------------------
 # Current acceleration.
+var version = ProjectSettings.get_setting("application/config/version")
 var h_acceleration = 6
 # Acceleration mid-air.
 var air_acceleration = 1
@@ -204,7 +205,7 @@ func debug():
 
 	debug_2.text = str("look_direction.x: ",String(look_direction.x))
 	debug_3.text = str("jump_velocity: ", String(jump_velocity))
-	debug_4.text = str("0.1.2")
+	debug_4.text = version
 # This function detects if there is already a Spawn Point node.
 func setspawn():
 # If there isn't:
