@@ -1,4 +1,4 @@
-[gd_scene load_steps=114 format=2]
+[gd_scene load_steps=113 format=2]
 
 [ext_resource path="res://scenes/environments/env00.tres" type="Environment" id=1]
 [ext_resource path="res://addons/qodot/src/nodes/qodot_map.gd" type="Script" id=2]
@@ -27,7 +27,6 @@
 [ext_resource path="res://gridlessDB_data/Database/objects/Z.KaylaMeyer.tres" type="Resource" id=25]
 [ext_resource path="res://textures/map_mats/16x16.png" type="Texture" id=26]
 [ext_resource path="res://textures/map_mats/64x64.png" type="Texture" id=27]
-[ext_resource path="res://scenes/20480.tscn" type="PackedScene" id=28]
 [ext_resource path="res://scenes/LightTower00.tscn" type="PackedScene" id=40]
 
 [sub_resource type="SpatialMaterial" id=1]
@@ -838,7 +837,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.54656, 417.126, 55.9974 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.78855, 26.1106 )
 
 [node name="Torch05" parent="Layout" instance=ExtResource( 14 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34.737, 1.78855, -2.12568 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34.737, 0.98855, -2.12568 )
 
 [node name="Torch04" parent="Layout" instance=ExtResource( 14 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.9984, 252.98, 11.4431 )
@@ -850,6 +849,3 @@ npc_data = ExtResource( 18 )
 [node name="NpcA2" parent="." instance=ExtResource( 8 )]
 transform = Transform( 0.0479086, 0, -0.998851, 0, 1, 0, 0.998851, 0, 0.0479086, 36.4474, 4.00692, 1 )
 npc_data = ExtResource( 25 )
-
-[node name="20480" parent="." instance=ExtResource( 28 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 432, 0, -64 )
