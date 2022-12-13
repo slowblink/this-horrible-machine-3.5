@@ -214,7 +214,7 @@ visible = false
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 
-[node name="Sprint" type="ProgressBar" parent="."]
+[node name="Jump" type="ProgressBar" parent="."]
 visible = false
 margin_left = 1250.0
 margin_top = 685.0

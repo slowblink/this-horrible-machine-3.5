@@ -352,7 +352,7 @@ _global_script_class_icons={
 
 config/name="this horrible machine"
 run/main_scene="res://scenes/World01.tscn"
-config/version="0.0.1"
+config/version="0.1.3"
 config/build=1
 
 [audio]

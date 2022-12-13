@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-color = Color(0.289063, 1, 0, 1)
+color = Color( 0.289063, 1, 0, 1 )
 body_type = 1
 portrait = ""
 dialogic_character_file = "dialogic/characters/character-1670536990.json"
