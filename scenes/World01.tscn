@@ -452,7 +452,8 @@ script = ExtResource( 5 )
 [node name="Menu" parent="." instance=ExtResource( 4 )]
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-leap_scale = 1
+friction_scale = 10
+leap_scale = 2
 
 [node name="DialogManager" type="Node" parent="."]
 

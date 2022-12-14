@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://scenes/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://scenes/player/crosshair007.png" type="Texture" id=2]
@@ -132,6 +132,10 @@ albedo_texture = ExtResource( 15 )
 
 [sub_resource type="QuadMesh" id=774]
 material = SubResource( 771 )
+
+[sub_resource type="ParticlesMaterial" id=775]
+
+[sub_resource type="QuadMesh" id=776]
 
 [node name="Player" type="KinematicBody"]
 collision_layer = 2
@@ -292,7 +296,9 @@ margin_right = 46.0
 margin_bottom = 68.0
 text = "DEBUG"
 
-[node name="grapple_puff" type="Particles" parent="."]
+[node name="ParticleEffects" type="Spatial" parent="."]
+
+[node name="grapple_puff" type="Particles" parent="ParticleEffects"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 emitting = false
 amount = 32
@@ -302,6 +308,13 @@ randomness = 0.5
 local_coords = false
 process_material = SubResource( 773 )
 draw_pass_1 = SubResource( 774 )
+
+[node name="sparks" type="Particles" parent="ParticleEffects"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.72219, 0 )
+emitting = false
+one_shot = true
+process_material = SubResource( 775 )
+draw_pass_1 = SubResource( 776 )
 
 [connection signal="area_entered" from="ClimbCheck" to="." method="_on_ClimbCheck_area_entered"]
 [connection signal="area_exited" from="ClimbCheck" to="." method="_on_ClimbCheck_area_exited"]

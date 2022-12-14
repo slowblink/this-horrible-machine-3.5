@@ -11,9 +11,8 @@ extends KinematicBody
 # [] fix 471
 # [] I think touchdown() is okay to lose at this point
 # [X] we're back to flying! seems like this branch is all about movement now. whoops.
-# [] now we're basically not jumping anywhere. the friction might be too effective?
-# tweaking the exported values didn't help either, so I'll have to see why. affect_friction
-# might just be TOO effective.
+# [X] jump is fixed
+# [] slide on walls instead of fully self-arresting
 #######
 #NOTES#
 #######
@@ -23,9 +22,10 @@ extends KinematicBody
 ### Automatic References Start ###
 onready var _bob: AnimationPlayer = $Head/Camera/bob
 onready var _grapple: AnimationPlayer = $Head/Camera/grapple
-onready var _grapple_puff: Particles = $grapple_puff
+onready var _grapple_puff: Particles = $ParticleEffects/grapple_puff
 onready var _grapple_sfx: AudioStreamPlayer = $Grapple
 onready var _ray_cast: RayCast = get_node("%RayCast")
+onready var _sparks: Particles = $ParticleEffects/sparks
 ### Automatic References Stop ###
 # old code
 #look_direction = $Head/Camera.get_global_rotation()
@@ -194,6 +194,8 @@ export var leap_scale = 4
 onready var wall_friction = 0 # base level friction is 0, and we add 1 when grinding against it.
 # may later change this to a float? could be a nice number to gradually ramp up.
 
+
+
 var grapple = false
 var grapple_fx_started = false
 
@@ -233,10 +235,10 @@ func debug():
 	#look_rad.z = look_direction.z/PI
 	h_jump = Vector3()
 	h_jump -= transform.basis.z
-
-	debug_2.text = str("wall friction value: ", String(wall_friction))
+	debug_1.text = str("current wall friction: ", String(wall_friction))
+	debug_2.text = str("")
 	debug_3.text = str("jump_velocity: ", String(jump_velocity))
-	debug_4.text = str(version)
+	debug_4.text = str("version ",version)
 # This function detects if there is already a Spawn Point node.
 func setspawn():
 # If there isn't:
@@ -366,11 +368,11 @@ func grapple_wall():
 	if not grapple_fx_started:
 		_grapple_sfx.play()
 		_grapple.play("grapple") #camera
-		_grapple_puff.set_emitting(true)
+		_sparks.set_emitting(true)
 		grapple_fx_started = true
 		#we reset this when grapple is false again
 	grapple = true
-	affect_friction(grapple_scale)
+	apply_friction(friction_scale)
 	#self-arrest by skipping move_and_slide as well as zeroing gravity?
 	#we end up here if space was pushed while touching a wall in the air
 	
@@ -378,9 +380,10 @@ func jump_velocity_decay(delta):
 	#take whatever the value is and multiply it by .9 and by delta, and then assign that to jump_velocity
 	# we're checking for the distance, positive or negative, from zero.
 	if is_on_wall():
-		affect_friction(4)
-	if abs(jump_velocity.x) > jump_death_margin:
+		apply_friction(friction_scale)
+	if abs(jump_velocity.x) > jump_death_margin: #if there's still enough horizontal inertia
 		#if falling:
+		
 		jump_velocity.x = jump_velocity.x - (((jump_velocity.x / jump_decay_rate) * delta) * (1 + wall_friction))
 				
 		#else: 
@@ -458,7 +461,7 @@ func forward_backward_move():
 			climbForce = 0
 func check_floor_touch(delta):
 	if not is_on_floor():
-		affect_friction(0)
+		apply_friction(0)
 	# the player is now falling
 		falling = true
 	# and if the player hasn't jumped yet, add 1 to jump count (so if the maximum ammount of jumps is only 1,
@@ -496,13 +499,13 @@ func check_floor_touch(delta):
 		# Make acceleration as if you are on the ground.
 			h_acceleration = normal_acceleration
 		# Set it so now the player is not falling anymore.
-		affect_friction(2)
+		apply_friction(friction_scale)
 		falling = false
 func check_ceiling_touch():
 	if is_on_ceiling():
 		# set the gravity of the player to 0, which means the player will remove all current Y velocity and 
 		# start falling.
-			affect_friction(1)
+			apply_friction(friction_scale)
 			gravityVec = Vector3.UP * 0
 			h_velocity.y = 0
 func is_jump_released():
@@ -516,9 +519,11 @@ func is_jump_released():
 			and (is_on_floor() or $GroundCheck.is_colliding()):
 				#gravityVec = (Vector3.UP * Jump)
 				jump_is_charging = false
+				set_jump_velocity()
 				gravityVec = (Vector3.UP * look_direction.x) * Jump
 			elif grapple:
 				jump_is_charging = false
+				set_jump_velocity()
 				gravityVec = (Vector3.UP * look_direction.x) * Jump
 	# Otherwise, if max jumps is more than 1:
 		else:
@@ -656,7 +661,7 @@ func movement(delta):
 	# warning-ignore:return_value_discarded
 	if not grapple:
 		grapple_fx_started = false #reset the fx for the next one
-		move_and_slide(movement, Vector3.UP, true, 4, PI/4, false)
+	move_and_slide(movement, Vector3.UP, true, 4, PI/4, false)
 	walk_fx()
 
 # CAMERA SYSTEM  ----------------------------------------------------------------------------
@@ -751,7 +756,7 @@ func releaseItem():
 	# Turn on the item's shadow.
 		ItemMesh.cast_shadow = true
 	# Give the item gravity. 
-		Item.gravity_scale = 8
+		Item.gravity_scale = Gravity
 	# Enable the item's collisions.
 		Item.get_node("CollisionShape").disabled = false
 	# Get the stage node and add the item node in it.
@@ -852,7 +857,6 @@ func touchdown():
 	pass
 func jump_charge():
 	#clear the jump velocity
-	jump_velocity = Vector3()
 	#and then presumably start charging up some value
 	jump_is_charging = true
 	
@@ -880,7 +884,7 @@ func check_raycast():
 	else:
 		toggle_crosshair(false)
 		debug_1.text = str("not much to see here")
-func affect_friction(amount:int):
+func apply_friction(amount:int):
 	wall_friction = amount * friction_scale
 func toggle_crosshair(interactable):
 	#this is a placeholder function, but later this will control the animation
