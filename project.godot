@@ -79,6 +79,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/dialogic/Example Assets/History/HistoryRow.gd"
 }, {
+"base": "Resource",
+"class": "Landmarks",
+"language": "GDScript",
+"path": "res://gridlessDB_data/Database/classes/Landmarks.gd"
+}, {
 "base": "LiquidLayer",
 "class": "LavaLayer",
 "language": "GDScript",
@@ -299,6 +304,7 @@ _global_script_class_icons={
 "DialogicUtil": "",
 "DynamicObjects": "",
 "HistoryRow": "",
+"Landmarks": "",
 "LavaLayer": "",
 "LiquidLayer": "",
 "Phenomenae": "",
@@ -372,7 +378,8 @@ script_templates_search_path="res://addons/xsm/templates/"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/godot-version-management/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/node_referencer/plugin.cfg", "res://addons/qodot/plugin.cfg", "res://addons/xsm/plugin.cfg" )
+
+enabled=PoolStringArray( "res://addons/AsepriteWizard/plugin.cfg", "res://addons/dialogic/plugin.cfg", "res://addons/godot-version-management/plugin.cfg", "res://addons/node_referencer/plugin.cfg", "res://addons/qodot/plugin.cfg", "res://addons/xsm/plugin.cfg" )
 
 [importer_defaults]
 

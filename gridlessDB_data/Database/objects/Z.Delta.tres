@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://gridlessDB_data/Database/classes/Characters.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+color = Color(0.73099, 0.077161, 0.914063, 1)
+body_type = 0
+portrait = ""
+idle_animation = 0
+alias = "Z. Delta"
+has_killed = 0
+smokes = 0
+drinks = 0
+owns_a_weapon = 0
+has_touched_the_decay = 0
+wants_to_touch_the_decay = 0
+next_scene = ""

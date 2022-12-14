@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://scenes/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://scenes/player/crosshair007.png" type="Texture" id=2]
@@ -48,6 +48,62 @@ tracks/0/keys = {
 "transitions": PoolRealArray( -2, -9.18957, 1 ),
 "update": 0,
 "values": [ Vector3( 0, 0, 0 ), Vector3( 0, -0.1, -0.2 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=782]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, -0.002, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, -1.492 ) ]
+}
+
+[sub_resource type="Animation" id=783]
+resource_name = "grind"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3, 0.5, 0.6, 0.7, 0.8, 1.2, 1.4, 1.6, 1.9 ),
+"transitions": PoolRealArray( -2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0.069, 0 ), Vector3( 0, -0.011, 0 ), Vector3( 0, 0.073, 0 ), Vector3( 0, 0.051, 0 ), Vector3( 0, -0.002, 0 ), Vector3( 0, -0.085, 0 ), Vector3( 0, 0.036, 0 ), Vector3( 0, -0.038, 0 ), Vector3( 0, 0.015, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4, 0.7, 1.1, 1.4, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0.121 ), Vector3( 0, 0, -1.492 ), Vector3( 0, 0, 0.187 ), Vector3( 0, 0, 0.23 ), Vector3( 0, 0, 0 ) ]
 }
 
 [sub_resource type="Animation" id=16]
@@ -133,12 +189,54 @@ albedo_texture = ExtResource( 15 )
 [sub_resource type="QuadMesh" id=774]
 material = SubResource( 771 )
 
+[sub_resource type="Gradient" id=775]
+colors = PoolColorArray( 0.989481, 1, 0.84982, 1, 1, 0.343483, 0, 1 )
+
+[sub_resource type="GradientTexture" id=776]
+gradient = SubResource( 775 )
+width = 16
+
+[sub_resource type="Curve" id=777]
+_data = [ Vector2( 0, 0.527528 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.245939 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=778]
+curve = SubResource( 777 )
+
+[sub_resource type="ParticlesMaterial" id=779]
+lifetime_randomness = 0.5
+trail_divisor = 10
+trail_size_modifier = SubResource( 778 )
+emission_shape = 1
+emission_sphere_radius = 0.5
+spread = 81.23
+initial_velocity = 25.0
+initial_velocity_random = 0.48
+damping = 54.01
+angle_random = 1.0
+scale = 0.05
+color_ramp = SubResource( 776 )
+
+[sub_resource type="SpatialMaterial" id=780]
+flags_unshaded = true
+flags_vertex_lighting = true
+flags_do_not_receive_shadows = true
+flags_disable_ambient_light = true
+vertex_color_use_as_albedo = true
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id=781]
+material = SubResource( 780 )
+
 [node name="Player" type="KinematicBody"]
 collision_layer = 2
 collision_mask = 5
 script = ExtResource( 1 )
 LockMouse = false
 SprintMeter = false
+Jump = 50
 Gravity = 5
 Speed = 5
 SprintSpeedFactor = 5
@@ -154,6 +252,7 @@ transform = Transform( 0.9375, 0, 0, 0, 0.9375, -1.16415e-10, 0, 1.16415e-10, 0.
 
 [node name="Camera" type="Camera" parent="Head"]
 unique_name_in_owner = true
+transform = Transform( 0.999661, 0.0260374, 0, -0.0260374, 0.999661, 0, 0, 0, 1, 0, -0.002, 0 )
 environment = ExtResource( 9 )
 far = 3000.0
 
@@ -164,6 +263,11 @@ anims/bobbing = SubResource( 11 )
 [node name="grapple" type="AnimationPlayer" parent="Head/Camera"]
 playback_speed = 2.0
 anims/grapple = SubResource( 22 )
+
+[node name="grind" type="AnimationPlayer" parent="Head/Camera"]
+playback_speed = 2.0
+anims/RESET = SubResource( 782 )
+anims/grind = SubResource( 783 )
 
 [node name="land" type="AnimationPlayer" parent="Head/Camera"]
 root_node = NodePath("../..")
@@ -214,7 +318,7 @@ visible = false
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 
-[node name="Sprint" type="ProgressBar" parent="."]
+[node name="Jump" type="ProgressBar" parent="."]
 visible = false
 margin_left = 1250.0
 margin_top = 685.0
@@ -292,7 +396,9 @@ margin_right = 46.0
 margin_bottom = 68.0
 text = "DEBUG"
 
-[node name="grapple_puff" type="Particles" parent="."]
+[node name="ParticleEffects" type="Spatial" parent="."]
+
+[node name="grapple_puff" type="Particles" parent="ParticleEffects"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 emitting = false
 amount = 32
@@ -302,6 +408,16 @@ randomness = 0.5
 local_coords = false
 process_material = SubResource( 773 )
 draw_pass_1 = SubResource( 774 )
+
+[node name="sparks" type="Particles" parent="ParticleEffects"]
+transform = Transform( -4.37114e-08, 0, -1, 1, -4.37114e-08, -4.37114e-08, -4.37114e-08, -1, 1.91069e-15, 0, -1, 0 )
+emitting = false
+amount = 32
+lifetime = 0.2
+explosiveness = 0.5
+randomness = 1.0
+process_material = SubResource( 779 )
+draw_pass_1 = SubResource( 781 )
 
 [connection signal="area_entered" from="ClimbCheck" to="." method="_on_ClimbCheck_area_entered"]
 [connection signal="area_exited" from="ClimbCheck" to="." method="_on_ClimbCheck_area_exited"]

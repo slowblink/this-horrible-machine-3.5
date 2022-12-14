@@ -4,10 +4,15 @@
 
 [resource]
 script = ExtResource( 1 )
-color = Color(0.73099, 0.077161, 0.914063, 1)
+color = Color( 0.73099, 0.077161, 0.914063, 1 )
 body_type = 0
 portrait = ""
-dialogic_character_file = "dialogic/characters/character-1670580877.json"
 idle_animation = 0
-name = "Z. Kayla Meyer"
-stage_shape = 0
+alias = "Z. Kayla Meyer"
+has_killed = 0
+smokes = 0
+drinks = 1
+owns_a_weapon = 1
+has_touched_the_decay = 0
+wants_to_touch_the_decay = 0
+next_scene = "timeline-1670556756.json"

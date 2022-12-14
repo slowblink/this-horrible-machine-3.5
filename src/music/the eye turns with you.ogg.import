@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/the eye turns with you.ogg-04adf74eca9b363536aa93bf1379ee8b.oggstr"
+
+[deps]
+
+source_file="res://src/music/the eye turns with you.ogg"
+dest_files=[ "res://.import/the eye turns with you.ogg-04adf74eca9b363536aa93bf1379ee8b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,16 @@
+// Game: this_horrible_machine
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_textures" "textures/map_mats"
+// brush 0
+{
+( -256 -64 16368 ) ( -256 -63 16368 ) ( -256 -64 16369 ) map_mats/512_decay_wall_02 0 0 0 1 1
+( -64 -256 16368 ) ( -64 -256 16369 ) ( -63 -256 16368 ) map_mats/512_decay_wall_02 0 0 0 1 1
+( -64 -64 0 ) ( -63 -64 0 ) ( -64 -63 0 ) map_mats/512_decay_wall_02 0 0 0 1 1
+( 64 64 20480 ) ( 64 65 20480 ) ( 65 64 20480 ) map_mats/512_decay_wall_02 0 0 0 1 1
+( 64 256 16400 ) ( 65 256 16400 ) ( 64 256 16401 ) map_mats/512_decay_wall_02 0 0 0 1 1
+( 256 64 16400 ) ( 256 64 16401 ) ( 256 65 16400 ) map_mats/512_decay_wall_02 0 0 0 1 1
+}
+}

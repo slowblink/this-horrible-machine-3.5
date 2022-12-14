@@ -20,15 +20,15 @@ __meta__ = {
 }
 
 [node name="Credit For Template" type="Label" parent="."]
-margin_top = 319.0
+margin_top = 310.0
 margin_right = 635.0
-margin_bottom = 354.0
+margin_bottom = 345.0
 theme = ExtResource( 2 )
 text = "this horrible machine"
 align = 1
 
 [node name="AARON" type="Button" parent="."]
-margin_top = 358.0
+margin_top = 349.0
 margin_right = 635.0
 margin_bottom = 384.0
 theme = ExtResource( 2 )
@@ -37,7 +37,7 @@ text = "aaron christopher"
 [node name="JORDAN" type="Button" parent="."]
 margin_top = 388.0
 margin_right = 635.0
-margin_bottom = 414.0
+margin_bottom = 423.0
 theme = ExtResource( 2 )
 text = "jordan nakamura"
 

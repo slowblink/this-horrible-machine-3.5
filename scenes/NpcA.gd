@@ -10,10 +10,11 @@ onready var _rigged_mesh: MeshInstance = $RiggedNPC/Armature/Skeleton/RiggedMesh
 onready var _rigged_npc: Spatial = $RiggedNPC
 ### Automatic References Stop ###
 
-onready var npc_name = npc_data.name
+onready var npc_name = npc_data.alias
 onready var npc_color = npc_data.color
 onready var npc_idle = npc_data.idle_animation
 onready var npc_body = npc_data.body_type
+onready var npc_next_scene = npc_data.next_scene
 
 
 
@@ -24,6 +25,8 @@ onready var npc_body = npc_data.body_type
 
 func _ready():
 	infer_character_details()
+
+	
 func infer_character_details():
 	generate_material()
 	apply_material()
@@ -33,3 +36,4 @@ func generate_material():
 	npc_material.albedo_color = npc_color 
 func apply_material():
 	_rigged_mesh.set_surface_material(0,npc_material)
+	
