@@ -1,4 +1,4 @@
-[gd_scene load_steps=113 format=2]
+[gd_scene load_steps=114 format=2]
 
 [ext_resource path="res://scenes/environments/env00.tres" type="Environment" id=1]
 [ext_resource path="res://addons/qodot/src/nodes/qodot_map.gd" type="Script" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://gridlessDB_data/Database/objects/Z.KaylaMeyer.tres" type="Resource" id=25]
 [ext_resource path="res://textures/map_mats/16x16.png" type="Texture" id=26]
 [ext_resource path="res://textures/map_mats/64x64.png" type="Texture" id=27]
+[ext_resource path="res://scenes/DialogManager.gd" type="Script" id=28]
 [ext_resource path="res://scenes/LightTower00.tscn" type="PackedScene" id=40]
 
 [sub_resource type="SpatialMaterial" id=1]
@@ -456,6 +457,10 @@ friction_scale = 10
 leap_scale = 2
 
 [node name="DialogManager" type="Node" parent="."]
+script = ExtResource( 28 )
+
+[node name="Timer" type="Timer" parent="DialogManager"]
+wait_time = 10.0
 
 [node name="DialogState" type="Node" parent="DialogManager"]
 script = ExtResource( 11 )
@@ -843,10 +848,13 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34.737, 0.98855, -2.12568 )
 [node name="Torch04" parent="Layout" instance=ExtResource( 14 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.9984, 252.98, 11.4431 )
 
-[node name="NpcA" parent="." instance=ExtResource( 8 )]
+[node name="Q Belinay Østensen" parent="." instance=ExtResource( 8 )]
 transform = Transform( -0.577416, 0, -0.81645, 0, 1, 0, 0.81645, 0, -0.577416, 34.7022, 0, 0.549628 )
 npc_data = ExtResource( 18 )
 
-[node name="NpcA2" parent="." instance=ExtResource( 8 )]
+[node name="Z Kayla Meyer" parent="." instance=ExtResource( 8 )]
 transform = Transform( 0.0479086, 0, -0.998851, 0, 1, 0, 0.998851, 0, 0.0479086, 36.4474, 4.00692, 1 )
 npc_data = ExtResource( 25 )
+
+[connection signal="dialog_interact" from="Player" to="DialogManager" method="_on_Player_dialog_interact"]
+[connection signal="timeout" from="DialogManager/Timer" to="DialogManager" method="_on_Timer_timeout"]

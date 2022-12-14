@@ -13,10 +13,11 @@ extends KinematicBody
 # [X] we're back to flying! seems like this branch is all about movement now. whoops.
 # [X] jump is fixed
 # [] slide on walls instead of fully self-arresting
+# [] make sparks fly from the direction of whatever wall the player is in contact with
 #######
 #NOTES#
 #######
-# jump_velocity_decay appears to be the function that's bringing the player to a halt
+# 
 
 
 ### Automatic References Start ###
@@ -24,14 +25,17 @@ onready var _bob: AnimationPlayer = $Head/Camera/bob
 onready var _grapple: AnimationPlayer = $Head/Camera/grapple
 onready var _grapple_puff: Particles = $ParticleEffects/grapple_puff
 onready var _grapple_sfx: AudioStreamPlayer = $Grapple
+onready var _grind: AnimationPlayer = $Head/Camera/grind
 onready var _ray_cast: RayCast = get_node("%RayCast")
 onready var _sparks: Particles = $ParticleEffects/sparks
 ### Automatic References Stop ###
-# old code
-#look_direction = $Head/Camera.get_global_rotation()
-#jump_velocity.x = sin(look_direction.x+(PI/2))*cos(look_direction.y+PI)
-#jump_velocity.y = sin(look_direction.x+(PI/2))*sin(look_direction.y+PI)
-#jump_velocity.z = cos(look_direction.x+(PI/2))
+
+# SIGNALS -------------------------------- 
+
+signal dialog_interact(start_request, npc, timeline) # bool for whether to start 
+#or stop, the npc triggering it, and which timeline to pull based on which is 
+#that npc's "next scene"
+
 # EXPORT VARIABLES  ----------------------------------------------------------------------------
 # Locks the mouse at the start of the game.
 
@@ -93,7 +97,6 @@ export var grapple_scale = 1
 # PRESET VARIABLES  ----------------------------------------------------------------------------
 
 onready var jump_is_charging = false
-onready var is_in_dialog = false
 # Current acceleration.
 var h_acceleration = 6
 # Acceleration mid-air.
@@ -200,6 +203,7 @@ var grapple = false
 var grapple_fx_started = false
 
 var npc_target = "null"
+var npc_next_scene = "null"
 
 # To get version string
 var version = ProjectSettings.get_setting("application/config/version")
@@ -221,6 +225,7 @@ func _ready() -> void:
 # set the global variable player to self,
 	Global.player = self
 	$Head/RayCast.add_exception($ClimbCheck)
+	is_sparking(false) #switch this off by default
 # Calls a deferred function, which allows us to do stuff after the ready()
 # function is called.
 	call_deferred("setspawn")
@@ -368,7 +373,7 @@ func grapple_wall():
 	if not grapple_fx_started:
 		_grapple_sfx.play()
 		_grapple.play("grapple") #camera
-		_sparks.set_emitting(true)
+		is_sparking(true)
 		grapple_fx_started = true
 		#we reset this when grapple is false again
 	grapple = true
@@ -867,6 +872,7 @@ func jump_charge():
 #
 #############################
 func check_raycast():
+	 
 	#_ray_cast is my node, and I want to check out whether it is_colliding()
 	if _ray_cast.is_colliding():
 		toggle_crosshair(true)
@@ -874,21 +880,30 @@ func check_raycast():
 		debug_1.text = str(_ray_cast.get_collider())
 		# check for the gridless db. if null, print it and move on.
 		if _ray_cast.get_collider().is_in_group("npc"):
-			npc_target = _ray_cast.get_collider().npc_name #for debug purposes
-			var new_dialog = Dialogic.start('meeting') #choosing the book to grab from the shelf
-			add_child(new_dialog)#start reading it
-			
-			
+			npc_target = _ray_cast.get_collider().npc_name
+			npc_next_scene = _ray_cast.get_collider().npc_next_scene
+			emit_signal("dialog_interact", true, npc_target, npc_next_scene)
 		else:
 			pass
 	else:
 		toggle_crosshair(false)
 		debug_1.text = str("not much to see here")
 func apply_friction(amount:int):
+	if is_on_wall() or is_on_ceiling():
+		is_sparking(true)
+	else:
+		is_sparking(false)
 	wall_friction = amount * friction_scale
-func toggle_crosshair(interactable):
+func toggle_crosshair(interactable: bool):
 	#this is a placeholder function, but later this will control the animation
 	#of some sort of UI element to indicate the player looking at something
 	# that can be picked up or manipulated
 	# currently it shows walls, which I want it to ignore.
 	pass
+func is_sparking(toggle: bool):
+	if toggle:
+		_grind.play("grind")
+		_sparks.set_emitting(true)
+	else:
+		_grind.stop()
+		_sparks.set_emitting(false)

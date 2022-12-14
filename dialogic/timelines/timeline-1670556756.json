@@ -5,6 +5,22 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "hey hey hey"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'm here, just testing things"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "you able to hear me?"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		}
 	],
 	"metadata": {
