@@ -378,6 +378,7 @@ script_templates_search_path="res://addons/xsm/templates/"
 
 [editor_plugins]
 
+
 enabled=PoolStringArray( "res://addons/AsepriteWizard/plugin.cfg", "res://addons/dialogic/plugin.cfg", "res://addons/godot-version-management/plugin.cfg", "res://addons/node_referencer/plugin.cfg", "res://addons/qodot/plugin.cfg", "res://addons/xsm/plugin.cfg" )
 
 [importer_defaults]

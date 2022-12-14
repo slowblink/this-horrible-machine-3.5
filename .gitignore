@@ -8,10 +8,4 @@ export.cfg
 .mono/
 data_*/
 builds/win/thm-win64.exe
-builds/win/thm-win64.exe
 builds/win/thm-win64.pck
-builds/win/thm-win64.exe
-builds/win/thm-win64.pck
-*.exe
-builds/win/thm-win64.pck
-builds/win/thm-win64.exe

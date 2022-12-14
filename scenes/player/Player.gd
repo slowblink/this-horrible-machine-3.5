@@ -98,6 +98,7 @@ export var grapple_scale = 1
 
 onready var jump_is_charging = false
 # Current acceleration.
+var version = ProjectSettings.get_setting("application/config/version")
 var h_acceleration = 6
 # Acceleration mid-air.
 var air_acceleration = 1
@@ -244,6 +245,7 @@ func debug():
 	debug_2.text = str("")
 	debug_3.text = str("jump_velocity: ", String(jump_velocity))
 	debug_4.text = str("version ",version)
+
 # This function detects if there is already a Spawn Point node.
 func setspawn():
 # If there isn't:
