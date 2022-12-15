@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/silent approach.ogg-a2eddabc52deb8060fb17736237b5b25.oggstr"
+
+[deps]
+
+source_file="res://src/music/silent approach.ogg"
+dest_files=[ "res://.import/silent approach.ogg-a2eddabc52deb8060fb17736237b5b25.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

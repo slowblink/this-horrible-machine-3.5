@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/the howling01.ogg-3c7139c488a6fc2ffa7f4329c2be8c16.oggstr"
+
+[deps]
+
+source_file="res://src/music/the howling01.ogg"
+dest_files=[ "res://.import/the howling01.ogg-3c7139c488a6fc2ffa7f4329c2be8c16.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

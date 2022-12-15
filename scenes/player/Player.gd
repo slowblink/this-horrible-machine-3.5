@@ -98,7 +98,6 @@ export var grapple_scale = 1
 
 onready var jump_is_charging = false
 # Current acceleration.
-var version = ProjectSettings.get_setting("application/config/version")
 var h_acceleration = 6
 # Acceleration mid-air.
 var air_acceleration = 1

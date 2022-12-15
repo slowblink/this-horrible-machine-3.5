@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/little zeroes v2.ogg-16c895e906435759319f10c0cb18beae.oggstr"
+
+[deps]
+
+source_file="res://src/music/little zeroes v2.ogg"
+dest_files=[ "res://.import/little zeroes v2.ogg-16c895e906435759319f10c0cb18beae.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/haunted stock photo.ogg-3458e0cefbb3c5f46a87f37a1154a824.oggstr"
+
+[deps]
+
+source_file="res://src/music/haunted stock photo.ogg"
+dest_files=[ "res://.import/haunted stock photo.ogg-3458e0cefbb3c5f46a87f37a1154a824.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

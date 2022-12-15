@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/one step closer to the edge and im about to break by linkin park.ogg-cece5661d43b49239a492ff0c4552976.oggstr"
+
+[deps]
+
+source_file="res://src/music/one step closer to the edge and im about to break by linkin park.ogg"
+dest_files=[ "res://.import/one step closer to the edge and im about to break by linkin park.ogg-cece5661d43b49239a492ff0c4552976.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

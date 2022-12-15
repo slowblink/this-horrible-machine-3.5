@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/winghift.ogg-c312b6e81939c98f72bb0c32e26af329.oggstr"
+
+[deps]
+
+source_file="res://src/music/winghift.ogg"
+dest_files=[ "res://.import/winghift.ogg-c312b6e81939c98f72bb0c32e26af329.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
