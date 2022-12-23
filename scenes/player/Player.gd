@@ -232,7 +232,6 @@ func _ready() -> void:
 	# if sprint meter is off, remove it from the screen.
 	if not SprintMeter:
 		$Jump.visible = false
-
 func debug():
 	look_direction = $Head/Camera.get_global_rotation()
 	#look_rad.x = look_direction.x/PI
@@ -872,14 +871,11 @@ func jump_charge():
 #is yes at the moment, so we will call a function.
 #
 #############################
+
 func check_raycast():
-	 
 	#_ray_cast is my node, and I want to check out whether it is_colliding()
 	if _ray_cast.is_colliding():
 		toggle_crosshair(true)
-		#then I want to see what it is colliding with, specifically which npc
-		debug_1.text = str(_ray_cast.get_collider())
-		# check for the gridless db. if null, print it and move on.
 		if _ray_cast.get_collider().is_in_group("npc"):
 			npc_target = _ray_cast.get_collider().npc_name
 			npc_next_scene = _ray_cast.get_collider().npc_next_scene
@@ -888,7 +884,7 @@ func check_raycast():
 			pass
 	else:
 		toggle_crosshair(false)
-		debug_1.text = str("not much to see here")
+
 func apply_friction(amount:int):
 	if is_on_wall() or is_on_ceiling():
 		is_sparking(true)

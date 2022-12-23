@@ -35,15 +35,14 @@ onready var current_timeline = ""
 func _on_Player_dialog_interact(start_request, npc, npc_next_scene):
 	if start_request and not in_dialog:
 		in_dialog = true
-		_timer.start()
 		# figure out which timeline to pull for this. use the character, and
 		# then use a bookmark to keep track of where the conversation has gone.
 		# although it's also possible that dialogic tracks this on its own and
 		# timelines can be made much longer
 		new_dialog = Dialogic.start(npc_next_scene)
 		current_timeline = npc_next_scene
+		new_dialog.connect ("dialogic_signal", self, "dialog_listener")
 		add_child(new_dialog)#start reading it
-		
 		pass 
 	else: # means the request was to switch off dialog
 		pass
@@ -54,4 +53,7 @@ func _on_Timer_timeout(): #when the timer runs out, close the dialog
 		in_dialog = false
 		#current_timeline = ""
 
-	pass # Replace with function body.
+func dialogic_signal(string):
+	match string:
+		"cooldown":
+			_timer.start()
