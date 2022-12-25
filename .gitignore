@@ -9,3 +9,6 @@ export.cfg
 data_*/
 builds/win/thm-win64.exe
 builds/win/thm-win64.pck
+src/maps/autosave/street01.5.map
+src/maps/autosave/street01.6.map
+src/maps/autosave/street01.7.map
