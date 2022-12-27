@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/building00.map-058353518cbd3fb2375bd56065a635cf.tres"
+
+[deps]
+
+source_file="res://src/maps/buildings/building00.map"
+dest_files=[ "res://.import/building00.map-058353518cbd3fb2375bd56065a635cf.tres" ]
+
+[params]
+
