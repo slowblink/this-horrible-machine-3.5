@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/street01.9.map-b875e7e2823173b34d86249ca60cfed3.tres"
+
+[deps]
+
+source_file="res://src/maps/autosave/street01.9.map"
+dest_files=[ "res://.import/street01.9.map-b875e7e2823173b34d86249ca60cfed3.tres" ]
+
+[params]
+
