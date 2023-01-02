@@ -848,7 +848,7 @@ script = ExtResource( 5 )
 [node name="Menu" parent="." instance=ExtResource( 4 )]
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 419, 58 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 40, 56 )
 friction_scale = 10
 leap_scale = 2
 
@@ -1478,7 +1478,7 @@ max_distance = 4096.0
 doppler_tracking = 2
 
 [node name="LightFixture01" parent="." instance=ExtResource( 40 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 53, 56, 64 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 54, 40, 64 )
 
 [connection signal="dialog_interact" from="Player" to="DialogManager" method="_on_Player_dialog_interact"]
 [connection signal="timeout" from="DialogManager/Timer" to="DialogManager" method="_on_Timer_timeout"]
