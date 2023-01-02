@@ -1,0 +1,181 @@
+// Game: this_horrible_machine
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_textures" "textures/map_mats"
+// brush 0
+{
+( -64 16 12 ) ( -64 12 16 ) ( -64 16 0 ) map_mats/Glass_05_basecolor 4 -4 0 1 1
+( -64 12 16 ) ( 64 12 16 ) ( -64 12 0 ) map_mats/Glass_05_basecolor 0 -4 0 1 1
+( -64 16 8 ) ( -64 12 8 ) ( 64 16 8 ) map_mats/Glass_05_basecolor 0 0 0 1 1
+( -64 16 12 ) ( 64 16 12 ) ( -64 12 16 ) map_mats/Glass_05_basecolor 0 0 0 1 1
+( -64 16 0 ) ( 64 16 0 ) ( -64 16 12 ) map_mats/Glass_05_basecolor 0 0 0 1 1
+( 64 16 0 ) ( 64 12 0 ) ( 64 16 12 ) map_mats/Glass_05_basecolor 4 -4 0 1 1
+}
+// brush 1
+{
+( -64 0 0 ) ( -64 4 0 ) ( -64 0 12 ) map_mats/Glass_05_basecolor 4 -4 0 1 1
+( -64 0 12 ) ( 64 0 12 ) ( -64 0 0 ) map_mats/Glass_05_basecolor 0 0 0 1 1
+( -64 4 16 ) ( 64 4 16 ) ( -64 0 12 ) map_mats/Glass_05_basecolor 0 0 0 1 1
+( 64 0 8 ) ( 64 4 8 ) ( -64 0 8 ) map_mats/Glass_05_basecolor 0 0 0 1 1
+( -64 4 16 ) ( -64 4 0 ) ( 64 4 16 ) map_mats/Glass_05_basecolor 0 -4 0 1 1
+( 64 0 12 ) ( 64 4 16 ) ( 64 0 0 ) map_mats/Glass_05_basecolor 4 -4 0 1 1
+}
+// brush 2
+{
+( -64 4 16 ) ( -64 4 12 ) ( -64 12 16 ) map_mats/Glass_05_basecolor 4 -4 0 1 1
+( 64 4 16 ) ( 64 4 12 ) ( -64 4 16 ) map_mats/Glass_05_basecolor 0 -4 0 1 1
+( 64 12 12 ) ( -64 12 12 ) ( 64 4 12 ) map_mats/Glass_05_basecolor 0 -4 0 1 1
+( -64 12 16 ) ( 64 12 16 ) ( -64 4 16 ) map_mats/Glass_05_basecolor 0 0 0 1 1
+( -64 12 16 ) ( -64 12 12 ) ( 64 12 16 ) map_mats/Glass_05_basecolor 0 -4 0 1 1
+( 64 12 16 ) ( 64 12 12 ) ( 64 4 16 ) map_mats/Glass_05_basecolor 4 -4 0 1 1
+}
+// brush 3
+{
+( -68 -8 0 ) ( -68 24 0 ) ( -68 -8 16 ) map_mats/16x16_metal_slats -8 0 0 1 1
+( -64 20 0 ) ( -68 24 0 ) ( -64 -4 0 ) map_mats/16_wall_metal_rust 0 12 0 1 1
+( -64 -4 16 ) ( -68 -8 16 ) ( -64 20 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( -68 -8 16 ) ( -64 -4 16 ) ( -68 -8 0 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( -68 24 0 ) ( -64 20 0 ) ( -68 24 16 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( -64 -4 0 ) ( -64 -4 16 ) ( -64 20 0 ) map_mats/16x16_metal_slats 8 0 0 1 1
+}
+// brush 4
+{
+( -96 20 0 ) ( -96 20 16 ) ( -96 -4 0 ) map_mats/16x16_metal_slats 8 0 0 1 1
+( -96 -4 0 ) ( -96 -4 16 ) ( -92 -8 0 ) map_mats/16x16_metal_slats 8 0 0 1 1
+( -96 20 0 ) ( -92 24 0 ) ( -96 20 16 ) map_mats/16x16_metal_slats 8 0 0 1 1
+( -96 -4 0 ) ( -92 -8 0 ) ( -96 20 0 ) map_mats/16_wall_metal_rust 0 12 0 1 1
+( -96 20 16 ) ( -92 24 16 ) ( -96 -4 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( -92 24 0 ) ( -92 -8 0 ) ( -92 24 16 ) map_mats/16x16_metal_slats -8 0 0 1 1
+}
+// brush 5
+{
+( -68 16 16 ) ( -68 16 0 ) ( -76 24 16 ) map_mats/16x16_metal_slats 4 0 0 1 1
+( -68 24 0 ) ( -76 24 0 ) ( -68 16 0 ) map_mats/16_wall_metal_rust 0 12 0 1 1
+( -68 24 16 ) ( -68 16 16 ) ( -76 24 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( -68 24 16 ) ( -76 24 16 ) ( -68 24 0 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( -68 24 0 ) ( -68 16 0 ) ( -68 24 16 ) map_mats/16x16_metal_slats -8 0 0 1 1
+}
+// brush 6
+{
+( -92 -8 0 ) ( -92 0 0 ) ( -92 -8 16 ) map_mats/16x16_metal_slats -8 0 0 1 1
+( -92 -8 16 ) ( -84 -8 16 ) ( -92 -8 0 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( -92 -8 0 ) ( -84 -8 0 ) ( -92 0 0 ) map_mats/16_wall_metal_rust 0 12 0 1 1
+( -92 -8 16 ) ( -92 0 16 ) ( -84 -8 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( -84 -8 16 ) ( -92 0 16 ) ( -84 -8 0 ) map_mats/16x16_metal_slats -12 0 0 1 1
+}
+// brush 7
+{
+( -92 24 16 ) ( -92 16 16 ) ( -92 24 0 ) map_mats/16x16_metal_slats -8 0 0 1 1
+( -92 24 0 ) ( -92 16 0 ) ( -84 24 0 ) map_mats/16_wall_metal_rust 0 12 0 1 1
+( -92 24 16 ) ( -84 24 16 ) ( -92 16 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( -92 24 0 ) ( -84 24 0 ) ( -92 24 16 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( -92 16 0 ) ( -92 16 16 ) ( -84 24 0 ) map_mats/16x16_metal_slats -4 0 0 1 1
+}
+// brush 8
+{
+( -68 0 16 ) ( -76 -8 16 ) ( -68 0 0 ) map_mats/16x16_metal_slats -4 0 0 1 1
+( -68 -8 0 ) ( -76 -8 0 ) ( -68 -8 16 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( -68 -8 0 ) ( -68 0 0 ) ( -76 -8 0 ) map_mats/16_wall_metal_rust 0 12 0 1 1
+( -68 -8 16 ) ( -76 -8 16 ) ( -68 0 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( -68 -8 16 ) ( -68 0 16 ) ( -68 -8 0 ) map_mats/16x16_metal_slats -8 0 0 1 1
+}
+// brush 9
+{
+( -84 24 16 ) ( -88 20 16 ) ( -84 24 0 ) map_mats/16x16_metal_slats -4 0 0 1 1
+( -72 20 16 ) ( -72 20 0 ) ( -88 20 16 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( -84 24 0 ) ( -88 20 0 ) ( -76 24 0 ) map_mats/16_wall_metal_rust 0 12 0 1 1
+( -76 24 16 ) ( -72 20 16 ) ( -84 24 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( -76 24 16 ) ( -84 24 16 ) ( -76 24 0 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( -76 24 0 ) ( -72 20 0 ) ( -76 24 16 ) map_mats/16x16_metal_slats 4 0 0 1 1
+}
+// brush 10
+{
+( -84 -8 0 ) ( -88 -4 0 ) ( -84 -8 16 ) map_mats/16x16_metal_slats -12 0 0 1 1
+( -84 -8 16 ) ( -76 -8 16 ) ( -84 -8 0 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( -76 -8 0 ) ( -72 -4 0 ) ( -84 -8 0 ) map_mats/16_wall_metal_rust 0 12 0 1 1
+( -84 -8 16 ) ( -88 -4 16 ) ( -76 -8 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( -88 -4 16 ) ( -88 -4 0 ) ( -72 -4 16 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( -76 -8 16 ) ( -72 -4 16 ) ( -76 -8 0 ) map_mats/16x16_metal_slats -4 0 0 1 1
+}
+// brush 11
+{
+( 92 -8 0 ) ( 92 24 0 ) ( 92 -8 16 ) map_mats/16x16_metal_slats -8 0 0 1 1
+( 96 20 0 ) ( 92 24 0 ) ( 96 -4 0 ) map_mats/16_wall_metal_rust 0 -4 0 1 1
+( 96 -4 16 ) ( 92 -8 16 ) ( 96 20 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( 92 -8 16 ) ( 96 -4 16 ) ( 92 -8 0 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( 92 24 0 ) ( 96 20 0 ) ( 92 24 16 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( 96 -4 0 ) ( 96 -4 16 ) ( 96 20 0 ) map_mats/16x16_metal_slats 8 0 0 1 1
+}
+// brush 12
+{
+( 92 0 16 ) ( 84 -8 16 ) ( 92 0 0 ) map_mats/16x16_metal_slats -4 0 0 1 1
+( 92 -8 0 ) ( 84 -8 0 ) ( 92 -8 16 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( 92 -8 0 ) ( 92 0 0 ) ( 84 -8 0 ) map_mats/16_wall_metal_rust 0 -4 0 1 1
+( 92 -8 16 ) ( 84 -8 16 ) ( 92 0 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( 92 -8 16 ) ( 92 0 16 ) ( 92 -8 0 ) map_mats/16x16_metal_slats -8 0 0 1 1
+}
+// brush 13
+{
+( 76 -8 0 ) ( 72 -4 0 ) ( 76 -8 16 ) map_mats/16x16_metal_slats 4 0 0 1 1
+( 76 -8 16 ) ( 84 -8 16 ) ( 76 -8 0 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( 84 -8 0 ) ( 88 -4 0 ) ( 76 -8 0 ) map_mats/16_wall_metal_rust 0 -4 0 1 1
+( 76 -8 16 ) ( 72 -4 16 ) ( 84 -8 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( 72 -4 16 ) ( 72 -4 0 ) ( 88 -4 16 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( 84 -8 16 ) ( 88 -4 16 ) ( 84 -8 0 ) map_mats/16x16_metal_slats -4 0 0 1 1
+}
+// brush 14
+{
+( 68 -8 0 ) ( 68 0 0 ) ( 68 -8 16 ) map_mats/16x16_metal_slats -8 0 0 1 1
+( 68 -8 16 ) ( 76 -8 16 ) ( 68 -8 0 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( 68 -8 0 ) ( 76 -8 0 ) ( 68 0 0 ) map_mats/16_wall_metal_rust 0 -4 0 1 1
+( 68 -8 16 ) ( 68 0 16 ) ( 76 -8 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( 76 -8 16 ) ( 68 0 16 ) ( 76 -8 0 ) map_mats/16x16_metal_slats 4 0 0 1 1
+}
+// brush 15
+{
+( 64 20 0 ) ( 64 20 16 ) ( 64 -4 0 ) map_mats/16x16_metal_slats 8 0 0 1 1
+( 64 -4 0 ) ( 64 -4 16 ) ( 68 -8 0 ) map_mats/16x16_metal_slats 8 0 0 1 1
+( 64 20 0 ) ( 68 24 0 ) ( 64 20 16 ) map_mats/16x16_metal_slats 8 0 0 1 1
+( 64 -4 0 ) ( 68 -8 0 ) ( 64 20 0 ) map_mats/16_wall_metal_rust 0 -4 0 1 1
+( 64 20 16 ) ( 68 24 16 ) ( 64 -4 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( 68 24 0 ) ( 68 -8 0 ) ( 68 24 16 ) map_mats/16x16_metal_slats -8 0 0 1 1
+}
+// brush 16
+{
+( 68 24 16 ) ( 68 16 16 ) ( 68 24 0 ) map_mats/16x16_metal_slats -8 0 0 1 1
+( 68 24 0 ) ( 68 16 0 ) ( 76 24 0 ) map_mats/16_wall_metal_rust 0 -4 0 1 1
+( 68 24 16 ) ( 76 24 16 ) ( 68 16 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( 68 24 0 ) ( 76 24 0 ) ( 68 24 16 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( 68 16 0 ) ( 68 16 16 ) ( 76 24 0 ) map_mats/16x16_metal_slats -4 0 0 1 1
+}
+// brush 17
+{
+( 76 24 16 ) ( 72 20 16 ) ( 76 24 0 ) map_mats/16x16_metal_slats -4 0 0 1 1
+( 88 20 16 ) ( 88 20 0 ) ( 72 20 16 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( 76 24 0 ) ( 72 20 0 ) ( 84 24 0 ) map_mats/16_wall_metal_rust 0 -4 0 1 1
+( 84 24 16 ) ( 88 20 16 ) ( 76 24 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( 84 24 16 ) ( 76 24 16 ) ( 84 24 0 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( 84 24 0 ) ( 88 20 0 ) ( 84 24 16 ) map_mats/16x16_metal_slats 4 0 0 1 1
+}
+// brush 18
+{
+( 92 16 16 ) ( 92 16 0 ) ( 84 24 16 ) map_mats/16x16_metal_slats 4 0 0 1 1
+( 92 24 0 ) ( 84 24 0 ) ( 92 16 0 ) map_mats/16_wall_metal_rust 0 -4 0 1 1
+( 92 24 16 ) ( 92 16 16 ) ( 84 24 16 ) map_mats/16_wall_metal_rust 0 8 0 1 1
+( 92 24 16 ) ( 84 24 16 ) ( 92 24 0 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( 92 24 0 ) ( 92 16 0 ) ( 92 24 16 ) map_mats/16x16_metal_slats -8 0 0 1 1
+}
+// brush 19
+{
+( -64 12 0 ) ( -64 12 4 ) ( -64 4 0 ) map_mats/16x16_metal_slats 4 -4 0 1 1
+( -64 -4 0 ) ( -64 -4 4 ) ( 64 -4 0 ) map_mats/16_wall_metal_rust 0 -4 0 1 1
+( -64 0 8 ) ( 64 -4 4 ) ( -64 -4 4 ) map_mats/16_wall_metal_rust 0 -4 0 1 1
+( -64 12 0 ) ( -64 4 0 ) ( 64 12 0 ) map_mats/16x16_metal_slats 0 0 0 1 1
+( -64 4 8 ) ( -64 12 8 ) ( 64 4 8 ) map_mats/16x16_metal_slats 0 -4 0 1 1
+( -64 16 8 ) ( -64 20 4 ) ( 64 20 4 ) map_mats/16_wall_metal_rust 0 -4 0 1 1
+( 64 20 0 ) ( 64 20 4 ) ( -64 20 0 ) map_mats/16_wall_metal_rust 0 -4 0 1 1
+( 64 4 0 ) ( 64 4 4 ) ( 64 12 0 ) map_mats/16x16_metal_slats 4 -4 0 1 1
+}
+}

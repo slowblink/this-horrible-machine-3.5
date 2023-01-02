@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-color = Color( 0.73099, 0.077161, 0.914063, 1 )
+color = Color( 0.94902, 0.529412, 0.0196078, 1 )
 body_type = 0
 portrait = ""
 idle_animation = 0

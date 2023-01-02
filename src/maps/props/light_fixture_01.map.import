@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/light_fixture_01.map-8f0dc72a5a1fe769771a19dbdd6880c6.tres"
+
+[deps]
+
+source_file="res://src/maps/props/light_fixture_01.map"
+dest_files=[ "res://.import/light_fixture_01.map-8f0dc72a5a1fe769771a19dbdd6880c6.tres" ]
+
+[params]
+

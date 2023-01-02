@@ -1,0 +1,28 @@
+[gd_resource type="SpatialMaterial" load_steps=5 format=2]
+
+[ext_resource path="res://textures/map_mats/Glass_06_AmbientOcclusion.png" type="Texture" id=1]
+[ext_resource path="res://textures/map_mats/Glass_06_Displacement.png" type="Texture" id=2]
+[ext_resource path="res://textures/map_mats/Glass_06_BaseColor.png" type="Texture" id=3]
+[ext_resource path="res://textures/map_mats/Glass_06_Normal.png" type="Texture" id=4]
+
+[resource]
+params_blend_mode = 1
+roughness_texture = ExtResource( 3 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 4 )
+ao_enabled = true
+ao_light_affect = 0.5
+ao_texture = ExtResource( 1 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+depth_enabled = true
+depth_scale = 0.05
+depth_deep_parallax = false
+depth_flip_tangent = false
+depth_flip_binormal = false
+depth_texture = ExtResource( 2 )
+refraction_enabled = true
+refraction_scale = 0.04
+refraction_texture = ExtResource( 4 )
+refraction_texture_channel = 0
