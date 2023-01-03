@@ -1,3 +1,3 @@
-extends Resource
+extends Landmarks
 class_name Category
 

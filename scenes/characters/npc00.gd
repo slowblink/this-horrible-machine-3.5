@@ -8,7 +8,7 @@ onready var _collision_shape: CollisionShape = $CollisionShape
 onready var _rigged_character: MeshInstance = $Armature/Skeleton/rigged_character
 ### Automatic References Stop ###
 
-onready var npc_name = npc_data.name
+onready var npc_name = npc_data.alias
 onready var npc_color = npc_data.color
 onready var npc_idle = npc_data.idle_animation
 onready var npc_body = npc_data.body_type

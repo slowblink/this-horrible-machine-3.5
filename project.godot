@@ -24,6 +24,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/dialogic/Localization/translation_service.gd"
 }, {
+"base": "Resource",
+"class": "Dead",
+"language": "GDScript",
+"path": "res://gridlessDB_data/Database/classes/Dead.gd"
+}, {
 "base": "Node",
 "class": "Dialogic",
 "language": "GDScript",
@@ -74,6 +79,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://gridlessDB_data/Database/classes/DynamicObjects.gd"
 }, {
+"base": "Resource",
+"class": "Foreshadowing",
+"language": "GDScript",
+"path": "res://gridlessDB_data/Database/classes/Foreshadowing.gd"
+}, {
 "base": "PanelContainer",
 "class": "HistoryRow",
 "language": "GDScript",
@@ -93,6 +103,11 @@ _global_script_classes=[ {
 "class": "LiquidLayer",
 "language": "GDScript",
 "path": "res://addons/qodot/game_definitions/worldspawn_layers/liquid.gd"
+}, {
+"base": "Resource",
+"class": "Living",
+"language": "GDScript",
+"path": "res://gridlessDB_data/Database/classes/Living.gd"
 }, {
 "base": "Resource",
 "class": "Phenomenae",
@@ -275,6 +290,11 @@ _global_script_classes=[ {
 "path": "res://addons/qodot/src/resources/game-definitions/trenchbroom/trenchbroom_tag.gd"
 }, {
 "base": "Resource",
+"class": "Unliving",
+"language": "GDScript",
+"path": "res://gridlessDB_data/Database/classes/Unliving.gd"
+}, {
+"base": "Resource",
 "class": "VectorResource",
 "language": "GDScript",
 "path": "res://addons/vector_resource/vector_resource.gd"
@@ -293,6 +313,7 @@ _global_script_class_icons={
 "Category": "",
 "Characters": "",
 "DTS": "",
+"Dead": "",
 "Dialogic": "",
 "DialogicAnimaPropertiesHelper": "",
 "DialogicAnimaResources": "",
@@ -303,10 +324,12 @@ _global_script_class_icons={
 "DialogicResources": "",
 "DialogicUtil": "",
 "DynamicObjects": "",
+"Foreshadowing": "",
 "HistoryRow": "",
 "Landmarks": "",
 "LavaLayer": "",
 "LiquidLayer": "",
+"Living": "",
 "Phenomenae": "",
 "PhysicsBall": "",
 "PhysicsEntity": "",
@@ -343,6 +366,7 @@ _global_script_class_icons={
 "TrenchBroomGameConfigFile": "",
 "TrenchBroomGameConfigFolder": "",
 "TrenchBroomTag": "",
+"Unliving": "",
 "VectorResource": "",
 "WaterLayer": "",
 "cQuakeLamp": ""

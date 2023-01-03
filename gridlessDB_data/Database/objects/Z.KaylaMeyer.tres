@@ -4,15 +4,15 @@
 
 [resource]
 script = ExtResource( 1 )
-color = Color( 0.94902, 0.529412, 0.0196078, 1 )
+color = Color(0.73099, 0.077161, 0.914063, 1)
 body_type = 0
 portrait = ""
 idle_animation = 0
 alias = "Z. Kayla Meyer"
-has_killed = false
-smokes = false
-drinks = false
-owns_a_weapon = false
-has_touched_the_decay = false
-wants_to_touch_the_decay = false
+has_killed = 0
+smokes = 0
+drinks = 1
+owns_a_weapon = 1
+has_touched_the_decay = 0
+wants_to_touch_the_decay = 0
 next_scene = "timeline-1670556756.json"

@@ -9,7 +9,7 @@
 radius = 0.4
 
 [sub_resource type="Animation" id=4]
-resource_name = "IDLE"
+resource_name = "Idle"
 length = 8.35
 loop = true
 tracks/0/type = "transform"
@@ -436,8 +436,8 @@ shape = SubResource( 8 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Armature")
-autoplay = "IDLE"
-anims/IDLE = SubResource( 4 )
+autoplay = "Idle"
+anims/Idle = SubResource( 4 )
 anims/RUNNING = SubResource( 5 )
 anims/TPOSE = SubResource( 6 )
 anims/WALKING = SubResource( 7 )

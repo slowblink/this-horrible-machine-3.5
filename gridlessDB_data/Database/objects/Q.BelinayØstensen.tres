@@ -4,15 +4,15 @@
 
 [resource]
 script = ExtResource( 1 )
-color = Color( 0.94902, 0.529412, 0.0196078, 1 )
+color = Color(0.289063, 1, 0, 1)
 body_type = 1
 portrait = ""
 idle_animation = 0
 alias = "Q. Belinay Østensen"
-has_killed = false
-smokes = false
-drinks = false
-owns_a_weapon = false
-has_touched_the_decay = false
-wants_to_touch_the_decay = false
-next_scene = "timeline-1671563351.json"
+has_killed = 1
+smokes = 1
+drinks = 0
+owns_a_weapon = 0
+has_touched_the_decay = 0
+wants_to_touch_the_decay = 0
+next_scene = "timeline-1670556756.json"
