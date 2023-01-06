@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/the sound of the howl 16.ogg-b74849e17a07f606010e28c51f5b04aa.oggstr"
+
+[deps]
+
+source_file="res://src/music/the sound of the howl 16.ogg"
+dest_files=[ "res://.import/the sound of the howl 16.ogg-b74849e17a07f606010e28c51f5b04aa.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

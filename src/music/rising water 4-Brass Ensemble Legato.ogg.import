@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rising water 4-Brass Ensemble Legato.ogg-c332bb33ea7da50c5a2bb1aec34f699f.oggstr"
+
+[deps]
+
+source_file="res://src/music/rising water 4-Brass Ensemble Legato.ogg"
+dest_files=[ "res://.import/rising water 4-Brass Ensemble Legato.ogg-c332bb33ea7da50c5a2bb1aec34f699f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

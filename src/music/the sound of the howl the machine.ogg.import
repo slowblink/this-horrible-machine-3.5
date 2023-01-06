@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/the sound of the howl the machine.ogg-1f572f376751a9614656abe5aefd92f5.oggstr"
+
+[deps]
+
+source_file="res://src/music/the sound of the howl the machine.ogg"
+dest_files=[ "res://.import/the sound of the howl the machine.ogg-1f572f376751a9614656abe5aefd92f5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

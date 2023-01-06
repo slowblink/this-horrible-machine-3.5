@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/the sound of the howl 3-AG_bass_tee_F# Rendered (e5c362aff4adc786).ogg-e2772dea002402e8885c28675879c135.oggstr"
+
+[deps]
+
+source_file="res://src/music/the sound of the howl 3-AG_bass_tee_F# Rendered (e5c362aff4adc786).ogg"
+dest_files=[ "res://.import/the sound of the howl 3-AG_bass_tee_F# Rendered (e5c362aff4adc786).ogg-e2772dea002402e8885c28675879c135.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

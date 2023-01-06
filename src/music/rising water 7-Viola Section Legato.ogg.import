@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rising water 7-Viola Section Legato.ogg-3a29739b41c3819435714aae201f5cfd.oggstr"
+
+[deps]
+
+source_file="res://src/music/rising water 7-Viola Section Legato.ogg"
+dest_files=[ "res://.import/rising water 7-Viola Section Legato.ogg-3a29739b41c3819435714aae201f5cfd.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -9,7 +9,7 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Resource",
+"base": "Landmarks",
 "class": "Category",
 "language": "GDScript",
 "path": "res://gridlessDB_data/Database/classes/Category.gd"

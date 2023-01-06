@@ -4,15 +4,15 @@
 
 [resource]
 script = ExtResource( 1 )
-color = Color(0.3, 0, 1, 1)
+color = Color( 0.3, 0, 1, 1 )
 body_type = 0
 portrait = ""
 idle_animation = 0
 alias = "Baron Omer"
-has_killed = 0
-smokes = 0
-drinks = 0
-owns_a_weapon = 0
-has_touched_the_decay = 0
-wants_to_touch_the_decay = 0
+has_killed = false
+smokes = false
+drinks = false
+owns_a_weapon = false
+has_touched_the_decay = false
+wants_to_touch_the_decay = false
 next_scene = ""

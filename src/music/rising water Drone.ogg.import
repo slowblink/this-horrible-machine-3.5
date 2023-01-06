@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rising water Drone.ogg-ca85b3adc5b0ac31d3b3cb2e0de4fcce.oggstr"
+
+[deps]
+
+source_file="res://src/music/rising water Drone.ogg"
+dest_files=[ "res://.import/rising water Drone.ogg-ca85b3adc5b0ac31d3b3cb2e0de4fcce.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
