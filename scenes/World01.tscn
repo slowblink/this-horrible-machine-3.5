@@ -1,4 +1,4 @@
-[gd_scene load_steps=517 format=2]
+[gd_scene load_steps=516 format=2]
 
 [ext_resource path="res://scenes/environments/env00.tres" type="Environment" id=1]
 [ext_resource path="res://addons/qodot/src/nodes/qodot_map.gd" type="Script" id=2]
@@ -42,7 +42,6 @@
 [ext_resource path="res://scenes/light/LightFixture01.tscn" type="PackedScene" id=40]
 [ext_resource path="res://textures/map_mats/256x256_concrete_wall_01.tres" type="Material" id=42]
 [ext_resource path="res://textures/map_mats/128_rivet_wall_horizontal.tres" type="Material" id=43]
-[ext_resource path="res://scenes/light/LightFixture02.tscn" type="PackedScene" id=58]
 [ext_resource path="res://npc/NpcA.tscn" type="PackedScene" id=59]
 [ext_resource path="res://gridlessDB_data/Database/objects/BaronOmer.tres" type="Resource" id=60]
 [ext_resource path="res://scenes/light/HugeLightFixture.tscn" type="PackedScene" id=61]
@@ -2191,6 +2190,15 @@ debug_mode = false
 timed = false
 next_state = NodePath("../Active")
 
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 111.1, 35.7631 )
+light_color = Color( 0.94902, 0.513726, 0.0196078, 1 )
+light_energy = 0.1
+light_specular = 5.0
+shadow_enabled = true
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 8000.0
+
 [node name="Layout" type="Spatial" parent="."]
 
 [node name="Street02" type="Spatial" parent="Layout"]
@@ -3671,14 +3679,6 @@ shape = SubResource( 48 )
 [node name="entity_0_brush_6_collision_shape" type="CollisionShape" parent="Layout/Break02/entity_0_worldspawn"]
 shape = SubResource( 49 )
 
-[node name="DirectionalLight" type="DirectionalLight" parent="Layout"]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 111.1, 35.7631 )
-light_color = Color( 0.94902, 0.529412, 0.0196078, 1 )
-light_specular = 5.0
-shadow_enabled = true
-directional_shadow_blend_splits = true
-directional_shadow_max_distance = 8000.0
-
 [node name="Torch03" parent="Layout" instance=ExtResource( 14 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 211.191, 259.041, -46.9195 )
 
@@ -3696,48 +3696,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.9984, 252.98, 11.4431 )
 
 [node name="LightFixture01" parent="Layout" instance=ExtResource( 40 )]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 54, 40, 64 )
-
-[node name="LightFixture02" parent="." instance=ExtResource( 58 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -88, 28, -690 )
-
-[node name="LightFixture03" parent="." instance=ExtResource( 58 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -88, -35, -690 )
-
-[node name="LightFixture04" parent="." instance=ExtResource( 58 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -88, -97, -690 )
-
-[node name="LightFixture05" parent="." instance=ExtResource( 58 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -88, -164, -690 )
-
-[node name="LightFixture06" parent="." instance=ExtResource( 58 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -88, -227, -690 )
-
-[node name="LightFixture07" parent="." instance=ExtResource( 58 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -88, -290, -690 )
-
-[node name="LightFixture08" parent="." instance=ExtResource( 58 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -88, -355, -690 )
-
-[node name="LightFixture09" parent="." instance=ExtResource( 58 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -88, -423, -690 )
-
-[node name="LightFixture01" parent="." instance=ExtResource( 40 )]
-transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -16, -7, -718 )
-
-[node name="LightFixture10" parent="." instance=ExtResource( 40 )]
-transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -16, -101, -718 )
-
-[node name="LightFixture11" parent="." instance=ExtResource( 40 )]
-transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -16, -178, -718 )
-
-[node name="LightFixture12" parent="." instance=ExtResource( 40 )]
-transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -16, -252, -718 )
-
-[node name="LightFixture13" parent="." instance=ExtResource( 40 )]
-transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -16, -323, -718 )
-
-[node name="LightFixture14" parent="." instance=ExtResource( 40 )]
-transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -16, -413, -718 )
 
 [node name="NpcA" parent="." instance=ExtResource( 59 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3 )
