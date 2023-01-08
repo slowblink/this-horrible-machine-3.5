@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/huge_light_fixture.map-cf2c4273bfeee05411379d0e1847a953.tres"
+
+[deps]
+
+source_file="res://src/maps/props/huge_light_fixture.map"
+dest_files=[ "res://.import/huge_light_fixture.map-cf2c4273bfeee05411379d0e1847a953.tres" ]
+
+[params]
+
