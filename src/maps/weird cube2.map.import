@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/weird cube2.map-0079e532b6b000b7fff60be05540a614.tres"
+
+[deps]
+
+source_file="res://src/maps/weird cube2.map"
+dest_files=[ "res://.import/weird cube2.map-0079e532b6b000b7fff60be05540a614.tres" ]
+
+[params]
+

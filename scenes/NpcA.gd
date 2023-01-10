@@ -1,6 +1,5 @@
 extends Spatial
 
-export(Resource) var npc_data
 var npc_material #generated below 
 
 ### Automatic References Start ###
@@ -10,14 +9,6 @@ onready var _rigged_mesh: MeshInstance = $RiggedNPC/Armature/Skeleton/RiggedMesh
 onready var _rigged_npc: Spatial = $RiggedNPC
 ### Automatic References Stop ###
 
-onready var npc_name = npc_data.alias
-onready var npc_color = npc_data.color
-onready var npc_idle = npc_data.idle_animation
-onready var npc_body = npc_data.body_type
-onready var npc_next_scene = npc_data.next_scene
-
-
-
 ##########################
 ## THIS NODE IS A FOR ANY NPC
 ## MODULATE COLOR AND MESH DEFORMS
@@ -25,8 +16,6 @@ onready var npc_next_scene = npc_data.next_scene
 
 func _ready():
 	infer_character_details()
-
-	
 func infer_character_details():
 	generate_material()
 	apply_material()
