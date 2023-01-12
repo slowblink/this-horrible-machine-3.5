@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/jump test.1.map-21f1fb1e4d56250058c2526567a77f01.tres"
+
+[deps]
+
+source_file="res://src/maps/autosave/jump test.1.map"
+dest_files=[ "res://.import/jump test.1.map-21f1fb1e4d56250058c2526567a77f01.tres" ]
+
+[params]
+
