@@ -380,7 +380,6 @@ func grapple_wall():
 	apply_friction(friction_scale)
 	#self-arrest by skipping move_and_slide as well as zeroing gravity?
 	#we end up here if space was pushed while touching a wall in the air
-	
 func jump_velocity_decay(delta):
 	#take whatever the value is and multiply it by .9 and by delta, and then assign that to jump_velocity
 	# we're checking for the distance, positive or negative, from zero.

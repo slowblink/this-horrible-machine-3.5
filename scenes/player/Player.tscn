@@ -243,7 +243,6 @@ SprintSpeedFactor = 5
 CrouchSpeedFactor = 5
 friction_scale = 2
 grapple_scale = 4
-jump_decay_rate = 50
 leap_scale = 1
 
 [node name="CollisionShape" type="CollisionShape" parent="." groups=["Player"]]

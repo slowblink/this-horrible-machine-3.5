@@ -3,17 +3,15 @@
 [sub_resource type="ProceduralSky" id=1]
 radiance_size = 0
 sky_top_color = Color( 0, 0, 0, 1 )
-sky_horizon_color = Color( 0.113725, 0.521569, 1, 1 )
-sky_energy = 0.1
+sky_horizon_color = Color( 0.0117647, 0.65098, 0.415686, 1 )
 ground_bottom_color = Color( 0, 0, 0, 1 )
-ground_horizon_color = Color( 0.113725, 0.521569, 1, 1 )
+ground_horizon_color = Color( 0.0117647, 0.65098, 0.415686, 1 )
 ground_curve = 0.0151572
-sun_color = Color( 0.956863, 0.286275, 0.0588235, 1 )
+sun_color = Color( 0.819608, 0.164706, 0, 1 )
 sun_latitude = 90.0
 sun_angle_min = 10.0
 sun_angle_max = 360.0
-sun_curve = 0.00947313
-sun_energy = 14.84
+sun_curve = 0.207053
 texture_size = 0
 
 [resource]
