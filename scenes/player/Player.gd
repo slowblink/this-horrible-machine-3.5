@@ -14,12 +14,13 @@ extends KinematicBody
 # [X] jump is fixed
 # [] slide on walls instead of fully self-arresting
 # [] make sparks fly from the direction of whatever wall the player is in contact with
+#
 #######
 #NOTES#
 #######
 # 
-
-
+#
+#
 ### Automatic References Start ###
 onready var _bob: AnimationPlayer = $Head/Camera/bob
 onready var _grapple: AnimationPlayer = $Head/Camera/grapple
@@ -569,7 +570,6 @@ func is_sprint_pressed():
 				$RandomWalk/WalkAudioTimer.wait_time = 0.5
 				$RandomWalk.volume_db = walkVolume
 				$Sprint.value += StaminaRegen
-
 	# If sprint meter is turned off, just switch the current speed to sprint speed and change audio parameters.
 		else:
 			Speed = sprintSpeed
