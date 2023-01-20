@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/20480_lift_terminal.map-caa087b5628158c85cc50dc07ec522b0.tres"
+
+[deps]
+
+source_file="res://src/maps/20480_lift_terminal.map"
+dest_files=[ "res://.import/20480_lift_terminal.map-caa087b5628158c85cc50dc07ec522b0.tres" ]
+
+[params]
+

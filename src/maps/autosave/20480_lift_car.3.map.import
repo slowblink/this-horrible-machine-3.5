@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/20480_lift_car.3.map-847434ed13704566583cb22396717104.tres"
+
+[deps]
+
+source_file="res://src/maps/autosave/20480_lift_car.3.map"
+dest_files=[ "res://.import/20480_lift_car.3.map-847434ed13704566583cb22396717104.tres" ]
+
+[params]
+

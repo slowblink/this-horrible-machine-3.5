@@ -22,7 +22,7 @@ func infer_character_details():
 func generate_material():
 	npc_material = SpatialMaterial.new()
 	npc_material.flags_unshaded = true
-	npc_material.albedo_color = npc_color 
+#	npc_material.albedo_color = npc_color 
 func apply_material():
 	_rigged_mesh.set_surface_material(0,npc_material)
 	

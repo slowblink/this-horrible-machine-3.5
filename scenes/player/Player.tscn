@@ -44,7 +44,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.4 ),
+"times": PoolRealArray( 0, 0.1, 0.2 ),
 "transitions": PoolRealArray( -2, -9.18957, 1 ),
 "update": 0,
 "values": [ Vector3( 0, 0, 0 ), Vector3( 0, -0.1, -0.2 ), Vector3( 0, 0, 0 ) ]
@@ -254,7 +254,7 @@ transform = Transform( 0.9375, 0, 0, 0, 0.9375, -1.16415e-10, 0, 1.16415e-10, 0.
 
 [node name="Camera" type="Camera" parent="Head"]
 unique_name_in_owner = true
-transform = Transform( 0.999661, 0.0260374, 0, -0.0260374, 0.999661, 0, 0, 0, 1, 0, -0.002, 0 )
+transform = Transform( 0.999661, 0.0260374, 0, -0.0260374, 0.999661, 0, 0, 0, 1, 0, 0, 0 )
 environment = ExtResource( 9 )
 far = 3000.0
 

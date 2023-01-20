@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/arisen decay.ogg-947f75bd9b313d820ca6ce86507ab4dd.oggstr"
+
+[deps]
+
+source_file="res://src/music/arisen decay.ogg"
+dest_files=[ "res://.import/arisen decay.ogg-947f75bd9b313d820ca6ce86507ab4dd.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

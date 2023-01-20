@@ -198,8 +198,6 @@ export var leap_scale = 4
 onready var wall_friction = 0 # base level friction is 0, and we add 1 when grinding against it.
 # may later change this to a float? could be a nice number to gradually ramp up.
 
-
-
 var grapple = false
 var grapple_fx_started = false
 
