@@ -1,0 +1,17 @@
+// Game: this_horrible_machine
+// Format: Valve
+// entity 0
+{
+"mapversion" "220"
+"classname" "worldspawn"
+"_tb_textures" "textures/map_mats;textures/misc"
+// brush 0
+{
+( -32512 -2549 7764 ) ( -32512 -2548 7764 ) ( -32512 -2549 7765 ) map_mats/1024_wall_metal_rust [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 4456 -32000 7764 ) ( 4456 -32000 7765 ) ( 4457 -32000 7764 ) map_mats/1024_wall_metal_rust [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 4456 -2549 0 ) ( 4457 -2549 0 ) ( 4456 -2548 0 ) map_mats/1024_wall_metal_rust [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 4640 -2442 256 ) ( 4640 -2441 256 ) ( 4641 -2442 256 ) map_mats/1024_wall_metal_rust [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 4640 32512 7765 ) ( 4641 32512 7765 ) ( 4640 32512 7766 ) map_mats/1024_wall_metal_rust [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32000 -2442 7765 ) ( 32000 -2442 7766 ) ( 32000 -2441 7765 ) map_mats/1024_wall_metal_rust [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}

@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/biggest_square.2.map-b20e4894f6ac4b8650ee450865f2f483.tres"
+
+[deps]
+
+source_file="res://src/maps/autosave/biggest_square.2.map"
+dest_files=[ "res://.import/biggest_square.2.map-b20e4894f6ac4b8650ee450865f2f483.tres" ]
+
+[params]
+

@@ -1,4 +1,4 @@
-[gd_scene load_steps=477 format=2]
+[gd_scene load_steps=482 format=2]
 
 [ext_resource path="res://scenes/environments/env00.tres" type="Environment" id=1]
 [ext_resource path="res://addons/qodot/src/nodes/qodot_map.gd" type="Script" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://textures/map_mats/256x256.png" type="Texture" id=10]
 [ext_resource path="res://textures/map_mats/512_armor-plating1_albedo.tres" type="Material" id=11]
 [ext_resource path="res://textures/map_mats/256_master_vertical_slot_panels.tres" type="Material" id=12]
+[ext_resource path="res://textures/map_mats/512_broken_down_concrete2_albedo.tres" type="Material" id=13]
 [ext_resource path="res://scenes/light/GrabLamps/Torch01.tscn" type="PackedScene" id=14]
 [ext_resource path="res://textures/map_mats/128x128.png" type="Texture" id=15]
 [ext_resource path="res://textures/map_mats/32x32.png" type="Texture" id=16]
@@ -38,7 +39,6 @@
 [ext_resource path="res://textures/map_mats/256_wall_metal_rust.png" type="Texture" id=38]
 [ext_resource path="res://textures/map_mats/512_wall_metal_rust.png" type="Texture" id=39]
 [ext_resource path="res://scenes/light/LightFixture01.tscn" type="PackedScene" id=40]
-[ext_resource path="res://npc/NPC.tscn" type="PackedScene" id=41]
 [ext_resource path="res://textures/map_mats/256x256_concrete_wall_01.tres" type="Material" id=42]
 [ext_resource path="res://textures/map_mats/128_rivet_wall_horizontal.tres" type="Material" id=43]
 [ext_resource path="res://scenes/light/HugeLightFixture.tscn" type="PackedScene" id=61]
@@ -2062,6 +2062,42 @@ points = PoolVector3Array( -32, 96, -32, -32, 64, -32, 32, 64, -32, 32, 96, -32,
 [sub_resource type="ConvexPolygonShape" id=546]
 points = PoolVector3Array( -32, 64, -32, -32, 32, -32, 32, 32, -32, 32, 64, -32, -32, 64, 32, -32, 32, 32, 32, 32, 32, 32, 64, 32 )
 
+[sub_resource type="SpatialMaterial" id=969]
+
+[sub_resource type="ArrayMesh" id=970]
+surfaces/0 = {
+"aabb": AABB( -2000, 0, -2016, 4032, 16, 4016 ),
+"array_data": PoolByteArray( 0, 0, 250, 196, 0, 0, 128, 65, 0, 0, 252, 196, 127, 127, 129, 63, 208, 83, 0, 184, 0, 0, 250, 196, 0, 0, 0, 128, 0, 0, 252, 196, 127, 127, 129, 63, 208, 83, 0, 0, 0, 0, 254, 68, 0, 0, 0, 0, 0, 0, 252, 196, 127, 127, 129, 63, 240, 211, 0, 0, 0, 0, 254, 68, 0, 0, 128, 65, 0, 0, 252, 196, 127, 127, 129, 63, 240, 211, 0, 184, 0, 0, 250, 196, 0, 0, 128, 65, 0, 0, 252, 196, 129, 0, 0, 63, 224, 211, 0, 184, 0, 0, 250, 196, 0, 0, 128, 65, 0, 0, 250, 68, 129, 0, 0, 63, 208, 83, 0, 184, 0, 0, 250, 196, 0, 0, 0, 0, 0, 0, 250, 68, 129, 0, 0, 63, 208, 83, 0, 0, 0, 0, 250, 196, 0, 0, 0, 128, 0, 0, 252, 196, 129, 0, 0, 63, 224, 211, 0, 0, 0, 0, 254, 68, 0, 0, 0, 0, 0, 0, 252, 196, 0, 129, 127, 127, 224, 83, 240, 211, 0, 0, 250, 196, 0, 0, 0, 128, 0, 0, 252, 196, 0, 129, 127, 127, 224, 83, 208, 83, 0, 0, 250, 196, 0, 0, 0, 0, 0, 0, 250, 68, 0, 129, 127, 127, 208, 211, 208, 83, 0, 0, 254, 68, 0, 0, 0, 0, 0, 0, 250, 68, 0, 129, 127, 127, 208, 211, 240, 211, 0, 0, 254, 68, 0, 0, 128, 65, 0, 0, 252, 196, 0, 127, 0, 63, 224, 211, 240, 211, 0, 0, 254, 68, 0, 0, 128, 65, 0, 0, 250, 68, 0, 127, 0, 63, 208, 83, 240, 211, 0, 0, 250, 196, 0, 0, 128, 65, 0, 0, 250, 68, 0, 127, 0, 63, 208, 83, 208, 83, 0, 0, 250, 196, 0, 0, 128, 65, 0, 0, 252, 196, 0, 127, 0, 63, 224, 211, 208, 83, 0, 0, 254, 68, 0, 0, 128, 65, 0, 0, 252, 196, 127, 0, 127, 127, 224, 83, 0, 184, 0, 0, 254, 68, 0, 0, 0, 0, 0, 0, 252, 196, 127, 0, 127, 127, 224, 83, 0, 0, 0, 0, 254, 68, 0, 0, 0, 0, 0, 0, 250, 68, 127, 0, 127, 127, 208, 211, 0, 0, 0, 0, 254, 68, 0, 0, 128, 65, 0, 0, 250, 68, 127, 0, 127, 127, 208, 211, 0, 184, 0, 0, 250, 196, 0, 0, 128, 65, 0, 0, 250, 68, 0, 0, 127, 63, 208, 211, 0, 184, 0, 0, 254, 68, 0, 0, 128, 65, 0, 0, 250, 68, 0, 0, 127, 63, 240, 83, 0, 184, 0, 0, 254, 68, 0, 0, 0, 0, 0, 0, 250, 68, 0, 0, 127, 63, 240, 83, 0, 0, 0, 0, 250, 196, 0, 0, 0, 0, 0, 0, 250, 68, 0, 0, 127, 63, 208, 211, 0, 0 ),
+"array_index_data": PoolByteArray( 0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 4, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 8, 0, 10, 0, 11, 0, 12, 0, 13, 0, 14, 0, 12, 0, 14, 0, 15, 0, 16, 0, 17, 0, 18, 0, 16, 0, 18, 0, 19, 0, 20, 0, 21, 0, 22, 0, 20, 0, 22, 0, 23, 0 ),
+"blend_shape_data": [  ],
+"format": 2194711,
+"index_count": 36,
+"material": ExtResource( 13 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+
+[sub_resource type="ConvexPolygonShape" id=971]
+points = PoolVector3Array( -2000, 16, -2016, -2000, 0, -2016, 2032, 0, -2016, 2032, 16, -2016, -2000, 16, 2000, -2000, 0, 2000, 2032, 0, 2000, 2032, 16, 2000 )
+
+[sub_resource type="ArrayMesh" id=972]
+surfaces/0 = {
+"aabb": AABB( -2000, 0, -2016, 4032, 16, 4016 ),
+"array_data": PoolByteArray( 0, 0, 250, 196, 0, 0, 128, 65, 0, 0, 252, 196, 127, 127, 129, 63, 208, 83, 0, 184, 0, 0, 250, 196, 0, 0, 0, 128, 0, 0, 252, 196, 127, 127, 129, 63, 208, 83, 0, 0, 0, 0, 254, 68, 0, 0, 0, 0, 0, 0, 252, 196, 127, 127, 129, 63, 240, 211, 0, 0, 0, 0, 254, 68, 0, 0, 128, 65, 0, 0, 252, 196, 127, 127, 129, 63, 240, 211, 0, 184, 0, 0, 250, 196, 0, 0, 128, 65, 0, 0, 252, 196, 129, 0, 0, 63, 224, 211, 0, 184, 0, 0, 250, 196, 0, 0, 128, 65, 0, 0, 250, 68, 129, 0, 0, 63, 208, 83, 0, 184, 0, 0, 250, 196, 0, 0, 0, 0, 0, 0, 250, 68, 129, 0, 0, 63, 208, 83, 0, 0, 0, 0, 250, 196, 0, 0, 0, 128, 0, 0, 252, 196, 129, 0, 0, 63, 224, 211, 0, 0, 0, 0, 254, 68, 0, 0, 0, 0, 0, 0, 252, 196, 0, 129, 127, 127, 224, 83, 240, 211, 0, 0, 250, 196, 0, 0, 0, 128, 0, 0, 252, 196, 0, 129, 127, 127, 224, 83, 208, 83, 0, 0, 250, 196, 0, 0, 0, 0, 0, 0, 250, 68, 0, 129, 127, 127, 208, 211, 208, 83, 0, 0, 254, 68, 0, 0, 0, 0, 0, 0, 250, 68, 0, 129, 127, 127, 208, 211, 240, 211, 0, 0, 254, 68, 0, 0, 128, 65, 0, 0, 252, 196, 0, 127, 0, 63, 224, 211, 240, 211, 0, 0, 254, 68, 0, 0, 128, 65, 0, 0, 250, 68, 0, 127, 0, 63, 208, 83, 240, 211, 0, 0, 250, 196, 0, 0, 128, 65, 0, 0, 250, 68, 0, 127, 0, 63, 208, 83, 208, 83, 0, 0, 250, 196, 0, 0, 128, 65, 0, 0, 252, 196, 0, 127, 0, 63, 224, 211, 208, 83, 0, 0, 254, 68, 0, 0, 128, 65, 0, 0, 252, 196, 127, 0, 127, 127, 224, 83, 0, 184, 0, 0, 254, 68, 0, 0, 0, 0, 0, 0, 252, 196, 127, 0, 127, 127, 224, 83, 0, 0, 0, 0, 254, 68, 0, 0, 0, 0, 0, 0, 250, 68, 127, 0, 127, 127, 208, 211, 0, 0, 0, 0, 254, 68, 0, 0, 128, 65, 0, 0, 250, 68, 127, 0, 127, 127, 208, 211, 0, 184, 0, 0, 250, 196, 0, 0, 128, 65, 0, 0, 250, 68, 0, 0, 127, 63, 208, 211, 0, 184, 0, 0, 254, 68, 0, 0, 128, 65, 0, 0, 250, 68, 0, 0, 127, 63, 240, 83, 0, 184, 0, 0, 254, 68, 0, 0, 0, 0, 0, 0, 250, 68, 0, 0, 127, 63, 240, 83, 0, 0, 0, 0, 250, 196, 0, 0, 0, 0, 0, 0, 250, 68, 0, 0, 127, 63, 208, 211, 0, 0 ),
+"array_index_data": PoolByteArray( 0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 4, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 8, 0, 10, 0, 11, 0, 12, 0, 13, 0, 14, 0, 12, 0, 14, 0, 15, 0, 16, 0, 17, 0, 18, 0, 16, 0, 18, 0, 19, 0, 20, 0, 21, 0, 22, 0, 20, 0, 22, 0, 23, 0 ),
+"blend_shape_data": [  ],
+"format": 2194711,
+"index_count": 36,
+"material": ExtResource( 13 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+
+[sub_resource type="ConvexPolygonShape" id=973]
+points = PoolVector3Array( -2000, 16, -2016, -2000, 0, -2016, 2032, 0, -2016, 2032, 16, -2016, -2000, 16, 2000, -2000, 0, 2000, 2032, 0, 2000, 2032, 16, 2000 )
+
 [sub_resource type="SphereShape" id=536]
 radius = 3.0
 
@@ -2081,12 +2117,10 @@ directional_shadow_max_distance = 8192.0
 [node name="Menu" parent="." instance=ExtResource( 4 )]
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-transform = Transform( -0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, -188, 504, 47 )
+transform = Transform( -0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, -188, 394, -46 )
 friction_scale = 10
 jump_death_margin = 1.0
 leap_scale = 2
-
-[node name="NPC" parent="." instance=ExtResource( 41 )]
 
 [node name="Spaces" type="Spatial" parent="."]
 
@@ -3364,35 +3398,31 @@ shape = SubResource( 967 )
 shape = SubResource( 968 )
 
 [node name="Torch03" parent="Spaces" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, 10 )
 
 [node name="Torch02" parent="Spaces" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 3, 11 )
 
 [node name="Torch01" parent="Spaces" instance=ExtResource( 14 )]
+transform = Transform( 0.836516, 0.158494, 0.524519, -0.224144, -0.774519, 0.591506, 0.5, -0.612372, -0.612372, 21, 5, 30 )
 
 [node name="Torch05" parent="Spaces" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, 8 )
 
 [node name="Torch04" parent="Spaces" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 3, 12 )
 
 [node name="LightFixture01" parent="Spaces" instance=ExtResource( 40 )]
-
-[node name="HugeLightFixture" parent="Spaces" instance=ExtResource( 61 )]
-transform = Transform( 1, 0, -1.74846e-07, 1.74846e-07, -4.37114e-08, 1, -7.64276e-15, -1, -4.37114e-08, 213, 133, 64 )
-
-[node name="HugeLightFixture2" parent="Spaces" instance=ExtResource( 61 )]
-transform = Transform( -4.37114e-08, -4.37114e-08, 1, -1, 1.91069e-15, -4.37114e-08, 0, -1, -4.37114e-08, 0, 260, 64 )
-
-[node name="HugeLightFixture3" parent="Spaces" instance=ExtResource( 61 )]
-transform = Transform( 1, 4.37114e-08, -3.55271e-15, 4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, -166, 128, -48 )
-
-[node name="HugeLightFixture4" parent="Spaces" instance=ExtResource( 61 )]
-transform = Transform( -4.37114e-08, 0, -1, 1, -4.37114e-08, -4.37114e-08, -4.37114e-08, -1, 1.91069e-15, 70, 407, 64 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 21, 27, -64 )
 
 [node name="OmniLight" type="OmniLight" parent="Spaces"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 218, -10 )
 light_color = Color( 0.113725, 0.521569, 1, 1 )
 omni_range = 200.0
 omni_attenuation = 8.32444
 
 [node name="OmniLight2" type="OmniLight" parent="Spaces"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 219, 16 )
 light_color = Color( 0.113725, 0.521569, 1, 1 )
 omni_range = 200.0
 omni_attenuation = 8.32444
@@ -3443,6 +3473,115 @@ shape = SubResource( 545 )
 
 [node name="entity_0_brush_6_collision_shape" type="CollisionShape" parent="Spaces/LiftCable/entity_0_worldspawn"]
 shape = SubResource( 546 )
+
+[node name="QodotMap" type="Spatial" parent="Spaces"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 2320.06, 0, -32 )
+script = ExtResource( 2 )
+map_file = "C:/Users/aaron/Documents/GitHub/this-horrible-machine/src/maps/biggest_square.map"
+inverse_scale_factor = 16.0
+entity_fgd = ExtResource( 6 )
+base_texture_dir = "res://textures"
+texture_file_extensions = PoolStringArray( "png" )
+worldspawn_layers = [  ]
+brush_clip_texture = "special/clip"
+face_skip_texture = "special/skip"
+texture_wads = [  ]
+material_file_extension = "tres"
+default_material = SubResource( 969 )
+uv_unwrap_texel_size = 1.0
+print_profiling_data = false
+use_trenchbroom_group_hierarchy = false
+tree_attach_batch_size = 16
+set_owner_batch_size = 16
+
+[node name="entity_0_worldspawn" type="StaticBody" parent="Spaces/QodotMap"]
+
+[node name="entity_0_mesh_instance" type="MeshInstance" parent="Spaces/QodotMap/entity_0_worldspawn"]
+use_in_baked_light = true
+mesh = SubResource( 970 )
+
+[node name="entity_0_brush_0_collision_shape" type="CollisionShape" parent="Spaces/QodotMap/entity_0_worldspawn"]
+shape = SubResource( 971 )
+
+[node name="QodotMap2" type="Spatial" parent="Spaces"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 2320.06, 0, 16 )
+script = ExtResource( 2 )
+map_file = "C:/Users/aaron/Documents/GitHub/this-horrible-machine/src/maps/biggest_square.map"
+inverse_scale_factor = 16.0
+entity_fgd = ExtResource( 6 )
+base_texture_dir = "res://textures"
+texture_file_extensions = PoolStringArray( "png" )
+worldspawn_layers = [  ]
+brush_clip_texture = "special/clip"
+face_skip_texture = "special/skip"
+texture_wads = [  ]
+material_file_extension = "tres"
+default_material = SubResource( 969 )
+uv_unwrap_texel_size = 1.0
+print_profiling_data = false
+use_trenchbroom_group_hierarchy = false
+tree_attach_batch_size = 16
+set_owner_batch_size = 16
+
+[node name="entity_0_worldspawn" type="StaticBody" parent="Spaces/QodotMap2"]
+
+[node name="entity_0_mesh_instance" type="MeshInstance" parent="Spaces/QodotMap2/entity_0_worldspawn"]
+use_in_baked_light = true
+mesh = SubResource( 972 )
+
+[node name="entity_0_brush_0_collision_shape" type="CollisionShape" parent="Spaces/QodotMap2/entity_0_worldspawn"]
+shape = SubResource( 973 )
+
+[node name="HugeLightFixture" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( 1, 0, -1.74846e-07, 1.74846e-07, -4.37114e-08, 1, -7.64276e-15, -1, -4.37114e-08, 213, 133, 64 )
+
+[node name="HugeLightFixture2" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( -4.37114e-08, -4.37114e-08, 1, -1, 1.91069e-15, -4.37114e-08, 0, -1, -4.37114e-08, 0, 260, 64 )
+
+[node name="HugeLightFixture3" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( 1, 4.37114e-08, -3.55271e-15, 4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, -166, 128, -48 )
+
+[node name="HugeLightFixture4" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( -4.37114e-08, 0, -1, 1, -4.37114e-08, -4.37114e-08, -4.37114e-08, -1, 1.91069e-15, 158, 369, 64 )
+
+[node name="HugeLightFixture5" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( -4.37114e-08, 0, -1, 1, -4.37114e-08, -4.37114e-08, -4.37114e-08, -1, 1.91069e-15, 343, 369, 14 )
+
+[node name="HugeLightFixture6" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -87, 28, -690.5 )
+
+[node name="HugeLightFixture7" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -87, -41, -690.5 )
+
+[node name="HugeLightFixture8" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -87, -99, -690.5 )
+
+[node name="HugeLightFixture9" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -87, -166, -690.5 )
+
+[node name="HugeLightFixture10" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -87, -230, -690.5 )
+
+[node name="HugeLightFixture11" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -87, -296, -690.5 )
+
+[node name="HugeLightFixture12" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -87, -358, -690.5 )
+
+[node name="HugeLightFixture13" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -87, -421, -690.5 )
+
+[node name="HugeLightFixture14" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( -4.37114e-08, 1.06581e-14, -1, 0, 1, 1.06581e-14, 1, 4.65882e-22, -4.37114e-08, 33, 472, -161 )
+
+[node name="HugeLightFixture15" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( -4.37114e-08, 1.06581e-14, -1, 0, 1, 1.06581e-14, 1, 4.65882e-22, -4.37114e-08, -16, 472, -241 )
+
+[node name="HugeLightFixture16" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( -4.37114e-08, 1.06581e-14, -1, 0, 1, 1.06581e-14, 1, 4.65882e-22, -4.37114e-08, -151, 480, -301 )
+
+[node name="HugeLightFixture17" parent="Spaces" instance=ExtResource( 61 )]
+transform = Transform( -1, -9.31764e-22, 8.74228e-08, 0, 1, 1.06581e-14, -8.74228e-08, 1.06581e-14, -1, -190, 480, -192 )
 
 [node name="MonologManager" type="Node" parent="."]
 script = ExtResource( 9 )
