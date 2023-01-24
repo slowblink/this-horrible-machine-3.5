@@ -69,6 +69,7 @@ shape = SubResource( 3 )
 
 [node name="OmniLight" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.00007, 0 )
-light_color = Color( 0.2405, 0.4043, 0.65, 1 )
-light_energy = 16.0
+light_color = Color( 0.37, 0.622, 1, 1 )
+shadow_enabled = true
 omni_range = 200.0
+omni_shadow_mode = 0
