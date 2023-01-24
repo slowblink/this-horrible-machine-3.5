@@ -375,7 +375,7 @@ _global_script_class_icons={
 [application]
 
 config/name="this horrible machine"
-run/main_scene="res://scenes/World01.tscn"
+run/main_scene="res://scenes/World03.tscn"
 config/version="0.1.3.2"
 config/build=1
 
