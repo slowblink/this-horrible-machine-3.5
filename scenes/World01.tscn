@@ -1,4 +1,4 @@
-[gd_scene load_steps=532 format=2]
+[gd_scene load_steps=536 format=2]
 
 [ext_resource path="res://scenes/environments/env00.tres" type="Environment" id=1]
 [ext_resource path="res://addons/qodot/src/nodes/qodot_map.gd" type="Script" id=2]
@@ -60,6 +60,9 @@
 [ext_resource path="res://scenes/light/LightFixture02.tscn" type="PackedScene" id=58]
 [ext_resource path="res://npc/NpcA.tscn" type="PackedScene" id=59]
 [ext_resource path="res://gridlessDB_data/Database/objects/BaronOmer.tres" type="Resource" id=60]
+[ext_resource path="res://StereoAudio.tscn" type="PackedScene" id=61]
+[ext_resource path="res://src/particles/spark_static.png" type="Texture" id=62]
+[ext_resource path="res://scenes/audio/audio_test.gd" type="Script" id=63]
 
 [sub_resource type="SpatialMaterial" id=1]
 
@@ -2158,6 +2161,9 @@ points = PoolVector3Array( -96, 624, 80, -96, 0, 80, 0, 0, 80, 0, 624, 80, -96, 
 [sub_resource type="ConvexPolygonShape" id=49]
 points = PoolVector3Array( -96, 0, -32, -96, -16, -32, 0, -16, -32, 0, 0, -32, -96, 0, 96, -96, -16, 96, 0, -16, 96, 0, 0, 96 )
 
+[sub_resource type="SphereShape" id=510]
+radius = 28.2757
+
 [node name="World" type="WorldEnvironment"]
 environment = ExtResource( 1 )
 script = ExtResource( 5 )
@@ -2165,7 +2171,8 @@ script = ExtResource( 5 )
 [node name="Menu" parent="." instance=ExtResource( 4 )]
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-transform = Transform( -0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 66, 43, 55 )
+transform = Transform( -0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, -123.378, 92.4998, -17.9152 )
+Speed = 15
 friction_scale = 10
 jump_decay_rate = 75
 leap_scale = 2
@@ -3717,14 +3724,38 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.9984, 252.98, 11.4431 )
 [node name="LightFixture01" parent="Layout" instance=ExtResource( 40 )]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 54, 40, 64 )
 
+[node name="AudioTest" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -114.148, 85.1886, -11.6552 )
+script = ExtResource( 63 )
+
+[node name="StereoAudio" parent="AudioTest" instance=ExtResource( 61 )]
+
+[node name="Sprite3D" type="Sprite3D" parent="AudioTest"]
+transform = Transform( 25, 0, 0, 0, 25, 0, 0, 0, 25, 0, 0, 0 )
+billboard = 1
+double_sided = false
+texture = ExtResource( 62 )
+
+[node name="OmniLight" type="OmniLight" parent="AudioTest"]
+light_color = Color( 1, 0.498039, 0.192157, 1 )
+light_energy = 3.552
+omni_range = 36.2699
+omni_attenuation = 4.0
+
+[node name="Area" type="Area" parent="AudioTest"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="AudioTest/Area"]
+shape = SubResource( 510 )
+
 [node name="SoundCluster" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 198, 338, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 198.522, 341.755, -2.86834 )
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="SoundCluster"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 34 )
 stream = ExtResource( 45 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3732,7 +3763,6 @@ doppler_tracking = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 39, -20, -35 )
 stream = ExtResource( 47 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3740,7 +3770,6 @@ doppler_tracking = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -47, -14, -38 )
 stream = ExtResource( 44 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3748,14 +3777,12 @@ doppler_tracking = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14, -61 )
 stream = ExtResource( 41 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D5" type="AudioStreamPlayer3D" parent="SoundCluster"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 0, 49 )
 stream = ExtResource( 46 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="SoundCluster3" type="Spatial" parent="."]
@@ -3765,7 +3792,6 @@ transform = Transform( -4.37114e-08, 0, 1, 0.965926, 0.258819, 4.2222e-08, -0.25
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 34 )
 stream = ExtResource( 45 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3773,7 +3799,6 @@ doppler_tracking = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 39, -20, -35 )
 stream = ExtResource( 47 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3781,7 +3806,6 @@ doppler_tracking = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -47, -14, -38 )
 stream = ExtResource( 44 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3789,14 +3813,12 @@ doppler_tracking = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14, -61 )
 stream = ExtResource( 41 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D5" type="AudioStreamPlayer3D" parent="SoundCluster3"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 0, 49 )
 stream = ExtResource( 46 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="SoundCluster2" type="Spatial" parent="."]
@@ -3806,7 +3828,6 @@ transform = Transform( -0.0669873, -0.965926, 0.25, -0.25, 0.258819, 0.933013, -
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 34 )
 stream = ExtResource( 49 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3814,7 +3835,6 @@ doppler_tracking = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 39, -20, -35 )
 stream = ExtResource( 48 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3822,7 +3842,6 @@ doppler_tracking = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -47, -14, -38 )
 stream = ExtResource( 55 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3830,49 +3849,42 @@ doppler_tracking = 2
 transform = Transform( 1, -2.67384e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -10.2631, 36.0132, -22.6974 )
 stream = ExtResource( 50 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D5" type="AudioStreamPlayer3D" parent="SoundCluster2"]
 transform = Transform( 1, -2.67384e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -0.694069, -13.9762, -15.1001 )
 stream = ExtResource( 52 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D6" type="AudioStreamPlayer3D" parent="SoundCluster2"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -4.15398, -32.2409, 9.40359 )
 stream = ExtResource( 51 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D7" type="AudioStreamPlayer3D" parent="SoundCluster2"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -24.1489, -5.69402, 10.6152 )
 stream = ExtResource( 56 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D8" type="AudioStreamPlayer3D" parent="SoundCluster2"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, 16.8602, 35.6142, -18.7939 )
 stream = ExtResource( 57 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D9" type="AudioStreamPlayer3D" parent="SoundCluster2"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -0.919628, -45.801, -18.1221 )
 stream = ExtResource( 53 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D10" type="AudioStreamPlayer3D" parent="SoundCluster2"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, 14.8997, 31.1499, 19.4322 )
 stream = ExtResource( 54 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="SoundCluster4" type="Spatial" parent="."]
@@ -3882,7 +3894,6 @@ transform = Transform( -0.0669873, -0.965926, 0.25, -0.25, 0.258819, 0.933013, -
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 34 )
 stream = ExtResource( 49 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3890,7 +3901,6 @@ doppler_tracking = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 39, -20, -35 )
 stream = ExtResource( 48 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3898,7 +3908,6 @@ doppler_tracking = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -47, -14, -38 )
 stream = ExtResource( 55 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3906,49 +3915,42 @@ doppler_tracking = 2
 transform = Transform( 1, -2.67384e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -10.2631, 36.0132, -22.6974 )
 stream = ExtResource( 50 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D5" type="AudioStreamPlayer3D" parent="SoundCluster4"]
 transform = Transform( 1, -2.67384e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -0.694069, -13.9762, -15.1001 )
 stream = ExtResource( 52 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D6" type="AudioStreamPlayer3D" parent="SoundCluster4"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -4.15398, -32.2409, 9.40359 )
 stream = ExtResource( 51 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D7" type="AudioStreamPlayer3D" parent="SoundCluster4"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -24.1489, -5.69402, 10.6152 )
 stream = ExtResource( 56 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D8" type="AudioStreamPlayer3D" parent="SoundCluster4"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, 16.8602, 35.6142, -18.7939 )
 stream = ExtResource( 57 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D9" type="AudioStreamPlayer3D" parent="SoundCluster4"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -0.919628, -45.801, -18.1221 )
 stream = ExtResource( 53 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D10" type="AudioStreamPlayer3D" parent="SoundCluster4"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, 14.8997, 31.1499, 19.4322 )
 stream = ExtResource( 54 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="SoundCluster5" type="Spatial" parent="."]
@@ -3958,7 +3960,6 @@ transform = Transform( -0.0669873, -0.965926, 0.25, -0.25, 0.258819, 0.933013, -
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 34 )
 stream = ExtResource( 49 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3966,7 +3967,6 @@ doppler_tracking = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 39, -20, -35 )
 stream = ExtResource( 48 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3974,7 +3974,6 @@ doppler_tracking = 2
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -47, -14, -38 )
 stream = ExtResource( 55 )
 unit_size = 10.0
-autoplay = true
 max_distance = 4096.0
 doppler_tracking = 2
 
@@ -3982,49 +3981,42 @@ doppler_tracking = 2
 transform = Transform( 1, -2.67384e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -10.2631, 36.0132, -22.6974 )
 stream = ExtResource( 50 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D5" type="AudioStreamPlayer3D" parent="SoundCluster5"]
 transform = Transform( 1, -2.67384e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -0.694069, -13.9762, -15.1001 )
 stream = ExtResource( 52 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D6" type="AudioStreamPlayer3D" parent="SoundCluster5"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -4.15398, -32.2409, 9.40359 )
 stream = ExtResource( 51 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D7" type="AudioStreamPlayer3D" parent="SoundCluster5"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -24.1489, -5.69402, 10.6152 )
 stream = ExtResource( 56 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D8" type="AudioStreamPlayer3D" parent="SoundCluster5"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, 16.8602, 35.6142, -18.7939 )
 stream = ExtResource( 57 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D9" type="AudioStreamPlayer3D" parent="SoundCluster5"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, -0.919628, -45.801, -18.1221 )
 stream = ExtResource( 53 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="AudioStreamPlayer3D10" type="AudioStreamPlayer3D" parent="SoundCluster5"]
 transform = Transform( 1, -2.67464e-10, 2.98023e-08, 0, 1, -1.49012e-08, -2.98023e-08, -1.49728e-08, 1, 14.8997, 31.1499, 19.4322 )
 stream = ExtResource( 54 )
 unit_size = 10.0
-autoplay = true
 doppler_tracking = 2
 
 [node name="LightFixture02" parent="." instance=ExtResource( 58 )]
@@ -4075,3 +4067,5 @@ npc_data = ExtResource( 60 )
 
 [connection signal="dialog_interact" from="Player" to="DialogManager" method="_on_Player_dialog_interact"]
 [connection signal="timeout" from="DialogManager/Timer" to="DialogManager" method="_on_Timer_timeout"]
+[connection signal="body_shape_entered" from="AudioTest/Area" to="AudioTest" method="_on_Area_body_shape_entered"]
+[connection signal="body_shape_exited" from="AudioTest/Area" to="AudioTest" method="_on_Area_body_shape_exited"]

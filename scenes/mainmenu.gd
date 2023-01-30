@@ -52,3 +52,6 @@ func Credits() -> void:
 func hide():
 	Global.Settings.visible = false
 	$Credits.visible = false
+
+func _ready():
+	_on_Play_pressed()

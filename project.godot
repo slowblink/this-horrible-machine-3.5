@@ -387,6 +387,7 @@ default_bus_layout="res://Deprecated/default_bus_layout.tres"
 
 Global="*res://scenes/Global.gd"
 Pause="*res://scenes/ui/pause/Pause.tscn"
+AmbisonicEngine="*res://audio/AmbisonicEngine.gd"
 
 [display]
 

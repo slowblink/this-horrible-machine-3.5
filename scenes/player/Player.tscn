@@ -251,12 +251,13 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0
 shape = SubResource( 3 )
 
 [node name="Head" type="Spatial" parent="."]
-transform = Transform( 0.9375, 0, 0, 0, 0.9375, -1.16415e-10, 0, 1.16415e-10, 0.9375, 0, 1.00625, 2.32831e-10 )
+transform = Transform( 1, 0, 0, 0, 1, -1.24176e-10, 0, 1.24176e-10, 1, 0, 1, 0 )
 
 [node name="Camera" type="Camera" parent="Head"]
 unique_name_in_owner = true
 transform = Transform( 0.999661, 0.0260374, 0, -0.0260374, 0.999661, 0, 0, 0, 1, 0, -0.002, 0 )
 environment = ExtResource( 9 )
+fov = 90.0
 far = 3000.0
 
 [node name="bob" type="AnimationPlayer" parent="Head/Camera"]
@@ -342,8 +343,9 @@ transform = Transform( 1, 0, 0, 0, 1, -6.98492e-10, 0, 6.98492e-10, 1, 0, 0.2982
 shape = SubResource( 15 )
 
 [node name="RandomWalk" type="AudioStreamPlayer" parent="."]
+volume_db = -24.0
 script = ExtResource( 3 )
-AudioFiles = [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 8 ) ]
+AudioFiles = [ ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ) ]
 
 [node name="WalkAudioTimer" type="Timer" parent="RandomWalk"]
 wait_time = 0.5
