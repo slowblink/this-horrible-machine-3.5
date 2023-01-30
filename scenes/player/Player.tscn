@@ -254,9 +254,9 @@ transform = Transform( 0.9375, 0, 0, 0, 0.9375, -1.16415e-10, 0, 1.16415e-10, 0.
 
 [node name="Camera" type="Camera" parent="Head"]
 unique_name_in_owner = true
-transform = Transform( 0.999661, 0.0260374, 0, -0.0260374, 0.999661, 0, 0, 0, 1, 0, 0, 0 )
+transform = Transform( 0.999661, 0.0260374, 0, -0.0260374, 0.999661, 0, 0, 0, 1, 0, -0.002, 0 )
 environment = ExtResource( 9 )
-far = 3000.0
+far = 8192.0
 
 [node name="bob" type="AnimationPlayer" parent="Head/Camera"]
 playback_speed = 2.0
@@ -281,6 +281,11 @@ cast_shadow = 0
 generate_lightmap = false
 mesh = SubResource( 20 )
 material/0 = SubResource( 21 )
+
+[node name="SpotLight" type="SpotLight" parent="Head/Camera"]
+transform = Transform( 0.999661, -0.0260374, -3.23322e-12, 0.0260374, 0.999661, 1.24134e-10, 0, -1.24176e-10, 1, 0.0262001, -1.00591, 2 )
+spot_range = 4096.0
+spot_angle = 35.67
 
 [node name="Hand" type="SpringArm" parent="Head"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )

@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/big_cube.3.map-603e20522e4d954c46200092830d579b.tres"
+
+[deps]
+
+source_file="res://src/maps/autosave/big_cube.3.map"
+dest_files=[ "res://.import/big_cube.3.map-603e20522e4d954c46200092830d579b.tres" ]
+
+[params]
+
